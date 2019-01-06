@@ -1,0 +1,38 @@
+{
+  "name": "Hugo_Mix_Tailwind_SASS",
+  "version": "1.0.0",
+  "description": "✅ Hugo ✅ Laravel Mix ✅ Tailwind CSS ✅ SASS ✅ PurgeCSS",
+  "main": "webpack.mix.js",
+  "scripts": {
+    "hugo": "hugo",
+    "hugo-server": "hugo server --disableFastRender",
+    "development": "NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "production": "NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "build": "npm run production && npm run hugo",
+    "dev": "npm run development && npm run hugo-server",
+    "do": "concurrently 'npm run watch' 'npm run hugo-server'"
+  },
+  "keywords": [
+    "hugo",
+    "webpack",
+    "tailwind-css"
+  ],
+  "dependencies": {
+    "babel-preset-env": "^1.7.0",
+    "concurrently": "^4.1.0",
+    "laravel-mix": "^4.0.13",
+    "laravel-mix-purgecss": "^4.0.0",
+    "laravel-mix-tailwind": "^0.1.0",
+    "tailwind": "^3.0.0"
+  },
+  "author": "Lindsey Bradford <lindseyb@wearetelegraph.com>",
+  "license": "N/A",
+  "devDependencies": {
+    "resolve-url-loader": "2.3.1",
+    "sass": "^1.15.3",
+    "sass-loader": "7.*",
+    "tailwindcss": "^0.7.3",
+    "vue-template-compiler": "^2.5.21"
+  }
+}
