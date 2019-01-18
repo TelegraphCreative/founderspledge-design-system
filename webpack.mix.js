@@ -2,12 +2,15 @@ let mix = require('laravel-mix');
 require('laravel-mix-purgecss');
 require('laravel-mix-tailwind');
 
-let themeDir = "./themes/ananke/";
+let themeDir = "./themes/founders/";
+
+// .copy( themeDir + 'src/assets', themeDir + 'static/dist/assets')
+
 mix
-.js( themeDir + 'src/js/app.js', themeDir + 'static/dist/js')
-.sass( themeDir +'src/scss/app.scss', themeDir + 'static/dist/css')
-.tailwind();
-    
+    .js( themeDir + 'src/js/app.js', themeDir + 'static/dist/js')
+    .sass( themeDir +'src/scss/app.scss', themeDir + 'static/dist/css')
+    .tailwind();
+        
 if (mix.inProduction()) {
     mix.purgeCss({
         enabled: mix.inProduction(),
