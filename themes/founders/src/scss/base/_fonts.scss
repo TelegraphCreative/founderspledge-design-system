@@ -1,0 +1,56 @@
+// Fonts
+
+/*
+        This font software is the property of Commercial Type.
+
+        You may not modify the font software, use it on another website, or install it on a computer.
+
+        License information is available at http://commercialtype.com/eula
+        For more information please visit Commercial Type at http://commercialtype.com or email us at info[at]commercialtype.com
+
+        Copyright (C) 2019 Schwartzco Inc.
+        License: 1901-SHTMYN     
+*/
+
+$font-path: '../assets/fonts/';
+
+
+// Graphik Web 
+@font-face {
+    font-family: 'Graphik--web';
+    src: url('../assets/fonts/Graphik/Graphik-Semibold-Web.woff2') format('woff2'),
+        url('#{$font-path}Graphik/Graphik-Semibold-Web.woff') format('woff');
+    font-weight:  600;
+    font-style:   normal;
+    font-stretch: normal;
+}
+
+
+@font-face {
+    font-family: 'Graphik--web';
+    src: url('#{$font-path}Graphik/Graphik-Medium-Web.woff2') format('woff2'),
+        url('#{$font-path}Graphik/Graphik-Medium-Web.woff') format('woff');
+    font-weight:  500;
+    font-style:   normal;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: 'Graphik--web';
+    src: url('#{$font-path}Graphik/Graphik-Regular-Web.woff2') format('woff2'),
+        url('#{$font-path}Graphik/Graphik-Regular-Web.woff') format('woff');
+    font-weight:  400;
+    font-style:   normal;
+    font-stretch: normal;
+}
+
+
+// Chap 
+@font-face {
+    font-family: 'Chap--web';
+    src: url('#{$font-path}Chap/Chap-Semibold.woff') format('woff'),
+        url('#{$font-path}Chap/Chap-Semibold.eot') format('eot');
+    font-weight:  600;
+    font-style:   normal;
+    font-stretch: normal;
+}

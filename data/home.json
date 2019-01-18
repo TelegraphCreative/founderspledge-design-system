@@ -1,0 +1,30 @@
+{
+    "Header": [
+        {
+            "preheader": "Why",
+            "header": "To",
+            "desc": "That's"
+        }
+    ],
+
+    "Highlights": [
+        {
+            "name": "Community",
+            "descr" : "Form lasting bonds with value-aligned entrepreneurs, tackle some of the world’s toughest challenges, and learn experts at our intimate events around the globe.",
+            "linkText" : "Learn More",
+            "linkUrl" : "#"
+        },
+        {
+            "name": "Research",
+            "descr" : "Giving away money is easy. Giving thoughtfully and impactfully is far more difficult. That’s why we can end-to-end, individualized philanthropic planning for every step of the impact journey.",
+            "linkText" : "Learn More",
+            "linkUrl" : "#"
+        },
+        {
+            "name": "Support",
+            "descr" : "We operate the world’s only cost-free donor advised fund. We provide end-to-end support for your giving, enabling you to give anywhere, any time, with ease.            ",
+            "linkText" : "Learn More",
+            "linkUrl" : "#"
+        }
+    ]
+ }

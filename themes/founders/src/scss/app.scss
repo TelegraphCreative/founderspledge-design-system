@@ -1,0 +1,18 @@
+[v-cloak] {display: none}
+@tailwind preflight;
+@tailwind components;
+@tailwind utilities;
+
+// Base
+@import 'base/fonts';
+
+// Components
+@import 'components/highlight-card';
+
+// body {
+//     @apply bg-pink text-red;
+// }
+
+// .critical-is-removed {
+//     @apply text-pink;
+// }
