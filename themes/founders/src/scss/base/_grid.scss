@@ -1,0 +1,82 @@
+// Grid 
+html {
+    @apply font-sans;
+    scroll-behavior: smooth;
+}
+
+.container {
+    @apply mx-auto;
+    max-width: 90rem; // 1440
+}
+
+// Screen
+@screen md {
+
+    // Gutters
+    .gutter {
+        @apply px-14;
+
+        &-l {
+            @apply pl-14;
+        }
+    }
+}
+
+
+
+// ----
+// .container {
+//     @apply 
+//         mx-auto
+//         px-3
+//         ;
+//         max-width: 90rem; 
+
+//     // Large
+//     &--md {
+//         max-width: 82.5rem; // (1200 + px-14)
+//         @apply px-3;
+//     }
+
+//     // Small (matches .content-gutter)
+//     &--sm {
+//         @apply 
+//             mx-auto
+//             px-3;
+//         max-width: 70.625rem;
+//     }
+//     &--xs {
+//         @apply 
+//             mx-auto
+//             px-3;
+//         max-width: 60rem;
+//     }
+
+//     @screen md {
+//         // Large
+//         &--md {
+//             @apply px-14;
+//         }
+//     }
+   
+//     &.-flush {
+//         @apply px-0;
+//     }
+// }
+
+
+// // Flex Grid
+// .flex-grid-12 {
+//     @apply flex flex-wrap justify-between
+//         grid grid-columns-12 grid-gap-2;
+// } 
+// @screen md {
+//     .flex-grid-12 {
+//         @apply grid-gap-4;
+//     } 
+//     .md\:flex-grid-12 {
+//         @apply flex flex-wrap justify-between
+//         grid grid-columns-12 grid-gap-4;
+//     }
+// }
+

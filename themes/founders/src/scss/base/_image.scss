@@ -1,0 +1,75 @@
+// Image Helpers
+.fit {
+    &-cover {
+       object-fit: cover;
+    }
+    &-contain {
+        object-fit: contain;
+     }
+}
+
+@media (max-width: 767px) {
+    .object-right--sm {
+        object-position: right;
+    }
+}
+
+
+// Image Element
+.image {
+    @apply 
+        block
+        relative
+        overflow-hidden
+        ;
+    
+    img {
+        @apply 
+            absolute
+            pin-t pin-l
+            w-full
+            h-full;
+    }
+
+    &.-is1x1 {
+        padding-top: 100%;
+    }
+    
+    &.-is12x16 {
+        padding-top: 130.25%;
+    }
+    
+    &.-is8x10 {
+        padding-top: 125%;
+    }
+    
+    &.-is16x12 {
+        padding-top: 76.35%;
+    }
+    
+    &.-is16x9 {
+        padding-top: 65.25%;
+    }
+    
+    &.-is2x1 {
+        padding-top: 50%;
+    }
+
+
+    // Shadow
+    &.-inner-shadow::before {
+        content: '';
+        @apply absolute 
+        h-full w-full
+        pin-t pin-l
+        z-10
+        block
+        shadow-inner;
+    }
+    &.rounded-full.-inner-shadow::before {
+        @apply rounded-full;
+    }
+
+}
+
+

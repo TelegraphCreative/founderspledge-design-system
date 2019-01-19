@@ -1,0 +1,85 @@
+// Site Footer
+.site-footer {
+
+    // Logo
+    .logo {
+        @apply text-green-darkest;
+    }
+
+    &__header {
+        @apply text-green-darkest text-xl
+        font-medium font-serif
+        mb-3;
+    }
+
+    // Meta
+    &__meta {
+        @apply text-sm text-black
+        border-t border-grey-lightest;
+    }
+
+    // // Form
+    // .signup-form {
+    //     @apply py-3;
+    // }
+
+
+
+}
+
+// Screen
+@screen md {
+    
+// Layout
+.site-footer {
+    
+    // Logo
+    &__logo {
+        @apply mb-4;
+    }
+
+    // Groups
+    &__groups__container {
+        @apply flex justify-between;
+    }
+    &__group {
+        @apply flex-1;
+        
+        &:first-child {
+            @apply w-1/2;
+            flex: inherit;
+        }
+    }
+
+    // Contact
+    .hcard {
+        @apply mb-12;
+    }
+
+    // Form
+    .signup-form {
+        @apply mt-12 mb-30;
+    }
+
+    // Meta
+    &__meta__container {
+        @apply flex 
+        justify-between
+        items-center
+        pt-4 pb-10;
+    }
+
+    
+}
+// Meta 
+.footer-meta__group {
+    @apply .flex-1;
+
+    &:nth-child(2) {
+        @apply text-center;
+    }
+    &:last-child {
+        @apply text-right;
+    }
+}
+}

@@ -1,0 +1,155 @@
+// Helpers
+@mixin list-bulleted__li {
+  @apply relative;
+
+  &:before {
+    content: "\2022";
+    @apply mr-1;
+  }
+}
+
+@mixin list-ruled(){
+  @apply text-grey-darker
+        py-2
+        border-b border-grey-lightest;
+}
+
+.list-ruled__li {
+  @include list-ruled;
+}
+
+.scroll-h {
+  white-space: nowrap;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+// Default
+ul,
+ol {
+  @apply m-0 
+    p-0 py-2; 
+
+  > li li {
+    @apply ml-4;
+  }
+}
+
+// Default UL (Bulleted)
+.list-bulleted {
+  li {
+    @include list-bulleted__li;
+  }
+}
+
+// Default OL
+ol {
+  @apply list-reset;
+  counter-reset: ol-counter;
+
+  li {
+    counter-increment: ol-counter;
+
+    &:before {
+      @apply pr-3;
+      content: "0" counter(ol-counter) ".";
+    }
+  }
+  
+  // Nested
+  ol {
+    counter-reset: ol-ol-counter;
+    
+    li {
+      counter-increment: ol-ol-counter;
+      
+      &:before {
+        content: counter(ol-ol-counter, lower-alpha) ".";
+      }
+    }
+  }
+}
+
+// Caret List
+.caret-list {
+  li {
+    @apply 
+      relative 
+      ml-6 mb-4;
+    
+      @include caret(4px, blue);
+
+      &:before {
+        transform: translate(0, -50%) rotate(-45deg);
+        left: -1.5rem;
+        top: 40%;
+      }
+  }
+}
+
+
+// Ruled
+.list-ruled {
+  li {
+    @include list-ruled;
+    @apply py-4;
+  }
+
+  li li {
+    &:first-child {
+      @apply pt-4;
+    }
+    &:last-child {
+        @apply border-b-0
+            pb-0;
+    }
+  }
+  &.-capped {
+    > li:first-child {
+      @apply border-t;
+    }
+  }
+
+}
+
+// Column List
+.column-list__item {
+  @apply mb-4;
+  page-break-inside: avoid; 
+  break-inside: avoid-column; 
+}
+
+
+// List Hero
+.list-hero {
+  h2 {
+    @apply font-sans 
+    text-2md 
+    mb-10;
+  }
+}
+
+// Screen
+@screen md {
+  
+  // List Hero
+  .list-hero {
+    @apply w-4/5;
+  }
+
+  // Column List
+  .md\:column-list {
+    column-count: 2;
+    
+
+  }
+  .column-list__item {
+    a {
+      @apply inline-block;
+    }
+  }
+
+
+}
+

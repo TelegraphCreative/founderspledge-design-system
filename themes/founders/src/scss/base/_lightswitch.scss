@@ -1,0 +1,67 @@
+// Lightswitch
+.lightswitch {
+    height: 0;
+	width: 0;
+    visibility: hidden;
+
+    @apply cursor-pointer;
+    
+    
+    &-toggle {
+        @apply 
+            cursor-pointer
+            relative
+            bg-white
+            border-grey-light border
+            inline-block;
+
+        text-indent: -9999px;
+        width: 1.875rem;
+        height: 1rem;
+        border-radius: 100px;
+        top:4px;
+    }
+    
+    &-toggle:after {
+        @apply  
+            absolute
+            bg-grey-light
+            rounded-full
+            property-all timing-1 duration-2;
+
+        content: '';
+        top: 3px;
+        left: 3px;
+        width: 0.5rem;
+        height: 0.5rem;
+    }
+
+    // Checked
+    &:checked + label .lightswitch-toggle {
+        @apply border-green;
+
+        &:after {
+            @apply bg-green;
+        }
+    }
+
+    &:checked + label .lightswitch-toggle:after {
+        left: calc(100% - 5px);
+        transform: translateX(-100%);
+    }
+    
+
+    + label .lightswitch-toggle:active:after {
+        width: 30px;
+    }
+
+    // Label
+    &-label {
+        @apply 
+            text-sm text-grey-darker
+            cursor-pointer
+            pl-2;
+    }
+}
+
+

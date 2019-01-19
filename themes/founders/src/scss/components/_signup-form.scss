@@ -1,0 +1,38 @@
+.signup-form {
+
+    @apply relative 
+    w-full max-w-xs
+    text-green-darkest;
+
+    .email {
+        @apply border-2 border-green-darkest
+        py-5 px-6
+        text-lg
+        font-serif
+        w-full
+        ;
+
+        &::placeholder {
+            @apply opacity-100;
+        }
+    }
+
+    .submit {
+        @apply 
+        absolute pin-r align-t
+        h-full
+        px-4
+        text-green-darkest;
+
+        &:hover {
+            @apply .text-green;
+        }
+        
+        &__icon {
+            @apply block w-2;
+        }
+    }
+
+
+    
+}

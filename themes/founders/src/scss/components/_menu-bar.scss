@@ -1,0 +1,22 @@
+// Menu Bar (inline menu)
+.menu-bar {
+    @apply 
+      list-reset;
+  
+      a, button {
+        @apply outline-none;
+      }
+  }
+  
+  @screen md {
+    
+      .menu-bar {
+        @apply 
+          list-reset 
+          flex flex-wrap
+          items-center
+          ;
+      }
+  
+  }
+  
