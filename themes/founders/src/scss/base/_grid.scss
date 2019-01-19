@@ -1,6 +1,5 @@
 // Grid 
 html {
-    @apply font-sans;
     scroll-behavior: smooth;
 }
 
@@ -18,6 +17,9 @@ html {
 
         &-l {
             @apply pl-14;
+        }
+        &-l--lg {
+            @apply pl-40;
         }
     }
 }

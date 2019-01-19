@@ -1,1 +1,29 @@
 // Media Article
+.media-article {
+
+}
+// Screen
+@screen md {
+    // Layout
+    .media-article {
+        @apply flex justify-between;
+
+        &__main {
+            width: 70%;
+            @apply pb-12;
+        }
+        &__aside {
+            width: 30%;
+        }
+
+        &__header {
+            @apply pt-14;
+            width: 90%;
+        }
+        &__article {
+            @apply w-4/5;
+        }
+        
+    }
+    
+}

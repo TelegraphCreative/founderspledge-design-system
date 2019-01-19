@@ -2,14 +2,13 @@
 
 
   <!-- Intro -->
-  <section>
+  <section class="space-t--sm space-b">
       {{ partial "components/media-article.html" . }}
   </section>
 
 
   <!-- Why FP? -->
-  <section class="bg-oat">
-
+  <section class="bg-oat-light">
     <!-- Section Header -->
     {{range $.Site.Data.home.Header}}
         {{ partial "components/section-header.html" . }}

@@ -1,8 +1,12 @@
 // Section Spacing
 .space {
 
+    &-t--sm {
+        @apply pt-14;
+    }
+
     &-b {
-        @apply pb-12;
+        @apply pb-16;
     }
     &-b--sm {
         @apply pb-10;

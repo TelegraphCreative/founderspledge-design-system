@@ -6,12 +6,30 @@
         no-underline
         timing-1 duration-1 property-all;
 
-    // &.-white {
-    //     @apply text-white;
-    //     &:hover {
-    //         @apply underline;
-    //     }
-    // }
+    // Underline
+    &.-underline {
+        @apply text-green border-b-3 border-green pb-2;
+        
+        &:hover {
+            @apply text-green-darkest border-green-darkest;
+        }
+
+
+    }
+
+
+    // Group
+    &-group {
+        @apply flex items-center;
+
+        .link {
+            @apply mr-4;
+            
+            &:last-child {
+                @apply mr-0;
+            }
+        }
+    }
 
     // // Icon
     // &--icon {

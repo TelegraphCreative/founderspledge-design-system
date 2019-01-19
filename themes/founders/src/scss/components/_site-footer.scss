@@ -18,10 +18,15 @@
         border-t border-grey-lightest;
     }
 
-    // // Form
-    // .signup-form {
-    //     @apply py-3;
-    // }
+    // Form
+    .signup-form {
+        @apply my-3;
+    }
+
+    // Map Pin
+    .icon--map-pin {
+        width: 0.75rem;
+    }
 
 
 

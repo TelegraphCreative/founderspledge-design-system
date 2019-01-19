@@ -1,6 +1,37 @@
 // Typography
+body {
+    @apply text-green-darkest font-sans;
+}
 
 // Headers
-.header-1 {
+.header {
+    // 14
+    &-sm {
+        @apply text-sm text-green 
+        uppercase
+        font-medium;
+    }
 
+    // 22
+    &-md {
+        @apply text-xl font-serif;
+    }
+    
+    // 40
+    &-lg {
+        @apply text-5xl font-serif;
+    }
+
+    // 72
+    &-xl {
+        @apply text-10xl font-serif;
+    }
+}
+
+// Paragraphs
+.paragraphs {
+    p {
+        @apply text-lg leading-normal 
+        mb-8;
+    }
 }
