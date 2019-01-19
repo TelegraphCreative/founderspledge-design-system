@@ -1,0 +1,121 @@
+<footer class="site-footer" role="contentinfo">
+    <div class="container">
+        
+        <!-- Groups -->
+        <div class="site-footer__groups">
+
+
+            <!-- Contact -->
+            <div class="main-footer__group">
+                <div aria-label="Founders Pledge Contact Info" class="footer-contact">
+
+                    <!-- Logo -->
+                    <div class="site-footer__logo">
+                        {{- partial "svg/founders-pledge-logo.svg" . -}}
+                    </div>
+                    
+                    <!-- Address -->
+                    <div class="vcard">
+                        <div class="vcard__item | tel">
+                            <a href="tel:"></a>
+                        </div>
+
+                        <div class="vcard__item | email">
+                            <a href="mailto:"></a>
+                        </div>
+
+                        <div class="vcard__item | address">
+                            <p>Block A Unit 402A</p>
+                            <p>100 Clements Road </p>
+                            <p>London SE16 4DG</p>
+                        </div>
+                    </div>
+
+                    <!-- Form -->
+                    <div class="signup-form">
+                        <form action="">
+                            <input type="text" class="email">
+                            <button>></button>
+                        </form>
+                    </div>
+                </div>
+            </div>  
+            
+            <!-- Footer Menu -->
+            <div class="main-footer__group"> 
+                <nav aria-label="Founders Pledge Main Footer Menu" class="footer-menu">
+                    
+                    <h5 class="main-footer__header | header-">First Things</h5>
+
+                    <ul class="menu-list">
+                        <li class="menu-list__item">
+                            <a role="menuitem" aria-haspopup="false" href="" class="menu-bar__link" tabindex="0">How It Works</a>
+                        </li>
+                        <li class="menu-list__item">
+                            <a role="menuitem" aria-haspopup="false" href="" class="menu-bar__link" tabindex="0">Impact</a>
+                        </li>
+                        <li class="menu-list__item">
+                            <a role="menuitem" aria-haspopup="false" href="" class="menu-bar__link" tabindex="0">Community</a>
+                        </li>
+                        <li class="menu-list__item">
+                            <a role="menuitem" aria-haspopup="false" href="" class="menu-bar__link" tabindex="0">Stories</a>
+                        </li>
+                        <li class="menu-list__item">
+                            <a role="menuitem" aria-haspopup="false" href="" class="menu-bar__link | -highlight" tabindex="0">Start Your Journey</a>
+                        </li>
+                        <li class="menu-list__item">
+                            <a role="menuitem" aria-haspopup="false" href="" class="menu-bar__link" tabindex="0">Sign In</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            
+            <!-- Footer Menu -->
+            <div class="main-footer__group"> 
+                <nav aria-label="Founders Pledge Main Footer Menu" class="footer-menu">
+                    
+                    <h5 class="main-footer__header | header-">Get to Know Use</h5>
+                    
+                    <ul class="menu-list">
+                        <li class="menu-list__item">
+                            <a role="menuitem" aria-haspopup="false" href="" class="menu-bar__link" tabindex="0">Who We Are</a>
+                        </li>
+                        <li class="menu-list__item">
+                            <a role="menuitem" aria-haspopup="false" href="" class="menu-bar__link" tabindex="0">Careers</a>
+                        </li>
+                        <li class="menu-list__item">
+                            <a role="menuitem" aria-haspopup="false" href="" class="menu-bar__link" tabindex="0">Press &amp; Media</a>
+                        </li>
+                        <li class="menu-list__item">
+                            <a role="menuitem" aria-haspopup="false" href="" class="menu-bar__link" tabindex="0">Privacy Policy</a>
+                        </li>
+                    </ul>
+
+                    <ul class="social-list" role="menubar">
+                        <li><a href="" aria-label="Facebook">{{- partial "svg/facebook.svg" -}}</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Meta -->
+        <div class="site-footer__meta">
+            <div class="footer-meta__group">
+                {{- partial "svg/facebook.svg" -}} Registered in USA, UK, &amp; Germany
+            </div>
+
+            <div class="footer-meta__group">
+                © Founders For Good
+            </div>
+            
+            <div class="footer-meta__group">
+                <button class="btn -dropdown">English</button>
+            </div>
+            
+        </div>
+    </div>
+</footer>
+
+{{ .Site.BaseURL }}
+
+&copy; {{ now.Format "2006" }} {{ .Site.Title }}

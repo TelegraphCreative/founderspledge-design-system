@@ -5,9 +5,11 @@
 
 // Base
 @import 'base/fonts';
+@import 'base/typography';
 
 // Components
 @import 'components/highlight-card';
+@import 'components/media-article';
 
 // body {
 //     @apply bg-pink text-red;
