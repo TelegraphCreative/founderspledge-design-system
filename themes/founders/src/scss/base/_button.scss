@@ -5,10 +5,24 @@
 
 // Base 
 .btn {
-    // @apply link;
+    @apply link
+    inline-block
+    border-3 border-green
+    text-green text-sm 
+    font-sans 
+    px-8 py-6;
+    
+    &:hover {
+        @apply border-green-light bg-green-light text-white;
+    }
+
+    &.-light {
+        @apply border-green-light text-green-light;
+
         &:hover {
-            // @apply ;
+            @apply border-white bg-white text-green-darkest;
         }
+    }
 
 }
 

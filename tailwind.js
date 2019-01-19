@@ -233,6 +233,7 @@ let colors = {
     */
   
     textSizes: {
+
       'xs': '.75rem',     // 12px
       'sm': '.875rem',    // 14px
       'base': '1rem',     // 16px
@@ -287,7 +288,7 @@ let colors = {
   
     leading: {
       'none': 1,
-      'tight': 1.25,
+      'tight': 1.3,
       'normal': 1.5,
       'loose': 2,
     },
@@ -308,6 +309,7 @@ let colors = {
     tracking: {
       'tight': '-0.05em',
       'normal': '0',
+      'narrow': '0.0362rem',
       'wide': '0.05em',
     },
   
@@ -644,7 +646,7 @@ let colors = {
       '20': '5rem',
       '22': '5.5rem',
       '24': '6rem',
-      '32': '8rem',
+      '32': '8.75rem',
       '40': '10.25rem',
     },
   

@@ -5,11 +5,16 @@ body {
 
 // Headers
 .header {
-    // 14
+    // 14 
     &-sm {
         @apply text-sm text-green 
         uppercase
-        font-medium;
+        font-medium
+        tracking-narrow;
+        
+        &.-light {
+            @apply text-green-light;
+        }
     }
 
     // 22
@@ -17,9 +22,9 @@ body {
         @apply text-xl font-serif;
     }
     
-    // 40
+    // 40 (36)
     &-lg {
-        @apply text-5xl font-serif;
+        @apply text-5xl font-serif leading-tight;
     }
 
     // 72
@@ -33,5 +38,12 @@ body {
     p {
         @apply text-lg leading-normal 
         mb-8;
+    }
+    
+    &.-sm {
+        p {
+            @apply text-sm leading-normal 
+            mb-4;
+        }
     }
 }
