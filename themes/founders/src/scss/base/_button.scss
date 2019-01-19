@@ -1,0 +1,104 @@
+// Prevent Outlines
+* {
+    outline: none;
+}
+
+// Base 
+.btn {
+    @apply link
+    inline-block
+    border-3 border-green
+    text-green text-sm 
+    font-sans 
+    px-8 py-6;
+    
+    &:hover {
+        @apply border-green-light bg-green-light text-white;
+    }
+
+    &.-light {
+        @apply border-green-light text-green-light;
+
+        &:hover {
+            @apply border-white bg-white text-green-darkest;
+        }
+    }
+
+}
+
+
+
+// -Modifiers
+.btn, [class^='btn--']{
+
+    // &.-large {
+    //     @apply 
+    //     text-sm;
+
+    //     @screen md {
+    //         @apply py-4 px-10
+    //         text-md;
+
+    //     }
+
+    //     &.-icon {
+    //         padding-left: 2.25rem;
+            
+    //     }
+    // }
+
+    
+    &.-wide {
+        @apply 
+            block 
+            w-full
+            text-center;
+    }
+
+    // &.-icon {
+    //     @apply pr-5;
+
+    //     .icon-wrap {
+    //         @apply flex items-center;
+    //     }
+    //     .icon {
+    //         @apply bg-blue-dark;
+    //     }
+
+    //     &:hover {
+    //         .icon {
+    //             @apply text-green 
+    //                 bg-white;
+    //         }
+    //     }
+    // }
+
+
+    // &.-drop {
+        
+    //     &:focus, &:hover {
+    //         @apply outline-none border-grey-light;
+    //     }
+
+    //     &.-active {
+    //         @apply bg-blue text-white border-blue;
+
+    //         &:after {
+    //             background: linear-gradient(90deg, rgba(255,255,255,0) 0%, #4354A8 55%);
+    //         }
+    //     }
+
+    //     .btn-text {
+    //         @apply mr-2 ;
+    //     }
+    //     .icon {
+    //         @apply absolute pin-r z-10;
+    //         right:.5rem;
+    //         height: .625rem;
+    //         width: .625rem;
+    //     }
+    // }
+
+
+
+}

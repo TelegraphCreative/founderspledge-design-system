@@ -1,12 +1,12 @@
 <footer class="site-footer" role="contentinfo">
-    <div class="container">
-        
-        <!-- Groups -->
-        <div class="site-footer__groups">
 
+        
+    <!-- Groups -->
+    <div class="site-footer__groups">
+        <div class="site-footer__groups__container | container gutter">
 
             <!-- Contact -->
-            <div class="main-footer__group">
+            <div class="site-footer__group">
                 <div aria-label="Founders Pledge Contact Info" class="footer-contact">
 
                     <!-- Logo -->
@@ -15,16 +15,16 @@
                     </div>
                     
                     <!-- Address -->
-                    <div class="vcard">
-                        <div class="vcard__item | tel">
-                            <a href="tel:"></a>
+                    <div class="hcard | gutter-l">
+                        <div class="hcard__item | tel">
+                            <a href="tel: +44 (0) 208 068 0425"> +44 (0) 208 068 0425</a>
                         </div>
 
-                        <div class="vcard__item | email">
-                            <a href="mailto:"></a>
+                        <div class="hcard__item | email">
+                            <a href="mailto:info@founderspledge.org">info@founderspledge.org</a>
                         </div>
 
-                        <div class="vcard__item | address">
+                        <div class="hcard__item | addr">
                             <p>Block A Unit 402A</p>
                             <p>100 Clements Road </p>
                             <p>London SE16 4DG</p>
@@ -32,20 +32,23 @@
                     </div>
 
                     <!-- Form -->
-                    <div class="signup-form">
+                    <div class="signup-form | gutter-l">
                         <form action="">
-                            <input type="text" class="email">
-                            <button>></button>
+                            <input type="text" class="email" placeholder="Email Digest Sign Up">
+                            <button class="submit">
+                                <span class="submit__icon | icon">
+                                    {{- partial "svg/arrow--r.svg" . -}}</button>
+                                </span>
                         </form>
                     </div>
                 </div>
             </div>  
             
             <!-- Footer Menu -->
-            <div class="main-footer__group"> 
+            <div class="site-footer__group"> 
                 <nav aria-label="Founders Pledge Main Footer Menu" class="footer-menu">
                     
-                    <h5 class="main-footer__header | header-">First Things</h5>
+                    <h5 class="site-footer__header | header-">First Things</h5>
 
                     <ul class="menu-list">
                         <li class="menu-list__item">
@@ -71,10 +74,10 @@
             </div>
             
             <!-- Footer Menu -->
-            <div class="main-footer__group"> 
+            <div class="site-footer__group"> 
                 <nav aria-label="Founders Pledge Main Footer Menu" class="footer-menu">
                     
-                    <h5 class="main-footer__header | header-">Get to Know Use</h5>
+                    <h5 class="site-footer__header | header-">Get to Know Us</h5>
                     
                     <ul class="menu-list">
                         <li class="menu-list__item">
@@ -92,30 +95,38 @@
                     </ul>
 
                     <ul class="social-list" role="menubar">
-                        <li><a href="" aria-label="Facebook">{{- partial "svg/facebook.svg" -}}</a></li>
+                        <li><a href="" aria-label="Facebook">{{- partial "svg/map-pin.svg" -}}</a></li>
                     </ul>
                 </nav>
             </div>
-        </div>
 
-        <!-- Meta -->
-        <div class="site-footer__meta">
+        </div>
+    </div>
+
+    <!-- Meta -->
+    <div class="site-footer__meta">
+        <div class="site-footer__meta__container | container gutter">
+
             <div class="footer-meta__group">
-                {{- partial "svg/facebook.svg" -}} Registered in USA, UK, &amp; Germany
+                <div class="align-text-icon">
+                        {{- partial "svg/map-pin.svg" -}}
+                        <div class="text ml-2">Registered in USA, UK, &amp; Germany</div>
+                </div>
             </div>
 
             <div class="footer-meta__group">
-                © Founders For Good
+                &copy; {{ now.Format "2006" }} Founders For Good
             </div>
             
             <div class="footer-meta__group">
                 <button class="btn -dropdown">English</button>
             </div>
-            
+        
         </div>
     </div>
-</footer>
 
+</footer>
+<!-- 
 {{ .Site.BaseURL }}
 
-&copy; {{ now.Format "2006" }} {{ .Site.Title }}
+ {{ .Site.Title }} -->

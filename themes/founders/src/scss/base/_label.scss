@@ -1,0 +1,92 @@
+// Labels
+// Standard Label
+.label {
+    @apply 
+        link
+        text-xs
+        font-sans font-semibold
+        uppercase 
+        leading-none;
+
+        
+}
+// Colors (tailwind bg- utility classes are styled as text white. use pallete outlined in styleguide)
+[class^='label bg-'] {
+    @apply text-white
+        px-3 py-1
+        rounded-full
+        inline-block;
+        
+    @screen md {
+        @apply py-2
+    }
+}
+.label.bg-yellow {
+    @apply text-black bg-yellow;
+}
+
+
+
+
+.label--amount {
+    @apply text-grey-darkest text-3xs 
+    font-sans font-medium 
+    py-1 block;
+}
+
+// Headsup Label
+.headsup-label {    
+    @apply 
+        text-white text-center 
+        uppercase
+        bg-green
+        p-8;
+
+    @screen sm {
+        @apply 
+            p-10;
+    }  
+}
+.headsup__title {
+    @apply 
+        font-light 
+        uppercase;
+}
+.headsup__detail {
+    @apply 
+        text-3xs 
+        font-semibold
+        pt-1;
+}
+
+// Content Section Label (block)
+.content-section-label {
+    @apply 
+        block 
+        mb-6 
+        relative
+        z-10;
+    
+        span {
+            @apply 
+                inline-block
+                bg-green
+                py-3 pr-8 pl-12
+                text-white text-3xs
+                link
+                font-bold
+                uppercase;
+
+        }
+
+        @screen sm {
+            @apply 
+                block mb-12;
+            span {
+                @apply 
+                    text-sm
+                    pl-32 pr-10 py-6;
+            }
+        }
+}
+

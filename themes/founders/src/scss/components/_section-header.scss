@@ -1,0 +1,18 @@
+.section-header {
+    @apply text-center;
+
+    .header-sm {
+        @apply mb-4;
+    }
+    .paragraphs {
+        @apply pt-8;
+    }
+    
+    @screen md {
+        @apply pt-22;
+
+        &__descr {
+            @apply w-3/5 mx-auto;
+        }
+    }
+}

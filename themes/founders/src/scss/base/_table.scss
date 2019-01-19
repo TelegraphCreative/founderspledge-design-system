@@ -1,0 +1,135 @@
+// Table
+.table {
+    
+    @apply 
+        text-left text-grey-darker text-base
+        overflow-hidden 
+        font-sans
+        w-full;
+
+    h2,h2,h3,h4,h5,h6 {
+        @apply text-grey-darkest 
+        font-medium;
+    }
+
+    &, thead, tbody {
+        @apply block;
+    }
+
+    thead {
+        @apply hidden   
+        bg-grey-lightest;
+    }
+    
+    th {
+        @apply 
+            text-grey-darker text-3xs
+            uppercase
+            font-semibold font-sans
+            p-4;
+    }
+
+    tr {
+        @apply 
+            block
+            py-2
+            border-b border-grey-lightest;
+    }
+    
+    td, th {
+        @apply block;
+    }
+
+    
+    td {
+        @apply py-2 px-4 ;
+    }
+
+    // Labels 
+    &.-labels {
+        td {
+            @apply py-2 px-4 text-right;
+            &:before {
+                content: attr(data-label);
+                @apply float-left
+                    text-left
+                    mt-px
+                    pr-3
+                    label;
+            }
+        }
+    }
+
+    // Programs
+    &.-programs {
+        h4, td {
+            @apply text-sm;
+        }
+
+        td {
+            @apply relative
+                ml-6;
+        }
+
+        .flag-icon {
+            @apply absolute;
+            left: -1rem;
+        }
+    }
+
+    // Disabled
+    &.-disabled {
+        &, h2,h2,h3,h4,h5,h6 {
+            @apply text-grey-light;
+        }
+    }
+
+    // Screen
+    @screen md {
+        thead {
+            @apply block;
+        }
+        th {
+            @apply text-sm;
+        }
+        tr {
+            @apply 
+                py-0
+                flex flex-row;
+        }
+        
+        td, th {
+            @apply flex-1;
+        }
+
+        td {
+            @apply py-8 px-4;
+        }
+
+        // Labels 
+        &.-labels {
+            td {
+                @apply py-8 px-4 text-left ml-0;
+                
+                &:before {
+                    @apply hidden;
+                }
+            }
+    
+            .flag-icon {
+                @apply static;
+            }
+        }
+
+        // Programs
+        &.-programs {
+            h4, td {
+                @apply text-base;
+            }
+        }
+    
+    }
+
+    
+}
+

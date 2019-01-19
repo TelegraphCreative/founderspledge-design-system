@@ -1,0 +1,88 @@
+//
+// Default Checkbox Styles
+//
+
+.control {
+    @apply block relative
+    pl-6 mb-3 
+    cursor-pointer;
+
+    input {
+        @apply absolute 
+        opacity-0;
+        z-index: -1;
+    }
+
+    &__indicator {
+        @apply absolute 
+            border border-grey-lightest
+            h-4 w-4;
+            top: 2px;
+            left: 0;
+    }
+
+    &--radio .control__indicator {
+        border-radius: 50%;
+    }
+    
+    // Hover, Focus
+    &:hover input:not([disabled]) ~ .control__indicator,
+    &:hover input:not([disabled]):checked ~ .control__indicator,
+    input:focus ~ .control__indicator {
+        @apply border-green;
+    }
+
+    // Checked
+    input:checked ~ .control__indicator,
+    input:checked:focus ~ .control__indicator {
+        @apply border-green bg-green;
+    }
+
+    // Disabled
+    input:disabled ~ .control__indicator {
+        @apply bg-grey-lightest     
+        pointer-events-none;
+    }
+    &__indicator:after {
+        content: '';
+        @apply absolute hidden;
+    }
+    input:checked ~ .control__indicator:after {
+        @apply inline-block;
+    }
+    &--checkbox .control__indicator:after {
+        @apply border-white;
+        left: 5px;
+        top: 2px;
+        width: 5px;
+        height: 8px;
+        border-width: 0 2px 2px 0;
+        transform: rotate(45deg);
+    }
+    &--checkbox input:disabled ~ .control__indicator:after {
+        border-color: #7b7b7b;
+    }
+
+    // Small
+    &.-small {
+        @apply font-sans text-sm mb-4;
+        margin-top: 2px;
+        .control__indicator {
+            top: -2px
+        }
+    }
+
+    // Radio Circles (not used)
+    // &--radio .control__indicator:after {
+    //     left: 7px;
+    //     top: 7px;
+    //     height: 6px;
+    //     width: 6px;
+    //     border-radius: 50%;
+    //     background: #fff;
+    // }
+    // &--radio input:disabled ~ .control__indicator:after {
+    //     background: #7b7b7b;
+    // }
+
+}

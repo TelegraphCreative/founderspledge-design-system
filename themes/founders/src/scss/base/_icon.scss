@@ -1,0 +1,13 @@
+// Icon
+.icon {
+    svg {
+        @apply w-full h-full 
+        timing-1 duration-1 property-all;
+    }
+}
+
+// Logo
+.logo {
+    @apply w-full block;
+    max-width: 12.3125rem;
+}

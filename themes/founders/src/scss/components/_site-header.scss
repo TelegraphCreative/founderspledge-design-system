@@ -1,0 +1,52 @@
+// Site Header
+.site-header {
+ 
+    // Logo
+    .logo {
+        @apply text-green;
+    }
+
+    // Layout
+    &__menu__container {
+        @apply flex justify-between;
+    }
+
+    // Menu Bar
+    .menu-bar {
+
+        &__item {
+            @apply px-4;
+        }
+
+        &__link {
+            @apply link 
+            font-medium
+            text-base text-green
+            leading-none;
+            
+            &:hover {
+                @apply text-green-darkest;
+            }
+
+            // Highlight 
+            &.-highlight {
+                @apply border-b-2 border-green;
+                &:hover {
+                    @apply border-green-darkest;
+                }
+            }
+        }
+        
+    }
+
+
+    // Screen
+    @screen md {
+
+        // Layout
+        &__menu__container {
+            @apply pt-14 pb-8;
+        }
+
+    }
+}

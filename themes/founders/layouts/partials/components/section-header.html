@@ -1,8 +1,15 @@
 <header class="section-header">
-    <h4 class="header-">{{.preheader}}</h4>
-    <h2 class="header-">{{.header}}</h2>
+    {{ if .preheader }}
+    <h4 class="header-sm">{{.preheader | safeHTML}}</h4>
+    {{ end }}
 
-    <div class="section-header__descr">
-        <p>{{.descr}}</p>
+    {{ if .header }}
+    <h2 class="header-lg">{{.header | safeHTML}}</h2>
+    {{ end }}
+
+    {{ if .descr }}
+    <div class="section-header__descr | paragraphs">
+        <p>{{.descr | safeHTML}}</p>
     </div>
+    {{ end }}
 </header>

@@ -1,0 +1,27 @@
+// Section Spacing
+.space {
+
+    &-t--sm {
+        @apply pt-14;
+    }
+
+    &-b {
+        @apply pb-16;
+    }
+    &-b--sm {
+        @apply pb-10;
+    }
+
+    @screen md {
+        &-b {
+            @apply pb-20
+        }
+    }
+
+}
+
+@screen md {
+    .md\:space-b {
+        @apply pb-20
+    }
+}

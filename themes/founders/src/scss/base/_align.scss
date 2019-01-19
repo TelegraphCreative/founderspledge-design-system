@@ -1,0 +1,12 @@
+.align-t {
+    top:50%;
+    transform: translate(0%, -50%);
+}
+
+.align-text-icon {
+    @apply flex .items-center;
+    
+    .icon {
+        @apply inline-block;
+    }
+}

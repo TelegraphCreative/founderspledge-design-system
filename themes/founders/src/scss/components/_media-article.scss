@@ -1,1 +1,52 @@
 // Media Article
+.media-article {
+
+    // Features
+    &__feature {
+        @apply max-w-xs w-full
+        pb-12;
+
+        &:last-of-type {
+            @apply pb-6;
+        }
+    }
+}
+// Screen
+@screen md {
+    // Layout
+    .media-article {
+        @apply flex justify-between;
+
+        &__main {
+            width: 68%;
+            @apply pb-12;
+        }
+        &__aside {
+            width: 32%;
+        }
+
+        &__header {
+            @apply pt-14;
+            width: 90%;
+        }
+        &__article {
+            width: 76%;
+        }
+
+        // Feature 
+
+        &.-features {
+            .media-article__header {
+                @apply pt-24;
+            }
+            .media-article__main {
+                width: 72%;
+            }
+            .media-article__aside {
+                width: 28%;
+            }
+        }
+        
+    }
+    
+}
