@@ -33,8 +33,7 @@
             width: 76%;
         }
 
-        // Feature 
-
+        // Features 
         &.-features {
             .media-article__header {
                 @apply pt-24;
@@ -44,6 +43,15 @@
             }
             .media-article__aside {
                 width: 28%;
+            }
+        }
+
+        // Reverse
+        &.-reverse {
+            @apply flex-row-reverse;
+
+            .media-article__main.gutter-l--lg {
+                @apply pl-32;
             }
         }
         

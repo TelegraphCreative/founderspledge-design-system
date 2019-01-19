@@ -1,5 +1,25 @@
 {
-    "Header": [
+    "MediaArticle_1": [
+        {   
+            "variation": "",
+            "header": "Redefining what it means to give back.",
+            "subheader": "Empowering Philanthropy",
+            "descr": "<p>FP is the impact initiative for entrepreneurs who want to make a global contribution, both in the present and future.</p><p>We are a community of founders and investors committed to investing for humanity, not just for profit. Providing expert research, guidance, and educational events, we empower entrepreneurs to maximize their impact.</p>",
+            "links" : [
+                {
+                    "text" : "Start Your Journey",
+                    "url" : "#"
+                }
+            ],
+            "image": {
+                "url": "/img/berlin.jpg",
+                "ratio": "8x20"
+            }
+            
+        }
+    ],
+
+    "WhyFoundersHeader": [
         {
             "preheader": "Why Founders Pledge",
             "header": "To become part of the community, <br>you’ve got to have skin in the game. ",
@@ -7,7 +27,7 @@
         }
     ],
 
-    "Highlights": [
+    "WhyFoundersHighlights": [
         {
             "name": "Community",
             "descr" : "Form lasting bonds with value-aligned entrepreneurs, tackle some of the world’s toughest challenges, and learn experts at our intimate events around the globe.",
@@ -25,6 +45,51 @@
             "descr" : "We operate the world’s only cost-free donor advised fund. We provide end-to-end support for your giving, enabling you to give anywhere, any time, with ease.            ",
             "linkText" : "Learn More",
             "linkUrl" : "#"
+        }
+    ],
+    
+    "MediaArticle_WhyNow": [
+        {   
+            "variation": "",
+            "header": "Redefining what it means to give back.",
+            "subheader": "Empowering Philanthropy",
+            "descr": "<p>FP is the impact initiative for entrepreneurs who want to make a global contribution, both in the present and future.</p><p>We are a community of founders and investors committed to investing for humanity, not just for profit. Providing expert research, guidance, and educational events, we empower entrepreneurs to maximize their impact.</p>",
+            "links" : [
+                {
+                    "text" : "Start Your Journey",
+                    "url" : "#"
+                }
+            ],
+            "image": {
+                "url": "/img/berlin.jpg",
+                "ratio": "8x20"
+            }
+            
+        }
+    ],
+
+    "ProgressHeader": [
+        {
+            "preheader": false,
+            "header": "Our Progress So Far",
+            "descr": "<p>Social impact is complex - and the research below reflects that.</p><p>That’s why we offer everyone in the community an opportunity to chat one-on-one with our research team. They’ll walk you through relevant research in a digestible way, and answer all your questions.</p>"
+        }
+    ],
+
+    "MediaArticle_2": [
+        {   
+            "variation": "-reverse",
+            "header": "100% for good",
+            "subheader": false,
+            "descr": "<p>We don’t take any cuts or fees from donations, and members can access all our benefits and events completely free of cost. Our operations are fully funded by a small, separate group of essential philanthropists.</p>",
+            "links" : [
+                {
+                    "text" : "Learn about our 100% Model",
+                    "url" : "#"
+                }
+            ],
+            "image": false
+            
         }
     ]
  }

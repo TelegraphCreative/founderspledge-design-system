@@ -9,32 +9,42 @@ Content Types:
 - Gallery
 
 -->
-<div class="media-article | container">
+<div class="media-article {{.variation}} | container">
 
     <div class="media-article__main | gutter-l--lg">
 
         <header class="media-article__header">
-            <h2 class="header-xl | pb-12">Redefining what it means to give back.</h2>
-            <h4 class="header-sm | pb-5">Empowering Philanthropy</h4>
+            <h2 class="header-xl | pb-12">{{ .header }}</h2>
+            {{ if .subheader }}
+            <h4 class="header-sm | pb-5">{{ .subheader }}</h4>
+            {{ end }}
         </header>
 
         <article class="media-article__article | paragraphs">
-            <p>FP is the impact initiative for entrepreneurs who want to make a global contribution, both in the present and future.</p>
-            <p>We are a community of founders and investors committed to investing for humanity, not just for profit. Providing expert research, guidance, and educational events, we empower entrepreneurs to maximize their impact.</p>
+            {{ .descr | safeHTML }}
         </article>
-
-        <div class="media-article__actions">
-            <div class="link-group">
-                <a href="#" class="link -underline">Start Your Journey</a>
+        
+        {{ if .links }}
+            <div class="media-article__actions">
+                {{ range .links }}
+                <div class="link-group">
+                    <a href="{{ .url }}" class="link -underline">{{ .text }}</a>
+                </div>
+                {{ end }}
             </div>
-        </div>
+        {{ end }}
 
     </div>
 
+    
     <aside class="media-article__aside | bg-orange">
-        <fiure class="image -is12x16">
-            <img src="" alt="">
+        {{ if .image }}
+        <fiure class="image -is{{ .image.ratio }}">
+            <img src="{{ .image.url }}" alt="" class="fit-cover">
         </fiure>
+        {{ end }}
     </aside>
+    
+    
 
 </div>

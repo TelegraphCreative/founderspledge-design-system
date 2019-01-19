@@ -3,21 +3,23 @@
 
   <!-- Intro -->
   <section class="space-t--sm space-b">
-      {{ partial "components/media-article.html" . }}
+        {{range $.Site.Data.home.MediaArticle_1}}
+            {{ partial "components/media-article.html" . }}
+        {{end}}
   </section>
 
 
   <!-- Why FP? -->
   <section class="bg-oat-light">
     <!-- Section Header -->
-    {{range $.Site.Data.home.Header}}
+    {{range $.Site.Data.home.WhyFoundersHeader}}
         {{ partial "components/section-header.html" . }}
     {{end}}
 
     <!-- Highlight Cards -->
     <div class="highlight-cards">
 
-      {{range $.Site.Data.home.Highlights}}
+      {{range $.Site.Data.home.WhyFoundersHighlights}}
         {{ partial "components/highlight-card.html" . }}
       {{end}}
 
@@ -32,18 +34,22 @@
   <!-- Progress -->
   <section>
     <!-- Section Header -->
-    {{range $.Site.Data.home.Header}}
+    {{range $.Site.Data.home.ProgressHeader}}
         {{ partial "components/section-header.html" . }}
     {{end}}
     
-    <!-- Heads Up - Inline -->
-    {{ partial "components/headsup--inline.html" . }}
+    <div class="space-t--sm space-b">
+            <!-- Heads Up - Inline -->
+            {{ partial "components/headsup--inline.html" . }}
+    </div>
   </section>
 
   <!-- Model -->
   <section>
-      <!-- Media Article (reversed) -->
-      {{ partial "components/media-article.html" . }}
+    <!-- Media Article (reversed) -->
+    {{range $.Site.Data.home.MediaArticle_2}}
+        {{ partial "components/media-article.html" . }}
+    {{end}}
   </section>
 
   
