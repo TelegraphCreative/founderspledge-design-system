@@ -3,32 +3,12 @@
 
   <!-- Intro -->
   <section>
-    <!-- Highlight Article -->
-    <div class="highlight-article">
-
-      <div class="highlight__content">
-
-        <header class="highlight__header">
-          <h2>Redefining what it means to give back.</h2>
-          <h4>EMPOWERING PHILANTHROPY</h4>
-        </header>
-
-        <article class="highlight__article">
-          <p>FP is the impact initiative for entrepreneurs who want to make a global contribution, both in the present and future.</p>
-          <p>We are a community of founders and investors committed to investing for humanity, not just for profit. Providing expert research, guidance, and educational events, we empower entrepreneurs to maximize their impact.</p>
-        </article>
-      </div>
-
-      <figure class="highlight__figure">
-        <img src="" alt="">
-      </figure>
-
-    </div>
+      {{ partial "components/media-article.html" . }}
   </section>
 
 
-  <!-- Why Founders Pledge -->
-  <section>
+  <!-- Why FP? -->
+  <section class="bg-oat">
 
     <!-- Section Header -->
     {{range $.Site.Data.home.Header}}
@@ -43,6 +23,39 @@
       {{end}}
 
     </div>
+  </section>
+
+  <!-- Why Now? -->
+  <section>
+      {{ partial "components/media-article--features.html" . }}
+  </section>
+
+  <!-- Progress -->
+  <section>
+    <!-- Section Header -->
+    {{range $.Site.Data.home.Header}}
+        {{ partial "components/section-header.html" . }}
+    {{end}}
+    
+    <!-- Heads Up - Inline -->
+    {{ partial "components/headsup--inline.html" . }}
+  </section>
+
+  <!-- Model -->
+  <section>
+      <!-- Media Article (reversed) -->
+      {{ partial "components/media-article.html" . }}
+  </section>
+
+  
+  <!-- Profile Slider -->
+  <section>
+      {{ partial "components/profile-slider.html" . }}
+  </section>
+
+  <!-- Logo Parade -->
+  <section>
+      {{ partial "components/logo-parade.html" . }}
   </section>
 
  {{ end }}

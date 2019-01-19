@@ -1,19 +1,21 @@
 
-
-<div class="feature-card">
+<div class="highlight-card">
     
+    {{ if .icon }}
     <div class="card__icon">
         
     </div>
+    {{end}}
 
     <div class="card__content">
         <h4>{{.name}}</h4>
         <p>{{.descr}}</p>
     </div>
 
+    {{ if .linkText }}
     <div class="card__action">
         <a href="{{.linkUrl}}" class="link">{{.linkText}}</a>
     </div>
-
+    {{ end }}
 
 </div> 
