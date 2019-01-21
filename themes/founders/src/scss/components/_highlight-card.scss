@@ -2,7 +2,8 @@
 .highlight-card {
     @apply relative z-10 
     flex-1
-    text-center;
+    text-center
+    overflow-hidden;
     
     .icon {
         @apply mx-auto;

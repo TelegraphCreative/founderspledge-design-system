@@ -1,0 +1,109 @@
+.profile-slider {
+    
+
+    // Main 
+    &__main {
+        @apply mb-10;
+      
+    }
+
+    // Aside
+    // &__aside {}
+
+    // Hide TS Default, Resets
+    [data-action] {
+        @apply hidden;
+    }
+    ul {
+        @apply list-reset;
+    }
+
+    // Control Panel
+    .slider-controls {
+        @apply cursor-pointer;
+    }
+    
+    // Controls
+    .controls-info {
+        @apply  relative;
+
+    }
+    
+
+    // Info
+    .info {
+        @apply center-xy
+        text-sm text-green-darkest
+        font-semibold;
+    }
+
+    // Nav
+    .nav {
+        @apply bg-white 
+        pt-6 pb-3 px-3 ml-4
+        flex
+        ;
+
+        &__item {
+            @apply mx-2
+            w-24 h-24
+            relative
+            property-opacity timing-1 duration-1;
+            
+            
+            &:after {
+                @apply absolute pseudo pin-l
+                w-full pb-1;
+                bottom: -11px;
+            }
+            
+        }
+
+    }
+
+    .icon {
+        &:hover {
+            @apply text-green;
+        }
+    }
+
+    .tns-nav-active {
+        .inactive {
+            @apply opacity-0;
+        }
+        &:after {
+            @apply bg-green;
+        }
+    }
+    
+    
+    // Screen
+    @screen md {
+        // Layout
+        .profile-slider {
+            &__container {
+                @apply flex-row-reverse;
+            }
+            &__main {
+                @apply pl-28;
+                width: 64%;  
+            }
+            &__aside {
+                width: 36%;
+            }
+        }
+
+        // Control Panel
+        .slider-controls {
+            @apply flex justify-end items-center float-right;
+            width: 64%;             
+        }
+
+        // Nav
+        .nav {
+            @apply flex-1;
+        }
+        
+    }
+    
+}

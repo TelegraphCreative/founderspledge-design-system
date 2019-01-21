@@ -5,9 +5,16 @@
         timing-1 duration-1 property-all;
     }
 
-    // Sizes
     &.-md {
         @apply w-12 h-12 block;
+    }
+    &.-sm {
+        @apply w-10 h-10 block;
+    }
+
+    // Transforms
+    &.-flip {
+        transform: rotate(180deg);
     }
 }
 
@@ -17,3 +24,7 @@
     max-width: 12.3125rem;
 }
 
+
+
+// Utility Classes
+.st0{fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}

@@ -4,7 +4,7 @@ html {
 }
 
 .container {
-    @apply mx-auto;
+    @apply mx-auto overflow-x-hidden;
     max-width: 90rem; // 1440
 }
 
@@ -15,14 +15,20 @@ html {
     .gutter {
         @apply px-14;
 
+        // Medium
+        &-sm {
+            @apply px-6;
+        }
+
+        // Left
         &-l {
             @apply pl-14;
-        }
-        &-l--md {
-            @apply pl-32;
-        }
-        &-l--lg {
-            @apply pl-40;
+            &--md {
+                @apply pl-32;
+            }
+            &--lg {
+                @apply pl-40;
+            }
         }
     }
 

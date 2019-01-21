@@ -1,0 +1,20 @@
+// Blockquote Resets
+blockquote, cite {
+    @apply roman font-normal m-0 p-0;
+}
+
+// Blockquote
+.blockquote {
+
+    // &__quote {
+    //     // @apply 
+    // }
+    // &__source-header {
+    //     // @apply 
+    // }
+    &__source-descr {
+        @apply text-sm;
+    }
+}
+
+

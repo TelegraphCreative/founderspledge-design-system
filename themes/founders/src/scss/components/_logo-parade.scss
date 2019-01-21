@@ -2,10 +2,10 @@
     @apply mt-8;
     
     &__logo {
-        @apply .bg-grey-light
-        mr-4
+        @apply .bg-oat-less-light
+        mr-6
         flex-1;
-        padding-top: 6%;
+        padding-top: 8%;
 
         &:last-child {
             @apply mr-0;

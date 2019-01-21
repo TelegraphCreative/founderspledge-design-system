@@ -57,6 +57,7 @@ let colors = {
     'white': '#ffffff',
 
     'oat': '#EDCCA5',
+    'oat-less-light': '#e8e3da',
     'oat-light': '#F1ECE4',
   
     // 'red-darkest': '#3b0d0c',
@@ -466,6 +467,7 @@ let colors = {
       '10': '2.5rem',
       '12': '3rem',
       '16': '4rem',
+      '20': '5rem',
       '24': '6rem',
       '32': '8rem',
       '48': '12rem',
