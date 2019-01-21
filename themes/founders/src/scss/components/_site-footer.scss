@@ -1,6 +1,7 @@
 // Site Footer
 .site-footer {
-
+    @apply border-t .border-grey-lightest;
+    
     // Logo
     .logo {
         @apply text-green-darkest;

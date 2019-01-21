@@ -1,1 +1,57 @@
 // Highlight Card
+.highlight-card {
+    @apply relative z-10 
+    flex-1
+    text-center;
+    
+    .icon {
+        @apply mx-auto;
+    }
+
+  
+    &__icon {
+        @apply mb-5;
+    }
+    &__action {
+        @apply mt-10;
+    }
+    &__content {
+        @apply relative z-10;
+    }
+
+
+    .paragraphs {
+        @apply mt-5;
+    }
+  
+    // Box
+    &:before {
+        @apply absolute pseudo pin-t pin-l z-0
+        w-full h-full 
+        property-colors duration-4 timing-1;
+        
+        transform: scaleX(1.08);
+    }
+
+    // Hover 
+    &:hover {
+        &:before {
+            @apply bg-white;
+        }
+    }
+
+
+    // Screen 
+    @screen md {
+        @apply pt-18 pb-20 px-20;
+        // padding-right: 2.625rem;
+        // padding-left: 2.625rem;
+
+        // &:first-child {
+        //     @apply pl-28;
+        // }
+        // &:last-child {
+        //     @apply pr-28;
+        // }
+    }
+}

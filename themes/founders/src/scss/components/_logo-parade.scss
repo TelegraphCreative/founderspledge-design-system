@@ -1,0 +1,23 @@
+.logo-parade {
+    @apply mt-8;
+    
+    &__logo {
+        @apply .bg-grey-light
+        mr-4
+        flex-1;
+        padding-top: 6%;
+
+        &:last-child {
+            @apply mr-0;
+        }
+    }
+}
+
+// Screen
+@screen md {
+    .logo-parade {
+        @apply flex justify-between
+        ;
+    }
+
+}

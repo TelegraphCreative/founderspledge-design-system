@@ -25,6 +25,11 @@ html {
             @apply pl-40;
         }
     }
+
+    // Flex Grid
+    .md\:flex-grid {
+        @apply flex .justify-between;
+    }
 }
 
 

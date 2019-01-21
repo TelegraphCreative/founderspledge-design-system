@@ -17,13 +17,14 @@
     {{end}}
 
     <!-- Highlight Cards -->
-    <div class="highlight-cards">
+    <div class="highlight-cards | md:flex-grid">
 
-      {{range $.Site.Data.home.WhyFoundersHighlights}}
-        {{ partial "components/highlight-card.html" . }}
-      {{end}}
+        {{range $.Site.Data.home.WhyFoundersHighlights}}
+            {{ partial "components/highlight-card.html" . }}
+        {{end}}
 
     </div>
+
   </section>
 
   <!-- Why Now? -->
@@ -59,7 +60,7 @@
   </section>
 
   <!-- Logo Parade -->
-  <section>
+  <section class="space-t--sm space-b">
       {{ partial "components/logo-parade.html" . }}
   </section>
 

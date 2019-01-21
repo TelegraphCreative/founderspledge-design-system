@@ -4,6 +4,11 @@
         @apply w-full h-full 
         timing-1 duration-1 property-all;
     }
+
+    // Sizes
+    &.-md {
+        @apply w-12 h-12 block;
+    }
 }
 
 // Logo
@@ -11,3 +16,4 @@
     @apply w-full block;
     max-width: 12.3125rem;
 }
+

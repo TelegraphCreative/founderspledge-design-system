@@ -2,7 +2,7 @@
 
         
     <!-- Groups -->
-    <div class="site-footer__groups">
+    <div class="site-footer__groups | space-t--sm">
         <div class="site-footer__groups__container | container gutter">
 
             <!-- Contact -->
@@ -37,7 +37,7 @@
                             <input type="text" class="email" placeholder="Email Digest Sign Up">
                             <button class="submit">
                                 <span class="submit__icon | icon">
-                                    {{- partial "svg/arrow--r.svg" . -}}</button>
+                                    {{- partial "svg/arrow--r.svg" (dict "class" "") -}}</button>
                                 </span>
                         </form>
                     </div>
