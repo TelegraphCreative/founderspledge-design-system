@@ -17,10 +17,12 @@
       "descr": "<p>Accountability, peace of mind, and end-to-end giving infrastructure. When you join the community, you also open a door to the world of evidence-driven philanthropy.</p><p>You gain access to educational events with our fantastic community of FPers, and world-class charity research by our in-house team of experts.</p>",
       "links": [
         {
+          "variation": "link -underline",
           "text": "Meet our Community",
           "url": "#"
         },
         {
+          "variation": "link -underline",
           "text": "Browse Research",
           "url": "#"
         }

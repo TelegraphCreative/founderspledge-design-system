@@ -7,6 +7,7 @@
       "descr": "<p>FP is the impact initiative for entrepreneurs who want to make a global contribution, both in the present and future.</p><p>We are a community of founders and investors committed to investing for humanity, not just for profit. Providing expert research, guidance, and educational events, we empower entrepreneurs to maximize their impact.</p>",
       "links": [
         {
+          "variation": "link -underline",
           "text": "Start Your Journey",
           "url": "#"
         }
@@ -68,6 +69,7 @@
       ],
       "links": [
         {
+          "variation": "link -underline",
           "text": "Learn about Donor Advised Funds",
           "url": "#"
         }
@@ -97,6 +99,7 @@
       "descr": "<p>We don’t take any cuts or fees from donations, and members can access all our benefits and events completely free of cost. Our operations are fully funded by a small, separate group of essential philanthropists.</p>",
       "links": [
         {
+          "variation": "link -underline",
           "text": "Learn about our 100% Model",
           "url": "#"
         }
