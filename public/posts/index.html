@@ -49,17 +49,15 @@
 
   <body class="">
 
-    <header class="site-header" role="banner">
-  
-  
-  <div class="site-header__menu">
-    <nav aria-label="Founders Pledge Main Menu" class="site-menu">
-      <div class="site-header__menu__container | container gutter">
+    <div id="app" v-cloak>
 
+      <header class="site-header" role="banner">
+
+  
+  <site_menu class="site-header__menu">
         
-        <div class="site-header__logo"><span class="logo | icon">
-	<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-		viewBox="0 0 570.4 239.4" style="enable-background:new 0 0 570.4 239.4;" xml:space="preserve">
+        <template slot="logo"><span class="logo | icon">
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 570.4 239.4">
 	<path fill="currentColor" d="M175,67.7h41.6v10h-29.1v20h22.9v9.7h-22.9v27.5H175V67.7z"/>
 	<path fill="currentColor" d="M219.1,110.8v-0.8c0-15.2,10.8-25.4,25.3-25.4c14.4,0,25.2,10.1,25.2,25.1v0.8c0,15.3-10.8,25.3-25.3,25.3
 	C229.8,135.8,219.1,125.8,219.1,110.8z M257.9,110.7V110c0-10.2-5.1-16.4-13.5-16.4c-8.5,0-13.6,6.1-13.6,16.3v0.8
@@ -99,38 +97,39 @@
 	<polygon fill="currentColor" points="62.6,85.5 94.1,103.6 116.8,90.5 77,67.5 39.9,89 39.9,134.9 62.6,121.8 		"/>
 	<polygon fill="currentColor" points="62.6,49.5 62.6,13.1 39.9,0 39.9,46 77,67.5 116.9,44.5 94.1,31.3 		"/>	
 	</svg>
-</span></div>
+</span><span class="logo-icon | icon -sm"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 168.7 194.7"><polygon fill="currentColor" points="45.5,97.4 0,123.7 0,161.6 57.5,128.4 57.5,66.4 0,33.2 0,71.2 		"/><polygon fill="currentColor" points="90.4,123.4 135.8,149.6 168.6,130.6 111.2,97.4 57.5,128.4 57.5,194.7 90.4,175.8 		"/><polygon fill="currentColor" points="90.4,71.5 90.4,19 57.5,0 57.5,66.4 111.2,97.4 168.7,64.2 135.9,45.2 		"/></svg></span>
+</template>
         
         
-        <ul class="menu-bar" role="menubar">
-          <li class="menu-bar__item">
-              <a role="menuitem" aria-haspopup="false" href="" class="menu-bar__link" tabindex="0">How It Works</a>
-          </li>
-          <li class="menu-bar__item">
-              <a role="menuitem" aria-haspopup="false" href="" class="menu-bar__link" tabindex="0">Impact</a>
-          </li>
-          <li class="menu-bar__item">
-              <a role="menuitem" aria-haspopup="false" href="" class="menu-bar__link" tabindex="0">Community</a>
-          </li>
-          <li class="menu-bar__item">
-              <a role="menuitem" aria-haspopup="false" href="" class="menu-bar__link" tabindex="0">Stories</a>
-          </li>
-          <li class="menu-bar__item">
-              <a role="menuitem" aria-haspopup="false" href="" class="menu-bar__link | -highlight" tabindex="0">Start Your Journey</a>
-          </li>
-          <li class="menu-bar__item">
-              <a role="menuitem" aria-haspopup="false" href="" class="menu-bar__link" tabindex="0">Sign In</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </div>
+        <template slot="menu">
+            <ul class="menu-bar" role="menubar">
+                <li class="menu-bar__item">
+                    <a role="menuitem" aria-haspopup="false" href="" class="menu-bar__link" tabindex="0">How It Works</a>
+                </li>
+                <li class="menu-bar__item">
+                    <a role="menuitem" aria-haspopup="false" href="" class="menu-bar__link" tabindex="0">Impact</a>
+                </li>
+                <li class="menu-bar__item">
+                    <a role="menuitem" aria-haspopup="false" href="" class="menu-bar__link" tabindex="0">Community</a>
+                </li>
+                <li class="menu-bar__item">
+                    <a role="menuitem" aria-haspopup="false" href="" class="menu-bar__link" tabindex="0">Stories</a>
+                </li>
+                <li class="menu-bar__item">
+                    <a role="menuitem" aria-haspopup="false" href="" class="menu-bar__link | -highlight" tabindex="0">Start Your Journey</a>
+                </li>
+                <li class="menu-bar__item">
+                    <a role="menuitem" aria-haspopup="false" href="" class="menu-bar__link" tabindex="0">Sign In</a>
+                </li>
+            </ul>
+        </template>
+
+  </site_menu>
 
 
 </header>
-    
-    <main class="" role="main">
-      
+      <main role="main">
+        
   <article class="pa3 pa4-ns nested-copy-line-height nested-img">
   <main class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy mid-gray"></main>
     <section class="flex-ns flex-wrap justify-around mt5">
@@ -153,13 +152,13 @@
     </section>
 </article>
 
-    </main>
-    
-    <footer class="site-footer" role="contentinfo">
+      </main>
+      
+      <footer class="site-footer container gutter" role="contentinfo">
 
         
     
-    <div class="site-footer__groups">
+    <div class="site-footer__groups | space-t--sm">
         <div class="site-footer__groups__container | container gutter">
 
             
@@ -168,8 +167,7 @@
 
                     
                     <div class="site-footer__logo"><span class="logo | icon">
-	<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-		viewBox="0 0 570.4 239.4" style="enable-background:new 0 0 570.4 239.4;" xml:space="preserve">
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 570.4 239.4">
 	<path fill="currentColor" d="M175,67.7h41.6v10h-29.1v20h22.9v9.7h-22.9v27.5H175V67.7z"/>
 	<path fill="currentColor" d="M219.1,110.8v-0.8c0-15.2,10.8-25.4,25.3-25.4c14.4,0,25.2,10.1,25.2,25.1v0.8c0,15.3-10.8,25.3-25.3,25.3
 	C229.8,135.8,219.1,125.8,219.1,110.8z M257.9,110.7V110c0-10.2-5.1-16.4-13.5-16.4c-8.5,0-13.6,6.1-13.6,16.3v0.8
@@ -212,7 +210,7 @@
 </span></div>
                     
                     
-                    <div class="hcard | gutter-l">
+                    <div class="hcard | lg:pl-10 lg:py-0 py-8">
                         <div class="hcard__item | tel">
                             <a href="tel: +44 (0) 208 068 0425"> +44 (0) 208 068 0425</a>
                         </div>
@@ -221,7 +219,7 @@
                             <a href="mailto:info@founderspledge.org">info@founderspledge.org</a>
                         </div>
 
-                        <div class="hcard__item | addr">
+                        <div class="hcard__item | addr | mt-5">
                             <p>Block A Unit 402A</p>
                             <p>100 Clements Road </p>
                             <p>London SE16 4DG</p>
@@ -229,11 +227,11 @@
                     </div>
 
                     
-                    <div class="signup-form | gutter-l">
+                    <div class="signup-form | lg:pl-10">
                         <form action="">
                             <input type="text" class="email" placeholder="Email Digest Sign Up">
                             <button class="submit">
-                                <span class="submit__icon | icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.6 24"><polygon fill="currentColor" points="1.7,24 0,23 6.3,12 0,1 1.7,0 8.6,12 "/></svg>
+                                <span class="submit__icon | icon"><span class="icon | icon--arrow "><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.6 24"><polygon fill="currentColor" points="1.7,24 0,23 6.3,12 0,1 1.7,0 8.6,12 "/></svg></span>
 </button>
                                 </span>
                         </form>
@@ -292,7 +290,8 @@
                     </ul>
 
                     <ul class="social-list" role="menubar">
-                        <li><a href="" aria-label="Facebook"><span class="icon | icon--map-pin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.5 16.5"><style type="text/css">.st0{fill:none;stroke:#12302D;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}</style><path class="st0" d="M12.8,6.8c0,3.7-6,9-6,9s-6-5.3-6-9c0-3.8,3.1-6,6-6S12.8,3,12.8,6.8z"/><circle class="st0" cx="6.8" cy="6.8" r="2"/></svg></span></a></li>
+                        <li><a href="" aria-label="Facebook"><span class="icon | icon--map-pin "><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.5 16.5"><path class="st0" stroke="currentColor" class="st0" d="M12.8,6.8c0,3.7-6,9-6,9s-6-5.3-6-9c0-3.8,3.1-6,6-6S12.8,3,12.8,6.8z"/><circle stroke="currentColor" class="st0" cx="6.8" cy="6.8" r="2"/></svg></span>
+</a></li>
                     </ul>
                 </nav>
             </div>
@@ -305,7 +304,8 @@
         <div class="site-footer__meta__container | container gutter">
 
             <div class="footer-meta__group">
-                <div class="align-text-icon"><span class="icon | icon--map-pin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.5 16.5"><style type="text/css">.st0{fill:none;stroke:#12302D;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}</style><path class="st0" d="M12.8,6.8c0,3.7-6,9-6,9s-6-5.3-6-9c0-3.8,3.1-6,6-6S12.8,3,12.8,6.8z"/><circle class="st0" cx="6.8" cy="6.8" r="2"/></svg></span><div class="text ml-2">Registered in USA, UK, &amp; Germany</div>
+                <div class="align-text-icon"><span class="icon | icon--map-pin "><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.5 16.5"><path class="st0" stroke="currentColor" class="st0" d="M12.8,6.8c0,3.7-6,9-6,9s-6-5.3-6-9c0-3.8,3.1-6,6-6S12.8,3,12.8,6.8z"/><circle stroke="currentColor" class="st0" cx="6.8" cy="6.8" r="2"/></svg></span>
+<div class="text ml-2">Registered in USA, UK, &amp; Germany</div>
                 </div>
             </div>
 
@@ -314,7 +314,17 @@
             </div>
             
             <div class="footer-meta__group">
-                <button class="btn -dropdown">English</button>
+                <select_box 
+                    class="-box"
+                    :opt="{ linkList: true, variant: '-narrow -center' }">
+
+                    <option value="?language=en-us" selected>English (US)</option>
+                    <option value="es">Spanish</option>
+                    <option value="url-to-localization-here">Mandarin</option>
+                    <option value="could-be-any-url">German</option>
+                    <option value="url-to-localization">French</option>
+                    
+                </select_box>
             </div>
         
         </div>
@@ -322,10 +332,12 @@
 
 </footer>
 
+    </div>
+
     
 <script src="http://example.org/dist/js/app.js"></script>
 
 
-
+    
   </body>
 </html>
