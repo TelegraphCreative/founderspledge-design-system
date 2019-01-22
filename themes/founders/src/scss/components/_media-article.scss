@@ -18,11 +18,11 @@
         @apply flex justify-between;
 
         &__main {
-            width: 68%;
-            @apply pb-12;
+            width: 69%;
+            @apply pb-12 pr-6;
         }
         &__aside {
-            width: 32%;
+            width: 31%;
         }
 
         &__header {
@@ -37,12 +37,6 @@
         &.-features {
             .media-article__header {
                 @apply pt-24;
-            }
-            .media-article__main {
-                width: 72%;
-            }
-            .media-article__aside {
-                width: 28%;
             }
         }
 

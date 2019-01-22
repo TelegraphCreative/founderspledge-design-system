@@ -20,11 +20,19 @@
 
 // Logo
 .logo {
+    max-width: 6.875rem;
+}
+.logo,
+.logo-icon {
     @apply w-full block;
-    max-width: 12.3125rem;
 }
 
-
+@screen menu {
+    // Logo
+    .logo {
+        max-width: 11rem;
+    }
+}
 
 // Utility Classes
 .st0{fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}

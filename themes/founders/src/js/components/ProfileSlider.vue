@@ -41,11 +41,14 @@
 
 <script>
 
-    import { tns } from 'tiny-slider/src/tiny-slider'
-    import IconArrow from './icons/icon-arrow--r'
+import { tns } from 'tiny-slider/src/tiny-slider';
+import IconArrow from '../icons/icon-arrow--r';
+
 import { timeout } from 'q';
     
     export default {
+        name: "profileSlider",
+
         props: [
             'opt'
         ],

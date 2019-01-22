@@ -1,4 +1,4 @@
-<footer class="site-footer" role="contentinfo">
+<footer class="site-footer container gutter" role="contentinfo">
 
         
     <!-- Groups -->
@@ -119,7 +119,17 @@
             </div>
             
             <div class="footer-meta__group">
-                <button class="btn -dropdown">English</button>
+                <select_box 
+                    class="-box"
+                    :opt="{ linkList: true, variant: '-narrow -center' }">
+
+                    <option value="?language=en-us" selected>English (US)</option>
+                    <option value="es">Spanish</option>
+                    <option value="url-to-localization-here">Mandarin</option>
+                    <option value="could-be-any-url">German</option>
+                    <option value="url-to-localization">French</option>
+                    
+                </select_box>
             </div>
         
         </div>

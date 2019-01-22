@@ -5,9 +5,9 @@ body {
 
 // Headers
 .header {
-    // 14 
+    // 12
     &-sm {
-        @apply text-sm text-green 
+        @apply text-xs text-green 
         uppercase
         font-medium
         tracking-narrow;
@@ -17,14 +17,14 @@ body {
         }
     }
 
-    // 22
+    // 18
     &-md {
-        @apply text-xl font-serif;
+        @apply text-lg font-serif;
     }
     
-    // 40 (36)
+    // 36
     &-lg {
-        @apply text-5xl font-serif leading-tight;
+        @apply text-4xl font-serif leading-tight;
     }
 
     // 72
@@ -36,13 +36,13 @@ body {
 // Paragraphs
 .paragraphs {
     p {
-        @apply text-lg leading-normal 
+        @apply text-base leading-normal 
         mb-8;
     }
     
     &.-sm {
         p {
-            @apply text-sm leading-normal 
+            @apply text-xs leading-normal 
             mb-4;
         }
     }

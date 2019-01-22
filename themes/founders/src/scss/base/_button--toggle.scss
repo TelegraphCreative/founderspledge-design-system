@@ -1,0 +1,89 @@
+.btn--toggle {
+    @apply 
+        cursor-pointer 
+        relative
+        no-underline;
+    
+    width: 1.5rem;
+    height: 1.25rem;
+    margin-top: 4px;
+    transform: rotate(0deg);
+
+    // // Bars
+	span {
+        @apply 
+            bg-green
+            block
+            absolute
+            w-full
+            opacity-100
+            pin-l
+            pointer-events-none
+            ;
+  
+        height: 2px;
+        transform: rotate(0deg);
+        transition: .25s ease-in-out;
+  
+          &:nth-child(1) {
+            top: 0px;
+          }
+  
+          &:nth-child(2),
+          &:nth-child(3) {
+            top: 8px;
+          }
+  
+          &:nth-child(4) {
+            top: 16px;
+          }
+      }
+  
+      // Active + Hover
+      &:hover,
+      &.-active {
+          span {
+              @apply bg-green-darkest;
+          }
+      }
+  
+    
+
+}
+
+
+
+
+// // Active
+.-active .btn--toggle {
+    span {
+
+        &:nth-child(1) {
+        top: 18px;
+        width: 0%;
+        left: 50%;
+        }
+
+        &:nth-child(2) {
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+        }
+
+        &:nth-child(3) {
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        }
+
+        &:nth-child(4) {
+        top: 18px;
+        width: 0%;
+        left: 50%;
+        }
+    
+    }
+
+}

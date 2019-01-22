@@ -9,7 +9,7 @@ Content Types:
 - Gallery
 
 -->
-<div class="media-article {{.variation}} | container">
+<div class="media-article {{.variation}} | container gutter">
 
     <div class="media-article__main | gutter-l--lg">
 
@@ -42,6 +42,8 @@ Content Types:
         <figure class="image -is{{ .image.ratio }}">
             <img src="{{ .image.url }}" alt="" class="fit-cover">
         </figure>
+        {{ else }}
+        <div class="image -is8x20"></div>
         {{ end }}
     </aside>
     

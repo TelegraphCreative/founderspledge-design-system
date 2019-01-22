@@ -16,7 +16,7 @@
     // Meta
     &__meta {
         @apply text-sm text-black
-        border-t border-grey-lightest;
+        border-t border-oat-light;
     }
 
     // Form
@@ -28,7 +28,6 @@
     .icon--map-pin {
         width: 0.75rem;
     }
-
 
 
 }
@@ -75,6 +74,10 @@
         pt-4 pb-10;
     }
 
+     // Choices
+     .choices {
+        @apply float-right;
+    }
     
 }
 // Meta 
