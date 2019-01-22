@@ -40,6 +40,7 @@ For example, the community page is located in `./themes/founders/layouts/communi
 Build pages using components found in `./themes/founders/layouts/partials`
 
 **Partials**
+
 | Name | Path |
 |:--|:--|
 | Page Header | `./themes/founders/layouts/partials/page-header` |

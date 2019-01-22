@@ -3,22 +3,27 @@
     @apply relative z-10 
     flex-1
     text-center
-    ;
-    // overflow-hidden
-    
+    bg-white
+    mb-4
+    py-12 px-10;
+
+    &:last-of-type {
+        @apply mb-0;
+    }
+
     .icon {
         @apply mx-auto;
     }
 
-  
     &__icon {
         @apply mb-6;
     }
+
     &__action {
         @apply mt-8
-        opacity-0
         property-opacity duration-4 timing-1;
     }
+
     &__content {
         @apply relative z-10;
     }
@@ -31,43 +36,50 @@
         }
     }
 
-
+    
     .paragraphs {
         @apply mt-4;
     }
   
-    // Box
-    &:before {
-        @apply absolute pseudo pin-t pin-l z-0
-        w-full h-full 
-        property-colors duration-4 timing-1;
-        
-        transform: scaleX(1.12);
-    }
+    
+    
 
-    // Hover 
-    &:hover {
-        &:before {
-            @apply bg-white;
-        }
-
-        .highlight-card__action {
-            @apply .opacity-100;
-        }
-    }
-
-
-    // Screen 
-    @screen md {
-        @apply p-18 px-10;
-    }
 }
 
-// Grid
-.highlight-cards {
-    @screen md {
-        &.gutter {
-            @apply px-22;
+// sm Screen 
+@screen sm {
+    .highlight-card {
+        @apply py-10;
+    }
+}
+// Md Screen 
+@screen md {
+    .highlight-card {
+        @apply py-18 bg-transparent mb-0;
+
+        &__action {
+            @apply opacity-0;
+        }
+
+        // Box
+        &:before {
+            @apply absolute pseudo pin-t pin-l z-0
+            w-full h-full 
+            property-colors duration-4 timing-1;
+            
+            transform: scaleX(1.12);
+        }
+
+        
+        // Hover 
+        &:hover {
+            &:before {
+                @apply bg-white;
+            }
+
+            .highlight-card__action {
+                @apply opacity-100;
+            }
         }
     }
 }

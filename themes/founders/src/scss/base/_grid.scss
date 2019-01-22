@@ -9,13 +9,17 @@ html {
     max-width: 90rem; // 1440
 }
 
-// Screen
+// Flex Grid
+.flex-grid {
+    @apply flex justify-between;
+}
+
+// Medium Screen
 @screen md {
 
     .container {
         @apply px-0;
     }
-    
 
     // Gutters
     .gutter {
@@ -25,7 +29,44 @@ html {
         }
 
         // Default
+        @apply px-10;
+
+        &-md {
+            @apply px-10;
+        }
+
+        // X Axis
+        &-lg {
+            @apply px-18;
+        }
+
+        // L
+        &-l {
+            @apply pl-10;
+            &--md {
+                @apply pl-10;
+            }
+            &--lg {
+                @apply pl-18;
+            }
+        }
+    }
+
+    // Flex Grid
+    .md\:flex-grid {
+        @apply flex justify-between;
+    }
+}
+
+// Large Screen
+@screen lg {
+
+    // lg:Default
+    .lg\:gutter {
         @apply px-15;
+    }
+    // Gutters
+    .gutter {
 
         &-md {
             @apply px-22;
@@ -35,8 +76,6 @@ html {
         &-lg {
             @apply px-30;
         }
-        
-        
 
         // L
         &-l {
@@ -51,11 +90,10 @@ html {
     }
 
     // Flex Grid
-    .md\:flex-grid {
-        @apply flex .justify-between;
+    .lg\:flex-grid {
+        @apply flex justify-between;
     }
 }
-
 
 
 /// Grid Notes (Homepage as sample)
