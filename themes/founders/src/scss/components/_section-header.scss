@@ -22,5 +22,12 @@
     // md Screen
     @screen md {
         @apply pt-22;
+
+        // Top Section Header
+        &.-top {
+            .header {
+                @apply text-6xl max-w-lg mx-auto;
+            }
+        }
     }
 }

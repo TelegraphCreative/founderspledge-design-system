@@ -1,72 +1,61 @@
 {{ define "main" }}
 
+    <!-- Intro -->
+    <section class="space-t--sm space-b">
+    {{range $.Site.Data.home.MediaArticle_1}}
+    {{ partial "components/media-article.html" . }} {{ end }}
+    </section>
 
-  <!-- Intro -->
-  <section class="space-t--sm space-b">
-        {{range .Params.MediaArticle_1}}
-            {{ partial "components/media-article.html" . }}
-        {{end}}
-  </section>
+    <!-- Why FP? -->
+    <section class="bg-oat-light">
+        <!-- Section Header -->
+        {{range $.Site.Data.home.SectionHeader_1}}
+            {{ partial "components/section-header.html" . }}
+        {{ end }}
 
+        <!-- Highlight Cards -->
+        <div class="highlight-cards | md:flex-grid container lg:gutter | md:pb-0 pb-4">
+            {{range $.Site.Data.home.Highlights_1}}
+            {{ partial "components/highlight-card.html" . }} {{ end }}
+        </div>
+    </section>
 
-  <!-- Why FP? -->
-  <section class="bg-oat-light">
-    <!-- Section Header -->
-    {{range .Params.WhyFoundersHeader}}
-        {{ partial "components/section-header.html" . }}
-    {{end}}
+    <!-- Why Now? -->
+    <section class="bg-green-darkest text-white">
+        {{range $.Site.Data.home.MediaArticle_2}}
+            {{ partial "components/media-article--features.html" . }}
+        {{ end }}
+    </section>
 
-    <!-- Highlight Cards -->
-    <div class="highlight-cards | md:flex-grid container lg:gutter | md:pb-0 pb-4">
+    <!-- Progress -->
+    <section>
+        <!-- Section Header -->
+        {{range $.Site.Data.home.SectionHeader_2}}
+            {{ partial "components/section-header.html" . }}
+        {{ end }}
 
-        {{range .Params.WhyFoundersHighlights}}
-            {{ partial "components/highlight-card.html" . }}
-        {{end}}
+        <div class="space-t--sm space-b">
+            <!-- Heads Up - Inline -->
+            {{ partial "components/headsup--inline.html" . }}
+        </div>
+    </section>
 
-    </div>
+    <!-- Model -->
+    <section class="space-b">
+        <!-- Media Article (reversed) -->
+        {{range $.Site.Data.home.MediaArticle_3}}
+            {{ partial "components/media-article--simple.html" . }}
+        {{ end }}
+    </section>
 
-  </section>
+    <!-- Profile Slider -->
+    <section class="bg-oat-light | space-t">
+        {{ partial "components/profile-slider.html" . }}
+    </section>
 
-  <!-- Why Now? -->
-  <section class="bg-green-darkest text-white">
-    {{range .Params.MediaArticle_WhyNow}}
-        {{ partial "components/media-article--features.html" . }}
-    {{ end }}
-  </section>
-  
+    <!-- Logo Parade -->
+    <section class="space-b container gutter">
+        {{ partial "components/logo-parade.html" . }}
+    </section>
 
-  <!-- Progress -->
-  <section>
-    <!-- Section Header -->
-    {{range .Params.ProgressHeader}}
-        {{ partial "components/section-header.html" . }}
-    {{end}}
-    
-    
-    <div class="space-t--sm space-b">
-        <!-- Heads Up - Inline -->
-        {{ partial "components/headsup--inline.html" . }}
-    </div>
-  </section>
-
-  <!-- Model -->
-  <section class="space-b">
-    <!-- Media Article (reversed) -->
-    {{range .Params.MediaArticle_2}}
-        {{ partial "components/media-article--simple.html" . }}
-    {{end}}
-    
-  </section>
-
-  
-  <!-- Profile Slider -->
-  <section class="bg-oat-light | space-t">
-    {{ partial "components/profile-slider.html" . }}
-  </section>
-
-  <!-- Logo Parade -->
-  <section class="space-b container gutter">
-      {{ partial "components/logo-parade.html" . }}
-  </section>
-
- {{ end }}
+{{ end }}
