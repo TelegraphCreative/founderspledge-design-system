@@ -11,10 +11,10 @@ Content Types:
 -->
 <div class="media-article {{.variation}} | container gutter-l--md">
 
-    <div class="media-article__main | gutter-l--lg">
+        <div class="media-article__main | gutter-l--lg | px-12 md:pb-12">
 
         <header class="media-article__header">
-            <h2 class="header-xl | pb-12">{{ .header }}</h2>
+            <h2 class="header-xl | pb-5 md:pb-12">{{ .header }}</h2>
             {{ if .subheader }}
             <h4 class="header-sm | pb-5">{{ .subheader }}</h4>
             {{ end }}
@@ -25,7 +25,7 @@ Content Types:
         </article>
         
         {{ if .links }}
-            <div class="media-article__actions">
+            <div class="media-article__actions | md:mt-12 mt-5">
                 {{ range .links }}
                 <div class="link-group">
                     <a href="{{ .url }}" class="link -underline">{{ .text }}</a>
@@ -37,13 +37,14 @@ Content Types:
     </div>
 
     
-    <aside class="media-article__aside | bg-orange">
+    <aside class="media-article__aside | lg:bg-orange">
         {{ if .image }}
-        <figure class="image -is{{ .image.ratio }}">
-            <img src="{{ .image.url }}" alt="" class="fit-cover">
-        </figure>
-        {{ else }}
-        <div class="image -is8x20"></div>
+            <figure class="image -is{{ .image.ratio }} | md:block hidden">
+                <img src="{{ .image.url }}" alt="" class="fit-cover">
+            </figure>
+            <figure class="image -is{{ .image_small.ratio }} | md:hidden block">
+                <img src="{{ .image_small.url }}" alt="" class="fit-cover">
+            </figure>
         {{ end }}
     </aside>
     

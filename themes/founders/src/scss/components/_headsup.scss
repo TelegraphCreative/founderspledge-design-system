@@ -1,5 +1,6 @@
 // Heads Up
 .headsup {
+    @apply text-center;
     &__fig {
         @apply mb-6;
     }
@@ -10,8 +11,7 @@
         // Inline
         &.-inline {
             @apply flex
-            justify-center
-            text-center;
+            justify-center;
             
             .headsup {
 

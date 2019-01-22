@@ -1,14 +1,11 @@
 .profile-slider {
     
+    @apply relative; 
 
     // Main 
     &__main {
-        @apply mb-10;
-      
+        @apply mb-10; 
     }
-
-    // Aside
-    // &__aside {}
 
     // Hide TS Default, Resets
     [data-action] {
@@ -26,10 +23,8 @@
     // Controls
     .controls-info {
         @apply  relative;
-
     }
     
-
     // Info
     .info {
         @apply center-xy
@@ -39,32 +34,17 @@
 
     // Nav
     .nav {
-        @apply bg-white 
-        pt-6 pb-3 px-3 ml-4
-        flex
-        ;
-
-        &__item {
-            @apply mx-2
-            w-18 h-18
-            relative
-            property-opacity timing-1 duration-1;
-            
-            
-            &:after {
-                @apply absolute pseudo pin-l
-                w-full pb-1;
-                bottom: -11px;
-            }
-            
-        }
-
+        @apply hidden;
     }
 
     .icon {
         &:hover {
             @apply text-green;
         }
+    }
+
+    #tns1 > .tns-item {
+        @apply pr-0;
     }
 
     .tns-nav-active {
@@ -74,8 +54,14 @@
         &:after {
             @apply bg-green;
         }
-    }
+    }  
     
+    // Mobile Controls
+    .slider-controls {
+        @apply absolute pin-b pin-r bg-oat-light p-4 mr-2;
+
+    }
+
     
     // Screen
     @screen md {
@@ -95,13 +81,28 @@
 
         // Control Panel
         .slider-controls {
-            @apply flex justify-end items-center float-right;
+            @apply static flex justify-end items-center float-right;
             width: 64%;             
         }
 
         // Nav
         .nav {
-            @apply flex-1;
+            @apply bg-white pt-6 pb-3 px-3 ml-4 flex flex-1;
+
+            &__item {
+                @apply mx-2
+                w-18 h-18
+                relative
+                property-opacity timing-1 duration-1;
+                
+                
+                &:after {
+                    @apply absolute pseudo pin-l
+                    w-full pb-1;
+                    bottom: -11px;
+                }
+                
+            }
         }
         
     }

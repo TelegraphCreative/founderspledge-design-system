@@ -22,14 +22,14 @@ body {
         @apply text-xl font-serif;
     }
     
-    // 36
+    // 36 -> 30
     &-lg {
-        @apply text-4xl font-serif leading-tight;
+        @apply text-3xl font-serif leading-tight;
     }
 
-    // 72
+    // 72 -> 40
     &-xl {
-        @apply text-10xl font-serif;
+        @apply text-5xl font-serif;
     }
 }
 
@@ -65,4 +65,22 @@ body {
 // Default Links
 a {
     @apply text-green;
+}
+
+// lg Screen
+@screen lg {
+    // Headers
+    .header {
+
+        // 36
+        &-lg {
+            @apply text-4xl font-serif leading-tight;
+        }
+
+        // 72
+        &-xl {
+            @apply text-10xl font-serif;
+        }
+
+    }
 }

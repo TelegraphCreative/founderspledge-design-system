@@ -29,7 +29,9 @@
 
   <!-- Why Now? -->
   <section class="bg-green-darkest text-white">
-      {{ partial "components/media-article--features.html" . }}
+    {{range $.Site.Data.home.MediaArticle_WhyNow}}
+        {{ partial "components/media-article--features.html" . }}
+    {{ end }}
   </section>
   
 

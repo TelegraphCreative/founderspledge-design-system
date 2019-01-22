@@ -6,15 +6,21 @@ blockquote, cite {
 // Blockquote
 .blockquote {
 
-    // &__quote {
-    //     // @apply 
-    // }
-    // &__source-header {
-    //     // @apply 
-    // }
     &__source-descr {
         @apply text-sm;
+    }  
+    
+    &__quote {
+        @apply text-2xl font-serif leading-tight
     }
 }
 
+// md Screen
+@screen md {
+    .blockquote {
+        &__quote {
+            @apply text-4xl;
+        }
+    }
+}
 
