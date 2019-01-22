@@ -32,12 +32,31 @@ Development files are stored in the Hugo theme, `founders`
 | Layouts | `./themes/founders/layouts`  |
 
 **Layouts**
-The base template file is `baseof.html` (`./themes/founders/layouts/_default/baseof.html`)
-Because we're using Hugo as a minimal SSG tool, we've kept things streamlined by creating individual files for each page in the sitemap. 
 
-For example, the community page is located in `./themes/founders/layouts/community/single.html`
+_Basics_
+- Base template file: `baseof.html` (`./themes/founders/layouts/_default/baseof.html`)
 
-Build pages using components found in `./themes/founders/layouts/partials`
+- Hugo generates pages based on the `.md` files in the `content` directory
+
+- The layout for each page is determined using the frontmatter variable, `layout`.
+
+- Layouts are stored in the `themes/founders/layouts/page` directory
+
+- Build pages using components found in `./themes/founders/layouts/partials`
+
+_Add a page_
+
+1. Run `hugo add new-page-name.md` Hugo will use the filename as the page handle.
+2. Add a new layout to the `themes/founders/layouts/page`. 
+3. Reference the layout in the markdown file (only title and layout are required variables):
+
+```
+layout: how-it-works
+```
+
+4. Run `yarn do` to start developing, or `yarn hugo` to generate production files in `public`
+
+
 
 **Partials**
 
