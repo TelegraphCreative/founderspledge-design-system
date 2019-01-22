@@ -1,0 +1,5 @@
+{
+   "layout": "stories",
+   "title": "stories"
+}
+

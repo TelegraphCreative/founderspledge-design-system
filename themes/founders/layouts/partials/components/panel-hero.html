@@ -1,0 +1,18 @@
+<header class="panel-hero {{.variation}}">
+
+    {{ if .header }}
+    <h2 class="header-lg">{{.header | safeHTML}}</h2>
+    {{ end }}
+
+    {{ if .descr }}
+    <div class="panel-hero__descr | paragraphs">
+        {{.descr | safeHTML}}
+    </div>
+    {{ end }}
+    
+    {{ if .action }}
+    <div class="panel-hero__action">
+        <a href="{{ .action.url }}" class="btn -light">{{ .action.text }}</a>
+    </div>
+    {{ end }}
+</header>

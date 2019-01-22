@@ -3,30 +3,38 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://example.org/categories/</loc>
+    <loc>https://confident-blackwell-dbed1e.netlify.com/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/community/</loc>
+    <loc>https://confident-blackwell-dbed1e.netlify.com/community/</loc>
   </url>
   
   <url>
-    <loc>http://example.org/</loc>
+    <loc>https://confident-blackwell-dbed1e.netlify.com/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/how-it-works/</loc>
+    <loc>https://confident-blackwell-dbed1e.netlify.com/</loc>
   </url>
   
   <url>
-    <loc>http://example.org/impact/</loc>
+    <loc>https://confident-blackwell-dbed1e.netlify.com/how-it-works/</loc>
   </url>
   
   <url>
-    <loc>http://example.org/tags/</loc>
+    <loc>https://confident-blackwell-dbed1e.netlify.com/impact/</loc>
+  </url>
+  
+  <url>
+    <loc>https://confident-blackwell-dbed1e.netlify.com/tags/</loc>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://confident-blackwell-dbed1e.netlify.com/stories/</loc>
   </url>
   
 </urlset>

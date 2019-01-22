@@ -1,5 +1,8 @@
 {
-    "MediaArticle_1": [
+   "layout": "home",
+   "title": "Home",
+   "slug": "/",
+   "MediaArticle_1": [
         {   
             "variation": "",
             "header": "Redefining what it means to give back.",
@@ -121,4 +124,7 @@
             
         }
     ]
- }
+}
+
+
+

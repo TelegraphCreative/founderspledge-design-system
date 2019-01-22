@@ -2,38 +2,56 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Founders Pledge</title>
-    <link>http://example.org/</link>
+    <link>https://confident-blackwell-dbed1e.netlify.com/</link>
     <description>Recent content on Founders Pledge</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://confident-blackwell-dbed1e.netlify.com/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Community</title>
-      <link>http://example.org/community/</link>
+      <link>https://confident-blackwell-dbed1e.netlify.com/community/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/community/</guid>
+      <guid>https://confident-blackwell-dbed1e.netlify.com/community/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Home</title>
+      <link>https://confident-blackwell-dbed1e.netlify.com/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://confident-blackwell-dbed1e.netlify.com/</guid>
       <description></description>
     </item>
     
     <item>
       <title>How It Works</title>
-      <link>http://example.org/how-it-works/</link>
+      <link>https://confident-blackwell-dbed1e.netlify.com/how-it-works/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/how-it-works/</guid>
+      <guid>https://confident-blackwell-dbed1e.netlify.com/how-it-works/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Impact</title>
-      <link>http://example.org/impact/</link>
+      <link>https://confident-blackwell-dbed1e.netlify.com/impact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/impact/</guid>
+      <guid>https://confident-blackwell-dbed1e.netlify.com/impact/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>stories</title>
+      <link>https://confident-blackwell-dbed1e.netlify.com/stories/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://confident-blackwell-dbed1e.netlify.com/stories/</guid>
       <description></description>
     </item>
     

@@ -1,5 +1,13 @@
 {{ define "main" }}
 
-    <h2>How it works</h2>
+
+  <!-- Panel Hero -->
+  <section class="space-t--sm space-b ">
+
+    {{range .Params.CallToAction}}
+        {{ partial "components/panel-hero.html" . }}
+    {{end}}
+  </section>
+
 
 {{ end }}
