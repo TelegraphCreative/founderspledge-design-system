@@ -28,6 +28,8 @@
 </template>
 
 <script>
+import click_outside from '../directives/ClickOutslide';
+
 export default {
     data(){
         return {
@@ -64,6 +66,9 @@ export default {
             }
 
         }
+    },
+    directives: {
+        'click-outside': click_outside
     }
 }
 </script>
