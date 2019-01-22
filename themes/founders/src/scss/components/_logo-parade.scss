@@ -1,0 +1,35 @@
+.logo-parade {
+
+    @apply mt-8
+    flex justify-between flex-wrap justify-center;
+
+    &__logo {
+        @apply 
+        px-2
+        w-full
+        mb-4;
+
+        max-width: 10rem;
+
+    }
+
+}
+
+// Screen
+@screen md {
+    .logo-parade {
+        // @apply flex justify-between justify-wrap;
+
+        &__logo {
+            @apply px-0 mr-6 mb-0
+            flex-1;
+
+            max-width: inherit;
+    
+            &:last-child {
+                @apply mr-0;
+            }
+        }
+    }
+
+}

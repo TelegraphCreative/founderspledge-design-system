@@ -1,39 +1,38 @@
 <header class="site-header" role="banner">
-  
-  <!-- Logo -->
-  <div class="site-header__menu">
-    <nav aria-label="Founders Pledge Main Menu" class="site-menu">
-      <div class="site-header__menu__container | container gutter">
 
+  <!-- Logo -->
+  <site_menu class="site-header__menu">
         <!-- Logo -->
-        <div class="site-header__logo">
+        <template slot="logo">
             {{- partial "svg/founders-pledge-logo.svg" . -}}
-        </div>
+            {{- partial "svg/founders-pledge-icon.svg" (dict "class" "-sm") -}}
+        </template>
         
         <!-- Menu Bar -->
-        <ul class="menu-bar" role="menubar">
-          <li class="menu-bar__item">
-              <a role="menuitem" aria-haspopup="false" href="" class="menu-bar__link" tabindex="0">How It Works</a>
-          </li>
-          <li class="menu-bar__item">
-              <a role="menuitem" aria-haspopup="false" href="" class="menu-bar__link" tabindex="0">Impact</a>
-          </li>
-          <li class="menu-bar__item">
-              <a role="menuitem" aria-haspopup="false" href="" class="menu-bar__link" tabindex="0">Community</a>
-          </li>
-          <li class="menu-bar__item">
-              <a role="menuitem" aria-haspopup="false" href="" class="menu-bar__link" tabindex="0">Stories</a>
-          </li>
-          <li class="menu-bar__item">
-              <a role="menuitem" aria-haspopup="false" href="" class="menu-bar__link | -highlight" tabindex="0">Start Your Journey</a>
-          </li>
-          <li class="menu-bar__item">
-              <a role="menuitem" aria-haspopup="false" href="" class="menu-bar__link" tabindex="0">Sign In</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </div>
+        <template slot="menu">
+            <ul class="menu-bar" role="menubar">
+                <li class="menu-bar__item">
+                    <a role="menuitem" aria-haspopup="false" href="" class="menu-bar__link" tabindex="0">How It Works</a>
+                </li>
+                <li class="menu-bar__item">
+                    <a role="menuitem" aria-haspopup="false" href="" class="menu-bar__link" tabindex="0">Impact</a>
+                </li>
+                <li class="menu-bar__item">
+                    <a role="menuitem" aria-haspopup="false" href="" class="menu-bar__link" tabindex="0">Community</a>
+                </li>
+                <li class="menu-bar__item">
+                    <a role="menuitem" aria-haspopup="false" href="" class="menu-bar__link" tabindex="0">Stories</a>
+                </li>
+                <li class="menu-bar__item">
+                    <a role="menuitem" aria-haspopup="false" href="" class="menu-bar__link | -highlight" tabindex="0">Start Your Journey</a>
+                </li>
+                <li class="menu-bar__item">
+                    <a role="menuitem" aria-haspopup="false" href="" class="menu-bar__link" tabindex="0">Sign In</a>
+                </li>
+            </ul>
+        </template>
+
+  </site_menu>
 
 
 </header>

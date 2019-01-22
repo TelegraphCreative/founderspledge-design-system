@@ -11,53 +11,57 @@ Content Types:
 -->
 <div class="media-article -features | container">
 
-    <div class="media-article__main | gutter-l">
+        <div class="media-article__main | gutter-l--lg | px-12 md:pb-12">
 
         <!-- Header -->
-        <header class="media-article__header">
-            <h4 class="header-sm -light | pb-4">Why Now?</h4>
-            <h2 class="header-lg | pb-14">By joining now you send a powerful signal to the tech ecosystem: impactful giving should be the norm.</h2>
+        <header class="media-article__header | md:pt-24 pt-12">
+            <h4 class="header-sm -light | pb-4">{{ .preheader }}</h4>
+            <h2 class="header-lg | pb-12">{{ .header }}</h2>
         </header>
 
         <!-- Groups -->
-        <div class="md:flex pb-8">
+        <div class="lg:flex md:pb-8">
 
             <!-- Group -->
-            <div class="md:w-1/2">
+            <div class="lg:w-1/2">
                 
                 <article class="media-article__article">
 
                     <!-- Features -->
+                    {{ range .features }}
                     <div class="media-article__feature">
-                        <h5 class="header-md | text-green-light | mb-3">Lock Lock In Your Commitment</h5>
+                        <h5 class="header-md | text-green-light | mb-3">{{ .header }}</h5>
                         <div class="paragraphs -sm">
-                            <p>Joining Founders Pledge enables you to lock in your commitment, and hold yourself accountable to your most important values.</p>
+                            {{ .descr | safeHTML }}
                         </div>
                     </div>
+                    {{ end }}
 
-                    <div class="media-article__feature">
-                        <h5 class="header-md | text-green-light | mb-3">Lock Lock In Your Commitment</h5>
-                        <div class="paragraphs -sm">
-                            <p>Joining Founders Pledge enables you to lock in your commitment, and hold yourself accountable to your most important values.</p>
-                        </div>
-                    </div>
-                    
                 </article>
             </div>
 
             <!-- Group -->
-            <div class="md:w-1/2 md:flex md:items-end">
+            <div class="lg:w-1/2 lg:flex lg:items-end lg:justify-end lg:pl-10">
                 <div class="media-article__actions">
-                    <a href="#" class="btn -light">Learn about Donor Advised Funds</a>
+                    {{ if .links }}
+                        {{ range .links }}
+                            <a href="{{ .url }}" class="btn -light">{{ .text }}</a>
+                        {{ end }}
+                    {{ end }}
                 </div>
             </div>
         </div>
     </div>
 
-    <aside class="media-article__aside | bg-green-light">
-        <fiure class="image -is12x16">
-            <img src="" alt="">
-        </fiure>
+    <aside class="media-article__aside | lg:bg-green-light | md:pb-0 pb-4">
+        {{ if .image }}
+            <figure class="image -is{{ .image.ratio }} | md:block hidden">
+                <img src="{{ .image.url }}" alt="" class="fit-cover">
+            </figure>
+            <figure class="image -is{{ .image_small.ratio }} | md:hidden block">
+                <img src="{{ .image_small.url }}" alt="" class="fit-cover">
+            </figure>
+        {{ end }}
     </aside>
     
 </div>

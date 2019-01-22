@@ -1,5 +1,13 @@
 // Media Article
 .media-article {
+    
+    &__main {
+        @apply pb-14;
+    }
+
+    // &__actions {
+    //     @apply mt-12;
+    // }
 
     // Features
     &__feature {
@@ -18,32 +26,46 @@
         @apply flex justify-between;
 
         &__main {
-            width: 68%;
-            @apply pb-12;
+            width: 67.5%;
+            // @apply pb-12 pr-12;
         }
         &__aside {
-            width: 32%;
+            width: 32.5%;
         }
 
         &__header {
             @apply pt-14;
-            width: 90%;
         }
         &__article {
-            width: 76%;
+            width: 72%;
         }
 
-        // Feature 
-
+        // Features 
         &.-features {
-            .media-article__header {
-                @apply pt-24;
+            .media-article__article {
+                @apply w-full;
             }
+        }
+
+        // Simple 
+        &.-simple {
             .media-article__main {
-                width: 72%;
+                width: 65%;
             }
             .media-article__aside {
-                width: 28%;
+                width: 35%;
+            }
+            .media-article__article {
+                width: 95%;
+            }
+        }
+
+        // Reverse
+        &.-reverse {
+            @apply flex-row-reverse;
+
+            .media-article__main.gutter-l--lg {
+                @apply pl-32;
             }
         }
         

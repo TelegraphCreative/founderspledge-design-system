@@ -1,21 +1,23 @@
 
 <div class="highlight-card">
-    
-    {{ if .icon }}
-    <div class="card__icon">
-        
-    </div>
-    {{end}}
+    <div class="highlight-card__content">
+        {{ if .icon }}
+        <div class="highlight-card__icon text-green">
+            {{- partial "svg/arrow--r.svg" (dict "class" "-md") -}}
+        </div>
+        {{end}}
 
-    <div class="card__content">
-        <h4>{{.name}}</h4>
-        <p>{{.descr}}</p>
-    </div>
+        <div class="highlight-card__main">
+            <h4 class="header-md">{{.name}}</h4>
+            <div class="paragraphs -sm">
+                <p>{{.descr | safeHTML }}</p>
+            </div>
+        </div>
 
-    {{ if .linkText }}
-    <div class="card__action">
-        <a href="{{.linkUrl}}" class="link">{{.linkText}}</a>
-    </div>
-    {{ end }}
-
+        {{ if .linkText }}
+        <div class="highlight-card__action | text-sm">
+            <a href="{{.linkUrl}}" class="link -underline">{{.linkText}}</a>
+        </div>
+        {{ end }}
+    </div>  
 </div> 

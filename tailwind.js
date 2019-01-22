@@ -57,6 +57,7 @@ let colors = {
     'white': '#ffffff',
 
     'oat': '#EDCCA5',
+    'oat-less-light': '#e8e3da',
     'oat-light': '#F1ECE4',
   
     // 'red-darkest': '#3b0d0c',
@@ -173,6 +174,7 @@ let colors = {
       'sm': '576px',
       'md': '768px',
       'lg': '992px',
+      'menu': '1100px',
       'xl': '1200px',
     },
   
@@ -243,7 +245,7 @@ let colors = {
       '3xl': '1.875rem',  // 30px
       '4xl': '2.25rem',   // 36px
       '5xl': '2.5rem',   // 40px
-      '10xl': '4.5rem',   // 72px
+      '10xl': '4.25rem',   // 68px
     },
   
   
@@ -288,9 +290,9 @@ let colors = {
   
     leading: {
       'none': 1,
-      'tight': 1.3,
+      'tight': 1.35,
       'normal': 1.5,
-      'loose': 2,
+      'loose': 1.75,
     },
   
   
@@ -466,6 +468,8 @@ let colors = {
       '10': '2.5rem',
       '12': '3rem',
       '16': '4rem',
+      '18': '4.5rem',
+      '20': '5rem',
       '24': '6rem',
       '32': '8rem',
       '48': '12rem',
@@ -514,6 +518,7 @@ let colors = {
       '10': '2.5rem',
       '12': '3rem',
       '16': '4rem',
+      '18': '4.5rem',
       '24': '6rem',
       '32': '8rem',
       '48': '12rem',
@@ -641,11 +646,14 @@ let colors = {
       '10': '2.5rem',
       '12': '3rem',
       '14': '3.75rem', // 60px
+      '15': '3.875rem', // 62px
       '16': '4rem',
       '18': '4.5rem',
       '20': '5rem',
       '22': '5.5rem',
       '24': '6rem',
+      '28': '7.5rem',
+      '30': '7.75rem',
       '32': '8.75rem',
       '40': '10.25rem',
     },

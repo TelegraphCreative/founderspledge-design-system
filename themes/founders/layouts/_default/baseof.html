@@ -41,14 +41,17 @@
 
   <body class="{{ $.Param "body_classes"  | default ""}}{{ with getenv "HUGO_ENV" }} {{ . }}{{ end }}">
 
-    {{ block "header" . }}{{ partial "base/site-header.html" .}}{{ end }}
-    
-    <main class="" role="main">
-      {{ block "main" . }}{{ end }}
-    </main>
-    
-    {{ block "footer" . }}{{ partial "base/site-footer.html" . }}{{ end }}
-    {{ block "scripts" . }}{{ partial "base/site-scripts.html" . }}{{ end }}
+    <div id="app" v-cloak>
 
+      {{ block "header" . }}{{ partial "base/site-header.html" .}}{{ end }}
+      <main role="main">
+        {{ block "main" . }}{{ end }}
+      </main>
+      
+      {{ block "footer" . }}{{ partial "base/site-footer.html" . }}{{ end }}
+    </div>
+
+    {{ block "scripts" . }}{{ partial "base/site-scripts.html" . }}{{ end }}
+    
   </body>
 </html>

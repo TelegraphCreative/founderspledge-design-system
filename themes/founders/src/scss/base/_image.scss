@@ -18,7 +18,6 @@
 // Image Element
 .image {
     @apply 
-        block
         relative
         overflow-hidden
         ;
@@ -34,9 +33,13 @@
     &.-is1x1 {
         padding-top: 100%;
     }
-    
+
     &.-is12x16 {
         padding-top: 130.25%;
+    }
+    
+    &.-is8x20 {
+        padding-top: 169.25%;
     }
     
     &.-is8x10 {
@@ -54,6 +57,7 @@
     &.-is2x1 {
         padding-top: 50%;
     }
+    
 
 
     // Shadow

@@ -1,21 +1,29 @@
 // Site Footer
 .site-footer {
-
+    @apply border-t .border-grey-lightest;
+    
     // Logo
     .logo {
         @apply text-green-darkest;
     }
 
+    // Header
     &__header {
         @apply text-green-darkest text-xl
         font-medium font-serif
         mb-3;
     }
 
+    // Group
+    &__group {
+        @apply max-w-xs 
+        mx-auto mb-10;
+    }
+
     // Meta
     &__meta {
-        @apply text-sm text-black
-        border-t border-grey-lightest;
+        @apply text-xs text-black
+        border-t border-oat-light;
     }
 
     // Form
@@ -29,62 +37,107 @@
     }
 
 
+}
 
+// Meta
+.site-footer__meta {
+    @apply pt-2;
+}
+.footer-meta__group {
+    @apply text-center mx-auto py-2;
+    .align-text-icon {
+        @apply justify-center;
+    }
+    .choices {
+        @apply mx-auto;
+    }
 }
 
 // Screen
 @screen md {
     
-// Layout
-.site-footer {
+    // Layout
+    .site-footer {
+        // Meta
+        &__meta__container {
+            @apply flex 
+            justify-between
+            items-center
+            pt-4 pb-8;
+        }
     
-    // Logo
-    &__logo {
-        @apply mb-4;
-    }
-
-    // Groups
-    &__groups__container {
-        @apply flex justify-between;
-    }
-    &__group {
-        @apply flex-1;
+         // Choices
+         .choices {
+            @apply float-right;
+        }
         
-        &:first-child {
-            @apply w-1/2;
-            flex: inherit;
+    }
+    // Meta 
+    .footer-meta__group {
+        @apply .flex-1;
+    
+        &:nth-child(2) {
+            @apply text-center;
+        }
+        &:last-child {
+            @apply text-right;
         }
     }
+}
 
-    // Contact
-    .hcard {
-        @apply mb-12;
-    }
+// Screen
+@screen lg {
+    
+    // Layout
+    .site-footer {
+        
+        // Logo
+        &__logo {
+            @apply mb-4;
+        }
 
-    // Form
-    .signup-form {
-        @apply mt-12 mb-30;
+        // Groups
+        &__groups__container {
+            @apply flex justify-between;
+        }
+        &__group {
+            @apply flex-1;
+            max-width: inherit;
+            
+            &:first-child {
+                @apply w-1/2;
+                flex: inherit;
+            }
+        }
+
+        // Contact
+        .hcard {
+            @apply mb-12;
+        }
+
+        // Form
+        .signup-form {
+            @apply mt-12 mb-30;
+        }
+
+        // Choices
+        .choices {
+            @apply float-right;
+        }
+        
     }
 
     // Meta
-    &__meta__container {
-        @apply flex 
-        justify-between
-        items-center
-        pt-4 pb-10;
-    }
+    .footer-meta__group {
+        @apply text-left mx-0 py-0;
 
+        .align-text-icon {
+            @apply justify-start;
+        }
+        .choices {
+            @apply mx-0;
+        }
+    }
     
-}
-// Meta 
-.footer-meta__group {
-    @apply .flex-1;
 
-    &:nth-child(2) {
-        @apply text-center;
-    }
-    &:last-child {
-        @apply text-right;
-    }
-}
 }

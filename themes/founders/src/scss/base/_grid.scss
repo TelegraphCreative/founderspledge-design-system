@@ -4,84 +4,108 @@ html {
 }
 
 .container {
-    @apply mx-auto;
+    @apply mx-auto
+    px-3;
     max-width: 90rem; // 1440
 }
 
-// Screen
+// Flex Grid
+.flex-grid {
+    @apply flex justify-between;
+}
+
+// Medium Screen
 @screen md {
+
+    .container {
+        @apply px-0;
+    }
 
     // Gutters
     .gutter {
-        @apply px-14;
 
+        &-sm {
+            @apply px-6;
+        }
+
+        // Default
+        @apply px-10;
+
+        &-md {
+            @apply px-10;
+        }
+
+        // X Axis
+        &-lg {
+            @apply px-18;
+        }
+
+        // L
         &-l {
-            @apply pl-14;
+            @apply pl-10;
+            &--md {
+                @apply pl-10;
+            }
+            &--lg {
+                @apply pl-18;
+            }
         }
-        &-l--md {
-            @apply pl-32;
+    }
+
+    // Flex Grid
+    .md\:flex-grid {
+        @apply flex justify-between;
+    }
+}
+
+// Large Screen
+@screen lg {
+
+    // lg:Default
+    .lg\:gutter {
+        @apply px-15;
+    }
+    // Gutters
+    .gutter {
+
+        &-md {
+            @apply px-22;
         }
-        &-l--lg {
-            @apply pl-40;
+
+        // X Axis
+        &-lg {
+            @apply px-30;
         }
+
+        // L
+        &-l {
+            @apply pl-15;
+            &--md {
+                @apply pl-22;
+            }
+            &--lg {
+                @apply pl-30;
+            }
+        }
+    }
+
+    // Flex Grid
+    .lg\:flex-grid {
+        @apply flex justify-between;
     }
 }
 
 
-
-// ----
-// .container {
-//     @apply 
-//         mx-auto
-//         px-3
-//         ;
-//         max-width: 90rem; 
-
-//     // Large
-//     &--md {
-//         max-width: 82.5rem; // (1200 + px-14)
-//         @apply px-3;
-//     }
-
-//     // Small (matches .content-gutter)
-//     &--sm {
-//         @apply 
-//             mx-auto
-//             px-3;
-//         max-width: 70.625rem;
-//     }
-//     &--xs {
-//         @apply 
-//             mx-auto
-//             px-3;
-//         max-width: 60rem;
-//     }
-
-//     @screen md {
-//         // Large
-//         &--md {
-//             @apply px-14;
-//         }
-//     }
-   
-//     &.-flush {
-//         @apply px-0;
-//     }
-// }
-
-
-// // Flex Grid
-// .flex-grid-12 {
-//     @apply flex flex-wrap justify-between
-//         grid grid-columns-12 grid-gap-2;
-// } 
-// @screen md {
-//     .flex-grid-12 {
-//         @apply grid-gap-4;
-//     } 
-//     .md\:flex-grid-12 {
-//         @apply flex flex-wrap justify-between
-//         grid grid-columns-12 grid-gap-4;
-//     }
-// }
-
+/// Grid Notes (Homepage as sample)
+// 212 (124 + 88 nested containers)
+//      media article
+// 124 / 7.75rem / 30 / lg
+//     nav
+//     media article -features
+//     footer
+// 88  / 5.5rem / 22 / md
+//     media article -simple
+//     profile slider
+// 62 / 3.875rem  / 15 / default
+//     logo parade
+//     highlight cards

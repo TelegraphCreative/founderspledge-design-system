@@ -3,57 +3,69 @@
 
   <!-- Intro -->
   <section class="space-t--sm space-b">
-      {{ partial "components/media-article.html" . }}
+        {{range $.Site.Data.home.MediaArticle_1}}
+            {{ partial "components/media-article.html" . }}
+        {{end}}
   </section>
 
 
   <!-- Why FP? -->
   <section class="bg-oat-light">
     <!-- Section Header -->
-    {{range $.Site.Data.home.Header}}
+    {{range $.Site.Data.home.WhyFoundersHeader}}
         {{ partial "components/section-header.html" . }}
     {{end}}
 
     <!-- Highlight Cards -->
-    <div class="highlight-cards">
+    <div class="highlight-cards | md:flex-grid container lg:gutter | md:pb-0 pb-4">
 
-      {{range $.Site.Data.home.Highlights}}
-        {{ partial "components/highlight-card.html" . }}
-      {{end}}
+        {{range $.Site.Data.home.WhyFoundersHighlights}}
+            {{ partial "components/highlight-card.html" . }}
+        {{end}}
 
     </div>
+
   </section>
 
   <!-- Why Now? -->
   <section class="bg-green-darkest text-white">
-      {{ partial "components/media-article--features.html" . }}
+    {{range $.Site.Data.home.MediaArticle_WhyNow}}
+        {{ partial "components/media-article--features.html" . }}
+    {{ end }}
   </section>
+  
 
   <!-- Progress -->
   <section>
     <!-- Section Header -->
-    {{range $.Site.Data.home.Header}}
+    {{range $.Site.Data.home.ProgressHeader}}
         {{ partial "components/section-header.html" . }}
     {{end}}
     
-    <!-- Heads Up - Inline -->
-    {{ partial "components/headsup--inline.html" . }}
+    
+    <div class="space-t--sm space-b">
+        <!-- Heads Up - Inline -->
+        {{ partial "components/headsup--inline.html" . }}
+    </div>
   </section>
 
   <!-- Model -->
-  <section>
-      <!-- Media Article (reversed) -->
-      {{ partial "components/media-article.html" . }}
+  <section class="space-b">
+    <!-- Media Article (reversed) -->
+    {{range $.Site.Data.home.MediaArticle_2}}
+        {{ partial "components/media-article--simple.html" . }}
+    {{end}}
+    
   </section>
 
   
   <!-- Profile Slider -->
-  <section>
-      {{ partial "components/profile-slider.html" . }}
+  <section class="bg-oat-light | space-t">
+    {{ partial "components/profile-slider.html" . }}
   </section>
 
   <!-- Logo Parade -->
-  <section>
+  <section class="space-b container gutter">
       {{ partial "components/logo-parade.html" . }}
   </section>
 

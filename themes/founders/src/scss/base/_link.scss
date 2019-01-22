@@ -4,11 +4,12 @@
 .link {
     @apply 
         no-underline
+        inline-block
         timing-1 duration-1 property-all;
 
     // Underline
     &.-underline {
-        @apply text-green border-b-3 border-green pb-2;
+        @apply text-green border-b-3 border-green pb-1;
         
         &:hover {
             @apply text-green-darkest border-green-darkest;

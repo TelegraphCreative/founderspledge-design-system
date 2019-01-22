@@ -1,0 +1,26 @@
+// Blockquote Resets
+blockquote, cite {
+    @apply roman font-normal m-0 p-0;
+}
+
+// Blockquote
+.blockquote {
+
+    &__source-descr {
+        @apply text-sm;
+    }  
+    
+    &__quote {
+        @apply text-2xl font-serif leading-tight
+    }
+}
+
+// md Screen
+@screen md {
+    .blockquote {
+        &__quote {
+            @apply text-4xl;
+        }
+    }
+}
+

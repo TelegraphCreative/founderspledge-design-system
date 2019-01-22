@@ -1,18 +1,26 @@
 .section-header {
-    @apply text-center;
+    @apply text-center mb-10 pt-14 px-4;
 
     .header-sm {
         @apply mb-4;
     }
     .paragraphs {
-        @apply pt-8;
+        @apply pt-4;
+    }
+
+    &__descr {
+        @apply w-4/5 mx-auto;
     }
     
+    // sm Screen
+    @screen sm {
+        &__descr {
+            @apply w-3/5;
+        }
+    }
+    
+    // md Screen
     @screen md {
         @apply pt-22;
-
-        &__descr {
-            @apply w-3/5 mx-auto;
-        }
     }
 }

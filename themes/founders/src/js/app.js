@@ -1,18 +1,63 @@
-console.log("It's alive!!");
+// Vue
+window.Vue = require('vue')
 
-// import styles from './../css/main.css';
+
+// Directives
+// Vue.directive('click-outside', {
+//     bind: function (el, binding, vNode) {
+//         // Provided expression must evaluate to a function.
+//         if (typeof binding.value !== 'function') {
+//         const compName = vNode.context.name
+//         let warn = `[Vue-click-outside:] provided expression '${binding.expression}' is not a function, but has to be`
+//         if (compName) {
+//             warn += `Found in component '${compName}'`
+//         }
+
+//         console.warn(warn)
+//         }
+//         // Define Handler and cache it on the element
+//         const bubble = binding.modifiers.bubble
+//         const handler = (e) => {
+//         if (bubble || (!el.contains(e.target) && el !== e.target)) {
+//             binding.value(e)
+//         }
+//         }
+//         el.__vueClickOutside__ = handler
+
+//         // add Event Listeners
+//         document.addEventListener('click', handler)
+//     },
+//     unbind: function (el, binding) {
+//         // Remove Event Listeners
+//         document.removeEventListener('click', el.__vueClickOutside__)
+//         el.__vueClickOutside__ = null
+//     }
+// })
 
 
-// NOTE: TO use Jquery, just call the modules you want
-// var $ = require('jquery/src/core');
-// require('jquery/src/core/init');
-// require('jquery/src/manipulation');
+// Imports
+import site_menu from './components/SiteMenu';
+import profile_slider from './components/ProfileSlider';
+import select_box from './components/SelectBox';
 
-// OR, use all of them
-// var $ = require('jquery/src/jquery');
 
-// And write your code
-// $('body').append('<p>Jquery is working</p>');
-//
-// You can also "require" any script from its location in the node modules folder. Webpack often knows what to look for, but you can add a script directly like this:
-// var javascriptthingy = require('name/folder/file.js');
+// Vue App
+const app = new Vue({
+    el: "#app",
+    data(){
+        return {
+            menuActive: false
+        }
+    },    
+    methods: {
+        onMenuActive: function(event){
+            this.menuActive = 'hello'
+        }
+    },    
+    components: {
+        site_menu,
+        profile_slider,
+        select_box
+    }
+});  
+

@@ -1,14 +1,27 @@
-// Site Header
+// Body on Sticky
+body {
+    padding-top: 4.5rem;
+}
+
+// Layout
 .site-header {
- 
+    
+    @apply fixed w-full pin-t z-20 bg-white; 
+
     // Logo
-    .logo {
+    .logo, .logo-icon {
         @apply text-green;
+    }
+    .logo {
+        @apply hidden;
     }
 
     // Layout
     &__menu__container {
-        @apply flex justify-between;
+        @apply flex justify-between 
+        items-center
+        py-4
+        relative z-20;
     }
 
     // Menu Bar
@@ -21,7 +34,9 @@
         &__link {
             @apply link 
             font-medium
-            text-base text-green
+            text-sm text-green
+            pb-1
+            border-b-2 border-transparent
             leading-none;
             
             &:hover {
@@ -30,7 +45,7 @@
 
             // Highlight 
             &.-highlight {
-                @apply border-b-2 border-green;
+                @apply border-green ;
                 &:hover {
                     @apply border-green-darkest;
                 }
@@ -39,14 +54,45 @@
         
     }
 
+    &__menu__container .menu-bar {
+        @apply hidden;
+    }
 
-    // Screen
-    @screen md {
+}
+
+// Screen
+@screen menu {
+
+    // Body for Sticky
+    body {
+        @apply pt-0;
+    }
+
+    // Site Header
+    .site-header {
+        
+        @apply relative;
+
+
+        .logo {
+            @apply block;
+        }
+        .logo-icon {
+            @apply hidden;
+        }
 
         // Layout
         &__menu__container {
             @apply pt-14 pb-8;
+
+            .menu-bar {
+                @apply flex;
+            }
         }
 
+        .btn--toggle {
+            @apply hidden;
+        }
     }
+
 }

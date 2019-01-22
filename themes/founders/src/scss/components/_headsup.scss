@@ -1,0 +1,25 @@
+// Heads Up
+.headsup {
+    @apply text-center;
+    &__fig {
+        @apply mb-6;
+    }
+    
+    // Screen
+    @screen md {
+        
+        // Inline
+        &.-inline {
+            @apply flex
+            justify-center;
+            
+            .headsup {
+
+                &__fig {
+                    @apply px-8;
+                }
+            }
+        }
+
+    }
+}
