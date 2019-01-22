@@ -57,7 +57,6 @@ layout: how-it-works
 4. Run `yarn do` to start developing, or `yarn hugo` to generate production files in `public`
 
 
-
 **Partials**
 
 | Name | Path |

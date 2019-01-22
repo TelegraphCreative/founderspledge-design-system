@@ -1,5 +1,5 @@
 ---
 title: "How It Works"
-layout: how-it-works
+layout: 'how-it-works'
 ---
 

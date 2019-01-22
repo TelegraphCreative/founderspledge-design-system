@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "https://confident-blackwell-dbed1e.netlify.com/"
 languageCode = "en-us"
 title = "Founders Pledge"
 theme = "founders"
