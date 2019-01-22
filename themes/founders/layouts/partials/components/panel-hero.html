@@ -1,7 +1,7 @@
 <header class="panel-hero {{.variation}}">
 
     {{ if .header }}
-    <h2 class="header-lg">{{.header | safeHTML}}</h2>
+    <h2 class="header-lg | mb-4">{{.header | safeHTML}}</h2>
     {{ end }}
 
     {{ if .descr }}
@@ -11,8 +11,9 @@
     {{ end }}
     
     {{ if .action }}
-    <div class="panel-hero__action">
-        <a href="{{ .action.url }}" class="btn -light">{{ .action.text }}</a>
+    <div class="panel-hero__action | pt-8">
+        <a href="{{ .action.url }}" class="btn -light -wide">{{ .action.text }}</a>
     </div>
     {{ end }}
+
 </header>

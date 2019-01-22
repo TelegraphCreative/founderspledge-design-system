@@ -1,0 +1,14 @@
+.panel-hero {
+    @apply text-center
+    pt-12 pb-14 px-4;
+
+    // Dark
+    &.bg-green-darkest {
+        @apply text-white;
+    }
+
+    // Screen
+    @screen md {
+        @apply pt-18 pb-20 px-8
+    }
+}

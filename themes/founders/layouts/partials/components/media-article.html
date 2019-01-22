@@ -11,12 +11,12 @@ Content Types:
 -->
 <div class="media-article {{.variation}} | container gutter-l--md">
 
-        <div class="media-article__main | gutter-l--lg | px-12 md:pb-12">
+        <div class="media-article__main | px-12 md:pb-12">
 
         <header class="media-article__header">
-            <h2 class="header-xl | pb-5 md:pb-12">{{ .header }}</h2>
+            <h2 class="header">{{ .header }}</h2>
             {{ if .subheader }}
-            <h4 class="header-sm | pb-5">{{ .subheader }}</h4>
+            <h4 class="subheader | header-sm | pb-5">{{ .subheader }}</h4>
             {{ end }}
         </header>
 
@@ -26,11 +26,11 @@ Content Types:
         
         {{ if .links }}
             <div class="media-article__actions | md:mt-12 mt-5">
-                {{ range .links }}
                 <div class="link-group">
-                    <a href="{{ .url }}" class="link -underline">{{ .text }}</a>
+                    {{ range .links }}
+                        <a href="{{ .url }}" class="link -underline">{{ .text }}</a>
+                    {{ end }}
                 </div>
-                {{ end }}
             </div>
         {{ end }}
 
