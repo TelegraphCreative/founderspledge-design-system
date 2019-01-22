@@ -4,7 +4,7 @@
   <!-- Panel Hero -->
   <section class="space-t--sm space-b ">
 
-    {{range $.Site.Data.how.CallToAction}}
+    {{range .Params.CallToAction}}
         {{ partial "components/panel-hero.html" . }}
     {{end}}
   </section>

@@ -7535,8 +7535,8 @@ var render = function() {
             },
             [
               _c(
-                "div",
-                { staticClass: "site-header__logo" },
+                "a",
+                { staticClass: "site-header__logo", attrs: { href: "/" } },
                 [_vm._t("logo")],
                 2
               ),

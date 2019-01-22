@@ -3,9 +3,9 @@
         <nav aria-label="Founders Pledge Main Menu" class="site-menu" :class="{'-active' : isActive}">
             <div class="site-header__menu__container | container gutter-lg">
 
-                <div class="site-header__logo">
+                <a href="/" class="site-header__logo">
                     <slot name="logo"></slot>
-                </div>
+                </a>
 
                 <div @click="toggleMenu" class="btn--toggle" :class="{'-active' : isActive}">
                     <span></span><span></span><span></span><span></span>

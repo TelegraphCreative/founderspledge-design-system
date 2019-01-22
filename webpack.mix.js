@@ -6,14 +6,14 @@ let themeDir = "./themes/founders/";
 
 // .copy( themeDir + 'src/assets', themeDir + 'static/dist/assets')
 
-// mix.webpackConfig({
-//     resolve: {
-//         extensions: [".json"],
-//         modules: [
-//         path.resolve(__dirname, 'node_modules'),
-//         ]
-//     }
-// });
+mix.webpackConfig({
+    resolve: {
+        extensions: [".json"],
+        modules: [
+        path.resolve(__dirname, 'node_modules'),
+        ]
+    }
+});
 
 mix
     .js( themeDir + 'src/js/app.js', themeDir + 'static/dist/js')

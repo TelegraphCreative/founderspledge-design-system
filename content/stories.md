@@ -1,5 +1,5 @@
----
-title: "stories"
-layout: 'stories'
----
+{
+   "layout": "stories",
+   "title": "stories"
+}
 

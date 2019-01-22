@@ -1,6 +1,6 @@
----
-title: "Impact"
-draft: false
-layout: 'impact'
----
+{
+   "draft": false,
+   "layout": "stories",
+   "title": "Impact"
+}
 

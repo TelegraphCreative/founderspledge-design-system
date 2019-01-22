@@ -1,5 +1,5 @@
----
-title: "Community"
-layout: 'community'
----
+{
+   "layout": "community",
+   "title": "Community"
+}
 
