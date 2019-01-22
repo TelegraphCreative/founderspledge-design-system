@@ -41,10 +41,10 @@
 
   <body class="{{ $.Param "body_classes"  | default ""}}{{ with getenv "HUGO_ENV" }} {{ . }}{{ end }}">
 
-    <div id="app" v-cloak >
+    <div id="app" v-cloak>
 
       {{ block "header" . }}{{ partial "base/site-header.html" .}}{{ end }}
-      <main @menu-active="onMenuActive" :class="'-' + menuActive" role="main">
+      <main role="main">
         {{ block "main" . }}{{ end }}
       </main>
       

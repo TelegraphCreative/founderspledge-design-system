@@ -33,7 +33,7 @@ import click_outside from '../directives/ClickOutslide';
 export default {
     data(){
         return {
-            isActive: false,
+            isActive: false
         }
     },
     mounted() {
@@ -48,7 +48,6 @@ export default {
     methods: {
         hide(){
             this.isActive = false
-            this.$emit('menu-active', false)
         },
 
         toggleMenu(){
@@ -57,12 +56,10 @@ export default {
             if(!this.isActive){
                 // Open
                 this.isActive = true
-                this.$emit('menu-active', true)
 
             } else {
                 // Close
                 this.isActive = false
-                this.$emit('menu-active', false)
             }
 
         }

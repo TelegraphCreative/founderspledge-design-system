@@ -51,7 +51,7 @@ const app = new Vue({
     },    
     methods: {
         onMenuActive: function(event){
-            this.menuActive = event
+            this.menuActive = 'hello'
         }
     },    
     components: {
