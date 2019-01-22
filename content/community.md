@@ -1,6 +1,5 @@
 ---
 title: "Community"
-draft: false
-type: 'community'
+layout: 'community'
 ---
 
