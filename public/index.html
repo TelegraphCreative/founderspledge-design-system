@@ -49,17 +49,15 @@
 
   <body class="">
 
-    <header class="site-header" role="banner">
-  
-  
-  <div class="site-header__menu">
-    <nav aria-label="Founders Pledge Main Menu" class="site-menu">
-      <div class="site-header__menu__container | container gutter">
+    <div id="app" v-cloak>
 
+      <header class="site-header" role="banner">
+
+  
+  <site_menu class="site-header__menu">
         
-        <div class="site-header__logo"><span class="logo | icon">
-	<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-		viewBox="0 0 570.4 239.4" style="enable-background:new 0 0 570.4 239.4;" xml:space="preserve">
+        <template slot="logo"><span class="logo | icon">
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 570.4 239.4">
 	<path fill="currentColor" d="M175,67.7h41.6v10h-29.1v20h22.9v9.7h-22.9v27.5H175V67.7z"/>
 	<path fill="currentColor" d="M219.1,110.8v-0.8c0-15.2,10.8-25.4,25.3-25.4c14.4,0,25.2,10.1,25.2,25.1v0.8c0,15.3-10.8,25.3-25.3,25.3
 	C229.8,135.8,219.1,125.8,219.1,110.8z M257.9,110.7V110c0-10.2-5.1-16.4-13.5-16.4c-8.5,0-13.6,6.1-13.6,16.3v0.8
@@ -99,72 +97,88 @@
 	<polygon fill="currentColor" points="62.6,85.5 94.1,103.6 116.8,90.5 77,67.5 39.9,89 39.9,134.9 62.6,121.8 		"/>
 	<polygon fill="currentColor" points="62.6,49.5 62.6,13.1 39.9,0 39.9,46 77,67.5 116.9,44.5 94.1,31.3 		"/>	
 	</svg>
-</span></div>
+</span><span class="logo-icon | icon -sm"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 168.7 194.7"><polygon fill="currentColor" points="45.5,97.4 0,123.7 0,161.6 57.5,128.4 57.5,66.4 0,33.2 0,71.2 		"/><polygon fill="currentColor" points="90.4,123.4 135.8,149.6 168.6,130.6 111.2,97.4 57.5,128.4 57.5,194.7 90.4,175.8 		"/><polygon fill="currentColor" points="90.4,71.5 90.4,19 57.5,0 57.5,66.4 111.2,97.4 168.7,64.2 135.9,45.2 		"/></svg></span>
+</template>
         
         
-        <ul class="menu-bar" role="menubar">
-          <li class="menu-bar__item">
-              <a role="menuitem" aria-haspopup="false" href="" class="menu-bar__link" tabindex="0">How It Works</a>
-          </li>
-          <li class="menu-bar__item">
-              <a role="menuitem" aria-haspopup="false" href="" class="menu-bar__link" tabindex="0">Impact</a>
-          </li>
-          <li class="menu-bar__item">
-              <a role="menuitem" aria-haspopup="false" href="" class="menu-bar__link" tabindex="0">Community</a>
-          </li>
-          <li class="menu-bar__item">
-              <a role="menuitem" aria-haspopup="false" href="" class="menu-bar__link" tabindex="0">Stories</a>
-          </li>
-          <li class="menu-bar__item">
-              <a role="menuitem" aria-haspopup="false" href="" class="menu-bar__link | -highlight" tabindex="0">Start Your Journey</a>
-          </li>
-          <li class="menu-bar__item">
-              <a role="menuitem" aria-haspopup="false" href="" class="menu-bar__link" tabindex="0">Sign In</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </div>
+        <template slot="menu">
+            <ul class="menu-bar" role="menubar">
+                <li class="menu-bar__item">
+                    <a role="menuitem" aria-haspopup="false" href="" class="menu-bar__link" tabindex="0">How It Works</a>
+                </li>
+                <li class="menu-bar__item">
+                    <a role="menuitem" aria-haspopup="false" href="" class="menu-bar__link" tabindex="0">Impact</a>
+                </li>
+                <li class="menu-bar__item">
+                    <a role="menuitem" aria-haspopup="false" href="" class="menu-bar__link" tabindex="0">Community</a>
+                </li>
+                <li class="menu-bar__item">
+                    <a role="menuitem" aria-haspopup="false" href="" class="menu-bar__link" tabindex="0">Stories</a>
+                </li>
+                <li class="menu-bar__item">
+                    <a role="menuitem" aria-haspopup="false" href="" class="menu-bar__link | -highlight" tabindex="0">Start Your Journey</a>
+                </li>
+                <li class="menu-bar__item">
+                    <a role="menuitem" aria-haspopup="false" href="" class="menu-bar__link" tabindex="0">Sign In</a>
+                </li>
+            </ul>
+        </template>
+
+  </site_menu>
 
 
 </header>
-    
-    <main class="" role="main">
-      
+      <main role="main">
+        
 
 
   
   <section class="space-t--sm space-b">
-      
-<div class="media-article | container">
+        
+            
+<div class="media-article  | container gutter-l--md">
 
-    <div class="media-article__main | gutter-l--lg">
+        <div class="media-article__main | gutter-l--lg | px-12 md:pb-12">
 
         <header class="media-article__header">
-            <h2 class="header-xl | pb-12">Redefining what it means to give back.</h2>
+            <h2 class="header-xl | pb-5 md:pb-12">Redefining what it means to give back.</h2>
+            
             <h4 class="header-sm | pb-5">Empowering Philanthropy</h4>
+            
         </header>
 
         <article class="media-article__article | paragraphs">
-            <p>FP is the impact initiative for entrepreneurs who want to make a global contribution, both in the present and future.</p>
-            <p>We are a community of founders and investors committed to investing for humanity, not just for profit. Providing expert research, guidance, and educational events, we empower entrepreneurs to maximize their impact.</p>
+            <p>FP is the impact initiative for entrepreneurs who want to make a global contribution, both in the present and future.</p><p>We are a community of founders and investors committed to investing for humanity, not just for profit. Providing expert research, guidance, and educational events, we empower entrepreneurs to maximize their impact.</p>
         </article>
-
-        <div class="media-article__actions">
-            <div class="link-group">
-                <a href="#" class="link -underline">Start Your Journey</a>
+        
+        
+            <div class="media-article__actions | md:mt-12 mt-5">
+                
+                <div class="link-group">
+                    <a href="#" class="link -underline">Start Your Journey</a>
+                </div>
+                
             </div>
-        </div>
+        
 
     </div>
 
-    <aside class="media-article__aside | bg-orange">
-        <fiure class="image -is12x16">
-            <img src="" alt="">
-        </fiure>
+    
+    <aside class="media-article__aside | lg:bg-orange">
+        
+            <figure class="image -is8x20 | md:block hidden">
+                <img src="/img/fpo-01.jpg" alt="" class="fit-cover">
+            </figure>
+            <figure class="image -is2x1 | md:hidden block">
+                <img src="/img/fpo-03.jpg" alt="" class="fit-cover">
+            </figure>
+        
     </aside>
+    
+    
 
 </div>
+        
   </section>
 
 
@@ -190,123 +204,153 @@
     
 
     
-    <div class="highlight-cards">
+    <div class="highlight-cards | md:flex-grid container lg:gutter | md:pb-0 pb-4">
 
-      
         
+            
 <div class="highlight-card">
-    
-    
-
-    <div class="card__content">
-        <h4>Community</h4>
-        <p>Form lasting bonds with value-aligned entrepreneurs, tackle some of the world’s toughest challenges, and learn experts at our intimate events around the globe.</p>
-    </div>
-
-    
-    <div class="card__action">
-        <a href="#" class="link">Learn More</a>
-    </div>
-    
-
-</div> 
-      
+    <div class="highlight-card__content">
         
-<div class="highlight-card">
-    
-    
-
-    <div class="card__content">
-        <h4>Research</h4>
-        <p>Giving away money is easy. Giving thoughtfully and impactfully is far more difficult. That’s why we can end-to-end, individualized philanthropic planning for every step of the impact journey.</p>
-    </div>
-
-    
-    <div class="card__action">
-        <a href="#" class="link">Learn More</a>
-    </div>
-    
-
-</div> 
-      
+        <div class="highlight-card__icon text-green"><span class="icon | icon--arrow -md"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.6 24"><polygon fill="currentColor" points="1.7,24 0,23 6.3,12 0,1 1.7,0 8.6,12 "/></svg></span>
+</div>
         
-<div class="highlight-card">
-    
-    
 
-    <div class="card__content">
-        <h4>Support</h4>
-        <p>We operate the world’s only cost-free donor advised fund. We provide end-to-end support for your giving, enabling you to give anywhere, any time, with ease.            </p>
-    </div>
+        <div class="highlight-card__main">
+            <h4 class="header-md">Community</h4>
+            <div class="paragraphs -sm">
+                <p>Form lasting bonds with value-aligned entrepreneurs, tackle some of the world’s toughest challenges, and learn experts at our intimate events around the globe.</p>
+            </div>
+        </div>
 
-    
-    <div class="card__action">
-        <a href="#" class="link">Learn More</a>
-    </div>
-    
-
+        
+        <div class="highlight-card__action | text-sm">
+            <a href="#" class="link -underline">Learn More</a>
+        </div>
+        
+    </div>  
 </div> 
-      
+        
+            
+<div class="highlight-card">
+    <div class="highlight-card__content">
+        
+        <div class="highlight-card__icon text-green"><span class="icon | icon--arrow -md"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.6 24"><polygon fill="currentColor" points="1.7,24 0,23 6.3,12 0,1 1.7,0 8.6,12 "/></svg></span>
+</div>
+        
+
+        <div class="highlight-card__main">
+            <h4 class="header-md">Research</h4>
+            <div class="paragraphs -sm">
+                <p>Giving away money is easy. Giving thoughtfully and impactfully is far more difficult. That’s why we can end-to-end, individualized philanthropic planning for every step of the impact journey.</p>
+            </div>
+        </div>
+
+        
+        <div class="highlight-card__action | text-sm">
+            <a href="#" class="link -underline">Learn More</a>
+        </div>
+        
+    </div>  
+</div> 
+        
+            
+<div class="highlight-card">
+    <div class="highlight-card__content">
+        
+        <div class="highlight-card__icon text-green"><span class="icon | icon--arrow -md"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.6 24"><polygon fill="currentColor" points="1.7,24 0,23 6.3,12 0,1 1.7,0 8.6,12 "/></svg></span>
+</div>
+        
+
+        <div class="highlight-card__main">
+            <h4 class="header-md">Support</h4>
+            <div class="paragraphs -sm">
+                <p>We operate the world’s only <a href='#'>cost-free donor advised fund</a>. We provide end-to-end support for your giving, enabling you to give anywhere, any time, with ease.</p>
+            </div>
+        </div>
+
+        
+        <div class="highlight-card__action | text-sm">
+            <a href="#" class="link -underline">Learn More</a>
+        </div>
+        
+    </div>  
+</div> 
+        
 
     </div>
+
   </section>
 
   
   <section class="bg-green-darkest text-white">
-      
+    
+        
 <div class="media-article -features | container">
 
-    <div class="media-article__main | gutter-l">
+        <div class="media-article__main | gutter-l--lg | px-12 md:pb-12">
 
         
-        <header class="media-article__header">
+        <header class="media-article__header | md:pt-24 pt-12">
             <h4 class="header-sm -light | pb-4">Why Now?</h4>
-            <h2 class="header-lg | pb-14">By joining now you send a powerful signal to the tech ecosystem: impactful giving should be the norm.</h2>
+            <h2 class="header-lg | pb-12">By joining now you send a powerful signal to the tech ecosystem: impactful giving should be the norm.</h2>
         </header>
 
         
-        <div class="md:flex pb-8">
+        <div class="lg:flex md:pb-8">
 
             
-            <div class="md:w-1/2">
+            <div class="lg:w-1/2">
                 
                 <article class="media-article__article">
 
                     
+                    
                     <div class="media-article__feature">
-                        <h5 class="header-md | text-green-light | mb-3">Lock Lock In Your Commitment</h5>
-                        <div class="paragraphs -sm">
-                            <p>Joining Founders Pledge enables you to lock in your commitment, and hold yourself accountable to your most important values.</p>
-                        </div>
-                    </div>
-
-                    <div class="media-article__feature">
-                        <h5 class="header-md | text-green-light | mb-3">Lock Lock In Your Commitment</h5>
+                        <h5 class="header-md | text-green-light | mb-3">Lock In Your Commitment</h5>
                         <div class="paragraphs -sm">
                             <p>Joining Founders Pledge enables you to lock in your commitment, and hold yourself accountable to your most important values.</p>
                         </div>
                     </div>
                     
+                    <div class="media-article__feature">
+                        <h5 class="header-md | text-green-light | mb-3">Start Exploring</h5>
+                        <div class="paragraphs -sm">
+                            <p>Joining Founders Pledge enables you to lock in your commitment, and hold yourself accountable to your most important values.</p>
+                        </div>
+                    </div>
+                    
+
                 </article>
             </div>
 
             
-            <div class="md:w-1/2 md:flex md:items-end">
+            <div class="lg:w-1/2 lg:flex lg:items-end lg:justify-end lg:pl-10">
                 <div class="media-article__actions">
-                    <a href="#" class="btn -light">Learn about Donor Advised Funds</a>
+                    
+                        
+                            <a href="#" class="btn -light">Learn about Donor Advised Funds</a>
+                        
+                    
                 </div>
             </div>
         </div>
     </div>
 
-    <aside class="media-article__aside | bg-green-light">
-        <fiure class="image -is12x16">
-            <img src="" alt="">
-        </fiure>
+    <aside class="media-article__aside | lg:bg-green-light | md:pb-0 pb-4">
+        
+            <figure class="image -is8x20 | md:block hidden">
+                <img src="/img/fpo-01.jpg" alt="" class="fit-cover">
+            </figure>
+            <figure class="image -is2x1 | md:hidden block">
+                <img src="/img/fpo-03.jpg" alt="" class="fit-cover">
+            </figure>
+        
     </aside>
     
 </div>
+    
   </section>
+  
 
   
   <section>
@@ -314,104 +358,177 @@
     
         <header class="section-header">
     
-    <h4 class="header-sm">Why Founders Pledge</h4>
-    
 
     
-    <h2 class="header-lg">To become part of the community, <br>you’ve got to have skin in the game. </h2>
+    <h2 class="header-lg">Our Progress So Far</h2>
     
 
     
     <div class="section-header__descr | paragraphs">
-        <p>That’s why our entry requirement is simple: make a legally binding pledge to donate a portion of your personal proceeds on exit to charity.</p>
+        <p>Social impact is complex - and the research below reflects that.</p><p>That’s why we offer everyone in the community an opportunity to chat one-on-one with our research team. They’ll walk you through relevant research in a digestible way, and answer all your questions.</p>
     </div>
     
 </header>
     
     
     
-    
+    <div class="space-t--sm space-b">
+        
+        
 <div class="headsup -inline">
     
     <div class="headsup__fig">
-        <h4 class="header-">$91 Million</h4>
-        <h3 class="header-">Donation Value</h3>
+        <h4 class="header-lg | text-green">$91 Million</h4>
+        <h3 class="header-sm -light">Donation Value</h3>
     </div>
     
     <div class="headsup__fig">
-        <h4 class="header-">$91 Million</h4>
-        <h3 class="header-">Donation Value</h3>
+        <h4 class="header-lg | text-green">$91 Million</h4>
+        <h3 class="header-sm -light">Donation Value</h3>
     </div>
-
+    
 </div>
+    </div>
   </section>
 
   
-  <section>
-      
-      
-<div class="media-article | container">
+  <section class="space-b">
+    
+    
+        
+<div class="media-article -simple -reverse | container gutter-md">
 
-    <div class="media-article__main | gutter-l--lg">
+    <div class="media-article__main | gutter-l--lg | px-12 md:pb-12">
 
         <header class="media-article__header">
-            <h2 class="header-xl | pb-12">Redefining what it means to give back.</h2>
-            <h4 class="header-sm | pb-5">Empowering Philanthropy</h4>
+            <h2 class="header-xl | pb-5 md:pb-12">100% for good</h2>
+            
         </header>
 
         <article class="media-article__article | paragraphs">
-            <p>FP is the impact initiative for entrepreneurs who want to make a global contribution, both in the present and future.</p>
-            <p>We are a community of founders and investors committed to investing for humanity, not just for profit. Providing expert research, guidance, and educational events, we empower entrepreneurs to maximize their impact.</p>
+            <p>We don’t take any cuts or fees from donations, and members can access all our benefits and events completely free of cost. Our operations are fully funded by a small, separate group of essential philanthropists.</p>
         </article>
+        
+        
+        <div class="media-article__actions | md:mt-12 mt-5">
+                
+                <div class="link-group">
+                    <a href="#" class="link -underline">Learn about our 100% Model</a>
+                </div>
+                
+            </div>
+        
 
-        <div class="media-article__actions">
-            <div class="link-group">
-                <a href="#" class="link -underline">Start Your Journey</a>
+    </div>
+
+    
+    <aside class="media-article__aside | bg-orange">
+        
+            <figure class="image -is8x20 | md:block hidden">
+                <img src="/img/fpo-01.jpg" alt="" class="fit-cover">
+            </figure>
+            <figure class="image -is2x1 | md:hidden block">
+                <img src="/img/fpo-03.jpg" alt="" class="fit-cover">
+            </figure>
+        
+    </aside>
+    
+    
+
+</div>
+    
+    
+  </section>
+
+  
+  
+  <section class="bg-oat-light | space-t">
+    
+<profile_slider :opt="{
+        items: 1,
+        autoplay: true,
+        mode: 'gallery'
+    }"
+    class="profile-slider | container clearfix">
+
+    <template slot="slides">
+        <div class="profile-slider__slide">
+            <div class="profile-slider__container gutter-sm gutter-l--md | md:flex-grid">
+
+                
+                <div class="profile-slider__main">
+                    <blockquote class="blockquote | md:pt-10">
+                
+                        <h3 class="blockquote__quote | mb-8 md:mb-10">"I’m excited to be able to contribute to a community of founders who are thinking critically about their giving. Together I believe we can achieve a huge amount of good."</h3>
+                        
+                        <cite>
+                            <h5 class="blockquote__source-header | header-md">Miguel Mckelvey</h5>
+                            <small class="blockquote__source-descr">Founder &amp; CEO</small>
+                        </cite>
+                
+                    </blockquote>
+                </div>
+                
+                
+                <div class="profile-slider__aside">
+                    <figure class="image -is1x1">
+                        <img src="/img/fpo-02.jpg" data-src="/img/fpo-02.jpg" alt="">
+                    </figure>
+                </div>
+        
             </div>
         </div>
 
-    </div>
+        <div class="profile-slider__slide">
+            <div class="profile-slider__container gutter-sm gutter-l--md | md:flex-grid">
 
-    <aside class="media-article__aside | bg-orange">
-        <fiure class="image -is12x16">
-            <img src="" alt="">
-        </fiure>
-    </aside>
-
-</div>
-  </section>
-
-  
-  
-  <section>
-      
-<div class="profile-slider">
-
-    <div class="profile-slider__fig">
-        <img src="" alt="">
-    </div>
-
-    <div class="profile-slider__main">
-        <blockquote class="blockquote">
-    
-            <h3 class="header-">"I’m excited to be able to contribute to a community of founders who are thinking critically about their giving. Together I believe we can achieve a huge amount of good."</h3>
+                
+                <div class="profile-slider__main">
+                        <blockquote class="blockquote | md:pt-10">
+                
+                        <h3 class="blockquote__quote | header-lg | mb-8 md:mb-12">"Right and left, the streets take you waterward. Its extreme down-town is the battery, where that noble mole is washed by waves, and cooled by breezes, which a few hours previous were out of sight of land."</h3>
+                        
+                        <cite>
+                            <h5 class="blockquote__source-header | header-md">Miguel Mckelvey</h5>
+                            <small class="blockquote__source-descr">Founder &amp; CEO</small>
+                        </cite>
+                
+                    </blockquote>
+                </div>
+                
+                
+                <div class="profile-slider__aside">
+                    <figure class="image -is1x1">
+                            <img src="/img/fpo-02.jpg" data-src="/img/fpo-02.jpg" alt="">
+                    </figure>
+                </div>
             
-            <cite>
-                <h5 class="header-">Miguel Mckelvey</h5>
-                <small>Founder &amp; CEO</small>
-            </cite>
-    
-        </blockquote>
-    </div>
+            </div>
+        </div>
+    </template>
 
-    [arrows]
-    [nav]
-</div>
+    <template slot="slideNav">
+    
+        <li class="nav__item">
+            <figure class="image -is1x1">
+                <img src="/img/fpo-02.jpg" data-src="/img/fpo-02.jpg" class="active | fit-cover" alt="">
+                <img src="/img/fpo-02--fade.jpg" data-src="/img/fpo-02.jpg" class="inactive | fit-cover" alt="">
+            </figure>
+        </li>
+        <li class="nav__item">
+            <figure class="image -is1x1">
+                <img src="/img/fpo-02.jpg" data-src="/img/fpo-02.jpg" class="active | fit-cover" alt="">
+                <img src="/img/fpo-02--fade.jpg" data-src="/img/fpo-02.jpg" class="inactive | fit-cover" alt="">
+            </figure>
+        </li>
+
+    </template>
+</profile_slider>
 
   </section>
 
   
-  <section>
+  <section class="space-b container gutter">
       
 <header class="section-header">
     <h4 class="header-sm">As Seen In</h4>
@@ -420,39 +537,45 @@
 <div class="logo-parade">
 
     <div class="logo-parade__logo">
-        <img src="" alt="">
+        <figure class="image -is2x1 | bg-oat-less-light">
+            <img src="" alt="">
+        </figure>
     </div>
     
     <div class="logo-parade__logo">
-        <img src="" alt="">
+        <figure class="image -is2x1 | bg-oat-less-light">
+            <img src="" alt="">
+        </figure>
     </div>
     
     <div class="logo-parade__logo">
-        <img src="" alt="">
-    </div>
-    
-    <div class="logo-parade__logo">
-        <img src="" alt="">
+        <figure class="image -is2x1 | bg-oat-less-light">
+            <img src="" alt="">
+        </figure>
     </div>
 
     <div class="logo-parade__logo">
-        <img src="" alt="">
+        <figure class="image -is2x1 | bg-oat-less-light">
+            <img src="" alt="">
+        </figure>
     </div>
 
     <div class="logo-parade__logo">
-        <img src="" alt="">
+        <figure class="image -is2x1 | bg-oat-less-light">
+            <img src="" alt="">
+        </figure>
     </div>    
 </div>
   </section>
 
  
-    </main>
-    
-    <footer class="site-footer" role="contentinfo">
+      </main>
+      
+      <footer class="site-footer container gutter" role="contentinfo">
 
         
     
-    <div class="site-footer__groups">
+    <div class="site-footer__groups | space-t--sm">
         <div class="site-footer__groups__container | container gutter">
 
             
@@ -461,8 +584,7 @@
 
                     
                     <div class="site-footer__logo"><span class="logo | icon">
-	<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-		viewBox="0 0 570.4 239.4" style="enable-background:new 0 0 570.4 239.4;" xml:space="preserve">
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 570.4 239.4">
 	<path fill="currentColor" d="M175,67.7h41.6v10h-29.1v20h22.9v9.7h-22.9v27.5H175V67.7z"/>
 	<path fill="currentColor" d="M219.1,110.8v-0.8c0-15.2,10.8-25.4,25.3-25.4c14.4,0,25.2,10.1,25.2,25.1v0.8c0,15.3-10.8,25.3-25.3,25.3
 	C229.8,135.8,219.1,125.8,219.1,110.8z M257.9,110.7V110c0-10.2-5.1-16.4-13.5-16.4c-8.5,0-13.6,6.1-13.6,16.3v0.8
@@ -505,7 +627,7 @@
 </span></div>
                     
                     
-                    <div class="hcard | gutter-l">
+                    <div class="hcard | lg:pl-10 lg:py-0 py-8">
                         <div class="hcard__item | tel">
                             <a href="tel: +44 (0) 208 068 0425"> +44 (0) 208 068 0425</a>
                         </div>
@@ -514,7 +636,7 @@
                             <a href="mailto:info@founderspledge.org">info@founderspledge.org</a>
                         </div>
 
-                        <div class="hcard__item | addr">
+                        <div class="hcard__item | addr | mt-5">
                             <p>Block A Unit 402A</p>
                             <p>100 Clements Road </p>
                             <p>London SE16 4DG</p>
@@ -522,11 +644,11 @@
                     </div>
 
                     
-                    <div class="signup-form | gutter-l">
+                    <div class="signup-form | lg:pl-10">
                         <form action="">
                             <input type="text" class="email" placeholder="Email Digest Sign Up">
                             <button class="submit">
-                                <span class="submit__icon | icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.6 24"><polygon fill="currentColor" points="1.7,24 0,23 6.3,12 0,1 1.7,0 8.6,12 "/></svg>
+                                <span class="submit__icon | icon"><span class="icon | icon--arrow "><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.6 24"><polygon fill="currentColor" points="1.7,24 0,23 6.3,12 0,1 1.7,0 8.6,12 "/></svg></span>
 </button>
                                 </span>
                         </form>
@@ -585,7 +707,8 @@
                     </ul>
 
                     <ul class="social-list" role="menubar">
-                        <li><a href="" aria-label="Facebook"><span class="icon | icon--map-pin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.5 16.5"><style type="text/css">.st0{fill:none;stroke:#12302D;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}</style><path class="st0" d="M12.8,6.8c0,3.7-6,9-6,9s-6-5.3-6-9c0-3.8,3.1-6,6-6S12.8,3,12.8,6.8z"/><circle class="st0" cx="6.8" cy="6.8" r="2"/></svg></span></a></li>
+                        <li><a href="" aria-label="Facebook"><span class="icon | icon--map-pin "><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.5 16.5"><path class="st0" stroke="currentColor" class="st0" d="M12.8,6.8c0,3.7-6,9-6,9s-6-5.3-6-9c0-3.8,3.1-6,6-6S12.8,3,12.8,6.8z"/><circle stroke="currentColor" class="st0" cx="6.8" cy="6.8" r="2"/></svg></span>
+</a></li>
                     </ul>
                 </nav>
             </div>
@@ -598,7 +721,8 @@
         <div class="site-footer__meta__container | container gutter">
 
             <div class="footer-meta__group">
-                <div class="align-text-icon"><span class="icon | icon--map-pin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.5 16.5"><style type="text/css">.st0{fill:none;stroke:#12302D;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}</style><path class="st0" d="M12.8,6.8c0,3.7-6,9-6,9s-6-5.3-6-9c0-3.8,3.1-6,6-6S12.8,3,12.8,6.8z"/><circle class="st0" cx="6.8" cy="6.8" r="2"/></svg></span><div class="text ml-2">Registered in USA, UK, &amp; Germany</div>
+                <div class="align-text-icon"><span class="icon | icon--map-pin "><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.5 16.5"><path class="st0" stroke="currentColor" class="st0" d="M12.8,6.8c0,3.7-6,9-6,9s-6-5.3-6-9c0-3.8,3.1-6,6-6S12.8,3,12.8,6.8z"/><circle stroke="currentColor" class="st0" cx="6.8" cy="6.8" r="2"/></svg></span>
+<div class="text ml-2">Registered in USA, UK, &amp; Germany</div>
                 </div>
             </div>
 
@@ -607,7 +731,17 @@
             </div>
             
             <div class="footer-meta__group">
-                <button class="btn -dropdown">English</button>
+                <select_box 
+                    class="-box"
+                    :opt="{ linkList: true, variant: '-narrow -center' }">
+
+                    <option value="?language=en-us" selected>English (US)</option>
+                    <option value="es">Spanish</option>
+                    <option value="url-to-localization-here">Mandarin</option>
+                    <option value="could-be-any-url">German</option>
+                    <option value="url-to-localization">French</option>
+                    
+                </select_box>
             </div>
         
         </div>
@@ -615,10 +749,12 @@
 
 </footer>
 
+    </div>
+
     
 <script src="http://example.org/dist/js/app.js"></script>
 
 
-
+    
   </body>
 </html>
