@@ -19,7 +19,7 @@ body {
 
     // 18
     &-md {
-        @apply text-lg font-serif;
+        @apply text-xl font-serif;
     }
     
     // 36
@@ -37,13 +37,32 @@ body {
 .paragraphs {
     p {
         @apply text-base leading-normal 
-        mb-8;
+        mb-6;
+
+        &:last-of-type {
+            @apply mb-0;
+        }
+
+        // Default Links
+        a {
+            @apply text-green;
+            
+            &:hover {
+                @apply text-green-darkest;
+            }
+        }
     }
     
     &.-sm {
         p {
-            @apply text-xs leading-normal 
+            @apply text-xs leading-loose 
             mb-4;
         }
     }
+}
+
+
+// Default Links
+a {
+    @apply text-green;
 }

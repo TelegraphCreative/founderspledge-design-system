@@ -46,7 +46,7 @@
 
         &__item {
             @apply mx-2
-            w-24 h-24
+            w-18 h-18
             relative
             property-opacity timing-1 duration-1;
             
@@ -86,10 +86,10 @@
             }
             &__main {
                 @apply pl-28;
-                width: 64%;  
+                width: 68%;  
             }
             &__aside {
-                width: 36%;
+                width: 32%;
             }
         }
 

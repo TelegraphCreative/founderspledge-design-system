@@ -18,25 +18,43 @@
         @apply flex justify-between;
 
         &__main {
-            width: 69%;
-            @apply pb-12 pr-6;
+            width: 67.5%;
+            @apply pb-12 pr-12;
         }
         &__aside {
-            width: 31%;
+            width: 32.5%;
+        }
+        &__actions {
+            @apply mt-12;
         }
 
         &__header {
             @apply pt-14;
-            width: 90%;
         }
         &__article {
-            width: 76%;
+            width: 72%;
         }
 
         // Features 
         &.-features {
             .media-article__header {
                 @apply pt-24;
+            }
+            .media-article__article {
+                @apply w-full;
+            }
+        }
+
+        // Simple 
+        &.-simple {
+            .media-article__main {
+                width: 65%;
+            }
+            .media-article__aside {
+                width: 35%;
+            }
+            .media-article__article {
+                width: 95%;
             }
         }
 

@@ -2,7 +2,7 @@
 <div class="highlight-card">
     <div class="highlight-card__content">
         {{ if .icon }}
-        <div class="highlight-card__icon">
+        <div class="highlight-card__icon text-green">
             {{- partial "svg/arrow--r.svg" (dict "class" "-md") -}}
         </div>
         {{end}}
@@ -10,12 +10,12 @@
         <div class="highlight-card__main">
             <h4 class="header-md">{{.name}}</h4>
             <div class="paragraphs -sm">
-                <p>{{.descr}}</p>
+                <p>{{.descr | safeHTML }}</p>
             </div>
         </div>
 
         {{ if .linkText }}
-        <div class="highlight-card__action">
+        <div class="highlight-card__action | text-sm">
             <a href="{{.linkUrl}}" class="link -underline">{{.linkText}}</a>
         </div>
         {{ end }}

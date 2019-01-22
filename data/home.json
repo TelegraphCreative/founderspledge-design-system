@@ -23,7 +23,7 @@
         {
             "preheader": "Why Founders Pledge",
             "header": "To become part of the community, <br>you’ve got to have skin in the game. ",
-            "descr": "That’s why our entry requirement is simple: make a legally binding pledge to donate a portion of your personal proceeds on exit to charity."
+            "descr": "<p>That’s why our entry requirement is simple: make a legally binding pledge to donate a portion of your personal proceeds on exit to charity.</p>"
         }
     ],
 
@@ -45,7 +45,7 @@
         {
             "icon": true,
             "name": "Support",
-            "descr" : "We operate the world’s only cost-free donor advised fund. We provide end-to-end support for your giving, enabling you to give anywhere, any time, with ease.",
+            "descr" : "We operate the world’s only <a href='#'>cost-free donor advised fund</a>. We provide end-to-end support for your giving, enabling you to give anywhere, any time, with ease.",
             "linkText" : "Learn More",
             "linkUrl" : "#"
         }

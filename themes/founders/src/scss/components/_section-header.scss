@@ -1,11 +1,12 @@
 .section-header {
-    @apply text-center;
+    @apply text-center mb-10;
 
     .header-sm {
         @apply mb-4;
     }
     .paragraphs {
-        @apply pt-8;
+        @apply pt-4;
+
     }
     
     @screen md {

@@ -1,7 +1,7 @@
 <template>
     <div v-click-outside="hide">
         <nav aria-label="Founders Pledge Main Menu" class="site-menu" :class="{'-active' : isActive}">
-            <div class="site-header__menu__container | container gutter-md">
+            <div class="site-header__menu__container | container gutter-lg">
 
                 <div class="site-header__logo">
                     <slot name="logo"></slot>

@@ -3,7 +3,8 @@
     @apply relative z-10 
     flex-1
     text-center
-    overflow-hidden;
+    ;
+    // overflow-hidden
     
     .icon {
         @apply mx-auto;
@@ -11,18 +12,28 @@
 
   
     &__icon {
-        @apply mb-5;
+        @apply mb-6;
     }
     &__action {
-        @apply mt-10;
+        @apply mt-8
+        opacity-0
+        property-opacity duration-4 timing-1;
     }
     &__content {
         @apply relative z-10;
     }
 
+    &__main {
+        max-width: 17rem;
+        @apply mx-auto;
+        a {
+            @apply inline;
+        }
+    }
+
 
     .paragraphs {
-        @apply mt-5;
+        @apply mt-4;
     }
   
     // Box
@@ -31,7 +42,7 @@
         w-full h-full 
         property-colors duration-4 timing-1;
         
-        transform: scaleX(1.08);
+        transform: scaleX(1.12);
     }
 
     // Hover 
@@ -39,20 +50,24 @@
         &:before {
             @apply bg-white;
         }
+
+        .highlight-card__action {
+            @apply .opacity-100;
+        }
     }
 
 
     // Screen 
     @screen md {
-        @apply pt-18 pb-20 px-20;
-        // padding-right: 2.625rem;
-        // padding-left: 2.625rem;
+        @apply p-18 px-10;
+    }
+}
 
-        // &:first-child {
-        //     @apply pl-28;
-        // }
-        // &:last-child {
-        //     @apply pr-28;
-        // }
+// Grid
+.highlight-cards {
+    @screen md {
+        &.gutter {
+            @apply px-22;
+        }
     }
 }

@@ -17,7 +17,7 @@
     {{end}}
 
     <!-- Highlight Cards -->
-    <div class="highlight-cards | md:flex-grid">
+    <div class="highlight-cards | md:flex-grid container gutter">
 
         {{range $.Site.Data.home.WhyFoundersHighlights}}
             {{ partial "components/highlight-card.html" . }}
@@ -51,7 +51,7 @@
   <section class="space-b">
     <!-- Media Article (reversed) -->
     {{range $.Site.Data.home.MediaArticle_2}}
-        {{ partial "components/media-article.html" . }}
+        {{ partial "components/media-article--simple.html" . }}
     {{end}}
     
   </section>

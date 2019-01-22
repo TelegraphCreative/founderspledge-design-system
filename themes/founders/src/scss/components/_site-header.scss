@@ -35,6 +35,8 @@ body {
             @apply link 
             font-medium
             text-sm text-green
+            pb-1
+            border-b-2 border-transparent
             leading-none;
             
             &:hover {
@@ -43,7 +45,7 @@ body {
 
             // Highlight 
             &.-highlight {
-                @apply border-b-2 border-green;
+                @apply border-green ;
                 &:hover {
                     @apply border-green-darkest;
                 }

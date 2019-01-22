@@ -19,24 +19,33 @@ html {
 
     // Gutters
     .gutter {
-        @apply px-16;
 
-        // X Axis
         &-sm {
             @apply px-6;
         }
+
+        // Default
+        @apply px-15;
+
         &-md {
+            @apply px-22;
+        }
+
+        // X Axis
+        &-lg {
             @apply px-30;
         }
+        
+        
 
         // L
         &-l {
-            @apply pl-14;
+            @apply pl-15;
             &--md {
-                @apply pl-30;
+                @apply pl-22;
             }
             &--lg {
-                @apply pl-40;
+                @apply pl-30;
             }
         }
     }
@@ -46,3 +55,19 @@ html {
         @apply flex .justify-between;
     }
 }
+
+
+
+/// Grid Notes (Homepage as sample)
+// 212 (124 + 88 nested containers)
+//      media article
+// 124 / 7.75rem / 30 / lg
+//     nav
+//     media article -features
+//     footer
+// 88  / 5.5rem / 22 / md
+//     media article -simple
+//     profile slider
+// 62 / 3.875rem  / 15 / default
+//     logo parade
+//     highlight cards
