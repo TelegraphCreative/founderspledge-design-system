@@ -1,0 +1,29 @@
+.page-menu {
+    @apply bg-oat-lighter;
+    &__bar {
+        @apply list-reset 
+        text-xs
+        flex flex-no-wrap
+        items-center
+        overflow-x
+        justify-between
+        overflow-gradient
+        ;
+    }
+
+    .link {
+        @apply px-4 py-8;
+    }
+    
+    @screen md {
+        @apply bg-transparent;
+        
+        &__bar {
+            @apply justify-center py-0 text-sm;
+        }
+        .link {
+            @apply px-8;
+        }
+    }
+
+}

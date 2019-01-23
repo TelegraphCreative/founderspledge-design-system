@@ -99,7 +99,7 @@
       "descr": "<p>We don’t take any cuts or fees from donations, and members can access all our benefits and events completely free of cost. Our operations are fully funded by a small, separate group of essential philanthropists.</p>",
       "links": [
         {
-          "variation": "link -underline",
+          "variation": "link -underline", 
           "text": "Learn about our 100% Model",
           "url": "#"
         }

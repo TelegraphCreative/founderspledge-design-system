@@ -1,0 +1,39 @@
+.overflow-x {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+// Content Gradient (for x-overflow)
+.overflow-gradient {
+    -webkit-mask-image: linear-gradient(to right, transparent, white 0px, white 90%, transparent);
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+    flex-direction: row;
+    
+        // Unused:
+        // &--btm-down {
+        //     &:before {
+        //         content: '';
+        //         @apply absolute pin-l z-10
+        //         w-full h-6
+        //         pointer-events-none;
+        //         top: 100%;
+        //         background: linear-gradient(0deg, rgba(251, 251, 251, 0) 50%, rgba(255, 255, 255, .9) 100%)
+
+        //     }
+        // }
+
+        // &--top-up {
+        //     &:before {
+        //         content: '';
+        //         @apply absolute pin-l z-10
+        //         w-full h-6 
+        //         pointer-events-none;
+        //         bottom: 100%;
+        //         background: linear-gradient(180deg, rgba(251, 251, 251, 0) 50%, rgba(255, 255, 255, .9) 100%)
+        //     }
+        // }
+}
+
+

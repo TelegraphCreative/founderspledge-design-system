@@ -1,0 +1,15 @@
+.feature-article {
+    @apply p-10;
+
+    &__main {
+        @apply mx-auto;
+        max-width: 28rem;
+    }
+}
+
+// Screen md
+@screen md {
+    .feature-article {
+        @apply py-32 px-16;
+    }
+}

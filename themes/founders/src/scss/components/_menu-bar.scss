@@ -2,10 +2,6 @@
 .menu-bar {
     @apply 
       list-reset;
-  
-      a, button {
-        @apply outline-none;
-      }
   }
   
   @screen md {

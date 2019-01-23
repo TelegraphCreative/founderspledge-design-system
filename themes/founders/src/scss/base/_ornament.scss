@@ -1,0 +1,17 @@
+.ornament {
+    &-breadcrumb {
+        @apply relative;
+
+        &:after {
+            // @apply pseudo bg-orange h-3 w-3 inline-block mx-1;
+            @apply text-orange inline-block mx-1;
+            content:'\25BA';
+        }
+
+        &:last-child {
+            &:after {
+                @apply hidden;
+            }
+        }
+    }
+}

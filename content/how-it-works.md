@@ -9,7 +9,25 @@
       "descr": false
     }
   ],
-   "MediaArticle_1": [
+  "PageMenu": [
+    {
+      "text": "The Pledger Journey",
+      "url": ""
+    },
+    {
+      "text": "Offerings",
+      "url": ""
+    },
+    {
+      "text": "Hear from our Community",
+      "url": ""
+    },
+    {
+      "text": "Benefits",
+      "url": ""
+    }
+  ],
+  "MediaArticle_1": [
     {
       "variation": "",
       "header": "What We Offer Pledgers",

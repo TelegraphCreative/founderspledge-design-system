@@ -1,0 +1,22 @@
+.slider-reset {
+    #tns1 > .tns-item {
+        @apply pr-0;
+    }
+
+    // Hide TS Default, Resets
+    [data-action] {
+        @apply hidden;
+    }
+    ul {
+        @apply list-reset;
+    }
+
+    .tns-nav-active {
+        .inactive {
+            @apply opacity-0;
+        }
+        &:after {
+            @apply bg-green;
+        }
+    }
+}

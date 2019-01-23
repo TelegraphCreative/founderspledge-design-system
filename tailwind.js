@@ -59,6 +59,7 @@ let colors = {
     'oat': '#EDCCA5',
     'oat-less-light': '#e8e3da',
     'oat-light': '#F1ECE4',
+    'oat-lighter': '#f8f6f2',
   
     // 'red-darkest': '#3b0d0c',
     // 'red-darker': '#621b18',

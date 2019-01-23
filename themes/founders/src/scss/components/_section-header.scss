@@ -25,8 +25,10 @@
 
         // Top Section Header
         &.-top {
+            @apply pb-6;
+
             .header {
-                @apply text-6xl max-w-lg mx-auto;
+                @apply text-6xl max-w-lg mx-auto leading-tight;
             }
         }
     }
