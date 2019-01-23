@@ -4,8 +4,11 @@
 .flip-card {
     
     // General Layout
-    @apply mb-12;
-    width: 48%;
+    @apply mb-12 w-full;
+
+    &__back {
+        @apply pt-10 px-8 pb-10;
+    }
 
     &__content {
         @apply relative 
@@ -22,16 +25,11 @@
         }
     }
 
-    &__front {
-        @apply absolute pin-t pin-l
-        w-full h-full
-        flex  justify-center flex-col;
-    }
-
+    
     &__back {
         @apply relative
-        opacity-0 z-20
-        property-all timing-1 duration-3;
+        z-20
+        property-all timing-1 duration-3 delay-0;
     }
 
     &__main {
@@ -42,33 +40,16 @@
     &__back {
         @apply property-all timing-1 duration-3;
     }
+
     &__front {
-        @apply delay-4;
+        @apply hidden delay-4;
     }
-    &__back {
-        @apply opacity-0 delay-0;
-    }
+
+    
     &__descr {
         @apply max-w-xs mx-auto;
     }
 
-    // Hover
-    &:hover {
-       
-        .flip-card__content {
-            &:before { 
-                transform: scaleY(1.2);
-            }
-        }
-
-        .flip-card__front {
-            @apply opacity-0 delay-0;
-        }
-
-        .flip-card__back {
-            @apply opacity-100 delay-4;
-        }
-    }
 
     // General Type
     &__name {
@@ -97,25 +78,36 @@
         .flip-card__detail {
             @apply block;
         }
+        
         .flip-card__back {
+            .flip-card__name {
+                @apply mb-6;
+            }
+
             .flip-card__name,
             .icon {
-                @apply hidden;
+                @apply block;
             }
         }
         .icon {
             @apply text-green;
         }
         .paragraphs p {
-            @apply font-serif text-xl font-semibold leading-tight;
+            @apply font-serif text-base font-semibold leading-tight;
         }
     }
 
     
     // - Press Type
     &.-press {
+
+        .flip-card__front {
+            @apply block opacity-100;
+        }
+
         .flip-card__logo {
-            @apply block;
+            @apply block pb-8;
+            max-width: 5rem;
         }
         .paragraphs p {
             @apply font-serif text-xl font-semibold leading-tight;
@@ -166,20 +158,80 @@
 .flip-cards {
     @apply flex-wrap;
 }
+
 // Screen
 @screen md {
     // General Layout
     .flip-card {
+        width: 48%;
+
+        &__front {
+            @apply absolute pin-t pin-l
+            w-full h-full
+            flex justify-center flex-col;
+        }
+    
         &__back {
-            @apply pt-12 px-8 pb-10;
+            @apply opacity-0 pt-12 px-8 pb-10;
         }
 
+        
+
+        // - Press Type
+        &.-press {
+
+            .flip-card__front {
+                @apply flex opacity-100;
+            }
+
+            .flip-card__logo {
+                @apply block py-4;
+                max-width: 8.75rem;
+            }
+        }    
         // Feature Type
         &.-feature {
+            .flip-card__back {  
+                .flip-card__name {
+                    @apply pb-0;
+                }
+                .flip-card__name,
+                .icon {
+                    @apply hidden;
+                }
+            }
+
+            .paragraphs p {
+                @apply text-xl;
+            }
+
             .flip-card__back {
                 @apply py-20 px-8 pb-16;
             }
         }
 
+        // Hover
+        &,
+        &.-press,
+        &.-feature {
+            &:hover {
+        
+                .flip-card__content {
+                    &:before { 
+                        transform: scaleY(1.2);
+                    }
+                }
+    
+                .flip-card__front {
+                    @apply opacity-0 delay-0;
+                }
+    
+                .flip-card__back {
+                    @apply opacity-100 delay-4;
+                }
+            }
+        }
+        
+        
     }
 }
