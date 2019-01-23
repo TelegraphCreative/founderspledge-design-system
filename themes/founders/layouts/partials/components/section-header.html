@@ -12,4 +12,10 @@
         {{.descr | safeHTML}}
     </div>
     {{ end }}
+
+    {{ if .link }}
+    <div class="section-header__action">
+        <a href="{{ .link.url }}" class="{{.link.variation}}">{{ .link.text }}</a>
+    </div>
+    {{ end }}
 </header>

@@ -28,42 +28,6 @@
       "url": ""
     }
   ],
-  "SectionHeader_2": [
-    {
-      "variation": "",
-      "preheader": "Methodology",
-      "header": "How we choose charities.",
-      "descr": "<p>With so many charities out there (1.5 million in the US alone!), and countless appeals for support coming our way every day, the world of philanthropy can be difficult to navigate.</p>",
-      "link": {
-        "variation": "btn -wide",
-         "text": "Learn more about our Methodology",
-         "url": "#"
-      }
-    }
-  ],
-  "Highlights_1": [
-    {
-      "icon": true,
-      "name": "Real, Lasting Impact",
-      "descr": "Something more difficult, and arguably more important, is figuring out which charities are outstandingly good. In practice, this means that choosing an effective charity is equivalent to multiplying your amount donated to a less effective charity. ",
-      "linkText": "Learn More",
-      "linkUrl": "#"
-    },
-    {
-      "icon": true,
-      "name": "Listen to Data",
-      "descr": "You’re probably used to making business decisions by digging into the data. We do the same with charities. First, we look for evidence that programs improve outcomes, not just outputs. Second, we look at impact evaluations: ",
-      "linkText": "Learn More",
-      "linkUrl": "#"
-    },
-    {
-      "icon": true,
-      "name": "Change the Game",
-      "descr": " By giving smart, the Founders Pledge community can have outsized impact; helping to encourage a industry wide best practice, and influencing how charities operate now, and in the future.",
-      "linkText": "Learn More",
-      "linkUrl": "#"
-    }
-  ],
   "MediaArticle_1": [
    {
      "variation": "",
@@ -87,7 +51,7 @@
      }
    }
  ],
-  "SectionHeader_3": [
+  "SectionHeader_2": [
     {
       "variation": "",
       "preheader": false,
@@ -120,46 +84,30 @@
       }
     },
     {
-      "variation": "-resource",
+      "variation": "-feature",
       "icon": "arrow--r.svg",
-      "name": "Alleviate Poverty",
+      "name": "Generous Vaction Time",
+      "detail": "London Office Only",
       "descr": "Giving money directly to those who most need it, so they can use it for what they most need it for",
+      "link": false
+    },
+    {
+      "variation": "-press",
+      "logo": "/img/fpo-logo-01.jpg",
+      "descr": "“enables budding tycoons to donate a percentage of their future earnings to good causes, once they sell or list their businesses.”",
       "link": {
         "variation": "link -underline",
-         "text": "Read the Research",
+         "text": "Read full article",
          "url": "#"
       }
     },
     {
-      "variation": "-resource",
-      "icon": "arrow--r.svg",
-      "name": "Alleviate Poverty",
-      "descr": "Giving money directly to those who most need it, so they can use it for what they most need it for",
+      "variation": "-press",
+      "logo": "/img/fpo-logo-02.jpg",
+      "descr": "“enables budding tycoons to donate a percentage of their future earnings to good causes, once they sell or list their businesses.”",
       "link": {
         "variation": "link -underline",
-         "text": "Read the Research",
-         "url": "#"
-      }
-    },
-    {
-      "variation": "-resource",
-      "icon": "arrow--r.svg",
-      "name": "Alleviate Poverty",
-      "descr": "Giving money directly to those who most need it, so they can use it for what they most need it for",
-      "link": {
-        "variation": "link -underline",
-         "text": "Read the Research",
-         "url": "#"
-      }
-    },
-    {
-      "variation": "-resource",
-      "icon": "arrow--r.svg",
-      "name": "Alleviate Poverty",
-      "descr": "Giving money directly to those who most need it, so they can use it for what they most need it for",
-      "link": {
-        "variation": "link -underline",
-         "text": "Read the Research",
+         "text": "Read full article",
          "url": "#"
       }
     },

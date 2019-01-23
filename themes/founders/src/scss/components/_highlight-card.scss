@@ -40,20 +40,23 @@
     .paragraphs {
         @apply mt-4;
     }
-  
-    
-    
 
 }
 
 // sm Screen 
 @screen sm {
+    
+    // General Layout
+    
     .highlight-card {
         @apply py-10;
     }
 }
 // Md Screen 
 @screen md {
+
+    // General Layout
+
     .highlight-card {
         @apply py-18 bg-transparent mb-0;
 
@@ -82,4 +85,32 @@
             }
         }
     }
+
+    // Variation
+    // On Dark
+    .bg-green-darkest .highlight-cards {
+        @apply text-white;
+
+        .highlight-card {
+            &__icon,
+            &__action {
+                @apply opacity-0
+                property-all timing-1 duration-2 delay-2;
+            }
+            
+            &__header {
+                @apply text-green-light;
+            }
+
+            // Hover 
+            &:hover {
+                @apply text-green-darkest;
+                .highlight-card__icon,
+                .highlight-card__action {
+                    @apply opacity-100;
+                }
+            }
+        }
+    }
+
 }

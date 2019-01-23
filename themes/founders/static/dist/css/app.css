@@ -4827,8 +4827,8 @@ button {
 }
 
 .btn:hover {
-  border-color: #a0e0b2;
-  background-color: #a0e0b2;
+  border-color: #53c07d;
+  background-color: #53c07d;
   color: #fff;
 }
 
@@ -5112,6 +5112,14 @@ cite {
 
 .ornament-breadcrumb:last-child:after {
   display: none;
+}
+
+.pattern {
+  background: url("/dist/assets/svg/pattern-crosshatch.svg") repeat;
+}
+
+.pattern-green {
+  background: url("/dist/assets/svg/pattern-crosshatch--green.svg") repeat;
 }
 
 .pseudo {
@@ -5872,6 +5880,10 @@ body {
   margin-right: auto;
 }
 
+.section-header__action {
+  padding-top: 2.5rem;
+}
+
 @media (min-width: 576px) {
   .section-header__descr {
     width: 60%;
@@ -5889,10 +5901,36 @@ body {
 
   .section-header.-top .header {
     font-size: 3.5rem;
-    max-width: 50rem;
     margin-left: auto;
     margin-right: auto;
-    line-height: 1.35;
+    max-width: 54rem;
+    line-height: 1.2;
+  }
+
+  .section-header.-basic {
+    padding-top: 0;
+    padding-bottom: 1rem;
+  }
+}
+
+.bg-green-darkest .section-header {
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  .bg-green-darkest .section-header .header-sm {
+    color: #a0e0b2;
+  }
+
+  .bg-green-darkest .section-header .btn {
+    color: #a0e0b2;
+    border-color: #a0e0b2;
+  }
+
+  .bg-green-darkest .section-header .btn:hover {
+    border-color: #fff;
+    background-color: #fff;
+    color: #12302d;
   }
 }
 
@@ -6200,6 +6238,32 @@ body {
   .highlight-card:hover .highlight-card__action {
     opacity: 1;
   }
+
+  .bg-green-darkest .highlight-cards {
+    color: #fff;
+  }
+
+  .bg-green-darkest .highlight-cards .highlight-card__icon,
+  .bg-green-darkest .highlight-cards .highlight-card__action {
+    opacity: 0;
+    transition-property: all;
+    transition-timing-function: ease;
+    transition-duration: .3s;
+    transition-delay: .3s;
+  }
+
+  .bg-green-darkest .highlight-cards .highlight-card__header {
+    color: #a0e0b2;
+  }
+
+  .bg-green-darkest .highlight-cards .highlight-card:hover {
+    color: #12302d;
+  }
+
+  .bg-green-darkest .highlight-cards .highlight-card:hover .highlight-card__icon,
+  .bg-green-darkest .highlight-cards .highlight-card:hover .highlight-card__action {
+    opacity: 1;
+  }
 }
 
 .profile-slider {
@@ -6360,6 +6424,10 @@ body {
   padding-bottom: 3.75rem;
 }
 
+.media-article__aside {
+  position: relative;
+}
+
 .media-article .media-article__header .header {
   font-size: 2.25rem;
   font-family: Chap--web;
@@ -6368,6 +6436,13 @@ body {
 
 .media-article.-highlight .media-article__header .header {
   font-size: 2.5rem;
+}
+
+.media-article .pattern {
+  width: 100%;
+  height: 4rem;
+  bottom: -1.25rem;
+  left: 0;
 }
 
 .media-article__feature {
@@ -6392,6 +6467,10 @@ body {
 
   .media-article__aside {
     width: 38%;
+  }
+
+  .media-article .pattern {
+    display: none;
   }
 
   .media-article__header {
@@ -6445,6 +6524,16 @@ body {
 
   .media-article.-reverse .media-article__main.gutter-l--lg {
     padding-left: 8.75rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .media-article .pattern {
+    display: block;
+    width: 19.1875rem;
+    height: 16.5625rem;
+    bottom: -3.25rem;
+    left: -4.5rem;
   }
 }
 

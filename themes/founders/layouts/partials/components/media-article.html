@@ -37,7 +37,7 @@ Content Types:
     </div>
 
     
-    <aside class="media-article__aside | lg:bg-orange">
+    <aside class="media-article__aside | xl:bg-orange">
         {{ if .image }}
             <figure class="image -is{{ .image.ratio }} | md:block hidden">
                 <img src="{{ .image.url }}" alt="" class="fit-cover">
@@ -46,6 +46,8 @@ Content Types:
                 <img src="{{ .image_small.url }}" alt="" class="fit-cover">
             </figure>
         {{ end }}
+
+        <div class="pattern | absolute"></div>
     </aside>
     
     

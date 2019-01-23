@@ -4,6 +4,9 @@
     &__main {
         @apply pb-14;
     }
+    &__aside {
+        @apply relative;
+    }
     
     // Header
     .media-article__header {
@@ -23,6 +26,15 @@
         }
     }
 
+    // Pattern
+    .pattern {
+        // @apply hidden;
+        width: 100%;
+        height: 4rem;
+        bottom: -1.25rem;
+        left: 0;
+    }
+
     // -Features > Feature
     &__feature {
         @apply max-w-xs w-full
@@ -34,7 +46,9 @@
     }
     
 }
-// Screen
+
+
+
 @screen md {
     // Layout
     .media-article {
@@ -45,6 +59,10 @@
         }
         &__aside {
             width: 38%;
+            
+        }
+        .pattern {
+            @apply hidden;
         }
 
         &__header {
@@ -108,4 +126,16 @@
         
     }
     
+}
+
+@screen lg {
+    .media-article {
+        .pattern {
+            @apply block;
+            width: 19.1875rem;
+            height: 16.5625rem;
+            bottom: -3.25rem;
+            left: -4.5rem;
+        }
+    }
 }
