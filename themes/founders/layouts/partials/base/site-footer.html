@@ -36,9 +36,10 @@
                         <form action="">
                             <input type="text" class="email" placeholder="Email Digest Sign Up">
                             <button class="submit">
-                                <span class="submit__icon | icon">
-                                    {{- partial "svg/arrow--r.svg" (dict "class" "") -}}</button>
-                                </span>
+
+                                    {{- partial "svg/arrow--r.svg" (dict "class" "submit-icon") -}}
+
+                            </button>
                         </form>
                     </div>
                 </div>
@@ -109,8 +110,8 @@
 
             <div class="footer-meta__group">
                 <div class="align-text-icon">
-                        {{- partial "svg/map-pin.svg" -}}
-                        <div class="text ml-2">Registered in USA, UK, &amp; Germany</div>
+                    {{- partial "svg/map-pin.svg" -}}
+                    <div class="text ml-2">Registered in USA, UK, &amp; Germany</div>
                 </div>
             </div>
 

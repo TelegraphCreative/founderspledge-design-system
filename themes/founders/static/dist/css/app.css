@@ -4843,6 +4843,17 @@ button {
   color: #12302d;
 }
 
+.btn.-dark {
+  border-color: #12302d;
+  color: #12302d;
+}
+
+.btn.-dark:hover {
+  border-color: #12302d;
+  background-color: #12302d;
+  color: #fff;
+}
+
 .btn.-wide,
 [class^=btn--].-wide {
   padding-left: 4rem;
@@ -5118,7 +5129,7 @@ cite {
   background: url("/dist/assets/svg/pattern-crosshatch.svg") repeat;
 }
 
-.pattern-green {
+.pattern--green {
   background: url("/dist/assets/svg/pattern-crosshatch--green.svg") repeat;
 }
 
@@ -5735,6 +5746,12 @@ cite {
   }
 }
 
+.search-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 body {
   padding-top: 4.5rem;
 }
@@ -6316,6 +6333,88 @@ body {
   }
 }
 
+.profile-cards {
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+}
+
+.profile-card {
+  display: block;
+  width: 50%;
+  margin-bottom: 2rem;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  text-decoration: none;
+}
+
+.profile-card__content,
+.profile-card__main {
+  height: 100%;
+}
+
+.profile-card__content {
+  overflow: hidden;
+}
+
+.profile-card__main {
+  position: relative;
+  color: #fff;
+  background-color: #12302d;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-top: 3rem;
+}
+
+.profile-card .pattern--green {
+  position: absolute;
+  right: 0;
+  height: 3.25rem;
+  width: 12.625rem;
+  top: -1rem;
+}
+
+@media (min-width: 768px) {
+  .profile-card {
+    width: 33.33333%;
+  }
+
+  .profile-card__content,
+  .profile-card__main {
+    height: auto;
+  }
+
+  .profile-card .visibility-shift {
+    opacity: 0;
+  }
+
+  .profile-card__content {
+    position: relative;
+  }
+
+  .profile-card__main {
+    -webkit-transform: translate(0%, 100%);
+            transform: translate(0%, 100%);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 20;
+    transition-property: all;
+    transition-duration: .6s;
+    transition-timing-function: ease;
+  }
+
+  .profile-card:hover .profile-card__main {
+    -webkit-transform: translate(0%, 0%);
+            transform: translate(0%, 0%);
+  }
+
+  .profile-card:hover .visibility-shift {
+    opacity: 1;
+  }
+}
+
 .profile-slider {
   position: relative;
 }
@@ -6756,7 +6855,7 @@ body {
   color: #53c07d;
 }
 
-.signup-form .submit__icon {
+.signup-form .submit .submit-icon {
   display: block;
   width: .5rem;
 }

@@ -12,15 +12,26 @@
     font-sans 
     px-6 py-5;
     
+    // Hover
     &:hover {
         @apply border-green bg-green text-white;
     }
 
+    // Light
     &.-light {
         @apply border-green-light text-green-light;
 
         &:hover {
             @apply border-white bg-white text-green-darkest;
+        }
+    }
+
+    // Dark
+    &.-dark {
+        @apply border-green-darkest text-green-darkest;
+
+        &:hover {
+            @apply border-green-darkest bg-green-darkest text-white;
         }
     }
 

@@ -1,0 +1,69 @@
+// Grid
+.profile-cards {
+    @apply -mx-2;
+}
+// Card
+.profile-card {
+
+    // Layout
+    @apply block w-1/2 mb-8 px-2 no-underline;
+
+    &__content,
+    &__main {
+        @apply h-full;
+    }
+
+    &__content {
+        @apply overflow-hidden;
+    }
+
+    // Box
+    &__main {
+        @apply relative text-white bg-green-darkest 
+        px-6 pb-6 pt-12;
+    }
+
+    .pattern--green {
+        @apply absolute pin-r;
+        height: 3.25rem;
+        width: 12.625rem;
+        top: -1rem;
+    }
+
+    // Screen
+    @screen md {
+        @apply w-1/3;
+
+        &__content,
+        &__main {
+            @apply h-auto;
+        }
+
+        .visibility-shift {
+            @apply .opacity-0;
+        }
+
+        &__content {
+            @apply relative;
+        }
+
+        // Box
+        &__main {
+            transform: translate(0%, 100%);
+            @apply absolute pin-l pin-b w-full z-20
+            property-all duration-4 timing-1;
+        }
+
+        &:hover {
+            .profile-card__main {
+                transform: translate(0%, 0%);
+            }
+            .visibility-shift {
+                @apply .opacity-100;
+            }
+        }
+
+    }
+
+    
+}
