@@ -11,7 +11,13 @@
     
     <!-- Section Header -->
     {{range .Params.SectionHeader_2}}
-    {{ partial "components/section-header.html" . }} {{ end }}
+        {{ partial "components/section-header.html" . }} {{ end }}
+
+    <!-- Flip Cards -->
+    <section class="flip-cards | bg-oat-light | space-t space-b | md:flex-grid justify-between | container gutter-md">
+        {{range .Params.FlipCards_1}}
+            {{ partial "components/flip-card.html" . }} {{ end }}
+    </section>
 
     <!-- Panel Hero -->
     {{range .Params.PanelHero_1}}
