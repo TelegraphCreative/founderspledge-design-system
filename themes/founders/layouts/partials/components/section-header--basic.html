@@ -1,0 +1,13 @@
+<header class="section-header -basic">
+    <div class="section-header__name">
+        {{ if .header }}
+        <h2 class="header | header-lg">{{ .header }}</h2>
+        {{ end }}
+    </div>
+
+    {{ if .link }}
+    <div class="section-header__action">
+        <a href="{{ .link.url }}" class="{{.link.variation}}">{{ .link.text }}</a>
+    </div>
+    {{ end }}
+</header>

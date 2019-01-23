@@ -1,4 +1,6 @@
 .section-header {
+
+    // General Layout
     @apply text-center mb-10 pt-14 px-4;
 
     .header-sm {
@@ -12,6 +14,10 @@
         @apply w-4/5 mx-auto;
     }
     
+    &__action {
+        @apply pt-10;
+    }
+
     // sm Screen
     @screen sm {
         &__descr {
@@ -21,13 +27,48 @@
     
     // md Screen
     @screen md {
+        // General Layout
         @apply pt-22;
 
         // Top Section Header
         &.-top {
+            @apply pb-6;
+
             .header {
-                @apply text-6xl max-w-lg mx-auto;
+                @apply text-6xl mx-auto;
+                max-width: 54rem;
+                line-height: 1.2;
             }
+        }
+
+        // -Basic Type
+        &.-basic {
+            @apply pt-0 pb-4;
+        }
+    }
+}
+
+// Variation
+// On Dark
+// md Screen
+.bg-green-darkest {
+    .section-header {
+        @apply text-white;
+    }
+    
+    @screen md {
+        .section-header {
+            .header-sm {
+                @apply text-green-light;
+            }
+            .btn {
+                @apply text-green-light border-green-light;
+
+                &:hover {
+                    @apply border-white bg-white text-green-darkest;
+                }
+            }
+
         }
     }
 }

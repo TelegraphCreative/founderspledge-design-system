@@ -1,0 +1,60 @@
+{{ define "main" }}
+
+    <!-- Section Header -->
+    {{range .Params.SectionHeader_1}}
+        {{ partial "components/section-header.html" . }} {{ end }}
+
+    <!-- Search Menu -->
+    <section class="search-menu space-b">
+
+        <!-- Form -->
+        <div class="search-menu__form">
+            <div class="search-form">
+                <form action="">
+                    <input type="search" class="search" placeholder="Search">
+                    <button class="submit">
+                        {{- partial "svg/arrow--r.svg" (dict "class" "-sm") -}}
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Filters -->
+        <div class="search-menu__filters">
+            <select_box 
+                class="-box"
+                :opt="{ linkList: true, variant: '-narrow -center' }">
+
+                <option value="?language=en-us" selected>English (US)</option>
+                <option value="es">Spanish</option>
+                <option value="url-to-localization-here">Mandarin</option>
+                <option value="could-be-any-url">German</option>
+                <option value="url-to-localization">French</option>
+                
+            </select_box>
+        </div>
+
+
+    </section>
+    
+    <!-- Small Header -->
+    <header class="text-center mb-6">
+        <h4 class="header-md">1,420 Pledgers</h4>
+    </header>
+
+    <!-- Profile Grid -->
+    <section class="profile-cards flex-grid flex-wrap  | container gutter-md  space-b">
+        {{range .Params.ProfileGrid_1}}
+            {{ partial "components/profile-card.html" . }} {{ end }}
+    </section>
+
+    <!-- Pagination -->
+    <div class="flex justify-center space-b ">
+        <button class="btn -wide -dark">Show More Pledgers</button>
+    </div>
+
+    <!-- Panel Hero -->
+    {{range .Params.PanelHero_1}}
+        {{ partial "components/panel-hero.html" . }} {{end}}
+        
+{{ end }}

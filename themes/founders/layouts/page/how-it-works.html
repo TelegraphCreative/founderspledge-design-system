@@ -2,20 +2,37 @@
 
   <!-- Section Header -->
   {{range .Params.SectionHeader_1}}
-    {{ partial "components/section-header.html" . }} 
-  {{ end }}
+    {{ partial "components/section-header.html" . }} {{ end }}
 
-  <!-- Pledgers -->
+  <!-- Page Menu-->
+  {{ partial "components/page-menu.html" . }}
+  
+  <!-- Info Slider -->
+  <section class="bg-green-darkest text-white | space-t">
+      {{ partial "components/info-slider.html" . }}
+  </section>
+
+  <!-- Feature Articles -->
+  <section class="">
+      {{ partial "components/feature-articles.html" . }}
+  </section>
+
+  <!-- Profile Slider --basic -->
+  <section class="bg-orange text-white | space-t">
+      {{ partial "components/profile-slider--basic.html" . }}
+  </section>
+
+
+  <!-- Media Article -->
   <section class="space-t--sm space-b">
     {{range .Params.MediaArticle_1}}
-    {{ partial "components/media-article.html" . }} {{ end }}
+      {{ partial "components/media-article.html" . }} {{ end }}
   </section>
 
   <!-- Panel Hero -->
   <section class="space-t--sm">
     {{range .Params.PanelHero_1}}
-        {{ partial "components/panel-hero.html" . }}
-    {{end}}
+        {{ partial "components/panel-hero.html" . }} {{end}}
   </section>
 
 

@@ -7,17 +7,6 @@
       
     }
 
-    // Aside
-    // &__aside {}
-
-    // Hide TS Default, Resets
-    [data-action] {
-        @apply hidden;
-    }
-    ul {
-        @apply list-reset;
-    }
-
     // Control Panel
     .slider-controls {
         @apply cursor-pointer
@@ -30,7 +19,6 @@
 
     }
     
-
     // Info
     .info {
         @apply center-xy
@@ -48,20 +36,6 @@
             @apply text-green;
         }
     }
-
-    #tns1 > .tns-item {
-        @apply pr-0;
-    }
-
-    .tns-nav-active {
-        .inactive {
-            @apply opacity-0;
-        }
-        &:after {
-            @apply bg-green;
-        }
-    }
-
     
 }
 
@@ -110,5 +84,23 @@
                 
             }
         }
+
+        // Basic
+        &.-basic {
+            .profile-slider__main {
+                @apply pl-10;
+            }
+            .slider-controls {
+                @apply bg-transparent;
+                width: auto;
+                top: -4rem;
+                right: 4rem;
+            }
+
+            .info {
+                @apply text-white;
+            }
+        }
     }
+    
 }

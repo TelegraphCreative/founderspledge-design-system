@@ -1,0 +1,10 @@
+.pattern {
+
+    background:url('/dist/assets/svg/pattern-crosshatch.svg') repeat;
+    
+    // -Green
+    &--green {
+        background:url('/dist/assets/svg/pattern-crosshatch--green.svg') repeat;
+    }
+    
+}

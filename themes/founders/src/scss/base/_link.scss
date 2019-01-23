@@ -24,7 +24,7 @@
         @apply flex items-center;
 
         .link {
-            @apply mr-4;
+            @apply mr-4 text-center;
             
             &:last-child {
                 @apply mr-0;
@@ -98,4 +98,7 @@ a {
     &:hover {
         @apply text-green;
     }
+}
+a, button {
+@apply outline-none;
 }

@@ -1,0 +1,94 @@
+
+<!--{{/*
+    Flip Card 
+    Variations:
+        -resource
+        -press
+        -feature
+        -cta
+*/}}-->
+
+<div class="flip-card {{ .variation}}">
+    <div class="flip-card__content">
+        <!-- CTA URL wrap -->
+        {{ if .url }}
+        <a href="{{ .url }}">
+        {{ end }}
+
+        <!-- Back -->
+        <div class="flip-card__back">
+            
+            <div class="flip-card__main">
+                
+                <!-- Icon -->
+                {{ if .icon }}
+                <div class="flip-card__icon">
+                    {{ $icon := (printf "%s%s" "svg/" .icon ) }}
+                    {{- partial $icon (dict "class" "-sm mx-auto") -}}
+                </div>
+                {{end}}
+                
+                <!-- Header -->
+                {{ if .name }}
+                <div class="flip-card__name">
+                    <h4 class="header-md">{{.name}}</h4>
+                </div>
+                {{end}}
+
+                <!-- Description -->
+                <div class="flip-card__descr | paragraphs -sm">
+                    <p>{{.descr | safeHTML }}</p>
+                </div>
+
+                {{ if .detail }}
+                <div class="flip-card__detail">
+                    <h5 class="header-sm">{{ .detail }}</h5>
+                </div>
+                {{ end }}
+            </div>
+
+            {{ if .link }}
+            <div class="flip-card__action | text-sm">
+                <a href="{{.link.url}}" class="link -underline">{{.link.text}}</a>
+            </div>
+            {{ end }}
+        </div>  
+        
+        <!-- Front -->
+        <header class="flip-card__front">
+            
+            <!-- Logo -->
+            {{ if .logo }}
+            <div class="flip-card__logo w-1/4 mx-auto">
+                <figure class="image -is2x1">
+                    <img src="{{ .logo }}" class="fit-contain" alt="{{ .descr }}">
+                </figure>
+            </div>
+            {{end}}
+
+            <!-- Icon -->
+            {{ if .icon }}
+            <div class="flip-card__icon">
+                {{ $icon := (printf "%s%s" "svg/" .icon ) }}
+                {{- partial $icon (dict "class" "-sm mx-auto") -}}
+            </div>
+            {{end}}
+            
+            <!-- Name-->
+            {{ if .name }}
+            <div class="flip-card__name">
+                <h4 class="header-md">{{.name}}</h4>
+            </div>
+            {{end}}
+            
+        </header>
+
+        <!-- CTA URL wrap /close -->
+        {{ if .url }}
+        </a>
+        {{ end }}
+    </div>
+
+    
+
+</div>
