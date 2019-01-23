@@ -1,0 +1,185 @@
+// Flip Cards
+
+// Card
+.flip-card {
+    
+    // General Layout
+    @apply mb-12;
+    width: 48%;
+
+    &__content {
+        @apply relative 
+        text-center text-green-darkest;
+
+        // Box
+        &:before {
+            @apply absolute pseudo pin-t pin-l z-0
+            w-full h-full 
+            property-all timing-1 duration-3
+            bg-white border-t-8 border-oat;
+            
+            transform: scale(1);
+        }
+    }
+
+    &__front {
+        @apply absolute pin-t pin-l
+        w-full h-full
+        flex  justify-center flex-col;
+    }
+
+    &__back {
+        @apply relative
+        opacity-0 z-20
+        property-all timing-1 duration-3;
+    }
+
+    &__main {
+        @apply relative z-30;
+    }
+
+    &__front,
+    &__back {
+        @apply property-all timing-1 duration-3;
+    }
+    &__front {
+        @apply delay-4;
+    }
+    &__back {
+        @apply opacity-0 delay-0;
+    }
+    &__descr {
+        @apply max-w-xs mx-auto;
+    }
+
+    // Hover
+    &:hover {
+       
+        .flip-card__content {
+            &:before { 
+                transform: scaleY(1.2);
+            }
+        }
+
+        .flip-card__front {
+            @apply opacity-0 delay-0;
+        }
+
+        .flip-card__back {
+            @apply opacity-100 delay-4;
+        }
+    }
+
+    // General Type
+    &__name {
+        @apply font-serif;
+    }
+
+    &__detail {
+        @apply hidden;
+    }
+    &__logo {
+        @apply hidden;
+    }
+    
+    .icon {
+        @apply mb-3 text-orange;
+    }
+
+    // - Feature Type
+    &.-feature {
+        .flip-card__content:before {
+            @apply border-green; 
+        }
+        .flip-card__action {
+            @apply hidden;
+        }
+        .flip-card__detail {
+            @apply block;
+        }
+        .flip-card__back {
+            .flip-card__name,
+            .icon {
+                @apply hidden;
+            }
+        }
+        .icon {
+            @apply text-green;
+        }
+        .paragraphs p {
+            @apply font-serif text-xl font-semibold leading-tight;
+        }
+    }
+
+    
+    // - Press Type
+    &.-press {
+        .flip-card__logo {
+            @apply block;
+        }
+        .paragraphs p {
+            @apply font-serif text-xl font-semibold leading-tight;
+        }
+        .link.-underline {
+            @apply .text-green-darkest .border-green-darkest .font-semibold;
+        }
+    }
+
+    // - CTA Type (by default, this works)
+    &.-cta {
+        
+        .flip-card__back {
+            @apply opacity-100 pt-16 pb-14 delay-0;
+        }
+        .flip-card__front {
+            @apply hidden;
+        }
+
+        .flip-card__content {
+            &:before { 
+                @apply border-0 bg-orange text-white;
+                transform: scale(1) !important;
+            }
+        }
+
+        a {
+            @apply .no-underline text-white;
+            transition: none;
+
+            &:hover {
+                @apply text-black;
+            }
+        }
+        .flip-card__name {
+            @apply mb-3;
+        }
+        .paragraphs p {
+            @apply text-sm;
+        }
+    }
+
+    // - Resource Type (by default, this works)
+    // &.-resource {}
+}
+
+// Grid
+.flip-cards {
+    @apply flex-wrap;
+}
+// Screen
+@screen md {
+    // General Layout
+    .flip-card {
+        &__back {
+            @apply pt-12 px-8 pb-10;
+        }
+
+        // Feature Type
+        &.-feature {
+            .flip-card__back {
+                @apply py-20 px-8 pb-16;
+            }
+        }
+
+    }
+}

@@ -71,3 +71,60 @@ layout: how-it-works
 | Logo Parade | `./themes/founders/layouts/partials/logo-parade` |
 
 
+### Flip Cards
+**Types**
+- -resource
+- -press
+- -feature
+- -cta
+
+#### Resource Data Model:
+```
+{
+    "variation": "-resource",
+    "icon": "icon-name.svg",
+    "name": "Alleviate Poverty",
+    "descr": "Giving money directly to those who most need it, so they can use it for what they most need it for",
+    "link": {
+    "variation": "link -underline",
+        "text": "Read the Research",
+        "url": "#"
+    }
+}
+```
+
+#### Press Data Model:
+```
+{
+    "variation": "-press",
+    "logo": "/img/fpo-logo-01.jpg",
+    "descr": "“enables budding tycoons to donate a percentage of their future earnings to good causes, once they sell or list their businesses.”",
+    "link": {
+    "variation": "link -underline",
+        "text": "Read full article",
+        "url": "#"
+    }
+}
+```
+
+#### Feature Data Model:
+```
+{
+    "variation": "-feature",
+    "icon": "arrow--r.svg",
+    "name": "Generous Vaction Time",
+    "detail": "London Office Only",
+    "descr": "Giving money directly to those who most need it, so they can use it for what they most need it for",
+    "link": false
+}
+```
+
+#### CTA Data Model:
+```
+{
+    "variation": "-cta",
+    "name": "Hear from our community.",
+    "descr": "Subheading connecting the giving to missions back to the community. Humans doing good for other humans—connectedness.",
+    "url": "#"
+}
+```
