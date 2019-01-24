@@ -1,11 +1,14 @@
 .profile-slider {
     @apply relative;
 
-    // Main 
+    // Layout 
     &__main {
-        @apply mb-10;
-      
+        @apply mb-10;      
     }
+    &__aside {
+        @apply relative;
+    }
+
 
     // Control Panel
     .slider-controls {
@@ -15,8 +18,7 @@
     
     // Controls
     .controls-info {
-        @apply  relative;
-
+        @apply relative;
     }
     
     // Info
@@ -27,7 +29,7 @@
     }
 
     // Nav
-    .nav {
+    .tns-nav, .nav {
         @apply hidden;
     }
 
@@ -35,6 +37,32 @@
         &:hover {
             @apply text-green;
         }
+    }
+    
+    .nav {
+        .image {
+            overflow: inherit;
+        }
+    }
+
+    // Basic Type
+    &.-basic {
+        @apply pt-14 pb-12;
+
+        .profile-slider__aside {
+            width: 90%;
+        }
+
+        .image img {
+            @apply .z-10;
+        }
+    }
+
+    // Pattern
+    .pattern--white {
+        @apply absolute z-0 h-full w-full;
+        right: -60px;
+        top: 40px;
     }
     
 }
@@ -45,7 +73,7 @@
 @screen md {
     // Layout
     .profile-slider {
-        &__container {
+        &__content {
             @apply flex-row-reverse;
         }
         &__main {
@@ -85,15 +113,21 @@
             }
         }
 
-        // Basic
+        // Basic Type
         &.-basic {
+            @apply pt-18 pb-16;
+            
             .profile-slider__main {
-                @apply pl-10;
+                @apply pl-14;
+            }
+            .profile-slider__aside {
+                width: 32%;
             }
             .slider-controls {
-                @apply bg-transparent;
+                @apply bg-transparent absolute;
                 width: auto;
-                top: -4rem;
+                top: inherit;
+                bottom: 5.625rem;       
                 right: 4rem;
             }
 
@@ -101,6 +135,51 @@
                 @apply text-white;
             }
         }
+
+        // Hero Type
+        &.-hero {
+            @apply pb-8;
+            
+            .profile-slider__main {
+                @apply absolute w-3/5 pin-r m-0 pl-0;
+                transform: translate(0%,-50%);
+            }
+            .profile-slider__aside {
+                @apply w-full;
+            }
+            .slider-controls {
+                @apply relative bg-green text-white w-auto p-4;
+                right: 60%;
+                .info {
+                    @apply text-white ;
+                }
+            }
+            .profile-slider__card {
+                @apply pt-10 px-14 pb-14;
+            }
+        }
+
+        // Pattern
+        .pattern--white {
+            @apply z-10;
+            width: 15.25rem;
+            height: 3.625rem;
+            right: -2rem;
+            bottom: -2rem;
+            top: inherit;
+        }
+    }
+
+    // Background Variations for Icons
+    .bg-orange {
+        .profile-slider {
+            .icon {
+                &:hover, &:focus  {
+                    @apply text-oat-less-light;
+                }
+            }
+        }
     }
     
 }
+

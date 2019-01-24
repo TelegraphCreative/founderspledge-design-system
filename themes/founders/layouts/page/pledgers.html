@@ -5,32 +5,28 @@
         {{ partial "components/section-header.html" . }} {{ end }}
 
     <!-- Search Menu -->
-    <section class="search-menu space-b">
+    <section class="search-menu | space-b">
 
         <!-- Form -->
-        <div class="search-menu__form">
+        <div class="search-menu__form | md:w-3/5">
             <div class="search-form">
                 <form action="">
                     <input type="search" class="search" placeholder="Search">
-                    <button class="submit">
-                        {{- partial "svg/arrow--r.svg" (dict "class" "-sm") -}}
+                    <button class="submit link">
+                        {{- partial "svg/search.svg" (dict "class" "-sm-2") -}}
                     </button>
                 </form>
             </div>
         </div>
 
         <!-- Filters -->
-        <div class="search-menu__filters">
-            <select_box 
-                class="-box"
-                :opt="{ linkList: true, variant: '-narrow -center' }">
-
-                <option value="?language=en-us" selected>English (US)</option>
-                <option value="es">Spanish</option>
-                <option value="url-to-localization-here">Mandarin</option>
-                <option value="could-be-any-url">German</option>
-                <option value="url-to-localization">French</option>
-                
+        <div class="search-menu__filters | md:w-2/5 md:flex md:justify-end">
+            
+            <select_box class="-box" :opt="{ linkList: true, variant: '-md -narrow-2 -dark -center' }">
+                <option value="All Locations">All Locations</option>
+                <option value="A Filter">A Filter</option>
+                <option value="A Filter">A Filter</option>
+                <option value="A Filter">A Filter</option>                
             </select_box>
         </div>
 
@@ -41,6 +37,17 @@
     <header class="text-center mb-6">
         <h4 class="header-md">1,420 Pledgers</h4>
     </header>
+
+    <!-- Profile Grid -->
+    <section class="profile-cards flex-grid flex-wrap  | container gutter-md  space-b">
+        {{range .Params.ProfileGrid_1}}
+            {{ partial "components/profile-card.html" . }} {{ end }}
+    </section>
+
+    <!-- Profile Slider -Hero -->
+    <section class="space-b">
+        {{ partial "components/profile-slider--hero.html" . }}
+    </section>
 
     <!-- Profile Grid -->
     <section class="profile-cards flex-grid flex-wrap  | container gutter-md  space-b">

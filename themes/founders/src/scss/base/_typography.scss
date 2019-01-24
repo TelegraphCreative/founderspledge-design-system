@@ -15,6 +15,9 @@ body {
         &.-light {
             @apply text-green-light;
         }
+        &.-white {
+            @apply text-white;
+        }
     }
 
     // 18

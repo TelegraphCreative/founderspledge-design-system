@@ -405,6 +405,21 @@ $choices-icon-cross-inverse: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjEiI
     max-width: 10rem;
     min-width: inherit;
   }
+  &.-narrow-2 {
+    max-width: 12.5rem;
+    min-width: inherit;
+  }
+  &.-md {
+    .choices__inner {
+      @apply px-6 py-5;
+    }
+  }
+  &.-dark {
+    .choices__list--dropdown,
+    .choices__inner {
+      @apply border-green-darkest;
+    }
+  }
   &.-center {
     @apply text-center;
     .choices__inner {

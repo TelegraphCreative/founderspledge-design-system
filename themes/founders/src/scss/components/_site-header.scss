@@ -11,9 +11,14 @@ body {
     // Logo
     .logo, .logo-icon {
         @apply text-green;
+        
+        &:hover {
+            @apply text-green-darkest;
+        }
     }
     .logo {
         @apply hidden;
+
     }
 
     // Layout

@@ -120,53 +120,6 @@
       }
     },
     {
-      "variation": "-feature",
-      "icon": "arrow--r.svg",
-      "name": "Generous Vaction Time",
-      "detail": "London Office Only",
-      "descr": "Giving money directly to those who most need it, so they can use it for what they most need it for",
-      "link": false
-    },
-    {
-      "variation": "-press",
-      "logo": "/img/fpo-logo-01.jpg",
-      "descr": "“enables budding tycoons to donate a percentage of their future earnings to good causes, once they sell or list their businesses.”",
-      "link": {
-        "variation": "link -underline",
-         "text": "Read full article",
-         "url": "#"
-      }
-    },
-    {
-      "variation": "-press",
-      "logo": "/img/fpo-logo-02.jpg",
-      "descr": "“enables budding tycoons to donate a percentage of their future earnings to good causes, once they sell or list their businesses.”",
-      "link": {
-        "variation": "link -underline",
-         "text": "Read full article",
-         "url": "#"
-      }
-    },
-    {
-      "variation": "-cta",
-      "name": "Hear from our community.",
-      "descr": "Subheading connecting the giving to missions back to the community. Humans doing good for other humans—connectedness.",
-      "url": "#"
-    }
-  ],
-  "FlipCards_2": [
-    {
-      "variation": "-resource",
-      "icon": "arrow--r.svg",
-      "name": "Alleviate Poverty",
-      "descr": "Giving money directly to those who most need it, so they can use it for what they most need it for",
-      "link": {
-        "variation": "link -underline",
-         "text": "Read the Research",
-         "url": "#"
-      }
-    },
-    {
       "variation": "-resource",
       "icon": "arrow--r.svg",
       "name": "Alleviate Poverty",
