@@ -1,0 +1,4 @@
+<span class="icon | icon--search {{ .class }}"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+<circle class="stroke" stroke="currentColor" cx="13.5" cy="13.5" r="12"/>
+<line class="stroke" stroke="currentColor" x1="31.1" y1="31.3" x2="22" y2="22.2"/>
+</svg>

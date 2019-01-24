@@ -4479,6 +4479,10 @@ body {
   color: #a0e0b2;
 }
 
+.header-sm.-white {
+  color: #fff;
+}
+
 .header-md {
   font-size: 1.25rem;
   font-family: Chap--web;
@@ -4803,6 +4807,18 @@ button {
   outline: 0;
 }
 
+a:focus,
+button:focus {
+  color: #e8a879 !important;
+  border-color: #e8a879 !important;
+}
+
+a:focus .icon,
+button:focus .icon {
+  color: #e8a879;
+  border-color: #e8a879;
+}
+
 * {
   outline: none;
 }
@@ -5065,6 +5081,12 @@ cite {
   display: block;
 }
 
+.icon.-sm-2 {
+  width: 2rem;
+  height: 2rem;
+  display: block;
+}
+
 .icon.-flip {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
@@ -5092,6 +5114,20 @@ cite {
   stroke-linecap: round;
   stroke-linejoin: round;
   stroke-miterlimit: 10;
+}
+
+.stroke {
+  fill: none;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+}
+
+.-stroke-3 .stroke {
+  stroke-width: 3;
+}
+
+.-stroke-4 .stroke {
+  stroke-width: 4;
 }
 
 .video-wrapper {
@@ -5133,6 +5169,10 @@ cite {
   background: url("/dist/assets/svg/pattern-crosshatch--green.svg") repeat;
 }
 
+.pattern--white {
+  background: url("/dist/assets/svg/pattern-crosshatch--white.svg") repeat;
+}
+
 .pseudo {
   content: "";
 }
@@ -5143,6 +5183,13 @@ cite {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+.center-y {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0%, -50%);
+          transform: translate(0%, -50%);
 }
 
 .overflow-x {
@@ -5679,6 +5726,23 @@ cite {
   min-width: inherit;
 }
 
+.choices.-narrow-2 {
+  max-width: 12.5rem;
+  min-width: inherit;
+}
+
+.choices.-md .choices__inner {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.choices.-dark .choices__list--dropdown,
+.choices.-dark .choices__inner {
+  border-color: #12302d;
+}
+
 .choices.-center {
   text-align: center;
 }
@@ -5752,6 +5816,67 @@ cite {
   align-items: center;
 }
 
+@media (min-width: 768px) {
+  .search-menu {
+    width: 66.66667%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.search-form form {
+  position: relative;
+}
+
+.search-form .search {
+  width: 100%;
+  border-bottom-width: 1px;
+  border-color: #12302d;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  padding-left: 2.5rem;
+  padding-right: 1rem;
+}
+
+.search-form .search::-webkit-input-placeholder {
+  opacity: 1;
+  color: #12302d;
+}
+
+.search-form .search:-ms-input-placeholder {
+  opacity: 1;
+  color: #12302d;
+}
+
+.search-form .search::-ms-input-placeholder {
+  opacity: 1;
+  color: #12302d;
+}
+
+.search-form .search::placeholder {
+  opacity: 1;
+  color: #12302d;
+}
+
+.search-form .search:focus {
+  color: #53c07d;
+  border-color: #12302d;
+}
+
+.search-form .submit {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0%, -50%);
+          transform: translate(0%, -50%);
+  left: 0;
+}
+
+.search-form .submit:hover {
+  color: #53c07d;
+}
+
 body {
   padding-top: 4.5rem;
 }
@@ -5767,6 +5892,11 @@ body {
 .site-header .logo,
 .site-header .logo-icon {
   color: #53c07d;
+}
+
+.site-header .logo:hover,
+.site-header .logo-icon:hover {
+  color: #12302d;
 }
 
 .site-header .logo {
@@ -6333,17 +6463,14 @@ body {
   }
 }
 
-.profile-cards {
-  margin-left: -0.5rem;
-  margin-right: -0.5rem;
-}
-
 .profile-card {
   display: block;
   width: 50%;
   margin-bottom: 2rem;
   padding-left: .5rem;
   padding-right: .5rem;
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
   text-decoration: none;
 }
 
@@ -6423,6 +6550,10 @@ body {
   margin-bottom: 2.5rem;
 }
 
+.profile-slider__aside {
+  position: relative;
+}
+
 .profile-slider .slider-controls {
   cursor: pointer;
   position: absolute;
@@ -6448,6 +6579,7 @@ body {
   font-weight: 600;
 }
 
+.profile-slider .tns-nav,
 .profile-slider .nav {
   display: none;
 }
@@ -6456,8 +6588,34 @@ body {
   color: #53c07d;
 }
 
+.profile-slider .nav .image {
+  overflow: inherit;
+}
+
+.profile-slider.-basic {
+  padding-top: 3.75rem;
+  padding-bottom: 3rem;
+}
+
+.profile-slider.-basic .profile-slider__aside {
+  width: 90%;
+}
+
+.profile-slider.-basic .image img {
+  z-index: 10;
+}
+
+.profile-slider .pattern--white {
+  position: absolute;
+  z-index: 0;
+  height: 100%;
+  width: 100%;
+  right: -60px;
+  top: 40px;
+}
+
 @media (min-width: 768px) {
-  .profile-slider__container {
+  .profile-slider__content {
     flex-direction: row-reverse;
   }
 
@@ -6512,19 +6670,82 @@ body {
     bottom: -11px;
   }
 
+  .profile-slider.-basic {
+    padding-top: 4.5rem;
+    padding-bottom: 4rem;
+  }
+
   .profile-slider.-basic .profile-slider__main {
-    padding-left: 2.5rem;
+    padding-left: 3.75rem;
+  }
+
+  .profile-slider.-basic .profile-slider__aside {
+    width: 32%;
   }
 
   .profile-slider.-basic .slider-controls {
     background-color: transparent;
+    position: absolute;
     width: auto;
-    top: -4rem;
+    top: inherit;
+    bottom: 5.625rem;
     right: 4rem;
   }
 
   .profile-slider.-basic .info {
     color: #fff;
+  }
+
+  .profile-slider.-hero {
+    padding-bottom: 2rem;
+  }
+
+  .profile-slider.-hero .profile-slider__main {
+    position: absolute;
+    width: 60%;
+    right: 0;
+    margin: 0;
+    padding-left: 0;
+    -webkit-transform: translate(0%, -50%);
+            transform: translate(0%, -50%);
+  }
+
+  .profile-slider.-hero .profile-slider__aside {
+    width: 100%;
+  }
+
+  .profile-slider.-hero .slider-controls {
+    position: relative;
+    background-color: #53c07d;
+    color: #fff;
+    width: auto;
+    padding: 1rem;
+    right: 60%;
+  }
+
+  .profile-slider.-hero .slider-controls .info {
+    color: #fff;
+  }
+
+  .profile-slider.-hero .profile-slider__card {
+    padding-top: 2.5rem;
+    padding-left: 3.75rem;
+    padding-right: 3.75rem;
+    padding-bottom: 3.75rem;
+  }
+
+  .profile-slider .pattern--white {
+    z-index: 10;
+    width: 15.25rem;
+    height: 3.625rem;
+    right: -2rem;
+    bottom: -2rem;
+    top: inherit;
+  }
+
+  .bg-orange .profile-slider .icon:hover,
+  .bg-orange .profile-slider .icon:focus {
+    color: #e8e3da;
   }
 }
 

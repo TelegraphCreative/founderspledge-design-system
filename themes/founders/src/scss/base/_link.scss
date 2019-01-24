@@ -102,3 +102,12 @@ a {
 a, button {
 @apply outline-none;
 }
+a:focus,
+button:focus {
+    color: #E8A879 !important;
+    border-color: #E8A879 !important;
+    .icon {
+        color: #E8A879 ;
+        border-color: #E8A879 ;
+    }
+}

@@ -1,3 +1,36 @@
 .search-menu {
     @apply flex justify-center items-center; 
+
+    // Screen
+    @screen md {
+        @apply w-2/3 mx-auto flex-grid;
+    }
+}
+
+.search-form {
+
+    form {
+        @apply relative;
+    }
+
+    .search {
+        @apply w-full border-b border-green-darkest
+        py-5 pl-10 pr-4;
+
+        &::placeholder {
+            @apply .opacity-100 text-green-darkest;
+        }
+
+        &:focus {
+            @apply text-green border-green-darkest;
+        }
+    }
+
+    // Button
+    .submit {
+        @apply center-y  pin-l;
+        &:hover {
+            @apply text-green;
+        }
+    }
 }

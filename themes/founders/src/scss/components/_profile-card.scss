@@ -1,12 +1,9 @@
 // Grid
-.profile-cards {
-    @apply -mx-2;
-}
 // Card
 .profile-card {
 
     // Layout
-    @apply block w-1/2 mb-8 px-2 no-underline;
+    @apply block w-1/2 mb-8 px-2 -mx-2 no-underline;
 
     &__content,
     &__main {

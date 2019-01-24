@@ -11,6 +11,9 @@
     &.-sm {
         @apply w-10 h-10 block;
     }
+    &.-sm-2 {
+        @apply w-8 h-8 block;
+    }
 
     // Transforms
     &.-flip {
@@ -36,3 +39,9 @@
 
 // Utility Classes
 .st0{fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+.stroke {
+    fill:none;stroke-width:2;stroke-miterlimit:10;
+}
+.-stroke-3 .stroke {stroke-width: 3;}
+.-stroke-4 .stroke {stroke-width: 4;}
+
