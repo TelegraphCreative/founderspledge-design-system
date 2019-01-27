@@ -1,0 +1,21 @@
+
+<a href="#" class="article-card">
+
+        <div class="article-card__content">
+            
+            {{ if .image }}
+            <figure class="article-card__figure | image -is16x9">
+                <img src="{{ .image }}" alt="" class="fit-cover">
+            </figure>
+            {{ end }}
+    
+            <div class="article-card__main">
+                <h2 class="preheader | header-sm">{{ .preheader }}</h2>
+                <h2 class="header | header-sm-2">{{ .header }}</h2>
+            </div>
+            
+        </div>  
+        
+    </a> 
+    
+    

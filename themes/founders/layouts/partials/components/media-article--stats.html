@@ -11,10 +11,15 @@ Content Types:
 -->
 <div class="media-article {{.variation}} | container gutter-l--md">
 
-        <div class="media-article__main | sm:px-12 md:pb-12">
+    <div class="media-article__main | sm:px-12 md:pb-12">
 
         <header class="media-article__header">
+            {{ if .preheader }}
+            <h4 class="preheader | header-sm | pb-5">{{ .preheader }}</h4>
+            {{ end }}
+
             <h2 class="header">{{ .header }}</h2>
+
             {{ if .subheader }}
             <h4 class="subheader | header-sm | pb-5">{{ .subheader }}</h4>
             {{ end }}
@@ -37,17 +42,9 @@ Content Types:
     </div>
 
     
-    <aside class="media-article__aside | xl:bg-orange">
-        {{ if .image }}
-            <figure class="image -is{{ .image.ratio }} | md:block hidden">
-                <img src="{{ .image.url }}" alt="" class="fit-cover">
-            </figure>
-            <figure class="image -is{{ .image_small.ratio }} | md:hidden block">
-                <img src="{{ .image_small.url }}" alt="" class="fit-cover">
-            </figure>
-        {{ end }}
-
-        <div class="pattern | absolute"></div>
+    <aside class="media-article__aside | xl:bg-green">
+        {{range .Stats}}
+            {{ partial "components/stat-card.html" . }} {{ end }}
     </aside>
     
     

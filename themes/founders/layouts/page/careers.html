@@ -1,0 +1,55 @@
+{{ define "main" }}
+
+    <!-- Section Header -->
+    {{range .Params.SectionHeader_1}}
+        {{ partial "components/section-header.html" . }} {{ end }}
+
+    <!-- Page Menu-->
+    {{ partial "components/page-menu.html" . }}
+
+    <section class="space-t--sm space-b--lg">
+        {{range .Params.MediaArticle_1}}
+            {{ partial "components/media-article.html" . }} {{ end }}
+    </section>
+    
+    
+    <section class="bg-green-darkest | space-t space-b">
+        <!-- Section Header - Basic -->
+        {{range .Params.SectionHeaderBasic_1}}
+            {{ partial "components/section-header--basic.html" . }} {{ end }}
+
+        <!-- Flip Cards -->
+        <div class="flip-cards | md:flex-grid justify-between | container gutter-md">
+            {{range .Params.FlipCards_1}}
+                {{ partial "components/flip-card.html" . }} {{ end }}
+        </div>
+    </section>
+
+    <section class="container | gutter-lg | space-t md:space-b--lg">
+        <!-- Section Header - Basic -->
+
+        {{range .Params.SectionHeaderBasic_2}}
+        {{ partial "components/section-header--basic.html" . }} {{ end }}
+
+
+        <!-- Resource List-->
+        <div class="resources">
+            {{range .Params.ResourceList_1}}
+                {{ partial "components/resource.html" . }} {{ end }}
+        </div>
+    </section> 
+
+    <section class="container | gutter-lg space-t space-b">
+        <!-- Section Header - Basic -->
+        {{range .Params.SectionHeaderBasic_3}}
+        {{ partial "components/section-header--arrow.html" . }} {{ end }}
+
+        <!-- Resource List-->
+        <div class="article-cards | xs:flex-grid">
+            {{range .Params.ArticleCards_1}}
+                {{ partial "components/article-card.html" . }} {{ end }}
+        </div>
+    </section> 
+
+
+{{ end }}

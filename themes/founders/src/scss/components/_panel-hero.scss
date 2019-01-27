@@ -9,6 +9,11 @@
 
     // Screen
     @screen md {
-        @apply pt-18 pb-20 px-8
+        @apply pt-18 pb-20 px-8;
+
+        // Large Type
+        &.-lg {
+            @apply pt-28 pb-30;
+        }
     }
 }

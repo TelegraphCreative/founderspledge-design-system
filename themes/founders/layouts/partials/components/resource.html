@@ -1,0 +1,37 @@
+<div class="resource__item">
+    <div class="resource__content">
+        <div class="resource__main">
+
+            <div class="resource__descr">                
+                {{ if .header }}
+                <h2 class="header | header-lg-2 mb-2 md:mb-0">{{.header | safeHTML}}</h2>
+                {{ end }}
+                {{ if .preheader }}
+                <h4 class="header-sm">{{.preheader | safeHTML}}</h4>
+                {{ end }}
+            </div>
+
+            {{ if .link }}
+            <div class="resource__action">
+                {{ if .link.variation }}
+                <a href="{{ .link.url }}" class="link -icon -green -sm">
+                    <span class="text">{{ .link.text }}</span>
+                    {{- partial "svg/arrow--r.svg" (dict "class" "-xs -stroke-4") -}}
+                </a>
+                {{ else }}
+                <a href="{{ .link.url }}" class="link -underline  -sm">{{ .link.text }}</a>
+                {{ end }}
+            </div>
+            {{ end }}
+
+        </div>
+
+        {{ if .image }}
+        <div class="resource__aside">
+            <figure class="image -is16x12 bg-oat">
+                <img src="{{ .image }}" alt="" class="fit-cover">
+            </figure>
+        </div>
+        {{ end }}
+    </div>
+</div>

@@ -29,27 +29,45 @@
 @import 'vendor/choices';
 
 // Components
+// Menus
 @import 'components/menu-bar';
 @import 'components/page-menu';
 @import 'components/search-menu';
+
+// Headers
 @import 'components/site-header';
 @import 'components/site-header--small';
 @import 'components/section-header';
+
+// Cards
 @import 'components/flip-card';
 @import 'components/highlight-card';
+@import 'components/stat-card';
+@import 'components/article-card';
+
+// Sliders
 @import 'components/profile-card';
 @import 'components/profile-slider';
 @import 'components/slider';
-@import 'components/headsup';
+
+// Articles
 @import 'components/media-article';
 @import 'components/feature-article';
+
+// Lists
 @import 'components/menu-list';
 @import "components/social-list";
-@import "components/logo-parade";
-@import "components/panel-hero";
+@import "components/resource-list";
+@import "components/logo-list";
+
+// Forms
 @import 'components/signup-form';
-@import 'components/site-footer';
+
+// Misc
+@import 'components/headsup';
+@import "components/panel-hero";
 @import 'components/hcard';
+@import 'components/site-footer';
 
 
 
