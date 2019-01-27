@@ -14,6 +14,9 @@
     &.-sm-2 {
         @apply w-8 h-8 block;
     }
+    &.-xs {
+        @apply w-4 h-4 block;
+    }
 
     // Transforms
     &.-flip {

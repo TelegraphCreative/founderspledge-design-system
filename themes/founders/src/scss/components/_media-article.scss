@@ -15,7 +15,7 @@
         }
     }
 
-    // Highlight
+    // Highlight Type
     &.-highlight {
         
         .media-article__header {
@@ -35,7 +35,7 @@
         left: 0;
     }
 
-    // -Features > Feature
+    // -Features Type > Feature
     &__feature {
         @apply max-w-xs w-full
         pb-12;
@@ -72,7 +72,7 @@
             width: 92%;
         }
 
-        // Highlight
+        // Highlight Type
         &.-highlight {
 
             .media-article__main {
@@ -95,14 +95,25 @@
             }
         }
 
-        // Features 
+        // Features Type
         &.-features {
             .media-article__article {
                 @apply w-full;
             }
         }
 
-        // Simple 
+        // Stats Type
+        &.-stats {
+            .media-article__main {
+                width: 54%;
+                @apply pr-20;
+            }
+            .media-article__aside {
+                width: 46%;
+            }
+        }
+
+        // Simple Type
         &.-simple {
             .media-article__main {
                 width: 65%;
@@ -121,6 +132,13 @@
 
             .media-article__main.gutter-l--lg {
                 @apply pl-32;
+            }
+        }
+
+        // Article Indent Type
+        &.-article-indent {
+            .media-article__main {
+                @apply pt-24
             }
         }
         

@@ -1,7 +1,7 @@
 .section-header {
 
     // General Layout
-    @apply text-center mb-10 pt-14 px-4;
+    @apply text-center mb-8 pt-12;
 
     .header-sm {
         @apply mb-4;
@@ -15,28 +15,75 @@
     }
     
     &__action {
-        @apply pt-10;
+        @apply pt-5;
     }
 
+    // -Left
+    &.-left {
+        @apply text-left;
+    }
+
+     // -Arrow Type
+     &.-arrow {
+        .link.-icon {
+            @apply .justify-center;
+        }
+        // -Left
+        &.-left {
+            @apply text-center;
+        }
+        
+     }
+
+   
     // sm Screen
     @screen sm {
         &__descr {
             @apply w-3/5;
         }
+
+         // -Arrow Type
+        &.-arrow {
+            .section-header__content {
+                @apply text-center relative;
+            }
+
+            .section-header__action {
+                @apply absolute pin-r pin-t pt-0;
+            }
+        }
+
+        // -Left (override other types)
+        &.-left {
+            .section-header__content {
+                @apply text-left;
+            }
+        }
+
+        // Top Section Header
+        &.-top {
+            @apply px-8;
+        }
+
     }
     
     // md Screen
     @screen md {
         // General Layout
-        @apply pt-22;
+        @apply mb-10 pt-14 pt-22;
+
+        &__action {
+            @apply pt-10;
+        }
+
 
         // Top Section Header
         &.-top {
             @apply pb-6;
 
             .header {
-                @apply text-6xl mx-auto;
-                max-width: 54rem;
+                @apply text-6xl mx-auto w-4/5;
+                // max-width: 54rem;
                 line-height: 1.2;
             }
         }
@@ -45,6 +92,7 @@
         &.-basic {
             @apply pt-0 pb-4;
         }
+
     }
 }
 

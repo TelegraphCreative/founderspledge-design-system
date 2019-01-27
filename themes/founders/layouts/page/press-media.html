@@ -1,0 +1,41 @@
+{{ define "main" }}
+
+    <!-- Section Header -->
+    {{range .Params.SectionHeader_1}}
+        {{ partial "components/section-header.html" . }} {{ end }}   
+    
+    <!-- Page Menu-->
+    {{ partial "components/page-menu.html" . }}
+
+    <section class="container | gutter-lg space-b | border-t border-oat-light space-t">
+        <!-- Section Header - Basic -->
+        {{range .Params.SectionHeaderBasic_1}}
+            {{ partial "components/section-header--basic.html" . }} {{ end }}
+
+        <!-- Resource List-->
+        <div class="resources">
+            {{range .Params.ResourceList_1}}
+                {{ partial "components/resource.html" . }} {{ end }}
+        </div>
+    </section>    
+
+    <!-- Panel Hero -->
+    {{range .Params.PanelHero_1}}
+        {{ partial "components/panel-hero.html" . }} {{end}}
+
+    <section class="bg-oat-light | space-b">
+        <div class="container gutter-lg">
+            <!-- Section Header - Basic -->
+            {{range .Params.SectionHeaderBasic_2}}
+            {{ partial "components/section-header--arrow.html" . }} {{ end }}
+        </div>
+
+        <!-- Flip Cards -->
+        <div class="flip-cards | md:flex-grid justify-between | container gutter-lg">
+            {{range .Params.FlipCards_1}}
+                {{ partial "components/flip-card.html" . }} {{ end }}
+        </div>
+    </section>
+    
+        
+{{ end }}

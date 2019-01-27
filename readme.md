@@ -68,7 +68,7 @@ layout: how-it-works
 | Media Article --feature | `./themes/founders/layouts/partials/media-article--features` |
 | Headsup | `./themes/founders/layouts/partials/headsup--inline` |
 | Highlight Card | `./themes/founders/layouts/partials/highlight-card` |
-| Logo Parade | `./themes/founders/layouts/partials/logo-parade` |
+| Logo List | `./themes/founders/layouts/partials/logo-list` |
 
 
 ### Flip Cards

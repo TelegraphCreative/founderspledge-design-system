@@ -1,21 +1,23 @@
 <header class="section-header {{ .variation }}">
-    {{ if .preheader }}
-    <h4 class="header-sm">{{.preheader | safeHTML}}</h4>
-    {{ end }}
+    <div class="section-header__content">
+        {{ if .preheader }}
+        <h4 class="header-sm">{{.preheader | safeHTML}}</h4>
+        {{ end }}
 
-    {{ if .header }}
-    <h2 class="header | header-lg">{{.header | safeHTML}}</h2>
-    {{ end }}
+        {{ if .header }}
+        <h2 class="header | header-lg">{{.header | safeHTML}}</h2>
+        {{ end }}
 
-    {{ if .descr }}
-    <div class="section-header__descr | paragraphs">
-        {{.descr | safeHTML}}
+        {{ if .descr }}
+        <div class="section-header__descr | paragraphs">
+            {{.descr | safeHTML}}
+        </div>
+        {{ end }}
+
+        {{ if .link }}
+        <div class="section-header__action">
+            <a href="{{ .link.url }}" class="{{.link.variation}}">{{ .link.text }}</a>
+        </div>
+        {{ end }}
     </div>
-    {{ end }}
-
-    {{ if .link }}
-    <div class="section-header__action">
-        <a href="{{ .link.url }}" class="{{.link.variation}}">{{ .link.text }}</a>
-    </div>
-    {{ end }}
 </header>

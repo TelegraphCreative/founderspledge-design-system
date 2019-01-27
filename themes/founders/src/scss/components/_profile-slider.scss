@@ -58,6 +58,13 @@
         }
     }
 
+    // Hero Type
+    &.-hero {
+        .profile-slider__card {
+            @apply pt-8 px-10 pb-10;
+        }
+    }
+
     // Pattern
     .pattern--white {
         @apply absolute z-0 h-full w-full;

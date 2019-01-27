@@ -1,4 +1,4 @@
-<header class="section-header -basic {{.variation}}">
+<header class="section-header -arrow {{.variation}}">
     <div class="section-header__content">
         <div class="section-header__name">
             {{ if .header }}
@@ -8,7 +8,10 @@
     
         {{ if .link }}
         <div class="section-header__action">
-            <a href="{{ .link.url }}" class="{{.link.variation}}">{{ .link.text }}</a>
+            <a href="{{ .link.url }}" class="link -icon">
+                <span class="text">{{ .link.text }}</span>
+                {{- partial "svg/arrow--r.svg" (dict "class" "-sm -stroke-3") -}}
+            </a>
         </div>
         {{ end }}
     </div>

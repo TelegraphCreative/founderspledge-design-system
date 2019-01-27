@@ -4,7 +4,7 @@
 .flip-card {
     
     // General Layout
-    @apply mb-12 w-full;
+    @apply mb-8 w-full;
 
     &__back {
         @apply pt-10 px-8 pb-10;
@@ -115,6 +115,7 @@
         .link.-underline {
             @apply .text-green-darkest .border-green-darkest .font-semibold;
         }
+
     }
 
     // - CTA Type (by default, this works)
@@ -163,6 +164,7 @@
 @screen md {
     // General Layout
     .flip-card {
+        @apply mb-12;
         width: 48%;
 
         &__front {

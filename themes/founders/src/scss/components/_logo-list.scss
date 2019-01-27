@@ -1,4 +1,4 @@
-.logo-parade {
+.logo-list {
 
     @apply mt-8
     flex justify-between flex-wrap justify-center;
@@ -17,7 +17,7 @@
 
 // Screen
 @screen md {
-    .logo-parade {
+    .logo-list {
         // @apply flex justify-between justify-wrap;
 
         &__logo {

@@ -5,7 +5,7 @@ html {
 
 .container {
     @apply mx-auto
-    px-3;
+    px-8;
     max-width: 90rem; // 1440
 }
 
@@ -14,6 +14,13 @@ html {
     @apply flex justify-between;
 }
 
+// Tiny Screen
+@screen xs {
+    // Flex Grid
+    .xs\:flex-grid {
+        @apply flex justify-between;
+    }
+}
 // Medium Screen
 @screen md {
 
@@ -74,7 +81,7 @@ html {
 
         // X Axis
         &-lg {
-            @apply px-30;
+            @apply px-32;
         }
 
         // L

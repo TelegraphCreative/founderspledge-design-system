@@ -1,0 +1,19 @@
+.article-card {
+    @apply no-underline;
+
+    &__main {
+        @apply py-6 w-4/5;
+
+    }
+    .preheader {
+        @apply mb-4;
+    }
+
+    // Screen
+    @screen xs {
+        width: 48%;
+    }
+    @screen md {
+        width: 46.8%;
+    }
+}

@@ -1,0 +1,78 @@
+.stat-card {
+    // General Layout
+    @apply pt-14 pb-0 px-8 bg-green-light text-white
+    property-all duration-3 timing-1;
+
+    &__header {
+        @apply mb-10;
+    }
+
+    &:hover {
+        @apply bg-green;
+    }
+
+    // Screen
+    @screen md {
+
+
+        &__header {
+            @apply flex items-center .justify-between;
+        }
+
+        &__descr {
+
+            animation-name: hideDescription;
+            animation-duration: 1s;
+            animation-timing-function: ease-in-out;
+            animation-fill-mode: forwards;
+        }
+
+        &__content {
+            @apply mx-auto;
+            max-width: 23.125rem;
+        }
+
+        &:hover {
+            .stat-card__descr {
+                animation-name: showDescription;
+            }
+        }
+    }
+}
+
+@keyframes hideDescription {
+    0% {
+        opacity:1;
+        max-height:15rem;
+        margin-bottom: 4rem;
+    }
+    20% {
+        opacity:0;
+    }
+    30% {
+        opacity:0;
+
+    }
+    100% {
+        opacity:0;
+        max-height:0;
+        margin-bottom: 0;
+    }
+}
+
+@keyframes showDescription {
+    0% {
+        opacity:0;
+        max-height:0;
+        margin-bottom: 0;
+    }
+    75% {
+        opacity:1;
+        margin-bottom: 4rem;
+    }
+    100% {
+        opacity:1;
+        max-height:15rem;
+        margin-bottom: 4rem;
+    }
+}

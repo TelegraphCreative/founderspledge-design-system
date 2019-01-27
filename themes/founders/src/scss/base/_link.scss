@@ -14,12 +14,46 @@
         &:hover {
             @apply text-green-darkest border-green-darkest;
         }
+    }
 
+    // Small
+    &.-sm {
+        @apply text-sm pb-0;
+    }
+
+    // Green
+    &.-green {
+        @apply text-green;
+        
+        &:hover {
+            @apply text-green-darkest;
+        }
+    }
+
+    // Icon Link
+    &.-icon {
+
+        @apply flex .justify-between items-center;
+
+        // .icon {
+        //     @apply relative;
+        //     top:2px;
+        // }
+
+        .text {
+            @apply mr-2;
+        }
+
+        &:hover {
+            svg {
+                transform: translate(.5rem,0);
+                @apply property-transform;
+            }
+        }
 
     }
 
-
-    // Group
+    // Group of Links
     &-group {
         @apply flex items-center;
 
@@ -31,60 +65,6 @@
             }
         }
     }
-
-    // // Icon
-    // &--icon {
-    //     @apply link;
-
-    //     .icon {
-    //         @apply relative;
-    //         top:2px;
-    //     }
-
-    //     &.-left {
-    //         .link-text {
-    //             @apply ml-2;
-    //         }
-    //     }
-    //     &.-right {
-    //         .link-text {
-    //             @apply mr-2;
-    //         }
-    //     }
-
-    // }
-    
-    
-    // // Caret
-    // &--caret {
-    //     @apply 
-    //         link--dotted
-    //         text-3xs
-    //         relative
-    //         ml-3;
-
-    //     &:before {
-    //         @apply absolute;
-            
-    //         top: 2px;
-    //         left: -10px;
-    //         content: '';
-    //         transform: rotate(-90deg);
-    //         height: 10px;
-    //         width: 10px;
-    //         background-size: 100%;
-    //         background-repeat: no-repeat;
-    //         background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 11.7 6.6'%3E%3Cpath fill='%235A6872' d='M5.6,6.5L0.1,1.2C0,1,0,0.8,0.1,0.6l0.5-0.5C0.7,0,1,0,1.2,0.1l4.4,4.3c0.2,0.1,0.4,0.1,0.6,0l4.3-4.2 c0.2-0.2,0.4-0.2,0.6,0l0.5,0.5c0.2,0.2,0.2,0.4,0,0.6L6.2,6.5C6,6.6,5.8,6.6,5.6,6.5z'/%3E%3C/svg%3E");
-    //     }
-    
-    //     &:hover {
-    //         @apply text-black;
-    //         &:before {
-    //             @apply border-black;
-    //         }
-    //     }        
-        
-    // }
 
 }
 

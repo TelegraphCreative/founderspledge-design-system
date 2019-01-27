@@ -1,9 +1,26 @@
 .search-menu {
-    @apply flex justify-center items-center; 
+    @apply mx-auto w-3/4; 
+
+    &__form,
+    &__filters {
+        @apply w-full mb-2;
+    }
+
+    &__form {
+        @apply  mb-2;
+    }
 
     // Screen
     @screen md {
-        @apply w-2/3 mx-auto flex-grid;
+        @apply w-2/3 mx-auto flex-grid
+        flex justify-center items-center;
+
+        &__form {
+            @apply w-3/5;
+        }
+        &__filters {
+            @apply w-2/5;
+        }
     }
 }
 

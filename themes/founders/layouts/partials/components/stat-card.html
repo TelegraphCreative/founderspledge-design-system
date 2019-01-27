@@ -1,0 +1,13 @@
+<div class="stat-card">
+    <div class="stat-card__content">
+        <div class="stat-card__header">
+            <h4 class="header | header-md">{{ .header }}</h4>
+            <h3 class="figure | header-xl">{{ .figure }}</h3>
+        </div>
+        {{ if .descr }}
+        <div class="stat-card__descr paragraphs ">
+            {{ .descr | safeHTML }}
+        </div>
+        {{ end }}
+    </div>
+</div>
