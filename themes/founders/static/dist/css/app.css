@@ -4489,6 +4489,11 @@ body {
   color: #fff;
 }
 
+.header-sm-2 {
+  font-size: 1.25rem;
+  font-family: Chap--web;
+}
+
 .header-md {
   font-size: 1.25rem;
   font-family: Chap--web;
@@ -4496,6 +4501,12 @@ body {
 
 .header-lg {
   font-size: 1.875rem;
+  font-family: Chap--web;
+  line-height: 1.35;
+}
+
+.header-lg-2 {
+  font-size: 1.5rem;
   font-family: Chap--web;
   line-height: 1.35;
 }
@@ -4536,6 +4547,10 @@ a {
 @media (min-width: 992px) {
   .header-lg {
     font-size: 2.25rem;
+  }
+
+  .header-lg-2 {
+    font-size: 2rem;
   }
 
   .header-xl {

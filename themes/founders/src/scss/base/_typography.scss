@@ -18,19 +18,28 @@ body {
         &.-white {
             @apply text-white;
         }
+
+        // Type Small 2
+        &-2 {
+            @apply text-xl font-serif;
+        }
     }
 
+    
     // 18
     &-md {
         @apply text-xl font-serif;
     }
     
-    // 36 -> 30
+    // 30 -> 36
     &-lg {
         @apply text-3xl font-serif leading-tight;
+        &-2 {
+            @apply text-2xl font-serif leading-tight;
+        }
     }
 
-    // 72 -> 40
+    // 40 -> 68 
     &-xl {
         @apply text-5xl font-serif;
     }
@@ -78,9 +87,13 @@ a {
         // 36
         &-lg {
             @apply text-4xl;
+            &-2 {
+                // @apply text-xl font-serif leading-tight;
+                font-size: 2rem;
+            }
         }
 
-        // 72
+        // 68
         &-xl {
             @apply text-10xl;
         }

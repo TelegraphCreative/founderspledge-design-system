@@ -3,6 +3,10 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://confident-blackwell-dbed1e.netlify.com/careers/</loc>
+  </url>
+  
+  <url>
     <loc>https://confident-blackwell-dbed1e.netlify.com/categories/</loc>
     <priority>0</priority>
   </url>
@@ -30,6 +34,14 @@
   
   <url>
     <loc>https://confident-blackwell-dbed1e.netlify.com/pledgers/</loc>
+  </url>
+  
+  <url>
+    <loc>https://confident-blackwell-dbed1e.netlify.com/press-media/</loc>
+  </url>
+  
+  <url>
+    <loc>https://confident-blackwell-dbed1e.netlify.com/start-your-journey/</loc>
   </url>
   
   <url>
