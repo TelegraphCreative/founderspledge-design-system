@@ -440,12 +440,12 @@
     
     <section class="bg-oat-light | space-t">
         
-<profile_slider :opt="{
+<full_slider :opt="{
         items: 1,
         autoplay: true,
         mode: 'gallery'
     }"
-    class="profile-slider slider-reset | container clearfix">
+    class="profile-slider slider-reset -no-gutters | container clearfix">
 
     <template slot="slides">
         <div class="profile-slider__slide">
@@ -494,7 +494,7 @@
                 
                 
                 <div class="profile-slider__aside">
-                    <figure class="image -is1x1">
+                    <figure class="image -is1x1 -show-overflow">
                             <img src="/img/fpo-02.jpg" data-src="/img/fpo-02.jpg" alt="">
                     </figure>
                 </div>
@@ -519,7 +519,7 @@
         </li>
 
     </template>
-</profile_slider>
+</full_slider>
 
     </section>
 

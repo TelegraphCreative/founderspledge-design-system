@@ -26,6 +26,11 @@
                     <span class="current" v-html="current"></span> of <span class="total" v-html="total"></span>
                 </div>
             </div>
+
+            <!-- Nav -->
+            <ul class="nav">
+                <slot name="slideNav"></slot>
+            </ul> 
             
         </div>
 
@@ -59,30 +64,32 @@ import { timeout } from 'q';
             let _this = this
             let Slides = _this.$el.querySelector('.slider')
             let Controls = _this.$el.querySelector('.controls')
-            let Options = _this.opt
-            
-            let nav_container = ".nav"
+            let Nav = _this.$el.querySelector('.nav')
+            let Options = _this.opt 
+
             window.addEventListener('load', function() {
                 var slider = tns({
                     "container": Slides,
+                    "slideBy": Options.slideBy,
                     "items": Options.items,
                     "mode": Options.mode,
                     
-                    "controlsContainer": ".controls",
+                    "controlsContainer": Controls,
+                    "navContainer": Nav,
                     "navAsThumbnails": true,
 
                     "autoplay": Options.autoplay,
-                    "autoplayTimeout": Options.autoplayTimeout,
-                    "mouseDrag": Options.mouseDrag,
+                    // "autoplayTimeout": Options.autoplayTimeout,
+                    // "mouseDrag": Options.mouseDrag,
                     "speed": Options.speed,
-                    "center": Options.center,
-                    "loop":  Options.loop,
+                    // "center": Options.center,
+                    "loop":  true,
                     
-                    "fixedWidth": Options.fixedWidth,    
-                    "controls": Options.controls,
+                    // "fixedWidth": Options.fixedWidth,    
+                    // "controls": Options.controls,
                     "lazyload": true,
 
-                    "gutter": 10,
+                    "gutter": Options.gutter,
                     responsive: {
                         0: {
                             "edgePadding": 0
@@ -96,6 +103,7 @@ import { timeout } from 'q';
                 // Initial UI
                 setTimeout(function(){
                     let info = slider.getInfo();
+                    // console.log(info)
                     customUi();
                 }, 1000)
 
@@ -105,6 +113,11 @@ import { timeout } from 'q';
                 // UI Info
                 function customUi(){
                     let info = slider.getInfo();
+                    let allSlides = Slides.querySelectorAll('.tns-slide-active')
+                    allSlides.forEach(slide => {
+                        slide.classList.remove('active');
+                    });
+                    Slides.querySelector('.tns-slide-active').classList.add('active');
 
                     _this.total = info.navItems.length
                     _this.current = info.displayIndex

@@ -1,8 +1,7 @@
 .slider-reset {
-    #tns1 > .tns-item {
-        @apply pr-0;
+    .tns-outer {
+        overflow-x: hidden;
     }
-
     // Hide TS Default, Resets
     [data-action] {
         @apply hidden;
@@ -18,5 +17,43 @@
         &:after {
             @apply bg-green;
         }
+    }
+
+    .icon--arrow {
+        @apply .cursor-pointer;
+    }
+
+}
+
+// No Gutters
+.-no-gutters {
+    .tns-item {
+        padding-right:  0 !important;
+    }
+}
+
+@screen lg {
+    // No Arrows
+    .-no-arrows {
+        .controls-info {
+            @apply hidden;
+        }
+    }
+}
+
+// No Controls
+.-no-controls {
+    .slider-controls {
+        @apply hidden;
+    }
+}
+
+// Gallery Transition
+.-gallery-transition {
+    .tns-item {
+        @apply opacity-0 timing-3 duration-2 property-opacity;
+    }
+    .tns-slide-active {
+        @apply opacity-100;
     }
 }

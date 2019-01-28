@@ -26,12 +26,6 @@
                     <span class="current" v-html="current"></span> of <span class="total" v-html="total"></span>
                 </div>
             </div>
-
-            <!-- Nav -->
-            <ul class="nav">
-                <slot name="slideNav"></slot>
-            </ul> 
-
             
         </div>
 
@@ -65,28 +59,26 @@ import { timeout } from 'q';
             let _this = this
             let Slides = _this.$el.querySelector('.slider')
             let Controls = _this.$el.querySelector('.controls')
-            let Nav = _this.$el.querySelector('.nav')
-            let Options = _this.opt 
-
+            let Options = _this.opt
+            
             window.addEventListener('load', function() {
                 var slider = tns({
                     "container": Slides,
                     "items": Options.items,
                     "mode": Options.mode,
                     
-                    "controlsContainer": ".controls",
-                    "navContainer": ".nav",
+                    "controlsContainer": Controls,
                     "navAsThumbnails": true,
 
                     "autoplay": Options.autoplay,
-                    "autoplayTimeout": Options.autoplayTimeout,
-                    "mouseDrag": Options.mouseDrag,
-                    "speed": Options.speed,
-                    "center": Options.center,
-                    "loop":  Options.loop,
+                    // "autoplayTimeout": Options.autoplayTimeout,
+                    // "mouseDrag": Options.mouseDrag,
+                    // "speed": Options.speed,
+                    // "center": Options.center,
+                    // "loop":  Options.loop,
                     
-                    "fixedWidth": Options.fixedWidth,    
-                    "controls": Options.controls,
+                    // "fixedWidth": Options.fixedWidth,    
+                    // "controls": Options.controls,
                     "lazyload": true,
 
                     "gutter": 10,

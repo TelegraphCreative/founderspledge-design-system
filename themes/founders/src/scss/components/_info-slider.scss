@@ -1,0 +1,139 @@
+
+// Info Slider Layout
+.info-slider-layout {
+    @apply pr-0 pl-6;
+}
+
+// Info Slider
+.info-slider {
+
+    @apply flex px-0 flex-col-reverse justify-end mx-0 relative;
+
+    
+
+    // Controls
+    .slider-controls {
+        @apply pb-8 text-center;
+
+        .preheader {
+            @apply mb-4;
+        }
+        .header {
+            line-height: 1;
+            @apply mb-5;
+        }
+    }
+    
+    .nav {
+        @apply hidden pt-8;
+
+        counter-reset: nav-list-counter;
+        li {
+            counter-increment: ol-counter;
+            
+            @apply text-green-light 
+            relative
+            property-all timing-2 duration-3
+            opacity-50
+            cursor-pointer
+            mb-6;
+
+            // Counter
+            &:before {
+                @apply font-sans text-xs 
+                absolute;
+                left: -1rem;
+                top: -.5rem;
+                content: "0" counter(ol-counter) ".";
+            }
+
+            // Line
+            &:after {
+                @apply pseudo center-y  border-t border-green-light;
+                width: 200%;
+                left:-200%;
+
+            }
+
+            // Active
+            &.tns-nav-active {
+                @apply opacity-100;
+                transform: translate(40%,0);
+            }
+        }
+        
+    }
+
+    // Arrow Controls
+    .controls {
+        @apply cursor-pointer
+        absolute bg-green-darkest p-4 mr-4 pin-r;
+        bottom: -1px;
+
+        .icon--arrow {
+            @apply text-white;
+        }
+    }
+
+    
+
+    // Transition
+    .highlight-card__content {
+        @apply property-opacity timing-1 duration-1;
+        opacity: .4;
+    }
+    .tns-slide-active.active .highlight-card__content {
+        opacity: 1;
+    }
+     
+}   
+
+
+// Screen
+@screen lg {
+    .info-slider-layout {
+        @apply pl-18 px-0;
+    }
+
+    .info-slider {
+        @apply flex-row-reverse;
+
+        // &__slide {
+        //     @apply mx-4;
+        // }
+
+        .nav {
+            @apply block;
+        }
+        
+        .slider-controls {
+            @apply w-1/3 pb-0 pl-18 text-left;
+        }
+        .info-slider-layout {
+            @apply pl-18;
+        }
+    
+        .tns-inner {
+            @apply pl-12;
+        }
+        .tns-outer {
+            @apply overflow-gradient--l-dark w-2/3;
+        }
+    }
+}
+
+
+@media (max-width: 575px) {
+    
+    .info-slider-layout {
+        @apply pb-8;
+    }
+
+    .info-slider {
+        // Arrow Controls
+        .controls {
+            bottom: -5rem;
+        }
+
+    }
+}

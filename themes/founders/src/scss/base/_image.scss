@@ -30,6 +30,12 @@
             h-full;
     }
 
+    // Show Overflow
+    &.-show-overflow {
+        @apply .overflow-visible;
+    }
+
+    // Ratios
     &.-is1x1 {
         padding-top: 100%;
     }
@@ -73,6 +79,8 @@
     &.rounded-full.-inner-shadow::before {
         @apply rounded-full;
     }
+
+
 
 }
 

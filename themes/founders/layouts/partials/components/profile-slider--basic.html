@@ -1,10 +1,10 @@
 <!-- Profile Slider -->
-<profile_slider_basic :opt="{
+<slider :opt="{
     items: 1,
     autoplay: true,
     mode: 'gallery'
 }"
-class="profile-slider -basic slider-reset bg-grey-darker| container clearfix">
+class="profile-slider -basic slider-reset -no-gutters bg-grey-darker| container clearfix">
 
 <template slot="slides">
     <div class="profile-slider__slide">
@@ -26,7 +26,7 @@ class="profile-slider -basic slider-reset bg-grey-darker| container clearfix">
             
             <!-- Aside -->
             <div class="profile-slider__aside">
-                <figure class="image -is1x1">
+                <figure class="image -is1x1 -show-overflow">
                     <img src="/img/fpo-02.jpg" data-src="/img/fpo-02.jpg" alt="">
                     <div class="pattern--white"></div> 
                 </figure>
@@ -54,7 +54,7 @@ class="profile-slider -basic slider-reset bg-grey-darker| container clearfix">
             
             <!-- Aside -->
             <div class="profile-slider__aside">
-                <figure class="image -is1x1">
+                <figure class="image -is1x1 -show-overflow">
                         <img src="/img/fpo-02.jpg" data-src="/img/fpo-02.jpg" alt="">
                         <div class="pattern--white"></div> 
                 </figure>
@@ -65,4 +65,4 @@ class="profile-slider -basic slider-reset bg-grey-darker| container clearfix">
 </template>
 
 
-</profile_slider_basic>
+</slider>
