@@ -1,4 +1,9 @@
 [v-cloak] {display: none}
+:root {
+	// Going where Tailwind cannot reach
+	--menu-sm-offset: 4.5rem;
+}
+
 
 @tailwind preflight;
 @tailwind components;

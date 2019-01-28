@@ -52,7 +52,7 @@
   
   "PanelHero_1": [
       {
-         "variation": "bg-green-darkest",
+         "variation": "-light",
          "header": "Meet our Team",
          "descr": "<p>Subheading about meeting the team behind the Pledge.</p>",
          "action" : {

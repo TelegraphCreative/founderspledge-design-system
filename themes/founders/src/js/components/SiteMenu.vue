@@ -27,8 +27,10 @@
     </div>
 </template>
 
-<script>
+<script type="text/babel">
 import click_outside from '../directives/ClickOutslide';
+require('intersection-observer');
+
 
 export default {
     data(){

@@ -12,20 +12,16 @@
  ],
  "PageMenu": [
     {
-      "text": "The Pledger Journey",
-      "url": ""
+      "text": "Media Resources",
+      "url": "#resources"
     },
     {
-      "text": "Offerings",
-      "url": ""
+      "text": "Contact",
+      "url": "#contact"
     },
     {
-      "text": "Hear from our Community",
-      "url": ""
-    },
-    {
-      "text": "Benefits",
-      "url": ""
+      "text": "Recent Press",
+      "url": "#press"
     }
   ],
 

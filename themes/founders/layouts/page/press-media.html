@@ -7,7 +7,7 @@
     <!-- Page Menu-->
     {{ partial "components/page-menu.html" . }}
 
-    <section class="container | gutter-lg space-b | border-t border-oat-light space-t">
+    <section id="resources" class="js-section | container | gutter-lg md:space-t space-b | border-t border-oat-light">
         <!-- Section Header - Basic -->
         {{range .Params.SectionHeaderBasic_1}}
             {{ partial "components/section-header--basic.html" . }} {{ end }}
@@ -19,11 +19,13 @@
         </div>
     </section>    
 
-    <!-- Panel Hero -->
-    {{range .Params.PanelHero_1}}
+    <section id="contact" class="js-section">
+        <!-- Panel Hero -->
+        {{range .Params.PanelHero_1}}
         {{ partial "components/panel-hero.html" . }} {{end}}
+    </section>
 
-    <section class="bg-oat-light | space-b">
+    <section id="press" class="js-section | bg-oat-light | space-b">
         <div class="container gutter-lg">
             <!-- Section Header - Basic -->
             {{range .Params.SectionHeaderBasic_2}}

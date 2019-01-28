@@ -3,7 +3,7 @@
     <ul class="page-menu__bar menu-bar">
         {{range .Params.PageMenu}}
             <li class="page-menu__item">
-                <a class="link" href="{{ .url }}">{{ .text }}</a>
+                <smooth_scroll class="link" :anchor="'{{ .url }}'" :offset="120">{{ .text }}</smooth_scroll>
             </li>
         {{ end }}
     </ul>

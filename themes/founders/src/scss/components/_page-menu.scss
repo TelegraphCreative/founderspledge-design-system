@@ -1,5 +1,8 @@
 .page-menu {
-    @apply bg-oat-lighter;
+    @apply bg-oat-lighter sticky z-40;
+
+    top: var(--menu-sm-offset);
+
     &__bar {
         @apply list-reset 
         text-xs
@@ -12,17 +15,17 @@
     }
 
     .link {
-        @apply px-4 py-8;
+        @apply px-0 py-6;
     }
     
     @screen md {
-        @apply bg-transparent;
+        @apply bg-white pin-t; 
         
         &__bar {
             @apply justify-center py-0 text-sm;
         }
         .link {
-            @apply px-8;
+            @apply px-8 py-8;
         }
     }
 
