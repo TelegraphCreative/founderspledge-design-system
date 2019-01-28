@@ -50,7 +50,7 @@
 
     <div id="app" v-cloak>
 
-      <header class="site-header" role="banner">
+      <header class="site-header | focus-links" role="banner">
 
   
   <site_menu class="site-header__menu">
@@ -396,44 +396,44 @@
             
 <div class="media-article -simple -reverse | container gutter-md">
 
-    <div class="media-article__main | gutter-l--lg | sm:px-12 md:pb-12">
-
-        <header class="media-article__header">
-            <h2 class="header-xl | pb-5 md:pb-12">100% for good</h2>
+        <div class="media-article__main | gutter-l--lg | sm:px-12 md:pb-12">
+    
+            <header class="media-article__header">
+                <h2 class="header-xl | pb-5 md:pb-12"><counter :start="0" :end="100"></counter>% for good</h2>
+                
+            </header>
+    
+            <article class="media-article__article | paragraphs">
+                <p>We don’t take any cuts or fees from donations, and members can access all our benefits and events completely free of cost. Our operations are fully funded by a small, separate group of essential philanthropists.</p>
+            </article>
             
-        </header>
-
-        <article class="media-article__article | paragraphs">
-            <p>We don’t take any cuts or fees from donations, and members can access all our benefits and events completely free of cost. Our operations are fully funded by a small, separate group of essential philanthropists.</p>
-        </article>
-        
-        
-        <div class="media-article__actions | md:mt-12 mt-5">
-                
-                <div class="link-group">
-                    <a href="#" class="link -underline">Learn about our 100% Model</a>
+            
+            <div class="media-article__actions | md:mt-12 mt-5">
+                    
+                    <div class="link-group">
+                        <a href="#" class="link -underline">Learn about our 100% Model</a>
+                    </div>
+                    
                 </div>
-                
-            </div>
+            
+    
+        </div>
+    
         
-
+        <aside class="media-article__aside | bg-orange">
+            
+                <figure class="image -is8x20 | md:block hidden">
+                    <img src="/img/fpo-01.jpg" alt="" class="fit-cover">
+                </figure>
+                <figure class="image -is2x1 | md:hidden block">
+                    <img src="/img/fpo-03.jpg" alt="" class="fit-cover">
+                </figure>
+            
+        </aside>
+        
+        
+    
     </div>
-
-    
-    <aside class="media-article__aside | bg-orange">
-        
-            <figure class="image -is8x20 | md:block hidden">
-                <img src="/img/fpo-01.jpg" alt="" class="fit-cover">
-            </figure>
-            <figure class="image -is2x1 | md:hidden block">
-                <img src="/img/fpo-03.jpg" alt="" class="fit-cover">
-            </figure>
-        
-    </aside>
-    
-    
-
-</div>
         
     </section>
 
@@ -567,7 +567,7 @@
 
       </main>
       
-      <footer class="site-footer container gutter" role="contentinfo">
+      <footer class="site-footer | container gutter | focus-links" role="contentinfo">
 
         
     

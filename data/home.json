@@ -94,7 +94,8 @@
   "MediaArticle_3": [
     {
       "variation": "-reverse",
-      "header": "100% for good",
+      "counter": "100",
+      "header": "% for good",
       "subheader": false,
       "descr": "<p>We don’t take any cuts or fees from donations, and members can access all our benefits and events completely free of cost. Our operations are fully funded by a small, separate group of essential philanthropists.</p>",
       "links": [

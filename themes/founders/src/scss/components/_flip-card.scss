@@ -152,7 +152,14 @@
     }
 
     // - Resource Type (by default, this works)
-    // &.-resource {}
+    &.-resource {
+        .link {
+            @apply text-green-darkest border-black;
+            &:hover {
+                @apply text-oat border-oat;
+            }
+        }
+    }
 }
 
 // Grid

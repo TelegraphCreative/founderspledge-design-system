@@ -35,6 +35,9 @@
 }
 
 @screen md {
+    .md\:space-t {
+        @apply pt-18;
+    }
     .md\:space-b {
         @apply pb-20
     }

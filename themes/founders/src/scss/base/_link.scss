@@ -30,6 +30,7 @@
         }
     }
 
+
     // Icon Link
     &.-icon {
 
@@ -80,14 +81,25 @@ a {
     }
 }
 a, button {
-@apply outline-none;
+ outline: none !important;
 }
-a:focus,
-button:focus {
-    color: #E8A879 !important;
-    border-color: #E8A879 !important;
-    .icon {
-        color: #E8A879 ;
-        border-color: #E8A879 ;
+
+// Focus Links (general accessibility)
+.focus-links {
+    a:focus,
+    button:focus {
+        color: #E8A879 !important;
+        border-color: #E8A879 !important;
+        .icon {
+            color: #E8A879 ;
+            border-color: #E8A879 ;
+        }
+    }
+}
+
+// Section Anchor
+.js-section-anchor {
+    &.section-active {
+        color: #53C07D !important;
     }
 }

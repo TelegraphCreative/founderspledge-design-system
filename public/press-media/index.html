@@ -54,7 +54,7 @@
 
     <div id="app" v-cloak>
 
-      <header class="site-header" role="banner">
+      <header class="site-header | focus-links" role="banner">
 
   
   <site_menu class="site-header__menu">
@@ -158,25 +158,21 @@
     <ul class="page-menu__bar menu-bar">
         
             <li class="page-menu__item">
-                <a class="link" href="">The Pledger Journey</a>
+                <smooth_scroll class="link" :anchor="'#resources'" :offset="120">Media Resources</smooth_scroll>
             </li>
         
             <li class="page-menu__item">
-                <a class="link" href="">Offerings</a>
+                <smooth_scroll class="link" :anchor="'#contact'" :offset="120">Contact</smooth_scroll>
             </li>
         
             <li class="page-menu__item">
-                <a class="link" href="">Hear from our Community</a>
-            </li>
-        
-            <li class="page-menu__item">
-                <a class="link" href="">Benefits</a>
+                <smooth_scroll class="link" :anchor="'#press'" :offset="120">Recent Press</smooth_scroll>
             </li>
         
     </ul>
 </nav>
 
-    <section class="container | gutter-lg space-b | border-t border-oat-light space-t">
+    <section id="resources" class="js-section | container | gutter-lg md:space-t space-b | border-t border-oat-light">
         
         
             <header class="section-header -basic -left">
@@ -298,8 +294,9 @@
         </div>
     </section>    
 
-    
-    
+    <section id="contact" class="js-section">
+        
+        
         <header class="panel-hero bg-green-darkest">
 
     
@@ -315,8 +312,9 @@
     
 
 </header> 
+    </section>
 
-    <section class="bg-oat-light | space-b">
+    <section id="press" class="js-section | bg-oat-light | space-b">
         <div class="container gutter-lg">
             
             
@@ -587,7 +585,7 @@
 
       </main>
       
-      <footer class="site-footer container gutter" role="contentinfo">
+      <footer class="site-footer | container gutter | focus-links" role="contentinfo">
 
         
     

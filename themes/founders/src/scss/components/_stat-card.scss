@@ -1,6 +1,6 @@
 .stat-card {
     // General Layout
-    @apply pt-14 pb-0 px-8 bg-green-light text-white
+    @apply pt-14 pb-14 px-8 mb-3 bg-green text-white
     property-all duration-3 timing-1;
 
     &__header {
@@ -13,7 +13,7 @@
 
     // Screen
     @screen md {
-
+        @apply pb-0 mb-0 bg-green-light;
 
         &__header {
             @apply flex items-center .justify-between;
@@ -44,19 +44,18 @@
     0% {
         opacity:1;
         max-height:15rem;
-        margin-bottom: 4rem;
+        padding-bottom:4rem;      
     }
-    20% {
-        opacity:0;
-    }
-    30% {
-        opacity:0;
-
+    50% {
+        opacity: 0;
+        max-height:15rem;
+        padding-bottom:4rem;      
     }
     100% {
         opacity:0;
         max-height:0;
-        margin-bottom: 0;
+        padding-bottom:0;      
+
     }
 }
 
@@ -64,15 +63,18 @@
     0% {
         opacity:0;
         max-height:0;
-        margin-bottom: 0;
+        padding-bottom:0;
+
     }
-    75% {
-        opacity:1;
-        margin-bottom: 4rem;
+    50% {
+        opacity:0;
+        max-height:15rem;  
+        padding-bottom:4rem;      
     }
     100% {
         opacity:1;
         max-height:15rem;
-        margin-bottom: 4rem;
+        padding-bottom:4rem;      
+
     }
 }
