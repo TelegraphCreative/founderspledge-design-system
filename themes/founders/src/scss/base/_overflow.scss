@@ -36,4 +36,8 @@
         // }
 }
 
+.overflow-gradient--l-dark {
+    -webkit-mask-image: linear-gradient(to left, transparent, #12302D 0px, #12302D 96%, transparent);
+}
+
 

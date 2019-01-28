@@ -19,7 +19,8 @@
     }
     
     @screen md {
-        @apply bg-white pin-t; 
+        @apply pin-t; 
+        background: rgba(255,255,255,.98);
         
         &__bar {
             @apply justify-center py-0 text-sm;

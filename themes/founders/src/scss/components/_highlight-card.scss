@@ -7,6 +7,7 @@
     mb-4
     py-12 px-10;
 
+
     &:last-of-type {
         @apply mb-0;
     }
@@ -36,9 +37,22 @@
         }
     }
 
-    
     .paragraphs {
         @apply mt-4;
+    }
+
+    // Align Text Left
+    &.text-left {
+        @apply text-left px-14;
+
+        .highlight-card__main {
+            @apply .max-w-full;
+        }
+
+        .highlight-card__main,
+        .icon {
+            @apply ml-0;
+        }
     }
 
 }
@@ -50,7 +64,9 @@
     
     .highlight-card {
         @apply py-10;
+        
     }
+
 }
 // Md Screen 
 @screen md {
@@ -84,14 +100,17 @@
                 @apply opacity-100;
             }
         }
+
+        
     }
 
     // Variation
     // On Dark
-    .bg-green-darkest .highlight-cards {
-        @apply text-white;
-
+    .bg-green-darkest {
+        
         .highlight-card {
+            @apply text-white;
+
             &__icon,
             &__action {
                 @apply opacity-0
@@ -110,7 +129,29 @@
                     @apply opacity-100;
                 }
             }
+
+             // White Type
+            &.-white {
+                @apply bg-white text-green-darkest;
+
+                .highlight-card__icon,
+                .highlight-card__action {
+                    @apply opacity-100;
+                }
+
+                // Hide Scaling Background
+                &:before { @apply hidden; }
+
+                // &:hover {
+                //     @apply bg-green text-white;
+                //     .icon {
+                //         @apply text-white;
+                //     }
+                // }
+            }
+
         }
+        
     }
 
 }
