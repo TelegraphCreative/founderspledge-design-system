@@ -27,6 +27,7 @@
 @import 'base/pattern';
 @import 'base/position';
 @import 'base/overflow';
+@import 'base/modal';
 
 
 // Vendor
@@ -49,6 +50,9 @@
 @import 'components/highlight-card';
 @import 'components/stat-card';
 @import 'components/article-card';
+
+// Modals
+@import 'components/profile-modal';
 
 // Sliders
 @import 'components/profile-card';

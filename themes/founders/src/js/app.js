@@ -3,11 +3,13 @@ window.Vue = require('vue')
 
 // Imports
 import site_menu from './components/SiteMenu';
-import smooth_scroll from './components/SmoothScroll';
+
 import full_slider from './components/FullSlider';
 import info_slider from './components/InfoSlider';
 import slider from './components/Slider';
+import profile_modal from './components/ProfileModal';
 import select_box from './components/SelectBox';
+import smooth_scroll from './components/SmoothScroll';
 import section_anchor_states from './components/SectionAnchorStates';
 import counter from './components/Counter';
 
@@ -20,6 +22,7 @@ const app = new Vue({
         full_slider,
         info_slider,
         slider,
+        profile_modal,
         select_box,
         smooth_scroll,
         counter

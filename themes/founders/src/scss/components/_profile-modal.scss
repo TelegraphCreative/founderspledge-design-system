@@ -1,0 +1,21 @@
+
+// Modal
+.modal.-profile {
+    
+    &.modal__box {
+        @apply flex justify-center flex-row-reverse
+        p-12 cursor-auto;
+    }
+
+   .modal { 
+        &__media {
+            @apply w-1/3 self-end;
+        }
+        &__content {
+            @apply w-2/3 
+            bg-white
+            p-12;
+        }
+   }
+
+}

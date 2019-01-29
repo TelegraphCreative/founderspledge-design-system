@@ -1,0 +1,36 @@
+
+<profile_modal>
+
+    <template slot="trigger">
+
+        <figure class="profile-card__figure | image -is1x1">
+            <img src="{{ .image }}" alt="">
+        </figure>
+
+        <div class="profile-card__main">
+            <h4 class="header-md | visibility-shift delay-3 property-all duration-5 timing-1">{{ .name }}</h4>
+            <h5 class="header-sm -white | visibility-shift delay-4 property-all duration-5 timing-1"> {{ .detail }}</h5>
+            <div class="pattern--green | visibility-shift delay-3 property-all duration-5 timing-1"></div>
+        </div>
+        
+    </template>
+
+    <template slot="image">
+        <figure class="profile-card__figure | image -is1x1">
+            <img src="{{ .image }}" alt="">
+        </figure>
+    </template>
+
+    <header slot="header">
+        <h4 class="header-md">{{ .name }}</h4>
+        <h5 class="header-sm -white"> {{ .detail }}</h5>
+    </header>
+
+    <article slot="article">
+        <div class="paragraphs">
+                <p>Lorem ipsum Miguel directs all architecture, design, and construction activities at WeWork. Previously, he created the design framework and led the national retail roll-out for American Apparel and was involved in the early-stage development of several companies. He earned his BA from the University of Oregon.</p>
+                <p>Lorem ipsum Miguel directs all architecture, design, and construction activities at WeWork. Previously, he created the design framework and led the national retail roll-out for American Apparel and was involved in the early-stage development of several companies. He earned his BA from the University of Oregon.</p>
+        </div>
+    </article>
+    
+</profile_modal>

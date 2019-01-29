@@ -5300,6 +5300,49 @@ cite {
   -webkit-mask-image: linear-gradient(to left, transparent, #12302d 0px, #12302d 96%, transparent);
 }
 
+body.overflow-hidden {
+  overflow: hidden;
+}
+
+.modal__bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 40;
+  cursor: pointer;
+  background-color: rgba(43, 61, 71, .4);
+}
+
+.modal__box {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #12302d;
+  overflow: auto;
+  z-index: 50;
+}
+
+.modal__close {
+  position: fixed;
+  cursor: pointer;
+  right: 0;
+  top: 0;
+  z-index: 30;
+  cursor: pointer;
+  right: 2.5rem;
+  top: 2.5rem;
+}
+
+.modal__close:hover {
+  color: #53c07d;
+}
+
 #tns1-iw {
   margin: 0 !important;
 }
@@ -6830,6 +6873,25 @@ body {
   }
 }
 
+.modal.-profile.modal__box {
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+  padding: 3rem;
+  cursor: auto;
+}
+
+.modal.-profile .modal__media {
+  width: 33.33333%;
+  align-self: flex-end;
+}
+
+.modal.-profile .modal__content {
+  width: 66.66667%;
+  background-color: #fff;
+  padding: 3rem;
+}
+
 .profile-card {
   display: block;
   width: 50%;
@@ -6837,6 +6899,7 @@ body {
   padding-left: .5rem;
   padding-right: .5rem;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .profile-card:last-child,
@@ -6929,8 +6992,14 @@ body {
   margin-bottom: 2.5rem;
 }
 
-.profile-slider__aside {
-  position: relative;
+.profile-slider .tns-inner,
+.profile-slider__content {
+  overflow: hidden;
+}
+
+.profile-slider.-hero .tns-inner,
+.profile-slider.-hero__content {
+  overflow: visible;
 }
 
 .profile-slider .slider-controls {
@@ -6993,11 +7062,12 @@ body {
 
 .profile-slider .pattern--white {
   position: absolute;
-  z-index: 0;
+  z-index: 10;
   height: 100%;
-  width: 100%;
-  right: -60px;
-  top: 40px;
+  right: -62px;
+  background-repeat: no-repeat;
+  width: 9rem;
+  top: -18px;
 }
 
 @media (min-width: 768px) {
@@ -7121,12 +7191,12 @@ body {
   }
 
   .profile-slider .pattern--white {
-    z-index: 10;
     width: 15.25rem;
     height: 3.625rem;
     right: -2rem;
     bottom: -2rem;
     top: inherit;
+    background-repeat: repeat;
   }
 
   .bg-orange .profile-slider .icon:hover,
@@ -7149,6 +7219,10 @@ body {
   margin-left: 0;
   margin-right: 0;
   position: relative;
+}
+
+.info-slider .tns-outer {
+  overflow-x: hidden;
 }
 
 .info-slider .slider-controls {
@@ -7279,10 +7353,6 @@ body {
   .info-slider .controls {
     bottom: -5rem;
   }
-}
-
-.slider-reset .tns-outer {
-  overflow-x: hidden;
 }
 
 .slider-reset [data-action] {

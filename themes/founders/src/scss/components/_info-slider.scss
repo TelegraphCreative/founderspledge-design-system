@@ -9,7 +9,9 @@
 
     @apply flex px-0 flex-col-reverse justify-end mx-0 relative;
 
-    
+    .tns-outer {
+        overflow-x: hidden;
+    }
 
     // Controls
     .slider-controls {

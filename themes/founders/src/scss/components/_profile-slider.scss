@@ -5,8 +5,17 @@
     &__main {
         @apply mb-10;      
     }
-    &__aside {
-        @apply relative;
+    .tns-inner,
+    &__content {
+        @apply overflow-hidden;
+    }
+
+    // Hero Type
+    &.-hero {
+        .tns-inner,
+        &__content {
+            @apply overflow-visible;
+        }
     }
 
 
@@ -67,9 +76,11 @@
 
     // Pattern
     .pattern--white {
-        @apply absolute z-0 h-full w-full;
-        right: -60px;
-        top: 40px;
+        @apply absolute z-10 h-full;
+        right: -62px;
+        background-repeat: no-repeat;
+        width: 9rem;
+        top: -18px;
     }
     
 }
@@ -168,12 +179,12 @@
 
         // Pattern
         .pattern--white {
-            @apply z-10;
             width: 15.25rem;
             height: 3.625rem;
             right: -2rem;
             bottom: -2rem;
             top: inherit;
+            background-repeat: repeat;
         }
     }
 
