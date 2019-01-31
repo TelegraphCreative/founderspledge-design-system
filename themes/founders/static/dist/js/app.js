@@ -450,6 +450,15 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -478,12 +487,6 @@ __webpack_require__.r(__webpack_exports__);
       if (this.options.modalClass) {
         return this.options.modalClass;
       }
-    },
-    btnText: function btnText() {
-      return this.options.hasOwnProperty('btnText') ? this.options.btnText : false;
-    },
-    btnClasses: function btnClasses() {
-      return this.options.hasOwnProperty('btnClass') ? this.options.btnClass : false;
     },
     // Adjust layout for image
     hasImage: function hasImage() {
@@ -9374,29 +9377,38 @@ var render = function() {
                 1
               ),
               _vm._v(" "),
-              _vm.hasImage
-                ? _c(
-                    "div",
-                    { staticClass: "modal__media" },
-                    [_vm._t("image")],
-                    2
-                  )
-                : _vm._e(),
-              _vm._v(" "),
               _c("div", { staticClass: "modal__content" }, [
                 _c(
-                  "header",
-                  { staticClass: "modal__header" },
-                  [_vm._t("header", [_c("h3", [_vm._v("Modal Header")])])],
+                  "div",
+                  { staticClass: "modal__aside -content" },
+                  [_vm._t("aside")],
                   2
                 ),
                 _vm._v(" "),
-                _c(
-                  "article",
-                  { staticClass: "modal__detail" },
-                  [_vm._t("article", [_c("p", [_vm._v("Article text…")])])],
-                  2
-                )
+                _c("div", { staticClass: "modal__main" }, [
+                  _c(
+                    "header",
+                    { staticClass: "modal__header" },
+                    [_vm._t("header", [_c("h3", [_vm._v("Modal Header")])])],
+                    2
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "article",
+                    { staticClass: "modal__detail" },
+                    [_vm._t("article", [_c("p", [_vm._v("Article text…")])])],
+                    2
+                  )
+                ]),
+                _vm._v(" "),
+                _vm.hasImage
+                  ? _c(
+                      "div",
+                      { staticClass: "modal__aside -media" },
+                      [_vm._t("image")],
+                      2
+                    )
+                  : _vm._e()
               ])
             ])
           : _vm._e()

@@ -2,20 +2,103 @@
 // Modal
 .modal.-profile {
     
+    // Layout
     &.modal__box {
-        @apply flex justify-center flex-row-reverse
-        p-12 cursor-auto;
+        @apply cursor-auto flex;
+    }
+    
+    .modal { 
+        &__content {
+            @apply flex flex-wrap flex-row;
+        }
+        &__aside {
+            @apply w-1/2;
+
+            &.-content {
+                order: 2;
+            }
+            &.-media {
+                order: 3;
+            }
+        }
+        &__header {
+            @apply text-green-light bg-green-darkest pb-10 pt-12 px-12;
+            margin-top: -1px; // fixes gap where white bg shows through at some breakpoints
+        }
+        &__main {
+            @apply bg-white;
+        }
+        &__detail {
+            @apply px-8 pt-10 pb-12;
+        }
     }
 
-   .modal { 
-        &__media {
-            @apply w-1/3 self-end;
+    // Typography
+    blockquote {
+        @apply font-serif text-green text-lg 
+        relative my-8;
+
+        &:before {
+            @apply pseudo absolute pin-l h-full -ml-8
+            border-l-8 border-green;
         }
-        &__content {
-            @apply w-2/3 
-            bg-white
-            p-12;
+    }
+    .definition-list {
+        @apply text-white;
+    }
+    
+
+
+    // Screen 
+    @screen md {
+
+        // Layout
+        .modal { 
+            &__content {
+                @apply grid h-full;
+                grid-template-columns: repeat(4, 1fr);
+            }
+            
+            &__aside {
+                @apply flex justify-end w-full;
+
+                &.-content {
+                    margin-top: 16.25rem;
+                    order:1;
+                }
+
+                &.-media {
+                    @apply self-end sticky pin-b;
+                    order:3;
+                }
+            }
+            
+            &__main {
+                grid-column-start: span 2;
+                order:2;
+            }
+
+            &__detail {
+                @apply p-12;
+            }
+
+            &__header {
+                @apply pt-28 pb-12;
+            }
+
         }
-   }
+
+        // Typography
+        p {
+            @apply leading-loose;
+        }
+        blockquote {
+            @apply text-xl my-10 leading-normal;
+            &:before {
+                @apply pseudo absolute pin-l h-full -ml-12;
+            }
+        }
+
+    }
 
 }

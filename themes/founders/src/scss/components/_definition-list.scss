@@ -1,0 +1,11 @@
+.definition-list {
+    dt {
+        @apply mb-2 px-5 pt-5
+        text-xs uppercase font-medium tracking-narrow;
+    }
+
+    dd {
+        @apply pb-5 px-5 border-b border-black
+        font-serif text-lg;
+    }
+}

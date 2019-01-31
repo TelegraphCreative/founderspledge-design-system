@@ -4493,11 +4493,6 @@ body {
   color: #fff;
 }
 
-.header-sm-2 {
-  font-size: 1.25rem;
-  font-family: Chap--web;
-}
-
 .header-md {
   font-size: 1.25rem;
   font-family: Chap--web;
@@ -4662,6 +4657,10 @@ html {
   padding-left: 2rem;
   padding-right: 2rem;
   max-width: 90rem;
+}
+
+.grid {
+  display: grid;
 }
 
 .flex-grid {
@@ -6874,22 +6873,130 @@ body {
 }
 
 .modal.-profile.modal__box {
-  display: flex;
-  justify-content: center;
-  flex-direction: row-reverse;
-  padding: 3rem;
   cursor: auto;
-}
-
-.modal.-profile .modal__media {
-  width: 33.33333%;
-  align-self: flex-end;
+  display: flex;
 }
 
 .modal.-profile .modal__content {
-  width: 66.66667%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.modal.-profile .modal__aside {
+  width: 50%;
+}
+
+.modal.-profile .modal__aside.-content {
+  order: 2;
+}
+
+.modal.-profile .modal__aside.-media {
+  order: 3;
+}
+
+.modal.-profile .modal__header {
+  color: #a0e0b2;
+  background-color: #12302d;
+  padding-bottom: 2.5rem;
+  padding-top: 3rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  margin-top: -1px;
+}
+
+.modal.-profile .modal__main {
   background-color: #fff;
-  padding: 3rem;
+}
+
+.modal.-profile .modal__detail {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 2.5rem;
+  padding-bottom: 3rem;
+}
+
+.modal.-profile blockquote {
+  font-family: Chap--web;
+  color: #53c07d;
+  font-size: 1.125rem;
+  position: relative;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.modal.-profile blockquote:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  margin-left: -2rem;
+  border-left-width: 8px;
+  border-color: #53c07d;
+}
+
+.modal.-profile .definition-list {
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  .modal.-profile .modal__content {
+    display: grid;
+    height: 100%;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .modal.-profile .modal__aside {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+  .modal.-profile .modal__aside.-content {
+    margin-top: 16.25rem;
+    order: 1;
+  }
+
+  .modal.-profile .modal__aside.-media {
+    align-self: flex-end;
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0;
+    order: 3;
+  }
+
+  .modal.-profile .modal__main {
+    grid-column-start: span 2;
+    order: 2;
+  }
+
+  .modal.-profile .modal__detail {
+    padding: 3rem;
+  }
+
+  .modal.-profile .modal__header {
+    padding-top: 7.5rem;
+    padding-bottom: 3rem;
+  }
+
+  .modal.-profile p {
+    line-height: 1.75;
+  }
+
+  .modal.-profile blockquote {
+    font-size: 1.25rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    line-height: 1.5;
+  }
+
+  .modal.-profile blockquote:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    margin-left: -3rem;
+  }
 }
 
 .profile-card {
@@ -7723,6 +7830,27 @@ body {
   .logo-list__logo:last-child {
     margin-right: 0;
   }
+}
+
+.definition-list dt {
+  margin-bottom: .5rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding-top: 1.25rem;
+  font-size: .75rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: .0362rem;
+}
+
+.definition-list dd {
+  padding-bottom: 1.25rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  border-bottom-width: 1px;
+  border-color: #000;
+  font-family: Chap--web;
+  font-size: 1.125rem;
 }
 
 .signup-form {

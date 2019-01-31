@@ -13,25 +13,34 @@
                         <IconClose :classes="'icon--close -sm text-green'"></IconClose>
                     </div>
 
-                    <!-- Optional : if removed, content will expand fullwidth -->
-                    <div class="modal__media" v-if="hasImage">
-                        <slot name="image"></slot>
-                    </div>
-
                     <div class="modal__content">
-                        <!-- Header -->
-                        <header class="modal__header">
-                            <slot name="header">
-                                <h3>Modal Header</h3>
-                            </slot>
-                        </header>
+                        
+                        <!-- Aside: Content -->
+                        <div class="modal__aside -content">
+                            <slot name="aside"></slot>
+                        </div>
 
-                        <!-- Article -->
-                        <article class="modal__detail">
-                            <slot name="article">
-                                <p>Article text…</p>
-                            </slot>
-                        </article>
+                        <!-- Main -->
+                        <div class="modal__main">
+                            <!-- Header -->
+                            <header class="modal__header">
+                                <slot name="header">
+                                    <h3>Modal Header</h3>
+                                </slot>
+                            </header>
+
+                            <!-- Article -->
+                            <article class="modal__detail">
+                                <slot name="article">
+                                    <p>Article text…</p>
+                                </slot>
+                            </article>
+                        </div>
+
+                        <!-- Asice: Media -->
+                        <div class="modal__aside -media" v-if="hasImage">
+                            <slot name="image"></slot>
+                        </div>      
                         
                     </div>
 
@@ -71,14 +80,6 @@
                if(this.options.modalClass) {
                 return this.options.modalClass
                } 
-            },
-
-            btnText(){
-                   return this.options.hasOwnProperty('btnText') ? this.options.btnText : false
-            },
-
-            btnClasses(){
-                return this.options.hasOwnProperty('btnClass') ? this.options.btnClass : false
             },
 
             // Adjust layout for image

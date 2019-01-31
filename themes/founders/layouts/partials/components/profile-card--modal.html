@@ -16,21 +16,34 @@
     </template>
 
     <template slot="image">
-        <figure class="profile-card__figure | image -is1x1">
+        <figure class="profile-card__figure">
             <img src="{{ .image }}" alt="">
         </figure>
     </template>
 
     <header slot="header">
-        <h4 class="header-md">{{ .name }}</h4>
-        <h5 class="header-sm -white"> {{ .detail }}</h5>
+        <h4 class="header-xl">{{ .name }}</h4>
+        <h5 class="header-sm -light"> {{ .detail }}</h5>
     </header>
 
     <article slot="article">
         <div class="paragraphs">
-                <p>Lorem ipsum Miguel directs all architecture, design, and construction activities at WeWork. Previously, he created the design framework and led the national retail roll-out for American Apparel and was involved in the early-stage development of several companies. He earned his BA from the University of Oregon.</p>
-                <p>Lorem ipsum Miguel directs all architecture, design, and construction activities at WeWork. Previously, he created the design framework and led the national retail roll-out for American Apparel and was involved in the early-stage development of several companies. He earned his BA from the University of Oregon.</p>
+            {{ .bio | safeHTML }}
         </div>
     </article>
+
+    <template slot="aside">
+        <dl class="definition-list">
+            <dt>Took the Pledge</dt>
+            <dd>March 2017</dd>
+
+            <dt>Location</dt>
+            <dd>San Francisco, USA</dd>
+
+            <dt>Elsewhere</dt>
+            <dd>Instagram</dd>
+        </dl>
+        
+    </template>
     
 </profile_modal>
