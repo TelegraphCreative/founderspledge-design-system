@@ -3,7 +3,7 @@
 .profile-card {
 
     // Layout
-    @apply block w-1/2 mb-4 px-2 no-underline;
+    @apply block w-1/2 mb-4 px-2 no-underline cursor-pointer;
     
     // Remove last btm margin on mobile
     &:last-child, 

@@ -1,12 +1,20 @@
-// Grid 
+// General Doc Rules 
 html {
     scroll-behavior: smooth;
 }
 
+
+// Container
 .container {
     @apply mx-auto
     px-8;
     max-width: 90rem; // 1440
+}
+
+
+// Grid
+.grid {
+    display: grid;
 }
 
 // Flex Grid
@@ -24,6 +32,7 @@ html {
 // Medium Screen
 @screen md {
 
+    // Container
     .container {
         @apply px-0;
     }
@@ -68,11 +77,11 @@ html {
 // Large Screen
 @screen lg {
 
-    // lg:Default
+    // Gutters
     .lg\:gutter {
         @apply px-15;
     }
-    // Gutters
+    
     .gutter {
 
         &-md {

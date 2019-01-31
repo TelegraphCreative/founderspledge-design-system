@@ -1,0 +1,41 @@
+body.overflow-hidden{
+    @apply overflow-hidden;
+}
+
+// Modal
+.modal {
+    //background-color: rgba(43, 61, 71, 0.4);
+    &__bg{
+        @apply fixed 
+        pin-t pin-r pin-b pin-l 
+        z-40
+        cursor-pointer; 
+
+        background-color: rgba(43, 61, 71, 0.4);
+    }
+    // Layout
+    &__box {
+        @apply fixed 
+        pin-t pin-r pin-b pin-l 
+        w-full h-full
+        bg-green-darkest 
+        overflow-auto
+        z-50;
+    
+    }
+
+    &__close {
+        @apply fixed
+        cursor-pointer
+        pin-r pin-t
+        z-30
+        cursor-pointer;
+        right: 2.5rem;
+        top: 2.5rem;
+
+        &:hover {
+            @apply text-green;
+        }
+
+    }
+}
