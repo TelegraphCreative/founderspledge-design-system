@@ -42,94 +42,84 @@
 
 import { tns } from 'tiny-slider/src/tiny-slider';
 import IconArrow from '../icons/icon-arrow--r';
-
 import { timeout } from 'q';
     
-    export default {
-        name: "profileSlider",
+export default {
+    name: "profileSlider",
 
-        props: [
-            'opt'
-        ],
+    props: [
+        'opt'
+    ],
 
-        data(){
-            return {
-                total: null,
-                current: null
-            }
-        },
-
-        mounted() {
-
-            let _this = this
-            let Slides = _this.$el.querySelector('.slider')
-            let Controls = _this.$el.querySelector('.controls')
-            let Nav = _this.$el.querySelector('.nav')
-            let Options = _this.opt 
-
-            window.addEventListener('load', function() {
-                var slider = tns({
-                    "container": Slides,
-                    "slideBy": Options.slideBy,
-                    "items": Options.items,
-                    "mode": Options.mode,
-                    
-                    "controlsContainer": Controls,
-                    "navContainer": Nav,
-                    "navAsThumbnails": true,
-
-                    "autoplay": Options.autoplay,
-                    // "autoplayTimeout": Options.autoplayTimeout,
-                    // "mouseDrag": Options.mouseDrag,
-                    "speed": Options.speed,
-                    "center": Options.center,
-                    "loop":  true,
-                    
-                    // "fixedWidth": Options.fixedWidth,    
-                    // "controls": Options.controls,
-                    "lazyload": true,
-
-                    "gutter": Options.gutter,
-                    responsive: {
-                        0: {
-                            "items": 1
-                        },
-                        576: {
-                            "items": Options.items,
-                        }
-                    }
-                });
-
-                // Initial UI
-                setTimeout(function(){
-                    let info = slider.getInfo();
-                    // console.log(info)
-                    customUi();
-                }, 1000)
-
-                // Update UI on Change
-                slider.events.on('transitionEnd', customUi);
-
-                // UI Info
-                function customUi(){
-                    let info = slider.getInfo();
-                    let allSlides = Slides.querySelectorAll('.tns-slide-active')
-                    allSlides.forEach(slide => {
-                        slide.classList.remove('active');
-                    });
-                    Slides.querySelector('.tns-slide-active').classList.add('active');
-
-                    _this.total = info.navItems.length
-                    _this.current = info.displayIndex
-
-                };
-
-            });
-            
-        },
-
-        components: {
-            IconArrow
+    data(){
+        return {
+            total: null,
+            current: null
         }
+    },
+
+    mounted() {
+
+        let _this = this
+        let Slides = _this.$el.querySelector('.slider')
+        let Controls = _this.$el.querySelector('.controls')
+        let Nav = _this.$el.querySelector('.nav')
+        let Options = _this.opt 
+
+        window.addEventListener('load', function() {
+            var slider = tns({
+                "container": Slides,
+                "slideBy": Options.slideBy,
+                "items": Options.items,
+                "mode": Options.mode,
+                "controlsContainer": Controls,
+                "navContainer": Nav,
+                "navAsThumbnails": true,
+                "autoplay": Options.autoplay,
+                "speed": Options.speed,
+                "center": Options.center,
+                "loop":  true,   
+                "lazyload": true,
+                "gutter": Options.gutter,
+                responsive: {
+                    0: {
+                        "items": 1
+                    },
+                    576: {
+                        "items": Options.items,
+                    }
+                }
+            });
+
+            // Initial UI
+            setTimeout(function(){
+                let info = slider.getInfo();
+                customUi();
+            }, 1000)
+
+            // Update UI on Change
+            slider.events.on('transitionEnd', customUi);
+
+            // UI Info
+            function customUi(){
+                let info = slider.getInfo();
+                let allSlides = Slides.querySelectorAll('.tns-slide-active')
+                allSlides.forEach(slide => {
+                    slide.classList.remove('active');
+                });
+                Slides.querySelector('.tns-slide-active').classList.add('active');
+
+                _this.total = info.navItems.length
+                _this.current = info.displayIndex
+
+            };
+
+        });
+        
+    },
+
+    components: {
+        IconArrow
     }
+}
 </script>

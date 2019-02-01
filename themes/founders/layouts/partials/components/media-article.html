@@ -36,6 +36,19 @@ Content Types:
                 </div>
             </div>
         {{ end }}
+        
+        {{ if .gallery }}
+            <div class="media-article__actions | md:mt-12 mt-5">
+                <div class="link-group">
+
+                    <!-- Gallery Modal -->
+                    {{ partial "components/gallery-modal.html" . }}
+
+                </div>
+            </div>
+        {{ end }}
+
+
 
     </div>
 

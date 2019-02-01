@@ -18,11 +18,18 @@
      "preheader": "Ethos",
      "subheader": false,
      "descr": "<p>Our research team is here to help you navigate the world of charity, and ensure your money is put to good use towards data-driven, scalable and cost-effective programs that truly make a difference.</p><p>We believe your giving should be powered by your core values: the unique perspectives that drive and guide you. </p><p>That’s why we’ve developed the Value Discovery approach, which underpins all our giving recommendations. Instead of relying on surface level questions that are susceptible to biases, we dig deep, to find the most effective opportunities for you to do good on your terms. </p>",
-     "links": [
+     "gallery": [
        {
-         "variation": "btn -wide",
-         "text": "Learn More",
-         "url": "#"
+         "image": "/img/fpo-03.jpg",
+         "caption": "Learn More"
+       },
+       {
+         "image": "/img/fpo-06.jpg",
+         "caption": "Learn More"
+       },
+       {
+         "image": "/img/fpo-07.jpg",
+         "caption": "Learn More"
        }
      ],
      "image": {
@@ -71,19 +78,12 @@
         "image": "/img/fpo-04.jpg",
         "pledgeDate": "March 2017",
         "bio": ""
-    },
-    {
-        "name": "Miguel McKelvey",
-        "detail": "Founder & CEO",
-        "image": "/img/fpo-02.jpg",
-        "pledgeDate": "March 2017",
-        "bio": ""
     }
   ],
   
   "PanelHero_1": [
       {
-         "variation": "",
+         "variation": "bg-green-darkest",
          "header": "Join the Community",
          "descr": "<p>Subheading about meeting the team behind the Pledge.</p>",
          "action" : {
