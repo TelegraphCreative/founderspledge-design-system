@@ -35,7 +35,6 @@
     }
 
     @screen lg {
-        @apply px-0;
         &:hover {
             @apply bg-green-darkest text-white px-10;
         }

@@ -1,0 +1,20 @@
+
+<gallery_modal>
+
+    <template slot="trigger">
+
+        <button class="btn">Show Gallery</button>
+        
+    </template>
+
+    <template slot="gallery">
+
+        {{ range .gallery }}
+        <div class="gallery-slide">
+            <img src="{{ .image }}" data-src="{{ .image }}" alt="">
+        </div>
+        {{ end }}
+
+    </template>
+    
+</gallery_modal>

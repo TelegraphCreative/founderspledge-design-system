@@ -8,6 +8,7 @@ import full_slider from './components/FullSlider';
 import info_slider from './components/InfoSlider';
 import slider from './components/Slider';
 import profile_modal from './components/ProfileModal';
+import gallery_modal from './components/GalleryModal';
 import select_box from './components/SelectBox';
 import smooth_scroll from './components/SmoothScroll';
 import section_anchor_states from './components/SectionAnchorStates';
@@ -23,6 +24,7 @@ const app = new Vue({
         info_slider,
         slider,
         profile_modal,
+        gallery_modal,
         select_box,
         smooth_scroll,
         counter

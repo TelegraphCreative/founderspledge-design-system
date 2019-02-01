@@ -7021,11 +7021,6 @@ body {
 }
 
 @media (min-width: 992px) {
-  .profile-card--info {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
   .profile-card--info:hover {
     background-color: #12302d;
     color: #fff;
