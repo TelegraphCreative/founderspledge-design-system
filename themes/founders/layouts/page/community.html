@@ -1,5 +1,37 @@
 {{ define "main" }}
 
-    <h2>Community</h2>
+    <!-- Section Header -->
+    {{range .Params.SectionHeader_1}}
+        {{ partial "components/section-header.html" . }} {{ end }}
 
+    <section class="space-t--sm space-b">
+        {{range .Params.MediaArticle_1}}
+            {{ partial "components/media-article.html" . }} {{ end }}
+    </section>
+    
+    <!-- Small Header -->
+    <header class="text-center mb-6 space-t">
+        <h4 class="header-sm">Impact Journeys</h4>
+    </header>
+
+    <!-- Profile Slider -Hero -->
+    <section class="space-b">
+        {{ partial "components/profile-slider--hero.html" . }}
+    </section>
+
+    <!-- Small Header -->
+    <header class="text-center mb-6">
+        <h4 class="header-md">Our Members</h4>
+    </header>
+
+    <!-- Profile Grid -->
+    <section class="profile-cards flex-grid flex-wrap  | container gutter-md  space-b">
+        {{range .Params.ProfileGrid_1}}
+            {{ partial "components/profile-card--modal.html" . }} {{ end }}
+    </section>
+
+    <!-- Panel Hero -->
+    {{range .Params.PanelHero_1}}
+        {{ partial "components/panel-hero.html" . }} {{end}}
+        
 {{ end }}
