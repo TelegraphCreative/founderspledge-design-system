@@ -71,19 +71,12 @@
         "image": "/img/fpo-04.jpg",
         "pledgeDate": "March 2017",
         "bio": ""
-    },
-    {
-        "name": "Miguel McKelvey",
-        "detail": "Founder & CEO",
-        "image": "/img/fpo-02.jpg",
-        "pledgeDate": "March 2017",
-        "bio": ""
     }
   ],
   
   "PanelHero_1": [
       {
-         "variation": "",
+         "variation": "bg-green-darkest",
          "header": "Join the Community",
          "descr": "<p>Subheading about meeting the team behind the Pledge.</p>",
          "action" : {

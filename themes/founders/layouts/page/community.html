@@ -28,6 +28,7 @@
     <section class="profile-cards flex-grid flex-wrap  | container gutter-md  space-b">
         {{range .Params.ProfileGrid_1}}
             {{ partial "components/profile-card--modal.html" . }} {{ end }}
+            {{ partial "components/profile-card--info.html" . }}
     </section>
 
     <!-- Panel Hero -->
