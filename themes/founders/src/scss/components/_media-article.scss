@@ -55,6 +55,7 @@
         @apply flex justify-between;
 
         &__main {
+            @apply max-w-lg;
             width: 62%;
         }
         &__aside {

@@ -27,7 +27,6 @@ $choices-icon-cross-inverse: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjEiI
     w-full;
 
   position: relative;
-  min-width: 17.5rem;
   font-size: $choices-font-size-lg;
   &:focus {
     outline: none;
@@ -401,12 +400,11 @@ $choices-icon-cross-inverse: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjEiI
 // }
 
 .choices {
-  &.-narrow {
-    max-width: 10rem;
-    min-width: inherit;
-  }
-  
-  &.-md {
+    &.-narrow {
+      max-width: 10rem;
+      min-width: inherit;
+    }
+    &.-md {
     .choices__inner {
       @apply px-6 py-5;
     }
@@ -425,6 +423,13 @@ $choices-icon-cross-inverse: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjEiI
   }
   
   // Screen
+  // -sm
+  @screen sm {
+    .choices {
+      min-width: 17.5rem;
+    }    
+  }
+  // -md
   @screen md {
     &.-md\:narrow-2 {
       max-width: 12.5rem;

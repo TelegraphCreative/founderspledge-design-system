@@ -1,7 +1,7 @@
 <template>
-    <div class="profile-card" v-click-outside="close">
+    <div class="profile-card">
 
-        <div class="profile-card__content" @click="toggleModal" :class='triggerClass'>
+        <div class="profile-card__content" @click="open" :class='triggerClass'>
             <slot name="trigger"></slot>
         </div>        
 
@@ -9,11 +9,11 @@
             <div class="modal -profile | modal__box" v-if="isActive">
 
                     <!-- Close -->
-                    <div @click="toggleModal" class="modal__close">
+                    <div @click="close" class="modal__close">
                         <IconClose :classes="'icon--close -sm text-green'"></IconClose>
                     </div>
 
-                    <div class="modal__content">
+                    <div class="modal__content ">
                         
                         <!-- Aside: Content -->
                         <div class="modal__aside -content">
@@ -52,7 +52,6 @@
 </template>
 <script>
     import IconClose from '../icons/icon-close';
-    import click_outside from '../directives/ClickOutslide';
 
     export default {
         props: {
@@ -72,6 +71,7 @@
         data(){
             return {
                 isActive: false,
+                bodyEl: null
             }
         },
         computed: {
@@ -83,33 +83,33 @@
             },
 
             // Adjust layout for image
-            hasImage() {
+            hasImage() {    
                 return this.$slots.image
             },
         },
         methods: {
             close(){
-                this.isActive = false
+                this.isActive = false;
+                this.bodyEl.classList.remove('overflow-hidden');
             },
-            toggleModal(){
-                this.isActive = !this.isActive;
-
-                document.querySelector('body').classList.toggle('overflow-hidden');
+            open(){
+                this.isActive = true;
+                this.bodyEl.classList.add('overflow-hidden');
             }
         },
         mounted() {
-            // Handle escape key press
+            // Set 
+            this.bodyEl = document.querySelector('body');  
+            
+            // Handle escape key press            
             document.body.addEventListener('keyup', e => {
                 if (e.keyCode === 27) {
-                    this.isActive = false
+                    this.close();
                 }
             })
         },
         components: {
             IconClose
-        },
-        directives: {
-            'click-outside': click_outside
         }
     }
 </script>

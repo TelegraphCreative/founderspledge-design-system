@@ -1,5 +1,5 @@
 .page-menu {
-    @apply bg-oat-lighter sticky z-40;
+    @apply bg-oat-lighter sticky z-40 px-8;
 
     top: var(--menu-sm-offset);
 
@@ -15,7 +15,7 @@
     }
 
     .link {
-        @apply px-0 py-6;
+        @apply px-2 py-6;
     }
     
     @screen md {

@@ -18,6 +18,17 @@ import counter from './components/Counter';
 // Vue App
 const app = new Vue({
     el: "#app",
+    data() {
+        return {
+            bodyClass: 'nothing'
+        }
+    },
+    methods: {
+        setBodyClasses(value){
+            console.log(value)
+            this.bodyClass = value;
+        }
+    },
     components: {
         site_menu,
         full_slider,

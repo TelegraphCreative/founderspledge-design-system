@@ -1,5 +1,4 @@
 .search-menu {
-    @apply mx-auto w-3/4; 
 
     &__form,
     &__filters {
@@ -13,7 +12,8 @@
     // Screen
     @screen md {
         @apply w-2/3 mx-auto flex-grid
-        flex justify-center items-center;
+        flex justify-center items-center
+        max-w-xl;
 
         &__form {
             @apply w-3/5;
