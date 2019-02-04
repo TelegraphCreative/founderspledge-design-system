@@ -207,23 +207,24 @@ __webpack_require__.r(__webpack_exports__);
     var Options = _this.opt;
     window.addEventListener('load', function () {
       var slider = Object(tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__["tns"])({
-        "container": Slides,
-        "slideBy": Options.slideBy,
-        "items": Options.items,
-        "mode": Options.mode,
-        "controlsContainer": Controls,
-        "navContainer": Nav,
-        "navAsThumbnails": true,
-        "autoplay": Options.autoplay,
-        // "autoplayTimeout": Options.autoplayTimeout,
-        // "mouseDrag": Options.mouseDrag,
-        "speed": Options.speed,
-        // "center": Options.center,
-        "loop": true,
-        // "fixedWidth": Options.fixedWidth,    
-        // "controls": Options.controls,
-        "lazyload": true,
-        "gutter": Options.gutter,
+        container: Slides,
+        slideBy: Options.slideBy,
+        items: Options.items,
+        mode: Options.mode,
+        controlsContainer: Controls,
+        navContainer: Nav,
+        navAsThumbnails: true,
+        autoplay: Options.autoplay,
+        // autoplayTimeout: Options.autoplayTimeout,
+        // mouseDrag: Options.mouseDrag,
+        speed: Options.speed,
+        // center: Options.center,
+        loop: true,
+        // fixedWidth: Options.fixedWidth,    
+        // controls: Options.controls,
+        lazyload: true,
+        onInit: onInit(),
+        gutter: Options.gutter,
         responsive: {
           0: {
             "edgePadding": 0
@@ -238,7 +239,12 @@ __webpack_require__.r(__webpack_exports__);
         var info = slider.getInfo(); // console.log(info)
 
         customUi();
-      }, 1000); // Update UI on Change
+      }, 1000); // Initial Load
+
+      function onInit() {
+        Slides.classList.remove('opacity-0');
+      } // Update UI on Change
+
 
       slider.events.on('transitionEnd', customUi); // UI Info
 
@@ -310,13 +316,37 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
-      isActive: false
+      isActive: false,
+      bodyEl: null
     };
   },
   methods: {
@@ -324,22 +354,31 @@ __webpack_require__.r(__webpack_exports__);
       var that = this; // Handle Modal
 
       that.isActive = !that.isActive;
-      document.querySelector('body').classList.toggle('overflow-hidden'); // Handle Slider
+      this.bodyEl.classList.toggle('overflow-hidden'); // Handle Slider
 
       if (this.isActive) {
         // Wait for Transiiton
         setTimeout(function () {
+          var GallerySlider = that.$el.querySelector('.gallery-slider');
           var Slides = that.$el.querySelector('.gallery-slides');
+          var Controls = that.$el.querySelector('.controls');
           var slider = Object(tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_2__["tns"])({
             container: Slides,
+            controlsContainer: Controls,
             slideBy: 1,
             items: 1,
             mode: "carousel",
             loop: true,
             lazyload: true,
             arrowKeys: true,
-            gutter: 16
-          });
+            gutter: 16,
+            onInit: onInit()
+          }); // Initial Load
+
+          function onInit() {
+            Slides.classList.add('ready');
+            GallerySlider.classList.remove('opacity-0');
+          }
         }, 150);
       }
     }
@@ -347,7 +386,9 @@ __webpack_require__.r(__webpack_exports__);
   mounted: function mounted() {
     var _this = this;
 
-    // Handle escape key press
+    // Set
+    this.bodyEl = document.querySelector('body'); // Handle escape key press
+
     document.body.addEventListener('keyup', function (e) {
       if (e.keyCode === 27) {
         _this.isActive = false;
@@ -439,28 +480,34 @@ __webpack_require__.r(__webpack_exports__);
     var Options = _this.opt;
     window.addEventListener('load', function () {
       var slider = Object(tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__["tns"])({
-        "container": Slides,
-        "slideBy": Options.slideBy,
-        "items": Options.items,
-        "mode": Options.mode,
-        "controlsContainer": Controls,
-        "navContainer": Nav,
-        "navAsThumbnails": true,
-        "autoplay": Options.autoplay,
-        "speed": Options.speed,
-        "center": Options.center,
-        "loop": true,
-        "lazyload": true,
-        "gutter": Options.gutter,
+        container: Slides,
+        slideBy: Options.slideBy,
+        items: Options.items,
+        mode: Options.mode,
+        controlsContainer: Controls,
+        navContainer: Nav,
+        navAsThumbnails: true,
+        autoplay: Options.autoplay,
+        speed: Options.speed,
+        center: Options.center,
+        loop: true,
+        lazyload: true,
+        onInit: onInit(),
+        gutter: Options.gutter,
         responsive: {
           0: {
-            "items": 1
+            items: 1
           },
           576: {
-            "items": Options.items
+            items: Options.items
           }
         }
-      }); // Initial UI
+      }); // Initial Load
+
+      function onInit() {
+        Slides.classList.remove('opacity-0');
+      } // Initial UI
+
 
       setTimeout(function () {
         var info = slider.getInfo();
@@ -866,30 +913,29 @@ __webpack_require__.r(__webpack_exports__);
     var Options = _this.opt;
     window.addEventListener('load', function () {
       var slider = Object(tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__["tns"])({
-        "container": Slides,
-        "items": Options.items,
-        "mode": Options.mode,
-        "controlsContainer": Controls,
-        "navAsThumbnails": true,
-        "autoplay": Options.autoplay,
-        // "autoplayTimeout": Options.autoplayTimeout,
-        // "mouseDrag": Options.mouseDrag,
-        // "speed": Options.speed,
-        // "center": Options.center,
-        // "loop":  Options.loop,
-        // "fixedWidth": Options.fixedWidth,    
-        // "controls": Options.controls,
-        "lazyload": true,
-        "gutter": 10,
+        container: Slides,
+        items: Options.items,
+        mode: Options.mode,
+        controlsContainer: Controls,
+        navAsThumbnails: true,
+        autoplay: Options.autoplay,
+        onInit: onInit(),
+        lazyload: true,
+        gutter: 10,
         responsive: {
           0: {
-            "edgePadding": 0
+            edgePadding: 0
           },
           991: {
-            "edgePadding": Options.edgePadding
+            edgePadding: Options.edgePadding
           }
         }
-      }); // Initial UI
+      }); // Initial Load
+
+      function onInit() {
+        Slides.classList.remove('opacity-0');
+      } // Initial UI
+
 
       setTimeout(function () {
         var info = slider.getInfo();
@@ -9354,7 +9400,7 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "tiny-slider" }, [
-    _c("div", { staticClass: "slider" }, [_vm._t("slides")], 2),
+    _c("div", { staticClass: "slider | opacity-0" }, [_vm._t("slides")], 2),
     _vm._v(" "),
     _c("div", { staticClass: "slider-controls" }, [
       _c("div", { staticClass: "controls-info" }, [
@@ -9446,10 +9492,48 @@ var render = function() {
                   _c(
                     "div",
                     {
-                      staticClass: "gallery-slides | slider-reset -no-controls"
+                      staticClass: "gallery-slider | slider-reset | opacity-0"
                     },
-                    [_vm._t("gallery")],
-                    2
+                    [
+                      _c(
+                        "div",
+                        { staticClass: "gallery-slides" },
+                        [_vm._t("gallery")],
+                        2
+                      ),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "slider-controls" }, [
+                        _c("div", { staticClass: "controls-info" }, [
+                          _c(
+                            "ul",
+                            { staticClass: "controls | flex justify-between" },
+                            [
+                              _c(
+                                "li",
+                                { staticClass: "prev | mr-3" },
+                                [
+                                  _c("IconArrow", {
+                                    attrs: { classes: "icon--arrow -flip -sm" }
+                                  })
+                                ],
+                                1
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "li",
+                                { staticClass: "next | ml-3" },
+                                [
+                                  _c("IconArrow", {
+                                    attrs: { classes: "icon--arrow -sm" }
+                                  })
+                                ],
+                                1
+                              )
+                            ]
+                          )
+                        ])
+                      ])
+                    ]
                   )
                 ])
               ])
@@ -9483,7 +9567,7 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "tiny-slider" }, [
-    _c("div", { staticClass: "slider" }, [_vm._t("slides")], 2),
+    _c("div", { staticClass: "slider | opacity-0" }, [_vm._t("slides")], 2),
     _vm._v(" "),
     _c(
       "div",
@@ -9752,7 +9836,7 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "tiny-slider" }, [
-    _c("div", { staticClass: "slider" }, [_vm._t("slides")], 2),
+    _c("div", { staticClass: "slider | opacity-0" }, [_vm._t("slides")], 2),
     _vm._v(" "),
     _c("div", { staticClass: "slider-controls" }, [
       _c("div", { staticClass: "controls-info" }, [

@@ -1,5 +1,5 @@
 .slider-reset {
-    
+
     // Hide TS Default, Resets
     [data-action] {
         @apply hidden;
@@ -7,7 +7,8 @@
     ul {
         @apply list-reset;
     }
-
+    
+    // Active
     .tns-nav-active {
         .inactive {
             @apply opacity-0;
@@ -17,9 +18,10 @@
         }
     }
 
+    // Arrow
     .icon--arrow {
         @apply .cursor-pointer;
-    }
+    }    
 
 }
 

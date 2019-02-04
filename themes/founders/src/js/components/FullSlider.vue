@@ -3,7 +3,7 @@
     <div class="tiny-slider">
         
         <!-- Slides -->
-        <div class="slider">
+        <div class="slider | opacity-0">
             <slot name="slides"></slot>
         </div>
 
@@ -69,27 +69,27 @@ import { timeout } from 'q';
 
             window.addEventListener('load', function() {
                 var slider = tns({
-                    "container": Slides,
-                    "slideBy": Options.slideBy,
-                    "items": Options.items,
-                    "mode": Options.mode,
+                    container: Slides,
+                    slideBy: Options.slideBy,
+                    items: Options.items,
+                    mode: Options.mode,
                     
-                    "controlsContainer": Controls,
-                    "navContainer": Nav,
-                    "navAsThumbnails": true,
+                    controlsContainer: Controls,
+                    navContainer: Nav,
+                    navAsThumbnails: true,
 
-                    "autoplay": Options.autoplay,
-                    // "autoplayTimeout": Options.autoplayTimeout,
-                    // "mouseDrag": Options.mouseDrag,
-                    "speed": Options.speed,
-                    // "center": Options.center,
-                    "loop":  true,
+                    autoplay: Options.autoplay,
+                    // autoplayTimeout: Options.autoplayTimeout,
+                    // mouseDrag: Options.mouseDrag,
+                    speed: Options.speed,
+                    // center: Options.center,
+                    loop:  true,
                     
-                    // "fixedWidth": Options.fixedWidth,    
-                    // "controls": Options.controls,
-                    "lazyload": true,
-
-                    "gutter": Options.gutter,
+                    // fixedWidth: Options.fixedWidth,    
+                    // controls: Options.controls,
+                    lazyload: true,
+                    onInit: onInit(),
+                    gutter: Options.gutter,
                     responsive: {
                         0: {
                             "edgePadding": 0
@@ -106,6 +106,11 @@ import { timeout } from 'q';
                     // console.log(info)
                     customUi();
                 }, 1000)
+
+                // Initial Load
+                function onInit(){
+                    Slides.classList.remove('opacity-0');
+                }
 
                 // Update UI on Change
                 slider.events.on('transitionEnd', customUi);
