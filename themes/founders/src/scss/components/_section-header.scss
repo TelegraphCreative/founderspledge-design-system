@@ -2,7 +2,9 @@
 
     // General Layout
     @apply text-center mb-8 pt-12;
-
+    @apply w-4/5 mx-auto ;
+    
+    
     .header-sm {
         @apply mb-4;
     }
@@ -11,14 +13,19 @@
     }
 
     &__descr {
-        @apply w-4/5 mx-auto;
+        @apply mx-auto max-w-lg;
     }
     
     &__action {
         @apply pt-5;
     }
 
-    // -Left
+    // -Top Type
+    &.-top {
+        @apply px-4 w-full max-w-full;
+    }
+
+    // -Left Type
     &.-left {
         @apply text-left;
     }
@@ -38,6 +45,7 @@
    
     // sm Screen
     @screen sm {
+        @apply w-full max-w-full;
         &__descr {
             @apply w-3/5;
         }
@@ -82,8 +90,7 @@
             @apply pb-6;
 
             .header {
-                @apply text-6xl mx-auto w-4/5;
-                // max-width: 54rem;
+                @apply text-6xl mx-auto w-4/5 max-w-xl;
                 line-height: 1.2;
             }
         }

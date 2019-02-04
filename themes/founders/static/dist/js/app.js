@@ -500,7 +500,6 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _icons_icon_close__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../icons/icon-close */ "./themes/founders/src/js/icons/icon-close.vue");
-/* harmony import */ var _directives_ClickOutslide__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../directives/ClickOutslide */ "./themes/founders/src/js/directives/ClickOutslide.js");
 //
 //
 //
@@ -553,7 +552,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: {
@@ -572,7 +570,8 @@ __webpack_require__.r(__webpack_exports__);
   },
   data: function data() {
     return {
-      isActive: false
+      isActive: false,
+      bodyEl: null
     };
   },
   computed: {
@@ -590,27 +589,27 @@ __webpack_require__.r(__webpack_exports__);
   methods: {
     close: function close() {
       this.isActive = false;
+      this.bodyEl.classList.remove('overflow-hidden');
     },
-    toggleModal: function toggleModal() {
-      this.isActive = !this.isActive;
-      document.querySelector('body').classList.toggle('overflow-hidden');
+    open: function open() {
+      this.isActive = true;
+      this.bodyEl.classList.add('overflow-hidden');
     }
   },
   mounted: function mounted() {
     var _this = this;
 
-    // Handle escape key press
+    // Set 
+    this.bodyEl = document.querySelector('body'); // Handle escape key press            
+
     document.body.addEventListener('keyup', function (e) {
       if (e.keyCode === 27) {
-        _this.isActive = false;
+        _this.close();
       }
     });
   },
   components: {
     IconClose: _icons_icon_close__WEBPACK_IMPORTED_MODULE_0__["default"]
-  },
-  directives: {
-    'click-outside': _directives_ClickOutslide__WEBPACK_IMPORTED_MODULE_1__["default"]
   }
 });
 
@@ -9552,24 +9551,14 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    {
-      directives: [
-        {
-          name: "click-outside",
-          rawName: "v-click-outside",
-          value: _vm.close,
-          expression: "close"
-        }
-      ],
-      staticClass: "profile-card"
-    },
+    { staticClass: "profile-card" },
     [
       _c(
         "div",
         {
           staticClass: "profile-card__content",
           class: _vm.triggerClass,
-          on: { click: _vm.toggleModal }
+          on: { click: _vm.open }
         },
         [_vm._t("trigger")],
         2
@@ -9580,7 +9569,7 @@ var render = function() {
           ? _c("div", { staticClass: "modal -profile | modal__box" }, [
               _c(
                 "div",
-                { staticClass: "modal__close", on: { click: _vm.toggleModal } },
+                { staticClass: "modal__close", on: { click: _vm.close } },
                 [
                   _c("IconClose", {
                     attrs: { classes: "icon--close -sm text-green" }
@@ -9589,7 +9578,7 @@ var render = function() {
                 1
               ),
               _vm._v(" "),
-              _c("div", { staticClass: "modal__content" }, [
+              _c("div", { staticClass: "modal__content " }, [
                 _c(
                   "div",
                   { staticClass: "modal__aside -content" },
@@ -21191,6 +21180,17 @@ window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.
 
 var app = new Vue({
   el: "#app",
+  data: function data() {
+    return {
+      bodyClass: 'nothing'
+    };
+  },
+  methods: {
+    setBodyClasses: function setBodyClasses(value) {
+      console.log(value);
+      this.bodyClass = value;
+    }
+  },
   components: {
     site_menu: _components_SiteMenu__WEBPACK_IMPORTED_MODULE_0__["default"],
     full_slider: _components_FullSlider__WEBPACK_IMPORTED_MODULE_1__["default"],
@@ -22151,8 +22151,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/lbradford/Sites/Client_Work/Founders_Pledge/founderspledge-fed/themes/founders/src/js/app.js */"./themes/founders/src/js/app.js");
-module.exports = __webpack_require__(/*! /Users/lbradford/Sites/Client_Work/Founders_Pledge/founderspledge-fed/themes/founders/src/scss/app.scss */"./themes/founders/src/scss/app.scss");
+__webpack_require__(/*! /Users/lindseybradford/Sites/Client_Work/FoundersPledge/themes/founders/src/js/app.js */"./themes/founders/src/js/app.js");
+module.exports = __webpack_require__(/*! /Users/lindseybradford/Sites/Client_Work/FoundersPledge/themes/founders/src/scss/app.scss */"./themes/founders/src/scss/app.scss");
 
 
 /***/ })

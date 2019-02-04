@@ -1,21 +1,25 @@
 # Founders Pledge FED
 ## Hugo + Tailwind + SASS + PurgeCSS   
 
-Powered by Laravel Mix, this site is built using Hugo to efficiently generate static html pages and webpack to handle the asset pipeline.
+Powered by Laravel Mix, this site is built using Hugo to efficiently generate static html pages and webpack to handle assets.
 
 ## Local Environment
 
 **Setup**
-```
-yarn install
-```
+
+**Install packages**
+`yarn install`
+
+**Install Hugo**
+`brew install hugo`
 
 **Development Mode**
-```
-yarn do
-```
+`yarn do`
+
 Starts a hugo server at [http://localhost:1313/](http://localhost:1313/)
 
+**Generate Distrubtion Files**
+`yarn hugo`
 
 ## File Structure
 Development files are stored in the Hugo theme, `founders`

@@ -22,7 +22,7 @@
             }
         }
         &__header {
-            @apply text-green-light bg-green-darkest pb-10 pt-12 px-12;
+            @apply px-8 text-green-light bg-green-darkest pb-10 pt-12;
             margin-top: -1px; // fixes gap where white bg shows through at some breakpoints
         }
         &__main {
@@ -55,8 +55,9 @@
         // Layout
         .modal { 
             &__content {
-                @apply grid h-full;
+                @apply grid h-full  mx-auto px-8;
                 grid-template-columns: repeat(4, 1fr);
+                max-width: 90rem; // 1440
             }
             
             &__aside {
@@ -83,7 +84,7 @@
             }
 
             &__header {
-                @apply pt-28 pb-12;
+                @apply pt-28 pb-12 px-12;
             }
 
         }
