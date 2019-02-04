@@ -35,6 +35,14 @@
         }
     }
 
+    // Gallery
+    &--gallery {
+        @apply flex justify-start items-center w-full;
+        .link {
+            @apply pl-10;
+        }
+    }
+
 }
 
 

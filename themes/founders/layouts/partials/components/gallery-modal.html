@@ -2,8 +2,19 @@
 <gallery_modal>
 
     <template slot="trigger">
-
-        <button class="btn">Show Gallery</button>
+        <div class="btn--gallery">
+            <div class="gallery-stack">
+                {{ range first 2 .gallery }}
+                <div class="gallery-stack__item">
+                    <img src="{{ .image }}" alt="">
+                </div>
+                {{ end }}
+            </div>
+            <button class="link -icon -green">
+                <span class="text">Browse event gallery</span>
+                {{- partial "svg/arrow--r.svg" (dict "class" "-xs -stroke-4") -}}
+            </button>
+        </div>
         
     </template>
 

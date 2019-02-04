@@ -1,0 +1,12 @@
+.gallery-stack {
+    @apply relative;
+
+    &__item {
+        @apply relative z-0 w-32;
+
+        &:nth-child(2) {
+            @apply absolute z-10
+            pin-t pin-l ml-5 mt-5;
+        }
+    }
+}

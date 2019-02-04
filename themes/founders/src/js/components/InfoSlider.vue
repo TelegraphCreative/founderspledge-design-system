@@ -3,7 +3,7 @@
     <div class="tiny-slider">
         
         <!-- Slides -->
-        <div class="slider">
+        <div class="slider | opacity-0">
             <slot name="slides"></slot>
         </div>
 
@@ -68,28 +68,34 @@ export default {
 
         window.addEventListener('load', function() {
             var slider = tns({
-                "container": Slides,
-                "slideBy": Options.slideBy,
-                "items": Options.items,
-                "mode": Options.mode,
-                "controlsContainer": Controls,
-                "navContainer": Nav,
-                "navAsThumbnails": true,
-                "autoplay": Options.autoplay,
-                "speed": Options.speed,
-                "center": Options.center,
-                "loop":  true,   
-                "lazyload": true,
-                "gutter": Options.gutter,
+                container: Slides,
+                slideBy: Options.slideBy,
+                items: Options.items,
+                mode: Options.mode,
+                controlsContainer: Controls,
+                navContainer: Nav,
+                navAsThumbnails: true,
+                autoplay: Options.autoplay,
+                speed: Options.speed,
+                center: Options.center,
+                loop:  true,   
+                lazyload: true,
+                onInit: onInit(),
+                gutter: Options.gutter,
                 responsive: {
                     0: {
-                        "items": 1
+                        items: 1
                     },
                     576: {
-                        "items": Options.items,
+                        items: Options.items,
                     }
                 }
             });
+
+            // Initial Load
+            function onInit(){
+                Slides.classList.remove('opacity-0');
+            }
 
             // Initial UI
             setTimeout(function(){

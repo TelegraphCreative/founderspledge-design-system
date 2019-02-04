@@ -3,7 +3,7 @@
     <div class="tiny-slider">
         
         <!-- Slides -->
-        <div class="slider">
+        <div class="slider | opacity-0">
             <slot name="slides"></slot>
         </div>
 
@@ -63,34 +63,29 @@ import { timeout } from 'q';
             
             window.addEventListener('load', function() {
                 var slider = tns({
-                    "container": Slides,
-                    "items": Options.items,
-                    "mode": Options.mode,
-                    
-                    "controlsContainer": Controls,
-                    "navAsThumbnails": true,
-
-                    "autoplay": Options.autoplay,
-                    // "autoplayTimeout": Options.autoplayTimeout,
-                    // "mouseDrag": Options.mouseDrag,
-                    // "speed": Options.speed,
-                    // "center": Options.center,
-                    // "loop":  Options.loop,
-                    
-                    // "fixedWidth": Options.fixedWidth,    
-                    // "controls": Options.controls,
-                    "lazyload": true,
-
-                    "gutter": 10,
+                    container: Slides,
+                    items: Options.items,
+                    mode: Options.mode,
+                    controlsContainer: Controls,
+                    navAsThumbnails: true,
+                    autoplay: Options.autoplay,
+                    onInit: onInit(),
+                    lazyload: true,
+                    gutter: 10,
                     responsive: {
                         0: {
-                            "edgePadding": 0
+                            edgePadding: 0
                         },
                         991: {
-                            "edgePadding": Options.edgePadding
+                            edgePadding: Options.edgePadding
                         }
                     }
                 });
+
+                // Initial Load
+                function onInit(){
+                    Slides.classList.remove('opacity-0');
+                }
 
                 // Initial UI
                 setTimeout(function(){

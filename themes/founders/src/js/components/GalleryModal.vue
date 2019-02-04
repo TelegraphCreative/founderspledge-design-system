@@ -20,10 +20,33 @@
                     <!-- Main -->
                     <div class="modal__main">
                         
-                        <!-- Slides -->
-                        <div class="gallery-slides | slider-reset -no-controls">
-                            <slot name="gallery"></slot>
+                        <!-- Gallery Slider -->
+                        <div class="gallery-slider | slider-reset | opacity-0">
+
+                            <!-- Slides -->
+                            <div class="gallery-slides">
+                                <slot name="gallery"></slot>
+                            </div>
+
+                            <!-- Slider Controls -->
+                            <div class="slider-controls">
+
+                                <!-- Controls/Info -->
+                                <div class="controls-info">
+                                    <!-- Controls -->
+                                    <ul class="controls | flex justify-between">
+                                        <li class="prev | mr-3">
+                                            <IconArrow :classes="'icon--arrow -flip -sm'"></IconArrow>
+                                        </li>
+                                        <li class="next | ml-3">
+                                            <IconArrow :classes="'icon--arrow -sm'"></IconArrow>
+                                        </li>
+                                    </ul>
+                                </div>
+                                
+                            </div>
                         </div>
+
 
                     </div>
                 </div>
@@ -43,6 +66,7 @@
         data(){
             return {
                 isActive: false,
+                bodyEl: null
             }
         },
         methods: {
@@ -51,24 +75,35 @@
 
                 // Handle Modal
                 that.isActive = !that.isActive;
-                document.querySelector('body').classList.toggle('overflow-hidden');
+                this.bodyEl.classList.toggle('overflow-hidden');
                                 
                 // Handle Slider
-                if(this.isActive) {
+                if(this.isActive) {   
                     
                     // Wait for Transiiton
                     setTimeout(function(){
+                        let GallerySlider = that.$el.querySelector('.gallery-slider');
                         let Slides = that.$el.querySelector('.gallery-slides');
+                        let Controls = that.$el.querySelector('.controls');
                         var slider = tns({
-                            "container": Slides,
-                            "slideBy": 1,
-                            "items": 1,
-                            "mode": "carousel",
-                            "loop":  true,
-                            "lazyload": true,
+                            container: Slides,
+                            controlsContainer: Controls,
+                            slideBy: 1,
+                            items: 1,
+                            mode: "carousel",
+                            loop:  true,
+                            lazyload: true,
                             arrowKeys: true,
-                            "gutter":16
+                            gutter:16,
+                            onInit: onInit()
                         });
+
+                        // Initial Load
+                        function onInit(){
+                            Slides.classList.add('ready');
+                            GallerySlider.classList.remove('opacity-0')
+                        }
+
                     },150);
 
                 }
@@ -76,6 +111,9 @@
             }
         },
         mounted() {
+
+            // Set
+            this.bodyEl = document.querySelector('body');
             
             // Handle escape key press
             document.body.addEventListener('keyup', e => {
