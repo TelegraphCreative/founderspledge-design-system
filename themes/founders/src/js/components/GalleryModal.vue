@@ -60,14 +60,14 @@
                     setTimeout(function(){
                         let Slides = that.$el.querySelector('.gallery-slides');
                         var slider = tns({
-                            "container": Slides,
-                            "slideBy": 1,
-                            "items": 1,
-                            "mode": "carousel",
-                            "loop":  true,
-                            "lazyload": true,
+                            container: Slides,
+                            slideBy: 1,
+                            items: 1,
+                            mode: "carousel",
+                            loop:  true,
+                            lazyload: true,
                             arrowKeys: true,
-                            "gutter":16
+                            gutter:16
                         });
                     },150);
 

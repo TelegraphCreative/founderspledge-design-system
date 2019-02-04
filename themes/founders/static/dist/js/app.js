@@ -331,14 +331,14 @@ __webpack_require__.r(__webpack_exports__);
         setTimeout(function () {
           var Slides = that.$el.querySelector('.gallery-slides');
           var slider = Object(tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_2__["tns"])({
-            "container": Slides,
-            "slideBy": 1,
-            "items": 1,
-            "mode": "carousel",
-            "loop": true,
-            "lazyload": true,
+            container: Slides,
+            slideBy: 1,
+            items: 1,
+            mode: "carousel",
+            loop: true,
+            lazyload: true,
             arrowKeys: true,
-            "gutter": 16
+            gutter: 16
           });
         }, 150);
       }

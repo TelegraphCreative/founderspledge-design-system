@@ -4951,6 +4951,17 @@ button {
   color: #fff;
 }
 
+.btn--gallery {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+
+.btn--gallery .link {
+  padding-left: 2.5rem;
+}
+
 .btn.-wide,
 [class^=btn--].-wide {
   padding-left: 4rem;
@@ -8048,6 +8059,25 @@ body {
 
 .hcard .addr {
   font-size: .875rem;
+}
+
+.gallery-stack {
+  position: relative;
+}
+
+.gallery-stack__item {
+  position: relative;
+  z-index: 0;
+  width: 8rem;
+}
+
+.gallery-stack__item:nth-child(2) {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  margin-left: 1.25rem;
+  margin-top: 1.25rem;
 }
 
 .site-footer {
