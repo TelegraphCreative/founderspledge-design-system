@@ -1,0 +1,15 @@
+.gallery-slider {
+    
+    @apply  p-6 pt-24;
+
+    // Control Panel
+    .slider-controls {
+        @apply cursor-pointer float-right
+        bg-green text-white p-4;
+    }
+
+    // -md
+    @screen md {
+        @apply pt-24 px-12;
+    }
+}
