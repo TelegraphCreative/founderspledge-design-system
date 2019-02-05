@@ -9,6 +9,11 @@ html {
     @apply mx-auto
     px-8;
     max-width: 90rem; // 1440
+
+    &--sm {
+        @apply px-8 mx-auto ;
+        max-width: 65rem; // 760
+    }
 }
 
 
@@ -35,6 +40,11 @@ html {
     // Container
     .container {
         @apply px-0;
+
+        &--sm {
+            @apply px-0;
+            
+        }
     }
 
     // Gutters
