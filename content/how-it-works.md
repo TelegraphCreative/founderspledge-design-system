@@ -55,16 +55,16 @@
       }
     }
   ],
-   "PanelHero_1": [
-        {
-            "variation": "bg-green-darkest",
-            "header": "Make the Pledge",
-            "descr": "<p>Subheading here, let’s keep it brief and reassuring. Transparency is succint.</p>",
-            "action" : {
-                "text" : "Request a Call",
-                "url" : "#"
-            }
+  "PanelHero_1": [
+    {
+        "variation": "bg-green-darkest",
+        "header": "Make the Pledge",
+        "descr": "<p>Subheading here, let’s keep it brief and reassuring. Transparency is succint.</p>",
+        "action" : {
+            "text" : "Request a Call",
+            "url" : "#"
         }
-    ]
+    }
+  ]
 }
 

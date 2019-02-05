@@ -1,0 +1,34 @@
+{{ define "main" }}
+
+    <!-- Section Header -->
+    {{range .Params.SectionHeader_1}}
+        {{ partial "components/section-header.html" . }} {{ end }}
+
+    <!-- Page Menu-->
+    {{ partial "components/page-menu.html" . }}
+
+    <section class="container--sm gutter-lg | space-t space-b" id="section-1">
+        {{ partial "components/general-body-copy.html" . }}
+    </section>
+
+    <section id="section-2">
+        <!-- Section Header - Basic -->
+        {{range .Params.SectionHeaderBasic_1}}
+            {{ partial "components/section-header--basic.html" . }} {{ end }}
+
+        <!-- Profile Grid -->
+        <section class="profile-cards flex-grid flex-wrap  | container gutter-md  | space-b">
+            {{range .Params.ProfileGrid_1}}
+                {{ partial "components/profile-card.html" . }} {{ end }}
+        </section>
+    </section>
+
+    <!-- Panel Hero -->
+    <section class="space-t--sm">
+        {{range .Params.PanelHero_1}}
+            {{ partial "components/panel-hero.html" . }} {{end}}
+    </section>
+
+
+
+{{ end }}

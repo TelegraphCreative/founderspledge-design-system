@@ -4,7 +4,7 @@
 
         @apply no-underline 
         py-10 px-8 
-        property-all duration-1 timing-1;
+        property-all duration-2 timing-1;
 
     }
 
@@ -21,9 +21,9 @@
         &.-dark {
             .link-card__content {
                 @apply bg-green-light text-green-darkest;
-            .header-sm {
-                @apply text-green-darkest;
-            }
+                .header-sm {
+                    @apply text-green-darkest;
+                }
             }
         }
     }

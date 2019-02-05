@@ -4664,6 +4664,14 @@ html {
   max-width: 90rem;
 }
 
+.container--sm {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 65rem;
+}
+
 .grid {
   display: grid;
 }
@@ -4682,6 +4690,11 @@ html {
 
 @media (min-width: 768px) {
   .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .container--sm {
     padding-left: 0;
     padding-right: 0;
   }
@@ -6938,7 +6951,7 @@ body {
 .featured-article-card .background {
   background-color: #fff;
   transition-property: all;
-  transition-duration: .15s;
+  transition-duration: .3s;
   transition-timing-function: ease;
   background-blend-mode: multiply;
 }
@@ -7117,7 +7130,7 @@ body {
   padding-left: 2rem;
   padding-right: 2rem;
   transition-property: all;
-  transition-duration: .15s;
+  transition-duration: .3s;
   transition-timing-function: ease;
 }
 
@@ -8215,6 +8228,63 @@ body {
 
 .hcard .addr {
   font-size: .875rem;
+}
+
+.article-copy h1,
+.article-copy h2,
+.article-copy h3,
+.article-copy h4 {
+  font-family: Chap--web;
+}
+
+.article-copy h1,
+.article-copy h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.article-copy h3 {
+  font-size: 1.875rem;
+  margin-bottom: 1.25rem;
+}
+
+.article-copy h4 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.article-copy h5 {
+  font-size: .75rem;
+  color: #53c07d;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: .0362rem;
+  margin-bottom: 1.25rem;
+}
+
+.article-copy h6 {
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: underline;
+  margin-bottom: .75rem;
+}
+
+.article-copy p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+.article-copy p:last-of-type {
+  margin-bottom: 0;
+}
+
+.article-copy img {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 768px) {
 }
 
 .gallery-stack {
