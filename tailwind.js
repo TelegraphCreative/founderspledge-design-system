@@ -90,6 +90,7 @@ let colors = {
     // 'green-dark': '#1f9d55',
     'green': '#53C07D',
     'green-light': '#A0E0B2',
+    'green-light-accessible': '#ACD0B6',
     // 'green-lighter': '#a2f5bf',
     // 'green-lightest': '#e3fcec',
   
