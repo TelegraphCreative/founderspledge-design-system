@@ -9492,7 +9492,8 @@ var render = function() {
                   _c(
                     "div",
                     {
-                      staticClass: "gallery-slider | slider-reset | opacity-0"
+                      staticClass:
+                        "gallery-slider | slider-reset -no-nav | opacity-0"
                     },
                     [
                       _c(
@@ -9510,7 +9511,10 @@ var render = function() {
                             [
                               _c(
                                 "li",
-                                { staticClass: "prev | mr-3" },
+                                {
+                                  staticClass:
+                                    "prev duration-1 timing-1 property-colors"
+                                },
                                 [
                                   _c("IconArrow", {
                                     attrs: { classes: "icon--arrow -flip -sm" }
@@ -9521,7 +9525,10 @@ var render = function() {
                               _vm._v(" "),
                               _c(
                                 "li",
-                                { staticClass: "next | ml-3" },
+                                {
+                                  staticClass:
+                                    "next duration-1 timing-1 property-colors"
+                                },
                                 [
                                   _c("IconArrow", {
                                     attrs: { classes: "icon--arrow -sm" }
@@ -9838,7 +9845,7 @@ var render = function() {
   return _c("div", { staticClass: "tiny-slider" }, [
     _c("div", { staticClass: "slider | opacity-0" }, [_vm._t("slides")], 2),
     _vm._v(" "),
-    _c("div", { staticClass: "slider-controls" }, [
+    _c("div", { staticClass: "slider-controls -light" }, [
       _c("div", { staticClass: "controls-info" }, [
         _c("ul", { staticClass: "controls | flex justify-between" }, [
           _c(

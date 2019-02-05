@@ -4857,6 +4857,12 @@ html {
   align-items: center;
 }
 
+.link.-icon svg {
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+}
+
 .link.-icon .text {
   margin-right: .5rem;
 }
@@ -4974,10 +4980,21 @@ button {
   justify-content: flex-start;
   align-items: center;
   width: 100%;
+  cursor: pointer;
 }
 
 .btn--gallery .link {
   padding-left: 2.5rem;
+  margin-top: 1.5rem;
+}
+
+.btn--gallery:hover .link {
+  color: #12302d;
+}
+
+.btn--gallery:hover .link svg {
+  -webkit-transform: translate(.5rem, 0);
+          transform: translate(.5rem, 0);
 }
 
 .btn.-wide,
@@ -5102,6 +5119,8 @@ button {
   left: 0;
   width: 100%;
   height: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
 }
 
 .image .background {
@@ -6910,6 +6929,9 @@ body {
 
 .article-card {
   text-decoration: none;
+  transition-property: all;
+  transition-duration: .3s;
+  transition-timing-function: ease;
 }
 
 .article-card__main {
@@ -6920,6 +6942,21 @@ body {
 
 .article-card .preheader {
   margin-bottom: 1rem;
+}
+
+.article-card__figure {
+  background-color: #f1ece4;
+}
+
+.article-card__figure img {
+  transition-property: all;
+  transition-duration: .3s;
+  transition-timing-function: ease;
+}
+
+.article-card:hover .article-card__figure img {
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
 }
 
 @media (min-width: 420px) {
@@ -6949,15 +6986,13 @@ body {
 }
 
 .featured-article-card .background {
-  background-color: #fff;
+  background-color: #f1ece4;
   transition-property: all;
   transition-duration: .3s;
   transition-timing-function: ease;
-  background-blend-mode: multiply;
 }
 
 .featured-article-card:hover .background {
-  background-color: #a0e0b2;
   -webkit-transform: scale(1.01);
           transform: scale(1.01);
 }
@@ -7323,6 +7358,10 @@ body {
   padding-right: 0 !important;
 }
 
+.-no-nav .tns-nav {
+  display: none;
+}
+
 @media (min-width: 992px) {
   .-no-arrows .controls-info {
     display: none;
@@ -7342,6 +7381,33 @@ body {
 
 .-gallery-transition .tns-slide-active {
   opacity: 1;
+}
+
+.slider-controls [data-controls] {
+  color: #12302d;
+  cursor: pointer;
+}
+
+.slider-controls [data-controls]:hover {
+  color: #53c07d;
+}
+
+.slider-controls.-light [data-controls] {
+  color: #fff;
+}
+
+.slider-controls.-light [data-controls]:hover {
+  color: #12302d;
+}
+
+.slider-controls.-green-box [data-controls] {
+  background-color: #53c07d;
+  color: #fff;
+  padding: .75rem;
+}
+
+.slider-controls.-green-box [data-controls]:hover {
+  background-color: #a0e0b2;
 }
 
 .profile-slider {
@@ -7390,10 +7456,6 @@ body {
 .profile-slider .tns-nav,
 .profile-slider .nav {
   display: none;
-}
-
-.profile-slider .icon:hover {
-  color: #53c07d;
 }
 
 .profile-slider .nav .image {
@@ -7562,11 +7624,6 @@ body {
     top: inherit;
     background-repeat: repeat;
   }
-
-  .bg-orange .profile-slider .icon:hover,
-  .bg-orange .profile-slider .icon:focus {
-    color: #e8e3da;
-  }
 }
 
 .info-slider-layout {
@@ -7719,37 +7776,35 @@ body {
   }
 }
 
-.gallery-slider {
-  padding: 1.5rem;
-  padding-top: 6rem;
-}
-
 .gallery-slider .slider-controls {
-  cursor: pointer;
   float: right;
-  background-color: #53c07d;
-  color: #fff;
-  padding: 1rem;
-}
-
-@media (min-width: 768px) {
-  .gallery-slider {
-    padding-top: 6rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
-  }
 }
 
 .modal .gallery-slider {
-  position: absolute;
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 80%;
-  top: 50%;
-  left: 50%;
+  width: 83.33333%;
+}
+
+@media (min-width: 768px) {
+  .modal .gallery-slider {
+    width: 66.66667%;
+  }
+
+  .modal .slider-controls {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: .25rem;
+    left: 0;
+  }
+
+  .modal .slider-controls [data-controls] {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
 }
 
 .media-article__main {
@@ -8295,6 +8350,9 @@ body {
   position: relative;
   z-index: 0;
   width: 8rem;
+  transition-property: all;
+  transition-duration: .45s;
+  transition-timing-function: var(--bezier-1);
 }
 
 .gallery-stack__item:nth-child(2) {
@@ -8304,6 +8362,12 @@ body {
   left: 0;
   margin-left: 1.25rem;
   margin-top: 1.25rem;
+  transition-delay: .15s;
+}
+
+.gallery-stack:hover .gallery-stack__item {
+  -webkit-transform: translate(.25rem, .25rem);
+          transform: translate(.25rem, .25rem);
 }
 
 .site-footer {

@@ -32,6 +32,13 @@
     }
 }
 
+// No Gutters
+.-no-nav {
+    .tns-nav {
+        @apply hidden;
+    }
+}
+
 @screen lg {
     // No Arrows
     .-no-arrows {
@@ -55,5 +62,38 @@
     }
     .tns-slide-active {
         @apply opacity-100;
+    }
+}
+
+// Controls (arrows) Variations
+.slider-controls {
+    // Default
+    [data-controls] {
+        @apply text-green-darkest cursor-pointer;
+        &:hover {
+            @apply text-green;
+        }
+    }
+
+    // -light
+    &.-light {
+        [data-controls] {
+            @apply text-white;
+    
+            &:hover {
+                @apply text-green-darkest;
+            }
+        }
+    }
+
+    // -green-box Type
+    &.-green-box {
+        [data-controls] {
+            @apply bg-green text-white p-3 ;
+    
+            &:hover {
+                @apply bg-green-light;
+            }
+        }
     }
 }

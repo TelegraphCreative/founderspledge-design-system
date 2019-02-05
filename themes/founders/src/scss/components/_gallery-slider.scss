@@ -1,24 +1,28 @@
 .gallery-slider {
-    
-    @apply  p-6 pt-24;
 
     // Control Panel
     .slider-controls {
-        @apply cursor-pointer float-right
-        bg-green text-white p-4;
-    }
-
-    // -md
-    @screen md {
-        @apply pt-24 px-12;
+        @apply float-right;
     }
 }
 
 // Modal
 .modal {
     .gallery-slider {
-        @apply absolute center-xy w-4/5;
-        top: 50%;
-        left: 50%;
+        @apply center-xy w-5/6;
+    }
+
+    // -md
+    @screen md {
+        .gallery-slider {
+            @apply w-2/3;
+        }
+        .slider-controls {
+            @apply absolute pin-b mb-1 pin-l;
+
+            [data-controls] {
+                @apply py-4;
+            }
+        }
     }
 }

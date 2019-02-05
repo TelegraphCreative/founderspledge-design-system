@@ -19,7 +19,7 @@
         <!-- Profile Grid -->
         <section class="profile-cards flex-grid flex-wrap  | container gutter-md  | space-b">
             {{range .Params.ProfileGrid_1}}
-                {{ partial "components/profile-card.html" . }} {{ end }}
+                {{ partial "components/profile-card--modal.html" . }} {{ end }}
         </section>
     </section>
 
@@ -28,7 +28,5 @@
         {{range .Params.PanelHero_1}}
             {{ partial "components/panel-hero.html" . }} {{end}}
     </section>
-
-
 
 {{ end }}
