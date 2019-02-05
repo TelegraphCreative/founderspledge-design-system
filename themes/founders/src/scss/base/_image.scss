@@ -22,12 +22,18 @@
         overflow-hidden
         ;
     
-    img {
+    img,
+    .background {
         @apply 
             absolute
             pin-t pin-l
             w-full
             h-full;
+    }
+
+    .background {
+        background-position: top center;
+        background-size: cover;
     }
 
     // Show Overflow

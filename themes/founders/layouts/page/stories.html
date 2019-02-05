@@ -1,5 +1,82 @@
 {{ define "main" }}
 
-    <h2>stories</h2>
+    <!-- Section Header -->
+    {{range .Params.SectionHeader_1}}
+        {{ partial "components/section-header.html" . }} {{ end }}
 
+    <!-- Page Menu-->
+    {{ partial "components/page-menu.html" . }}
+    
+    {{/*  Featured Article Card  */}}
+    {{ range .Params.FeaturedArticle_1 }}
+        {{ partial "components/featured-article-card.html" . }} {{ end }}
+
+    {{/*  Section  */}}
+    <section class="container | gutter-lg space-b" id="featured">
+        <!-- Section Header - Basic -->
+        {{range .Params.SectionHeaderBasic_1 }}
+            {{ partial "components/section-header--arrow.html" . }} {{ end }}
+
+        <!-- Resource List-->
+        <div class="article-cards | xs:flex-grid">
+            {{range .Params.ArticleCards_1}}
+                {{ partial "components/article-card.html" . }} {{ end }}
+        </div>
+    </section>
+
+    
+    {{/*  Section  */}}
+    <section class="container | gutter-lg space-b" id="impact">
+        <!-- Section Header - Basic -->
+        {{range .Params.SectionHeaderBasic_2}}
+        {{ partial "components/section-header--arrow.html" . }} {{ end }}
+
+        <!-- Resource List-->
+        <div class="article-cards | xs:flex-grid">
+            {{range .Params.ArticleCards_2}}
+                {{ partial "components/article-card.html" . }} {{ end }}
+        </div>
+    </section>
+
+    {{/*  Section  */}}
+    <section class="container | gutter-lg space-b" id="insights">
+        <!-- Section Header - Basic -->
+        {{range .Params.SectionHeaderBasic_3}}
+        {{ partial "components/section-header--arrow.html" . }} {{ end }}
+
+        <!-- Resource List-->
+        <div class="article-cards | xs:flex-grid">
+            {{range .Params.ArticleCards_3}}
+                {{ partial "components/article-card.html" . }} {{ end }}
+        </div>
+    </section>
+
+    {{/*  Section  */}}
+    <section class="container | gutter-lg space-b" id="news">
+        <!-- Section Header - Basic -->
+        {{range .Params.SectionHeaderBasic_4}}
+        {{ partial "components/section-header--arrow.html" . }} {{ end }}
+
+        <!-- Resource List-->
+        <div class="article-cards | xs:flex-grid">
+            {{range .Params.ArticleCards_4}}
+                {{ partial "components/article-card.html" . }} {{ end }}
+        </div>
+    </section>
+
+    {{/*  Section  */}}
+    <section class="container | gutter-lg space-b" id="research">
+        <!-- Section Header - Basic -->
+        {{range .Params.SectionHeaderBasic_5}}
+        {{ partial "components/section-header--arrow.html" . }} {{ end }}
+
+        <!-- Resource List-->
+        <div class="article-cards | xs:flex-grid">
+            {{range .Params.ArticleCards_5}}
+                {{ partial "components/article-card.html" . }} {{ end }}
+        </div>
+    </section>
+
+
+        
 {{ end }}

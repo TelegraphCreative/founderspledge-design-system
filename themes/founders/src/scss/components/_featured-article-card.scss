@@ -1,0 +1,32 @@
+.featured-article-card {
+    @apply no-underline;
+
+    // Figure
+    &__figure  {
+        @apply overflow-hidden;
+    }
+    .background {
+        @apply bg-white property-all duration-1 timing-1;
+        background-blend-mode: multiply;
+    }
+
+    // Hover 
+    &:hover {
+        .background {
+            @apply bg-green-light;
+        transform: scale(1.01);
+        }
+    }
+
+
+    
+
+    // Screen
+    // -md
+    @screen md {
+        // Content
+        &__main {
+            @apply w-3/5;
+        }
+    }
+}
