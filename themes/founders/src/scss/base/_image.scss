@@ -29,6 +29,7 @@
             pin-t pin-l
             w-full
             h-full;
+        backface-visibility: hidden;
     }
 
     .background {
@@ -69,8 +70,6 @@
     &.-is2x1 {
         padding-top: 50%;
     }
-    
-
 
     // Shadow
     &.-inner-shadow::before {
@@ -85,8 +84,6 @@
     &.rounded-full.-inner-shadow::before {
         @apply rounded-full;
     }
-
-
 
 }
 

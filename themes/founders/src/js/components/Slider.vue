@@ -8,7 +8,7 @@
         </div>
 
         <!-- Slider Controls -->
-        <div class="slider-controls">
+        <div class="slider-controls -light">
 
             <!-- Controls/Info -->
             <div class="controls-info">

@@ -21,7 +21,7 @@
                     <div class="modal__main">
                         
                         <!-- Gallery Slider -->
-                        <div class="gallery-slider | slider-reset | opacity-0">
+                        <div class="gallery-slider | slider-reset -no-nav | opacity-0">
 
                             <!-- Slides -->
                             <div class="gallery-slides">
@@ -35,10 +35,10 @@
                                 <div class="controls-info">
                                     <!-- Controls -->
                                     <ul class="controls | flex justify-between">
-                                        <li class="prev | mr-3">
+                                        <li class="prev duration-1 timing-1 property-colors">
                                             <IconArrow :classes="'icon--arrow -flip -sm'"></IconArrow>
                                         </li>
-                                        <li class="next | ml-3">
+                                        <li class="next duration-1 timing-1 property-colors">
                                             <IconArrow :classes="'icon--arrow -sm'"></IconArrow>
                                         </li>
                                     </ul>

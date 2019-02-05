@@ -36,10 +36,11 @@
 
         @apply flex items-center;
 
-        // .icon {
-        //     @apply relative;
-        //     top:2px;
-        // }
+        // Icon 
+        svg {
+            @apply property-transform;
+        }
+
 
         .text {
             @apply mr-2;

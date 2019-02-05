@@ -37,9 +37,18 @@
 
     // Gallery
     &--gallery {
-        @apply flex justify-start items-center w-full;
+        @apply flex justify-start items-center w-full cursor-pointer;
+        
         .link {
-            @apply pl-10;
+            @apply pl-10 mt-6;
+        }
+        &:hover {
+            .link {
+                @apply text-green-darkest;
+                svg {
+                    transform: translate(.5rem, 0)
+                }
+            }
         }
     }
 

@@ -5,7 +5,7 @@
 
 // Card
 .article-card {
-    @apply no-underline;
+    @apply no-underline property-all duration-2 timing-1;;
 
     &__main {
         @apply py-6 w-4/5;
@@ -13,6 +13,20 @@
     }
     .preheader {
         @apply mb-4;
+    }
+
+    // Figure
+    &__figure {
+        @apply bg-oat-light;
+        img {
+            @apply property-all duration-2 timing-1;
+        }
+    }
+    // Hover 
+    &:hover {
+        .article-card__figure img {
+            transform: scale(1.01);
+        }
     }
 
     // Screen

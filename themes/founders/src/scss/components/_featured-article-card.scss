@@ -6,14 +6,12 @@
         @apply overflow-hidden;
     }
     .background {
-        @apply bg-white property-all duration-2 timing-1;
-        background-blend-mode: multiply;
+        @apply bg-oat-light property-all duration-2 timing-1;
     }
 
     // Hover 
     &:hover {
         .background {
-            @apply bg-green-light;
             transform: scale(1.01);
         }
     }
