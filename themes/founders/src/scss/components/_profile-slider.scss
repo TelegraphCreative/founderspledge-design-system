@@ -18,11 +18,11 @@
         }
     }
 
-    // Control Panel
-    .slider-controls {
-        @apply cursor-pointer
-        absolute pin-b pin-r bg-oat-light p-4 mr-2;;
-    }
+    // // Control Panel
+    // .slider-controls {
+    //     @apply cursor-pointer
+    //     absolute pin-b pin-r bg-green-darkest p-4 mr-2;;
+    // }
     
     // Controls
     .controls-info {
@@ -32,7 +32,7 @@
     // Info
     .info {
         @apply center-xy
-        text-sm text-green-darkest
+        text-sm
         font-semibold;
     }
 
@@ -58,6 +58,11 @@
 
         .image img {
             @apply .z-10;
+        }
+
+        .tns-inner,
+        .profile-slider__content {
+            @apply overflow-visible;
         }
     }
 
@@ -169,7 +174,7 @@
                 }
             }
             .profile-slider__card {
-                @apply pt-10 px-14 pb-12;
+                @apply pt-10 px-14 pb-14;
             }
         }
 

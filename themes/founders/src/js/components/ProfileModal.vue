@@ -30,11 +30,11 @@
                             </header>
 
                             <!-- Article -->
-                            <article class="modal__detail">
+                            <div class="modal__detail">
                                 <slot name="article">
                                     <p>Article text…</p>
                                 </slot>
-                            </article>
+                            </div>
                         </div>
 
                         <!-- Asice: Media -->

@@ -10,7 +10,24 @@
       "descr": false
     }
   ],
-
+  "PageMenu": [
+    {
+      "text": "Ethos",
+      "url": "#ethos"
+    },
+    {
+      "text": "Impact Journeys",
+      "url": "#impact-journeys"
+    },
+    {
+      "text": "Our Members",
+      "url": "#members"
+    },
+    {
+      "text": "Press",
+      "url": "#press"
+    }
+  ],
   "MediaArticle_1": [
    {
      "variation": "",
@@ -42,6 +59,13 @@
      }
    }
  ],
+ "SectionHeaderBasic_1": [
+    {
+      "variation": "",
+      "header": "Our Members",
+      "link": false
+    }
+  ],
 
   "ProfileGrid_1": [
     {
@@ -70,14 +94,14 @@
         "detail": "Founder & CEO",
         "image": "/img/fpo-02.jpg",
         "pledgeDate": "March 2017",
-        "bio": "<p>Miguel directs all architecture, design, and construction activities at WeWork. Previously, he created the design framework and led the national retail roll-out for American Apparel and was involved in the early-stage development of several companies. He earned his BA from the University of Oregon.</p><blockquote>I’m excited to be able to contribute to a community of founders who are thinking critically about their giving. Together I believe we can achieve a huge amount of good.</blockquote><p>Miguel directs all architecture, design, and construction activities at WeWork. Previously, he created the design framework and led the national retail roll-out for American Apparel and was involved in the early-stage development of several companies. He earned his BA from the University of Oregon.</p>"
+        "bio": "<p>Miguel directs all architecture, design, and construction activities at WeWork. Previously, he created the design framework and led the national retail roll-out for American Apparel and was involved in the early-stage development of several companies. He earned his BA from the University of Oregon.</p><blockquote>I’m excited to be able to contribute to a community of founders who are thinking critically about their giving. Together I believe we can achieve a huge amount of good.</blockquote><p>Miguel directs all architecture, design, and construction activities at WeWork. Previously, he created the design framework and led the national retail roll-out for American Apparel and was involved in the early-stage development of several companies. He earned his BA from the University of Oregon.</p><h5>Section Heading (H5)</h5><h2>Created with a simple aspiration (h2)</h2><p>We approached this mission with a deep understanding of the sector – Founders Pledge was built by founders, for founders and launched out of <a href='#'>Founders Forum</a>, Europe's foremost network of digital and technology entrepreneurs.</p><p>We're empowering founders and investors to add value to their companies as well as the causes they love, without sacrificing one for the other. Together, we’re making a real difference in the tech world and in the global community.</p>"
     },
     {
         "name": "Susanna Young",
         "detail": "Founder & CEO",
         "image": "/img/fpo-04.jpg",
         "pledgeDate": "March 2017",
-        "bio": ""
+        "bio": "<p>Miguel directs all architecture, design, and construction activities at WeWork. Previously, he created the design framework and led the national retail roll-out for American Apparel and was involved in the early-stage development of several companies. He earned his BA from the University of Oregon.</p><blockquote>I’m excited to be able to contribute to a community of founders who are thinking critically about their giving. Together I believe we can achieve a huge amount of good.</blockquote><p>Miguel directs all architecture, design, and construction activities at WeWork. Previously, he created the design framework and led the national retail roll-out for American Apparel and was involved in the early-stage development of several companies. He earned his BA from the University of Oregon.</p><h5>Section Heading (H5)</h5><h2>Created with a simple aspiration (h2)</h2><p>We approached this mission with a deep understanding of the sector – Founders Pledge was built by founders, for founders and launched out of Founders Forum, Europe's foremost network of digital and technology entrepreneurs.</p><p>We're empowering founders and investors to add value to their companies as well as the causes they love, without sacrificing one for the other. Together, we’re making a real difference in the tech world and in the global community.</p>"
     }
   ],
   

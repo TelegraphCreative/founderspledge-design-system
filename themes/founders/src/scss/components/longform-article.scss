@@ -19,6 +19,17 @@
         order: 1;
     }
 
+    // Pattern
+    .pattern--green {
+        width: 10rem;
+        height: 2.5rem;
+        bottom: -1rem;
+        background-size: 100%;
+
+        @apply center-x;
+
+    }
+
     // Screen 
     // - md 
     @screen md {
@@ -41,6 +52,14 @@
         &__aside {
             @apply pt-6 pl-3 pr-0;
             order: 1;
+        }
+
+        // Pattern
+        .pattern--green {
+            background-size: 80%;
+            width: 20.25rem;
+            height: 6rem;
+            bottom: -3rem;
         }
 
     }

@@ -45,7 +45,6 @@
      }
    }
  ],
-  
   "SectionHeaderBasic_1": [
     {
       "variation": "",
@@ -111,7 +110,7 @@
       "image": false,
       "link": {
         "variation": "-icon",
-        "text": "Download",
+        "text": "See details",
         "url": "#"
       }
     },
@@ -148,7 +147,7 @@
     {  
         "preheader": "Insights",
         "header": "His Passion for WeWork Drove His Vision for Social Change ",
-        "image": "/img/fpo-01.jpg",
+        "image": "/img/fpo-12.jpg",
         "link": {
             "text": "Read full article",
             "url": "#"
@@ -157,7 +156,7 @@
     {  
         "preheader": "Insights",
         "header": "His Passion for WeWork Drove His Vision for Social Change ",
-        "image": "/img/fpo-01.jpg",
+        "image": "/img/fpo-13.jpg",
         "link": {
             "text": "Read full article",
             "url": "#"

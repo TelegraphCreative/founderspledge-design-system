@@ -19,7 +19,7 @@
     }
     
     @screen md {
-        @apply pin-t; 
+        @apply pin-t border-oat-light border-b; 
         background: rgba(255,255,255,.98);
         
         &__bar {
