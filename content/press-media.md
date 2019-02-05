@@ -29,7 +29,7 @@
     {
       "preheader": "Zip File",
       "header": "Logos",
-      "image": "/img/fpo-01.jpg",
+      "image": "/img/fpo-14.jpg",
       "link": {
         "variation": "-icon",
         "text": "Download",
@@ -39,7 +39,7 @@
     {
       "preheader": "Zip File",
       "header": "Logos",
-      "image": "/img/fpo-01.jpg",
+      "image": "/img/fpo-14.jpg",
       "link": {
         "text": "Download",
         "url": "#"
@@ -48,7 +48,7 @@
     {
       "preheader": "Zip File",
       "header": "Logos",
-      "image": "/img/fpo-01.jpg",
+      "image": "/img/fpo-14.jpg",
       "link": {
         "text": "Download",
         "url": "#"

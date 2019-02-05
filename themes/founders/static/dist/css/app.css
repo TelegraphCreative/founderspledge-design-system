@@ -6057,6 +6057,8 @@ body.overflow-hidden {
 @media (min-width: 768px) {
   .page-menu {
     top: 0;
+    border-color: #f1ece4;
+    border-bottom-width: 1px;
     background: rgba(255, 255, 255, .98);
   }
 
@@ -6197,6 +6199,10 @@ body {
 .site-header .menu-bar__item {
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.site-header .menu-bar__item.active .menu-bar__link {
+  color: #a0e0b2;
 }
 
 .site-header .menu-bar__link {
@@ -7479,16 +7485,6 @@ body {
   overflow: visible;
 }
 
-.profile-slider .slider-controls {
-  cursor: pointer;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  background-color: #f1ece4;
-  padding: 1rem;
-  margin-right: .5rem;
-}
-
 .profile-slider .controls-info {
   position: relative;
 }
@@ -7500,7 +7496,6 @@ body {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   font-size: .875rem;
-  color: #12302d;
   font-weight: 600;
 }
 
@@ -7524,6 +7519,11 @@ body {
 
 .profile-slider.-basic .image img {
   z-index: 10;
+}
+
+.profile-slider.-basic .tns-inner,
+.profile-slider.-basic .profile-slider__content {
+  overflow: visible;
 }
 
 .profile-slider.-hero .profile-slider__card {
@@ -7664,7 +7664,7 @@ body {
     padding-top: 2.5rem;
     padding-left: 3.75rem;
     padding-right: 3.75rem;
-    padding-bottom: 3rem;
+    padding-bottom: 3.75rem;
   }
 
   .profile-slider .pattern--white {
@@ -8157,6 +8157,7 @@ body {
   position: relative;
   color: #12302d;
   text-decoration: none;
+  z-index: 1;
 }
 
 .article-copy a:before {

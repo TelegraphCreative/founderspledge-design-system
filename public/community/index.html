@@ -109,6 +109,8 @@
                 <li class="menu-bar__item">
                     <a role="menuitem" aria-haspopup="false" href="/how-it-works" class="menu-bar__link" tabindex="0">How It Works</a>
                 </li>
+                
+                
                 <li class="menu-bar__item">
                     <a role="menuitem" aria-haspopup="false" href="/impact" class="menu-bar__link" tabindex="0">Impact</a>
                 </li>
@@ -151,8 +153,32 @@
         
     </div>
 </header> 
+    
+    
+    
+<nav class="page-menu | gutter">
+    <ul class="page-menu__bar menu-bar">
+        
+            <li class="page-menu__item">
+                <smooth_scroll class="link" :anchor="'#ethos'" :offset="120">Ethos</smooth_scroll>
+            </li>
+        
+            <li class="page-menu__item">
+                <smooth_scroll class="link" :anchor="'#impact-journeys'" :offset="120">Impact Journeys</smooth_scroll>
+            </li>
+        
+            <li class="page-menu__item">
+                <smooth_scroll class="link" :anchor="'#members'" :offset="120">Our Members</smooth_scroll>
+            </li>
+        
+            <li class="page-menu__item">
+                <smooth_scroll class="link" :anchor="'#press'" :offset="120">Press</smooth_scroll>
+            </li>
+        
+    </ul>
+</nav>
 
-    <section class="space-t--sm space-b">
+    <section id="ethos" class="space-t--sm space-b">
         
             
 <div class="media-article  | container gutter-l--md">
@@ -254,7 +280,7 @@
     </header>
 
     
-    <section class="space-b">
+    <section class="space-b--lg" id="impact-journeys">
         
 <slider :opt="{
     items: 1,
@@ -281,7 +307,7 @@ class="profile-slider -hero slider-reset -no-gutters | container gutter-md clear
                     <h3 class="header-md | text-green-light mb-1">Elon Musk</h3>
                     <h3 class="header-sm -light | mb-4">Founder at Tesla, Space X</h3>
                     
-                    <div class="paragraphs -sm">
+                    <div class="paragraphs">
                         <p>Our operations are fully funded by a small group of essential donors and institutions. This means we can support impactful giving at zero cost. Simple, transparent, and effective. </p>
                     </div>
             
@@ -297,7 +323,7 @@ class="profile-slider -hero slider-reset -no-gutters | container gutter-md clear
             
             <div class="profile-slider__aside">
                 <figure class="image -is2x1">
-                    <img src="/img/fpo-05.jpg" data-src="/img/fpo-05.jpg" class="fit-cover" alt="">
+                    <img src="/img/fpo-07.jpg" data-src="/img/fpo-07.jpg" class="fit-cover" alt="">
                 </figure>
             </div>
 
@@ -305,10 +331,10 @@ class="profile-slider -hero slider-reset -no-gutters | container gutter-md clear
             <div class="profile-slider__main">
                 <div class="profile-slider__card | bg-green-darkest text-white">
             
-                    <h3 class="header-md | text-green-light mb-1">Elon Musk</h3>
-                    <h3 class="header-sm -light | mb-4">Founder at Tesla, Space X</h3>
+                    <h3 class="header-md | text-green-light mb-1">Miguel McKelvey</h3>
+                    <h3 class="header-sm -light | mb-4">Founder & CEO, WeWork</h3>
                     
-                    <div class="paragraphs -sm">
+                    <div class="paragraphs">
                         <p>Our operations are fully funded by a small group of essential donors and institutions. This means we can support impactful giving at zero cost. Simple, transparent, and effective. </p>
                     </div>
             
@@ -322,12 +348,30 @@ class="profile-slider -hero slider-reset -no-gutters | container gutter-md clear
 
 </slider>
 
+
+        
+        <aside class="container gutter-md | pt-12">
+            <a href="/stories" class="link -icon -green | justify-end inline-block">
+                <span class="text">See all stories</span><span class="icon | icon--arrow -xs -stroke-4"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 39"><polyline stroke="currentColor" class="stroke" points="0.9,38.5 11.9,19.5 0.9,0.5 "/></svg></span>
+</a>
+        </aside>
     </section>
 
+
+
     
-    <header class="text-center mb-6">
-        <h4 class="header-md">Our Members</h4>
-    </header>
+    
+        <header class="section-header -basic ">
+    <div class="section-header__content">
+        <div class="section-header__name">
+            
+            <h2 class="header | header-lg">Our Members</h2>
+            
+        </div>
+    
+        
+    </div>
+</header> 
 
     
     <section class="profile-cards flex-grid flex-wrap  | container gutter-md  space-b">
@@ -361,9 +405,9 @@ class="profile-slider -hero slider-reset -no-gutters | container gutter-md clear
     </header>
 
     <article slot="article">
-        <div class="paragraphs">
+        <article class="article-copy">
             <p>Miguel directs all architecture, design, and construction activities at WeWork. Previously, he created the design framework and led the national retail roll-out for American Apparel and was involved in the early-stage development of several companies. He earned his BA from the University of Oregon.</p><blockquote>I’m excited to be able to contribute to a community of founders who are thinking critically about their giving. Together I believe we can achieve a huge amount of good.</blockquote><p>Miguel directs all architecture, design, and construction activities at WeWork. Previously, he created the design framework and led the national retail roll-out for American Apparel and was involved in the early-stage development of several companies. He earned his BA from the University of Oregon. Miguel directs all architecture, design, and construction activities at WeWork. Previously, he created the design framework and led the national retail roll-out for American Apparel and was involved in the early-stage development of several companies. He earned his BA from the University of Oregon.</p>
-        </div>
+        </article>
     </article>
 
     <template slot="aside">
@@ -410,9 +454,9 @@ class="profile-slider -hero slider-reset -no-gutters | container gutter-md clear
     </header>
 
     <article slot="article">
-        <div class="paragraphs">
+        <article class="article-copy">
             <p>Miguel directs all architecture, design, and construction activities at WeWork. Previously, he created the design framework and led the national retail roll-out for American Apparel and was involved in the early-stage development of several companies. He earned his BA from the University of Oregon.</p><blockquote>I’m excited to be able to contribute to a community of founders who are thinking critically about their giving. Together I believe we can achieve a huge amount of good.</blockquote><p>Miguel directs all architecture, design, and construction activities at WeWork. Previously, he created the design framework and led the national retail roll-out for American Apparel and was involved in the early-stage development of several companies. He earned his BA from the University of Oregon.</p>
-        </div>
+        </article>
     </article>
 
     <template slot="aside">
@@ -459,9 +503,9 @@ class="profile-slider -hero slider-reset -no-gutters | container gutter-md clear
     </header>
 
     <article slot="article">
-        <div class="paragraphs">
+        <article class="article-copy">
             <p>Miguel directs all architecture, design, and construction activities at WeWork. Previously, he created the design framework and led the national retail roll-out for American Apparel and was involved in the early-stage development of several companies. He earned his BA from the University of Oregon.</p><blockquote>I’m excited to be able to contribute to a community of founders who are thinking critically about their giving. Together I believe we can achieve a huge amount of good.</blockquote><p>Miguel directs all architecture, design, and construction activities at WeWork. Previously, he created the design framework and led the national retail roll-out for American Apparel and was involved in the early-stage development of several companies. He earned his BA from the University of Oregon. Miguel directs all architecture, design, and construction activities at WeWork. Previously, he created the design framework and led the national retail roll-out for American Apparel and was involved in the early-stage development of several companies. He earned his BA from the University of Oregon.</p>
-        </div>
+        </article>
     </article>
 
     <template slot="aside">
@@ -508,9 +552,9 @@ class="profile-slider -hero slider-reset -no-gutters | container gutter-md clear
     </header>
 
     <article slot="article">
-        <div class="paragraphs">
-            <p>Miguel directs all architecture, design, and construction activities at WeWork. Previously, he created the design framework and led the national retail roll-out for American Apparel and was involved in the early-stage development of several companies. He earned his BA from the University of Oregon.</p><blockquote>I’m excited to be able to contribute to a community of founders who are thinking critically about their giving. Together I believe we can achieve a huge amount of good.</blockquote><p>Miguel directs all architecture, design, and construction activities at WeWork. Previously, he created the design framework and led the national retail roll-out for American Apparel and was involved in the early-stage development of several companies. He earned his BA from the University of Oregon.</p>
-        </div>
+        <article class="article-copy">
+            <p>Miguel directs all architecture, design, and construction activities at WeWork. Previously, he created the design framework and led the national retail roll-out for American Apparel and was involved in the early-stage development of several companies. He earned his BA from the University of Oregon.</p><blockquote>I’m excited to be able to contribute to a community of founders who are thinking critically about their giving. Together I believe we can achieve a huge amount of good.</blockquote><p>Miguel directs all architecture, design, and construction activities at WeWork. Previously, he created the design framework and led the national retail roll-out for American Apparel and was involved in the early-stage development of several companies. He earned his BA from the University of Oregon.</p><h5>Section Heading (H5)</h5><h2>Created with a simple aspiration (h2)</h2><p>We approached this mission with a deep understanding of the sector – Founders Pledge was built by founders, for founders and launched out of <a href='#'>Founders Forum</a>, Europe's foremost network of digital and technology entrepreneurs.</p><p>We're empowering founders and investors to add value to their companies as well as the causes they love, without sacrificing one for the other. Together, we’re making a real difference in the tech world and in the global community.</p>
+        </article>
     </article>
 
     <template slot="aside">
@@ -557,9 +601,9 @@ class="profile-slider -hero slider-reset -no-gutters | container gutter-md clear
     </header>
 
     <article slot="article">
-        <div class="paragraphs">
-            
-        </div>
+        <article class="article-copy">
+            <p>Miguel directs all architecture, design, and construction activities at WeWork. Previously, he created the design framework and led the national retail roll-out for American Apparel and was involved in the early-stage development of several companies. He earned his BA from the University of Oregon.</p><blockquote>I’m excited to be able to contribute to a community of founders who are thinking critically about their giving. Together I believe we can achieve a huge amount of good.</blockquote><p>Miguel directs all architecture, design, and construction activities at WeWork. Previously, he created the design framework and led the national retail roll-out for American Apparel and was involved in the early-stage development of several companies. He earned his BA from the University of Oregon.</p><h5>Section Heading (H5)</h5><h2>Created with a simple aspiration (h2)</h2><p>We approached this mission with a deep understanding of the sector – Founders Pledge was built by founders, for founders and launched out of Founders Forum, Europe's foremost network of digital and technology entrepreneurs.</p><p>We're empowering founders and investors to add value to their companies as well as the causes they love, without sacrificing one for the other. Together, we’re making a real difference in the tech world and in the global community.</p>
+        </article>
     </article>
 
     <template slot="aside">
@@ -599,6 +643,7 @@ class="profile-slider -hero slider-reset -no-gutters | container gutter-md clear
     </section>
 
     
+    <section id="press">
     
         <header class="panel-hero bg-green-darkest">
 
@@ -619,6 +664,7 @@ class="profile-slider -hero slider-reset -no-gutters | container gutter-md clear
     
 
 </header> 
+    </section>
         
 
       </main>

@@ -34,6 +34,13 @@ body {
 
         &__item {
             @apply px-4;
+
+            // Active
+            &.active {
+                .menu-bar__link {
+                    @apply text-green-light;
+                }
+            }
         }
 
         &__link {

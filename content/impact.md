@@ -66,7 +66,7 @@
   ],
   "MediaArticle_1": [
    {
-     "variation": "",
+     "variation": "-article-indent",
      "header": "Explore Your Intrinsic Values",
      "subheader": false,
      "descr": "<p>Our research team is here to help you navigate the world of charity, and ensure your money is put to good use towards data-driven, scalable and cost-effective programs that truly make a difference.</p><p>We believe your giving should be powered by your core values: the unique perspectives that drive and guide you. </p><p>That’s why we’ve developed the Value Discovery approach, which underpins all our giving recommendations. Instead of relying on surface level questions that are susceptible to biases, we dig deep, to find the most effective opportunities for you to do good on your terms. </p>",
