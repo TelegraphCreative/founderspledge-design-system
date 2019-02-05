@@ -18,7 +18,6 @@
         }
     }
 
-
     // Control Panel
     .slider-controls {
         @apply cursor-pointer
@@ -71,6 +70,10 @@
     &.-hero {
         .profile-slider__card {
             @apply pt-8 px-10 pb-10;
+
+            p:last-child {
+                @apply mb-0;
+            }
         }
     }
 
@@ -85,8 +88,6 @@
     
 }
 
-
- 
 // Screen
 @screen md {
     // Layout
@@ -173,7 +174,7 @@
                 }
             }
             .profile-slider__card {
-                @apply pt-10 px-14 pb-14;
+                @apply pt-10 px-14 pb-12;
             }
         }
 
@@ -200,4 +201,3 @@
     }
     
 }
-

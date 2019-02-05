@@ -1,16 +1,9 @@
-// Grid
 // Card
 .profile-card {
 
     // Layout
     @apply block w-full mb-4  no-underline cursor-pointer;
     
-    // Remove last btm margin on mobile
-    &:last-child, 
-    &:nth-last-child(2) {
-        @apply mb-0;
-    }
-
     &__content,
     &__main {
         @apply h-full;
@@ -80,5 +73,4 @@
 
     }
 
-    
 }

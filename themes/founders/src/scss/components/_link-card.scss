@@ -1,0 +1,47 @@
+.link-card {
+
+    &__content {
+
+        @apply no-underline 
+        py-10 px-8 
+        property-all duration-1 timing-1;
+
+    }
+
+    // -dark Type
+    &.-dark {
+        .link-card__content {
+            @apply bg-green-darkest text-white;
+        }
+
+    }
+
+    // Hover
+    &:hover {
+        &.-dark {
+            .link-card__content {
+                @apply bg-green-light text-green-darkest;
+            .header-sm {
+                @apply text-green-darkest;
+            }
+            }
+        }
+    }
+
+    // Screen
+    // -md
+    @screen md {
+        
+        // -large Type
+        &.-lg {
+            .link-card__content {
+                @apply pt-10 pb-12 px-24;
+            }
+            &--l {
+                .link-card__content {
+                    @apply pt-10 pb-12 pl-32 pr-24;
+                }
+            }
+        }
+    }
+}

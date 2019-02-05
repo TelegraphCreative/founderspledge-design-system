@@ -1,3 +1,9 @@
+// Grid
+.article-cards {
+    @apply flex-wrap;
+}
+
+// Card
 .article-card {
     @apply no-underline;
 
@@ -15,5 +21,11 @@
     }
     @screen md {
         width: 46.8%;
+        @apply mb-12;
+
+        &:nth-last-child(1), 
+        &:nth-last-child(2) {
+            @apply mb-0;
+        }
     }
 }

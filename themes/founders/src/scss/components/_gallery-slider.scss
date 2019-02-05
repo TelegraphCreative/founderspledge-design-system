@@ -13,3 +13,12 @@
         @apply pt-24 px-12;
     }
 }
+
+// Modal
+.modal {
+    .gallery-slider {
+        @apply absolute center-xy w-4/5;
+        top: 50%;
+        left: 50%;
+    }
+}
