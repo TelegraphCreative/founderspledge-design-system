@@ -67,6 +67,8 @@
 // Articles
 @import 'components/media-article';
 @import 'components/feature-article';
+@import 'components/longform-article'; 
+@import 'components/article-content'; 
 
 // Lists
 @import 'components/menu-list';
@@ -82,7 +84,7 @@
 @import 'components/headsup';
 @import "components/panel-hero";
 @import 'components/hcard';
-@import 'components/article';
+
 @import 'components/gallery-stack';
 @import 'components/site-footer';
 

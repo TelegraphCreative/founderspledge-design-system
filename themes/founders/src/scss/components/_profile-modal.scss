@@ -56,7 +56,7 @@
         .modal { 
             
             &__content {
-                @apply grid h-full  mx-auto px-8;
+                @apply grid h-full mx-auto px-8;
                 grid-template-columns: repeat(4, 1fr);
                 max-width: 90rem; // 1440
             }

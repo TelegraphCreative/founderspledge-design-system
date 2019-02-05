@@ -1,0 +1,42 @@
+{{ define "main" }}
+
+    <!-- Section Header -->
+    {{range .Params.SectionHeader_1}}
+        {{ partial "components/section-header.html" . }} {{ end }}
+
+    {{/*  Stories Article Layout  */}}
+    <section class="longform-article | bg-oat-light">
+        
+        <div class="longform-article__figure">
+            <figure class="featured-article-card__figure | image -background -is3x2 | bg-oat-light">
+                <div class="background" style="background-image: url('/img/fpo-08.jpg');"></div>
+            </figure>
+        </div>
+
+        {{/*  Content  */}}
+        <div class="longform-article__content | space-b--lg | container">
+
+            {{/*  Aside  */}}
+            <div class="longform-article__aside">
+
+                {{/*  Definition List  */}}
+                <dl class="definition-list">
+                    <dt>Published</dt>
+                    <dd>March 2017</dd>
+        
+                    <dt>Share this Story</dt>
+                    <dd>Instagram</dd>
+                </dl>
+    
+            </div>
+    
+            {{/*  Main  */}}
+            <div class="longform-article__main">
+                {{ partial "components/general-body-copy--expanded.html" . }}
+            </div>
+        </div>
+    </section>
+
+    
+        
+{{ end }}
