@@ -4708,6 +4708,11 @@ html {
   max-width: 65rem;
 }
 
+.container.-flush {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 .grid {
   display: grid;
 }
