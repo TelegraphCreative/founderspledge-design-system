@@ -8157,6 +8157,7 @@ body {
   position: relative;
   color: #12302d;
   text-decoration: none;
+  z-index: 1;
 }
 
 .article-copy a:before {
@@ -8233,14 +8234,22 @@ body {
 }
 
 .social-list a {
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 1rem;
+  height: 1rem;
   display: inline-block;
   color: #12302d;
 }
 
 .social-list a:hover {
   color: #53c07d;
+}
+
+.social-list.-white a {
+  color: #fff;
+}
+
+.social-list.-white a:hover {
+  color: #a0e0b2;
 }
 
 .resource__item {

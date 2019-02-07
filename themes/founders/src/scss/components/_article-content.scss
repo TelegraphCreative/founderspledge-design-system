@@ -56,7 +56,8 @@
 
     // Links 
     a {
-        @apply inline-block relative text-green-darkest .no-underline z-1;
+        @apply inline-block relative text-green-darkest .no-underline;
+        z-index: 1;
 
         // border
         &:before {
