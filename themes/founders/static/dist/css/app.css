@@ -6055,6 +6055,10 @@ body.overflow-hidden {
   padding-bottom: 1.5rem;
 }
 
+.page-menu .section-active {
+  color: #53c07d;
+}
+
 @media (min-width: 768px) {
   .page-menu {
     top: 0;
@@ -8682,8 +8686,8 @@ body {
   .site-footer__groups__container {
     margin-left: auto;
     margin-right: auto;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
     max-width: 90rem;
   }
 
@@ -8723,7 +8727,6 @@ body {
 
   .site-footer .hcard {
     margin-bottom: 3rem;
-    padding-left: 3.375rem;
   }
 
   .site-footer .signup-form {
