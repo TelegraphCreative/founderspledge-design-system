@@ -31,6 +31,10 @@
         "url": "#impact"
       },
       {
+        "text": "Insiders",
+        "url": "#insiders"
+      },
+      {
         "text": "Insights",
         "url": "#insights"
       },

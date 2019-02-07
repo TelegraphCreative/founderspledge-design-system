@@ -8,23 +8,23 @@
   {{ partial "components/page-menu.html" . }}
   
   <!-- Info Slider -->
-  <section class="bg-green-darkest | space-t space-b">
+  <section id="journey" class="js-section | bg-green-darkest | space-t space-b">
     {{ partial "components/info-slider.html" . }}
-</section>
+  </section>
 
   <!-- Feature Articles -->
-  <section class="">
+  <section id="offerings" class="js-section">
       {{ partial "components/feature-articles.html" . }}
   </section>
 
   <!-- Profile Slider --basic -->
-  <section class="bg-orange text-white">
+  <section id="community" class="js-section |  bg-orange text-white">
       {{ partial "components/profile-slider--basic.html" . }}
   </section>
 
 
   <!-- Media Article -->
-  <section class="space-t--sm space-b">
+  <section id="benefits" class="js-section | space-t--sm space-b">
     {{range .Params.MediaArticle_1}}
       {{ partial "components/media-article.html" . }} {{ end }}
   </section>
