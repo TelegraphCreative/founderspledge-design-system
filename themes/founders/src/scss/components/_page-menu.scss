@@ -17,6 +17,9 @@
     .link {
         @apply px-2 py-6;
     }
+    .section-active {
+        @apply text-green;
+    }
     
     @screen md {
         @apply pin-t border-oat-light border-b; 

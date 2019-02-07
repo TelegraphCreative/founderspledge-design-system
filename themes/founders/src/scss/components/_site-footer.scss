@@ -84,7 +84,7 @@
         // Container 
         &__groups__container{
             @apply mx-auto
-            px-8;
+            px-10;
             max-width: 90rem;
         }
     }
@@ -129,7 +129,7 @@
         // Contact
         .hcard {
             @apply mb-12;
-            padding-left: 3.375rem;
+            // padding-left: 3.375rem;
         }
 
         // Form
