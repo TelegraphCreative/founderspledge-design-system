@@ -5,11 +5,22 @@
         @apply inline-block mx-1;
     }
     a {
-        @apply w-6 h-6
+        @apply w-4 h-4
             inline-block text-green-darkest;
         
         &:hover {
             @apply text-green;
+        }
+    }
+
+    // -white type
+    &.-white {
+        a {
+            @apply text-white;
+            
+            &:hover {
+                @apply text-green-light;
+            }
         }
     }
 }
