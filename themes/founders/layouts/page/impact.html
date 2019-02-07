@@ -7,7 +7,7 @@
     <!-- Page Menu-->
     {{ partial "components/page-menu.html" . }}
 
-    <section class="bg-green-darkest">
+    <section id="methodology" class="js-section | bg-green-darkest">
         <!-- Section Header -->
         {{range .Params.SectionHeader_2}}
             {{ partial "components/section-header.html" . }} {{ end }}
@@ -19,19 +19,19 @@
             </div>
     </section>
 
-    <section class="space-t--sm space-b">
+    <section id="values" class="js-section | space-t--sm space-b">
         {{range .Params.MediaArticle_1}}
             {{ partial "components/media-article.html" . }} {{ end }}
     </section>
     
     <!-- Section Header -->
-    <section class="space-b">
+    <section id="specialists" class="js-section | space-b">
         {{range .Params.SectionHeader_3}}
             {{ partial "components/section-header.html" . }} {{ end }}
     </section>
 
     
-    <section class="bg-oat-light | space-t space-b">
+    <section id="missions" class="js-section | bg-oat-light | space-t space-b">
         <!-- Section Header - Basic -->
         {{range .Params.SectionHeaderBasic_1}}
             {{ partial "components/section-header--basic.html" . }} {{ end }}

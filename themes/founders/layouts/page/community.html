@@ -7,7 +7,7 @@
     <!-- Page Menu-->
     {{ partial "components/page-menu.html" . }}
 
-    <section id="ethos" class="space-t--sm space-b">
+    <section id="ethos" class="js-section space-t--sm space-b">
         {{range .Params.MediaArticle_1}}
             {{ partial "components/media-article.html" . }} {{ end }}
     </section>
@@ -18,7 +18,7 @@
     </header>
 
     <!-- Profile Slider -Hero -->
-    <section class="space-b--lg" id="impact-journeys">
+    <section id="impact-journeys" class="js-section | space-b--lg">
         {{ partial "components/profile-slider--hero.html" . }}
 
         <!-- See More Link -->
@@ -32,19 +32,20 @@
 
 
 
-    <!-- Section Header - Basic -->
-    {{range .Params.SectionHeaderBasic_1}}
+    
+    <!-- Profile Grid -->
+    <section id="members" class="js-section | profile-cards flex-grid flex-wrap  | container gutter-md  space-b">
+        <!-- Section Header - Basic -->
+        {{range .Params.SectionHeaderBasic_1}}
         {{ partial "components/section-header--basic.html" . }} {{ end }}
 
-    <!-- Profile Grid -->
-    <section class="profile-cards flex-grid flex-wrap  | container gutter-md  space-b">
         {{range .Params.ProfileGrid_1}}
             {{ partial "components/profile-card--modal.html" . }} {{ end }}
             {{ partial "components/profile-card--info.html" . }}
     </section>
 
     <!-- Panel Hero -->
-    <section id="press">
+    <section id="press" class="js-section">
     {{range .Params.PanelHero_1}}
         {{ partial "components/panel-hero.html" . }} {{end}}
     </section>

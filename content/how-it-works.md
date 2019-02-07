@@ -12,19 +12,19 @@
   "PageMenu": [
     {
       "text": "The Pledger Journey",
-      "url": ""
+      "url": "#journey"
     },
     {
       "text": "Offerings",
-      "url": ""
+      "url": "#offerings"
     },
     {
       "text": "Hear from our Community",
-      "url": ""
+      "url": "#community"
     },
     {
       "text": "Benefits",
-      "url": ""
+      "url": "#benefits"
     }
   ],
   "MediaArticle_1": [

@@ -12,20 +12,20 @@
   ],
   "PageMenu": [
     {
-      "text": "The Pledger Journey",
-      "url": ""
+      "text": "Methodology",
+      "url": "#methodology"
     },
     {
-      "text": "Offerings",
-      "url": ""
+      "text": "Value Discovery",
+      "url": "#values"
     },
     {
-      "text": "Hear from our Community",
-      "url": ""
+      "text": "Talk to a Specialist",
+      "url": "#specialists"
     },
     {
-      "text": "Benefits",
-      "url": ""
+      "text": "Missions",
+      "url": "#missions"
     }
   ],
   "SectionHeader_2": [

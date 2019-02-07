@@ -160,26 +160,26 @@
     <ul class="page-menu__bar menu-bar">
         
             <li class="page-menu__item">
-                <smooth_scroll class="link" :anchor="''" :offset="120">The Pledger Journey</smooth_scroll>
+                <smooth_scroll class="link" :anchor="'#journey'" :offset="120">The Pledger Journey</smooth_scroll>
             </li>
         
             <li class="page-menu__item">
-                <smooth_scroll class="link" :anchor="''" :offset="120">Offerings</smooth_scroll>
+                <smooth_scroll class="link" :anchor="'#offerings'" :offset="120">Offerings</smooth_scroll>
             </li>
         
             <li class="page-menu__item">
-                <smooth_scroll class="link" :anchor="''" :offset="120">Hear from our Community</smooth_scroll>
+                <smooth_scroll class="link" :anchor="'#community'" :offset="120">Hear from our Community</smooth_scroll>
             </li>
         
             <li class="page-menu__item">
-                <smooth_scroll class="link" :anchor="''" :offset="120">Benefits</smooth_scroll>
+                <smooth_scroll class="link" :anchor="'#benefits'" :offset="120">Benefits</smooth_scroll>
             </li>
         
     </ul>
 </nav>
   
   
-  <section class="bg-green-darkest | space-t space-b">
+  <section id="journey" class="js-section | bg-green-darkest | space-t space-b">
     <div class="info-slider-layout | container">
 
     
@@ -368,10 +368,10 @@
     </info_slider>
 
 </div>
-</section>
+  </section>
 
   
-  <section class="">
+  <section id="offerings" class="js-section">
       <div class="featured-articles | md:flex-grid container gutter">
     
     
@@ -430,7 +430,7 @@
   </section>
 
   
-  <section class="bg-orange text-white">
+  <section id="community" class="js-section |  bg-orange text-white">
       
 <slider :opt="{
     items: 1,
@@ -504,7 +504,7 @@ class="profile-slider -basic slider-reset -no-gutters bg-grey-darker| container 
 
 
   
-  <section class="space-t--sm space-b">
+  <section id="benefits" class="js-section | space-t--sm space-b">
     
       
 <div class="media-article  | container gutter-l--md">
