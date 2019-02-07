@@ -10,7 +10,24 @@
       "descr": false
     }
   ],
-
+  "PageMenu": [
+    {
+      "text": "Ethos",
+      "url": "#ethos"
+    },
+    {
+      "text": "Impact Journeys",
+      "url": "#impact-journeys"
+    },
+    {
+      "text": "Our Members",
+      "url": "#members"
+    },
+    {
+      "text": "Press",
+      "url": "#press"
+    }
+  ],
   "MediaArticle_1": [
    {
      "variation": "",
@@ -42,6 +59,13 @@
      }
    }
  ],
+ "SectionHeaderBasic_1": [
+    {
+      "variation": "",
+      "header": "Our Members",
+      "link": false
+    }
+  ],
 
   "ProfileGrid_1": [
     {

@@ -10,29 +10,22 @@
         @apply overflow-hidden;
     }
 
-    // Hero Type
-    &.-hero {
-        .tns-inner,
-        &__content {
-            @apply overflow-visible;
-        }
-    }
-
-    // Control Panel
+    
+    // Slider Controls
     .slider-controls {
-        @apply cursor-pointer
-        absolute pin-b pin-r bg-oat-light p-4 mr-2;;
+        @apply w-32 float-right;
+        [data-controls] {
+            @apply py-8;
+        } 
     }
     
-    // Controls
+    // Controls Info
     .controls-info {
         @apply relative;
     }
-    
-    // Info
     .info {
         @apply center-xy
-        text-sm text-green-darkest
+        text-sm
         font-semibold;
     }
 
@@ -50,14 +43,15 @@
 
     // Basic Type
     &.-basic {
-        @apply pt-14 pb-12;
-
-        .profile-slider__aside {
-            width: 90%;
-        }
+        @apply pt-14;
 
         .image img {
-            @apply .z-10;
+            @apply z-10;
+        }
+
+        .tns-inner,
+        .profile-slider__content {
+            @apply overflow-visible;
         }
     }
 
@@ -71,11 +65,29 @@
             }
         }
     }
+     // Hero Type
+     &.-hero {
+        @apply pb-8;
+        .tns-inner,
+        .profile-slider__content {
+            @apply overflow-visible;
+        }
+        .profile-slider__main {
+            @apply mb-0;
+        }
+        // Slider Controls
+        .slider-controls {
+            @apply relative bg-green text-white w-32 float-left;
+            .info {
+                @apply text-white ;
+            }
+        }
+    }
 
     // Pattern
     .pattern--white {
         @apply absolute z-10 h-full;
-        right: -62px;
+        left: -62px;
         background-repeat: no-repeat;
         width: 9rem;
         top: -18px;
@@ -98,10 +110,15 @@
             width: 32%;
         }
 
-        // Control Panel
+        // Slider Controls
         .slider-controls {
-            @apply relative flex justify-end items-center float-right p-0 m-0;
-            width: 64%;             
+            @apply relative flex justify-end items-center p-0 m-0;
+            width: 64%;      
+
+            [data-controls] {
+                @apply py-0;
+            } 
+   
         }
 
         // Nav
@@ -137,6 +154,7 @@
             .profile-slider__aside {
                 width: 32%;
             }
+            
             .slider-controls {
                 @apply bg-transparent absolute;
                 width: auto;
@@ -161,15 +179,16 @@
             .profile-slider__aside {
                 @apply w-full;
             }
+            // Slider Controls
             .slider-controls {
-                @apply relative bg-green text-white w-auto p-4;
+                @apply w-auto p-4 float-right;
                 right: 60%;
                 .info {
                     @apply text-white ;
                 }
             }
             .profile-slider__card {
-                @apply pt-10 px-14 pb-12;
+                @apply pt-10 px-14 pb-14;
             }
         }
 

@@ -1015,8 +1015,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: ["classes"]
 });
@@ -9936,12 +9934,13 @@ var render = function() {
   return _c("span", { staticClass: "icon |", class: _vm.classes }, [
     _c(
       "svg",
-      { attrs: { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 8.6 24" } },
+      { attrs: { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 13 39" } },
       [
-        _c("polygon", {
+        _c("polyline", {
+          staticClass: "stroke",
           attrs: {
-            fill: "currentColor",
-            points: "1.7,24 0,23 6.3,12 0,1 1.7,0 8.6,12 "
+            stroke: "currentColor",
+            points: "0.9,38.5 11.9,19.5 0.9,0.5 "
           }
         })
       ]
@@ -22242,8 +22241,8 @@ throw new Error("Module build failed (from ./node_modules/css-loader/index.js):\
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/lbradford/Sites/Client_Work/Founders_Pledge/founderspledge-fed/themes/founders/src/js/app.js */"./themes/founders/src/js/app.js");
-module.exports = __webpack_require__(/*! /Users/lbradford/Sites/Client_Work/Founders_Pledge/founderspledge-fed/themes/founders/src/scss/app.scss */"./themes/founders/src/scss/app.scss");
+__webpack_require__(/*! /Users/lindseybradford/Sites/Client_Work/FoundersPledge/themes/founders/src/js/app.js */"./themes/founders/src/js/app.js");
+module.exports = __webpack_require__(/*! /Users/lindseybradford/Sites/Client_Work/FoundersPledge/themes/founders/src/scss/app.scss */"./themes/founders/src/scss/app.scss");
 
 
 /***/ })

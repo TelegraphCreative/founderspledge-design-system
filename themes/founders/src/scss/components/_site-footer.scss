@@ -3,8 +3,16 @@
     @apply border-t .border-grey-lightest;
     
     // Logo
-    .logo {
-        @apply text-green-darkest;
+    &__logo {
+        @apply text-green-darkest relative;
+        left: -3rem;
+        .logo {
+            max-width: 11rem;
+        }
+
+        &:hover {
+            @apply text-green;
+        }
     }
 
     // Header
@@ -17,7 +25,12 @@
     // Group
     &__group {
         @apply max-w-xs 
-        mx-auto mb-10;
+        mx-auto mb-10 pl-12 pr-8; 
+    }
+
+    // Contact
+    .hcard {
+        @apply pl-0;
     }
 
     // Meta
@@ -35,7 +48,6 @@
     .icon--map-pin {
         width: 0.75rem;
     }
-
 
 }
 
@@ -65,16 +77,20 @@
             items-center
             pt-4 pb-8;
         }
-    
-         // Choices
-         .choices {
+        // Choices
+        .choices {
             @apply float-right;
         }
-        
+        // Container 
+        &__groups__container{
+            @apply mx-auto
+            px-8;
+            max-width: 90rem;
+        }
     }
     // Meta 
     .footer-meta__group {
-        @apply .flex-1;
+        @apply .flex-1 pr-0;
     
         &:nth-child(2) {
             @apply text-center;
@@ -113,6 +129,7 @@
         // Contact
         .hcard {
             @apply mb-12;
+            padding-left: 3.375rem;
         }
 
         // Form
