@@ -20,7 +20,6 @@
         }
 
         &__descr {
-
             animation-name: hideDescription;
             animation-duration: 1s;
             animation-timing-function: ease-in-out;
@@ -32,9 +31,12 @@
             max-width: 23.125rem;
         }
 
-        &:hover {
+        // Active Hover
+        &.-active {
+            @apply bg-green;
             .stat-card__descr {
                 animation-name: showDescription;
+                
             }
         }
     }

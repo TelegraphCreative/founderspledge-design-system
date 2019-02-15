@@ -67,17 +67,20 @@
             {
               "header": "Ambitious",
               "figure": "33%",
-              "descr": "<p>A third for you and family, a third for the world and a third for that third thing in your life (travel, angel investing, wacky experiment).</p>"
+              "descr": "<p>A third for you and family, a third for the world and a third for that third thing in your life (travel, angel investing, wacky experiment).</p>",
+              "active": true
             },
             {
               "header": "Traditional",
               "figure": "10%",
-              "descr": "<p>A third for you and family, a third for the world and a third for that third thing in your life (travel, angel investing, wacky experiment).</p>"
+              "descr": "<p>A third for you and family, a third for the world and a third for that third thing in your life (travel, angel investing, wacky experiment).</p>",
+              "active": false
             },
             {
               "header": "Conservative",
               "figure": "5%",
-              "descr": "<p>A third for you and family, a third for the world and a third for that third thing in your life (travel, angel investing, wacky experiment).</p>"
+              "descr": "<p>A third for you and family, a third for the world and a third for that third thing in your life (travel, angel investing, wacky experiment).</p>",
+              "active": false
             }
           ]
         }

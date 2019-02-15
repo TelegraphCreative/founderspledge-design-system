@@ -49,6 +49,9 @@
             @apply z-10;
         }
 
+        .tns-inner {
+            width: 99%;
+        }
         .tns-inner,
         .profile-slider__content {
             @apply overflow-visible;

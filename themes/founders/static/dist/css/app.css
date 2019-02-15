@@ -4584,6 +4584,16 @@ body {
   margin-bottom: 0;
 }
 
+.paragraphs.-xs p {
+  font-size: .875rem;
+  line-height: 1.75;
+  margin-bottom: 1rem;
+}
+
+.paragraphs.-xs p:last-of-type {
+  margin-bottom: 0;
+}
+
 a {
   color: #53c07d;
 }
@@ -4930,6 +4940,7 @@ html {
 .link-group {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .link-group .link {
@@ -4939,6 +4950,12 @@ html {
 
 .link-group .link:last-child {
   margin-right: 0;
+}
+
+@media (min-width: 768px) {
+  .link-group {
+    justify-content: flex-start;
+  }
 }
 
 a {
@@ -6444,9 +6461,9 @@ body {
 
 .flip-card__back {
   padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
   padding-left: 2rem;
   padding-right: 2rem;
-  padding-bottom: 2.5rem;
 }
 
 .flip-card__content {
@@ -6589,6 +6606,13 @@ body {
   display: none;
 }
 
+.flip-card.-cta .flip-card__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
 .flip-card.-cta .flip-card__content:before {
   border-width: 0;
   background-color: #e8a879;
@@ -6611,8 +6635,9 @@ body {
   margin-bottom: .75rem;
 }
 
-.flip-card.-cta .paragraphs p {
-  font-size: .875rem;
+.flip-card.-resource .flip-card__descr {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .flip-card.-resource .link {
@@ -6664,6 +6689,11 @@ body {
     padding-top: 1rem;
     padding-bottom: 1rem;
     max-width: 8.75rem;
+  }
+
+  .flip-card.-resource .flip-card__back {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
   }
 
   .flip-card.-feature .flip-card__back .flip-card__name {
@@ -6910,7 +6940,11 @@ body {
     max-width: 23.125rem;
   }
 
-  .stat-card:hover .stat-card__descr {
+  .stat-card.-active {
+    background-color: #53c07d;
+  }
+
+  .stat-card.-active .stat-card__descr {
     -webkit-animation-name: showDescription;
             animation-name: showDescription;
   }
@@ -7537,6 +7571,10 @@ body {
   z-index: 10;
 }
 
+.profile-slider.-basic .tns-inner {
+  width: 99%;
+}
+
 .profile-slider.-basic .tns-inner,
 .profile-slider.-basic .profile-slider__content {
   overflow: visible;
@@ -7934,6 +7972,10 @@ body {
 
 .media-article__feature:last-of-type {
   padding-bottom: 1.5rem;
+}
+
+.media-article.-article-indent .media-article__main {
+  padding-top: 3rem;
 }
 
 @media (min-width: 768px) {

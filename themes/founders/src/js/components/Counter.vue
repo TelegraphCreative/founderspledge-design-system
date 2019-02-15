@@ -22,15 +22,20 @@
         };
 
         window.addEventListener('load', function() {
-
-            let sections = document.querySelectorAll('.counter');
-            sections.forEach(section => {
-                inView('.counter').once('enter', el => {
-                    // Initialize Counter
-                    var counterEl = new CountUp(section, _this.start, _this.end);
-                    counterEl.start()
-                });
+            inView('.counter').once('enter', el => {
+                // Initialize Counter
+                var counterEl = new CountUp(_this.$el, _this.start, _this.end);
+                counterEl.start()
             });
+
+            // let sections = document.querySelectorAll('.counter');
+            // sections.forEach(section => {
+            //     inView('.counter').once('enter', el => {
+            //         // Initialize Counter
+            //         var counterEl = new CountUp(section, _this.start, _this.end);
+            //         counterEl.start()
+            //     });
+            // });
             
         });
     }
