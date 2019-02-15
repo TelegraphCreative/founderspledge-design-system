@@ -2,8 +2,10 @@
     @apply relative;
 
     &__item {
-        @apply relative z-0 w-32
+        @apply relative z-0
         property-all duration-3 timing-3;
+        
+        width: 10rem;
 
         &:nth-child(2) {
             @apply absolute z-10

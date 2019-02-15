@@ -29,7 +29,7 @@
                             </div>
 
                             <!-- Slider Controls -->
-                            <div class="slider-controls">
+                            <div class="slider-controls -green-box">
 
                                 <!-- Controls/Info -->
                                 <div class="controls-info">

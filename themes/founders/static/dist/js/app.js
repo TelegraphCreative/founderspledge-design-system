@@ -9371,9 +9371,11 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("span", { staticClass: "counter", attrs: { id: "counter" } }, [
-    _vm._v(_vm._s(_vm.end))
-  ])
+  return _c(
+    "span",
+    { staticClass: "counter | font-integer", attrs: { id: "counter" } },
+    [_vm._v(_vm._s(_vm.end))]
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -9501,7 +9503,7 @@ var render = function() {
                         2
                       ),
                       _vm._v(" "),
-                      _c("div", { staticClass: "slider-controls" }, [
+                      _c("div", { staticClass: "slider-controls -green-box" }, [
                         _c("div", { staticClass: "controls-info" }, [
                           _c(
                             "ul",

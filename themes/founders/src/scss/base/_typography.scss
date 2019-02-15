@@ -55,7 +55,7 @@ body {
 // Paragraphs
 .paragraphs {
     p {
-        @apply text-base leading-normal 
+        @apply text-lg leading-normal 
         mb-6;
 
         &:last-of-type {
@@ -74,8 +74,12 @@ body {
     
     &.-sm {
         p {
-            @apply text-xs leading-loose 
+            @apply text-base leading-loose 
             mb-4;
+
+            &:last-of-type {
+                @apply mb-0;
+            }
         }
     }
 }
@@ -107,4 +111,14 @@ a {
         }
 
     }
+}
+
+
+// Integers
+.font-integer {
+    -moz-font-feature-settings:"lnum" 1; 
+    -ms-font-feature-settings:"lnum" 1; 
+    -o-font-feature-settings:"lnum" 1; 
+    -webkit-font-feature-settings:"lnum" 1; 
+    font-feature-settings:"lnum" 1;
 }
