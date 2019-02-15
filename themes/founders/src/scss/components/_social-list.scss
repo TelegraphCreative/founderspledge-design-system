@@ -13,6 +13,13 @@
         }
     }
 
+    // -flush-l type
+    &.-flush-l {
+        li:first-child {
+            @apply -ml-1;
+        }
+    }
+
     // -white type
     &.-white {
         a {

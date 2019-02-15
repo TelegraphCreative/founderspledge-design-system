@@ -106,13 +106,16 @@
 // Variation
 // On Dark
 // md Screen
-.bg-green-darkest {
-    .section-header {
+.bg-green-darkest .section-header {
+    .header {
+        @apply text-green-light;
+    }
+    .paragraphs {
         @apply text-white;
     }
     
     @screen md {
-        .section-header {
+
             .header-sm {
                 @apply text-green-light;
             }
@@ -124,6 +127,6 @@
                 }
             }
 
-        }
+
     }
 }

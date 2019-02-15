@@ -87,6 +87,11 @@
             px-10;
             max-width: 90rem;
         }
+
+        // Header
+        &__header {
+            @apply mt-6;
+        }
     }
     // Meta 
     .footer-meta__group {

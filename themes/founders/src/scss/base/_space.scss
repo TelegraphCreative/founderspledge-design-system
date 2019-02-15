@@ -3,6 +3,9 @@
 
     &-t {
         @apply pt-16;
+        &--lg {
+            @apply pt-18;
+        }
         &--sm {
             @apply pt-12;
         }
@@ -23,6 +26,10 @@
     @screen md {
         &-t {
             @apply pt-18;
+
+            &--lg {
+                @apply pt-32;
+            }
         }
         &-b {
             @apply pb-18;
@@ -30,6 +37,7 @@
                 @apply pb-32;
             }
         }
+        
     }
 
 }

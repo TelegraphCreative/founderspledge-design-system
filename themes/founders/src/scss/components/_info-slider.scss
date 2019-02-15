@@ -62,6 +62,10 @@
                 @apply opacity-100;
                 transform: translate(40%,0);
             }
+
+            &:hover {
+                @apply opacity-100;
+            }
         }
         
     }

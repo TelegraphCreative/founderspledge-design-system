@@ -10,13 +10,13 @@
         items-center
         overflow-x
         justify-between
-        overflow-gradient
-        ;
+        overflow-gradient;
     }
 
     .link {
-        @apply px-2 py-6;
+        @apply px-2 py-6 font-normal;
     }
+    .link:hover,
     .section-active {
         @apply text-green;
     }

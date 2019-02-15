@@ -4,7 +4,7 @@
     
     // General Layout
     &__item {
-        @apply p-5 px-0 border-b border-oat-light relative;
+        @apply p-6 pt-8 px-0 border-b border-oat-light relative;
 
         // Box
         &:before {
@@ -20,6 +20,11 @@
                 @apply bg-white shadow-lg;
             }
         }
+
+
+        .link:hover {
+            @apply text-green border-green;
+        }
     }
 
     &__aside {
@@ -30,9 +35,10 @@
         @apply mb-4;
     }
 
-    &__descr {
-        @apply mb-2;
-    }
+    // &__descr {
+    //     @apply mb-2;
+    // }
+    
 
     &__content {
         @apply relative z-10;
@@ -71,7 +77,8 @@
         }
         
         &__action {
-            @apply opacity-0 .property-all .duration-3 .timing-1
+            @apply opacity-0 
+            timing-1 duration-1 property-all
             pr-15;
         }
 

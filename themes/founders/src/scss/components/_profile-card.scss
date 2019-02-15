@@ -47,6 +47,10 @@
             @apply h-auto;
         }
 
+        &__main {
+            @apply pb-8 pt-16;
+        }
+
         .visibility-shift {
             @apply .opacity-0;
         }

@@ -111,12 +111,15 @@
         .highlight-card {
             @apply text-white;
 
-            &__icon,
+            &__icon {
+                @apply text-green-light;
+            }
             &__action {
                 @apply opacity-0
                 property-all timing-1 duration-2 delay-2;
             }
             
+            .header-md,
             &__header {
                 @apply text-green-light;
             }
@@ -124,9 +127,15 @@
             // Hover 
             &:hover {
                 @apply text-green-darkest;
-                .highlight-card__icon,
+
                 .highlight-card__action {
                     @apply opacity-100;
+                }
+                .header-md {
+                    @apply text-green-darkest;
+                }
+                .highlight-card__icon {
+                    @apply text-green;
                 }
             }
 
