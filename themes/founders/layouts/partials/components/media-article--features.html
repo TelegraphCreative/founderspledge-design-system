@@ -11,7 +11,7 @@ Content Types:
 -->
 <div class="media-article -features | container">
 
-        <div class="media-article__main | gutter-l--lg | sm:px-12 md:pb-12">
+        <div class="media-article__main | gutter-l--lg | sm:pr-12 md:pb-12">
 
         <!-- Header -->
         <header class="media-article__header | md:pt-24 pt-12">
@@ -31,7 +31,7 @@ Content Types:
                     {{ range .features }}
                     <div class="media-article__feature">
                         <h5 class="header-md | text-green-light | mb-3">{{ .header }}</h5>
-                        <div class="paragraphs -sm">
+                        <div class="paragraphs -xs">
                             {{ .descr | safeHTML }}
                         </div>
                     </div>
@@ -53,7 +53,7 @@ Content Types:
         </div>
     </div>
 
-    <aside class="media-article__aside | lg:bg-green-light | md:pb-0 pb-4">
+    <aside class="media-article__aside  | md:pb-0 pb-4">
         {{ if .image }}
             <figure class="image -is{{ .image.ratio }} | md:block hidden">
                 <img src="{{ .image.url }}" alt="" class="fit-cover">

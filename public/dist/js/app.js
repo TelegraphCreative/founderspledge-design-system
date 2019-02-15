@@ -1055,6 +1055,7 @@ __webpack_require__.r(__webpack_exports__);
   methods: {
     onActive: function onActive() {
       this.isActive = true;
+      stopPropagation;
     },
     onInactive: function onInactive() {
       this.isActive = false;

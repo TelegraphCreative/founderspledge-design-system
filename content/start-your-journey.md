@@ -46,7 +46,7 @@
     ],
    "PanelHero_1": [
         {
-            "variation": "bg-green-darkest -lg",
+            "variation": "bg-green-darkest",
             "header": "Make the Pledge",
             "descr": "<p>Schedule a quick call with our team so we can get to know each other and figure out if we’re a good fit.</p>",
             "action" : {
@@ -57,7 +57,7 @@
     ],
     "MediaArticle_2": [
         {
-          "variation": "-stats",
+          "variation": "-stats -article-indent--sm",
           "preheader": "How Much?",
           "header": "Realising your pledge will be the most significant gift you’ll ever make.",
           "subheader": false,

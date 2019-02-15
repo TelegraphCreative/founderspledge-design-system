@@ -5,7 +5,7 @@
     {
       "variation": "-top",
       "preheader": "Start your Journey",
-      "header": "Giving Redefined: Simple, Personal, Impactful",
+      "header": "Giving Redefined: Simple, <br>Personal, Impactful",
       "descr": false
     }
   ],

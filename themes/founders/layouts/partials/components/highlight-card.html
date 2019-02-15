@@ -2,7 +2,7 @@
 <div class="highlight-card">
     <div class="highlight-card__content">
         {{ if .icon }}
-        <div class="highlight-card__icon text-green">
+        <div class="highlight-card__icon | text-green">
             {{- partial "svg/arrow--r.svg" (dict "class" "-md") -}}
         </div>
         {{end}}

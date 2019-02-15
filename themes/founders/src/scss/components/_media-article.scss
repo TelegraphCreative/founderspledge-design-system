@@ -48,7 +48,7 @@
     // Article Indent Type
     &.-article-indent {
         .media-article__main {
-            @apply pt-12
+            @apply pt-12;
         }
     }
     
@@ -105,8 +105,15 @@
 
         // Features Type
         &.-features {
-            .media-article__article {
-                @apply w-full;
+            .media-article__main {
+                @apply max-w-full;
+                width: 70%;
+            }
+            .media-article__aside {
+                width: 30%;
+            }
+            .image {
+                @apply h-full;
             }
         }
 
@@ -147,6 +154,11 @@
         &.-article-indent {
             .media-article__main {
                 @apply pt-24
+            }
+            &--sm {
+                .media-article__main {
+                    @apply pt-16;
+                }
             }
         }
         

@@ -45,6 +45,7 @@
     methods: {
         onActive(){
             this.isActive = true
+            stopPropagation
         },
         onInactive(){
             this.isActive = false

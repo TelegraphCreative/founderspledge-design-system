@@ -2,7 +2,7 @@
 
     <template slot="header">
         <h4 class="header | header-md">{{ .header }}</h4>
-        <h3 class="figure | header-xl">{{ .figure }}</h3>
+        <h3 class="figure | header-xl | font-integer">{{ .figure }}</h3>
     </template>
     
     {{ if .descr }}
@@ -14,18 +14,3 @@
     {{ end }}
 
 </stat_card>
-
-<!-- 
-<div class="stat-card">
-    <div class="stat-card__content">
-        <div class="stat-card__header">
-            <h4 class="header | header-md">{{ .header }}</h4>
-            <h3 class="figure | header-xl">{{ .figure }}</h3>
-        </div>
-        {{ if .descr }}
-        <div class="stat-card__descr paragraphs -xs">
-            {{ .descr | safeHTML }}
-        </div>
-        {{ end }}
-    </div>
-</div> -->

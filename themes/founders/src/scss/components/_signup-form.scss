@@ -6,6 +6,7 @@
 
     .email {
         @apply border-2 border-green-darkest
+        property-all duration-1 timing-1
         py-4 px-6
         text-base
         font-serif
@@ -14,6 +15,13 @@
 
         &::placeholder {
             @apply opacity-100;
+        }
+
+        &:focus, &:target {
+            @apply border-green;
+            &::placeholder {
+                @apply opacity-0;
+            }
         }
     }
 

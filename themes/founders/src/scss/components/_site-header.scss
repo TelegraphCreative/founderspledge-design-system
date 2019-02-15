@@ -38,14 +38,13 @@ body {
             // Active
             &.active {
                 .menu-bar__link {
-                    @apply text-green-light;
+                    @apply text-green-darkest;
                 }
             }
         }
 
         &__link {
             @apply link 
-            font-medium
             text-sm text-green
             pb-1
             border-b-2 border-transparent
