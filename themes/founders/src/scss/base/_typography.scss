@@ -82,6 +82,16 @@ body {
             }
         }
     }
+    &.-xs {
+        p {
+            @apply text-sm leading-loose 
+            mb-4;
+
+            &:last-of-type {
+                @apply mb-0;
+            }
+        }
+    }
 }
 
 

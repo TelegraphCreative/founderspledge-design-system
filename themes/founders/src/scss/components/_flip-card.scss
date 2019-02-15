@@ -7,7 +7,7 @@
     @apply mb-8 w-full;
 
     &__back {
-        @apply pt-10 px-8 pb-10;
+        @apply py-10 px-8;
     }
 
     &__content {
@@ -45,6 +45,7 @@
         @apply hidden delay-4;
     }
 
+    
     
     &__descr {
         @apply max-w-xs mx-auto;
@@ -129,6 +130,8 @@
         }
 
         .flip-card__content {
+            @apply flex flex-col .justify-center h-full;
+
             &:before { 
                 @apply border-0 bg-orange text-white;
                 transform: scale(1) !important;
@@ -146,19 +149,24 @@
         .flip-card__name {
             @apply mb-3;
         }
-        .paragraphs p {
-            @apply text-sm;
-        }
+        
     }
 
     // - Resource Type (by default, this works)
     &.-resource {
+        
+
+        .flip-card__descr {
+            @apply my-6;
+        }
+
         .link {
             @apply text-green-darkest border-black;
             &:hover {
                 @apply text-oat border-oat;
             }
         }
+        
     }
 }
 
@@ -198,6 +206,13 @@
                 max-width: 8.75rem;
             }
         }    
+        // resource Type
+        &.-resource {
+            .flip-card__back {
+                @apply py-6;
+            }
+        }
+
         // Feature Type
         &.-feature {
             .flip-card__back {  
