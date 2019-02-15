@@ -77,18 +77,12 @@
         }
         
         &__action {
-            @apply opacity-0 
-            timing-1 duration-1 property-all
+            @apply  timing-1 duration-1 property-all
             pr-15;
         }
 
         &__item {
             @apply -mx-5 px-5;
-            &:hover {
-                .resource__action {
-                    @apply opacity-100;
-                }
-            }
         }
     }
 

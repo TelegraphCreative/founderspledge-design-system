@@ -11,6 +11,7 @@
     a {
         @apply link
         block
+        font-normal
         text-green-darkest;
 
         &:hover {
@@ -18,5 +19,4 @@
         }
     }
     
-
 }

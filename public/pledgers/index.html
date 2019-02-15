@@ -686,10 +686,10 @@ c0-0.28463-0.00639-0.56776-0.01897-0.8493C30.00674,8.54849,31.11985,7.39218,32,6
         
 <slider :opt="{
     items: 1,
-    autoplay: true,
+    autoplay: false,
     mode: 'gallery'
 }"
-class="profile-slider -hero slider-reset -no-gutters | container gutter-md clearfix">
+class="profile-slider -hero slider-reset -no-gutters | clearfix">
 
 <template slot="slides">
     <div class="profile-slider__slide">
@@ -697,7 +697,7 @@ class="profile-slider -hero slider-reset -no-gutters | container gutter-md clear
 
             
             <div class="profile-slider__aside">
-                <figure class="image -is2x1">
+                <figure class="image -md:is2x1 -is16x9">
                     <img src="/img/fpo-05.jpg" data-src="/img/fpo-05.jpg" class="fit-cover" alt="">
                 </figure>
             </div>

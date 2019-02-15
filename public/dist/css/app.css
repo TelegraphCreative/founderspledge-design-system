@@ -5233,10 +5233,6 @@ button {
   padding-top: 76.35%;
 }
 
-.image.-is3x2 {
-  padding-top: 66.7%;
-}
-
 .image.-is16x9 {
   padding-top: 65.25%;
 }
@@ -5263,6 +5259,12 @@ button {
 
 .image.rounded-full.-inner-shadow::before {
   border-radius: 9999px;
+}
+
+@media (min-width: 768px) {
+  .image.-md\:is2x1 {
+    padding-top: 50%;
+  }
 }
 
 blockquote,
@@ -8257,6 +8259,7 @@ body {
   transition-duration: .15s;
   transition-property: all;
   display: block;
+  font-weight: 400;
   color: #12302d;
 }
 
@@ -8378,7 +8381,6 @@ body {
   }
 
   .resource__action {
-    opacity: 0;
     transition-timing-function: ease;
     transition-duration: .15s;
     transition-property: all;
@@ -8390,10 +8392,6 @@ body {
     margin-right: -1.25rem;
     padding-left: 1.25rem;
     padding-right: 1.25rem;
-  }
-
-  .resource__item:hover .resource__action {
-    opacity: 1;
   }
 }
 
