@@ -5,6 +5,10 @@
         @apply mb-6;
     }
     
+    &__fig__integer {
+        @apply relative;
+    } 
+    
     // Screen
     @screen md {
         

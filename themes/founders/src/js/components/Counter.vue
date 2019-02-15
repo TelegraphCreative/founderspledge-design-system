@@ -1,5 +1,5 @@
 <template>
-  <span class="counter" id="counter">{{end}}</span>
+  <span class="counter | font-integer" id="counter">{{end}}</span>
 </template>
 
 <script type="text/babel">
