@@ -6923,21 +6923,19 @@ body {
     justify-content: space-between;
   }
 
-  .stat-card__descr {
-    -webkit-animation-name: hideDescription;
-            animation-name: hideDescription;
-    -webkit-animation-duration: 1s;
-            animation-duration: 1s;
-    -webkit-animation-timing-function: ease-in-out;
-            animation-timing-function: ease-in-out;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
-  }
-
   .stat-card__content {
     margin-left: auto;
     margin-right: auto;
     max-width: 23.125rem;
+  }
+
+  .stat-card .stat-card__descr {
+    opacity: 0;
+    max-height: 0;
+    padding-bottom: 0;
+    transition-property: all;
+    transition-duration: .45s;
+    transition-timing-function: ease;
   }
 
   .stat-card.-active {
@@ -6945,8 +6943,10 @@ body {
   }
 
   .stat-card.-active .stat-card__descr {
-    -webkit-animation-name: showDescription;
-            animation-name: showDescription;
+    opacity: 1;
+    max-height: 15rem;
+    padding-bottom: 4rem;
+    transition-delay: .3s;
   }
 }
 

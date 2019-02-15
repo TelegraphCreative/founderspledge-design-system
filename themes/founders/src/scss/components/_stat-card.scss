@@ -19,24 +19,35 @@
             @apply flex items-center .justify-between;
         }
 
-        &__descr {
-            animation-name: hideDescription;
-            animation-duration: 1s;
-            animation-timing-function: ease-in-out;
-            animation-fill-mode: forwards;
-        }
-
         &__content {
             @apply mx-auto;
             max-width: 23.125rem;
         }
 
+        // Original State
+        .stat-card__descr {
+            opacity:0;
+            max-height:0;
+            padding-bottom:0; 
+            @apply property-all duration-3 timing-1;
+        }
+        // // Go
+        // &__descr {
+        //     animation-name: hideDescription;
+        //     animation-duration: 1s;
+        //     animation-timing-function: ease-in-out;
+        //     animation-fill-mode: forwards;
+        // }
+
+
         // Active Hover
         &.-active {
             @apply bg-green;
             .stat-card__descr {
-                animation-name: showDescription;
-                
+                opacity: 1;
+                max-height:15rem;
+                padding-bottom:4rem;   
+                transition-delay: .3s;
             }
         }
     }
