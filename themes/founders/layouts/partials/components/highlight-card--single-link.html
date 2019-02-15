@@ -1,13 +1,13 @@
 
 <div class="highlight-card">
-    <div class="highlight-card__content">
+    <a href="{{.linkUrl}}" class="highlight-card__content | no-underline">
         {{ if .icon }}
-        <div class="highlight-card__icon text-green">
+        <div class="highlight-card__icon | text-green">
             {{- partial "svg/arrow--r.svg" (dict "class" "-md") -}}
         </div>
         {{end}}
 
-        <div class="highlight-card__main">
+        <div class="highlight-card__main | text-grey-darkest">
             <h4 class="header-md">{{.name}}</h4>
             <div class="paragraphs -xs">
                 <p>{{.descr | safeHTML }}</p>
@@ -16,8 +16,8 @@
 
         {{ if .linkText }}
         <div class="highlight-card__action | text-sm">
-            <a href="{{.linkUrl}}" class="link -underline">{{.linkText}}</a>
+            <button class="link -underline">{{.linkText}}</button>
         </div>
         {{ end }}
-    </div>  
+    </a>  
 </div> 

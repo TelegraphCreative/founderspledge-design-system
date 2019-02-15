@@ -20,7 +20,6 @@
         }
 
         &__descr {
-
             animation-name: hideDescription;
             animation-duration: 1s;
             animation-timing-function: ease-in-out;
@@ -31,10 +30,21 @@
             @apply mx-auto;
             max-width: 23.125rem;
         }
-
+        // First Child + Hover
+        &:first-child {
+            @apply bg-green;
+            .stat-card__descr {
+                animation-name: none !important;
+                animation-duration: 0;
+                opacity:1;
+                max-height:15rem;
+                padding-bottom:4rem;    
+            }    
+        }
         &:hover {
             .stat-card__descr {
                 animation-name: showDescription;
+                
             }
         }
     }

@@ -57,7 +57,7 @@
 
     // Group of Links
     &-group {
-        @apply flex items-center;
+        @apply flex items-center .justify-center;
 
         .link {
             @apply mr-4 text-center;
@@ -68,6 +68,13 @@
         }
     }
 
+    // Screen Md
+    @screen md {
+        // Group of Links
+        &-group {
+            @apply justify-start;
+        }
+    }
 }
 
 
