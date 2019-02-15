@@ -10,6 +10,7 @@ import slider from './components/Slider';
 import profile_modal from './components/ProfileModal';
 import gallery_modal from './components/GalleryModal';
 import select_box from './components/SelectBox';
+import stat_card from './components/StatCard.vue';
 import smooth_scroll from './components/SmoothScroll';
 import section_anchor_states from './components/SectionAnchorStates';
 import counter from './components/Counter';
@@ -37,6 +38,7 @@ const app = new Vue({
         profile_modal,
         gallery_modal,
         select_box,
+        stat_card,
         smooth_scroll,
         counter
     }

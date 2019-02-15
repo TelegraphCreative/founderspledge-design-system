@@ -6940,21 +6940,11 @@ body {
     max-width: 23.125rem;
   }
 
-  .stat-card:first-child {
+  .stat-card.-active {
     background-color: #53c07d;
   }
 
-  .stat-card:first-child .stat-card__descr {
-    -webkit-animation-name: none !important;
-            animation-name: none !important;
-    -webkit-animation-duration: 0;
-            animation-duration: 0;
-    opacity: 1;
-    max-height: 15rem;
-    padding-bottom: 4rem;
-  }
-
-  .stat-card:hover .stat-card__descr {
+  .stat-card.-active .stat-card__descr {
     -webkit-animation-name: showDescription;
             animation-name: showDescription;
   }

@@ -276,45 +276,60 @@
     
     <aside class="media-article__aside | xl:bg-green">
         
-            <div class="stat-card">
-    <div class="stat-card__content">
-        <div class="stat-card__header">
-            <h4 class="header | header-md">Ambitious</h4>
-            <h3 class="figure | header-xl">33%</h3>
-        </div>
-        
+            <stat_card :active="true">
+
+    <template slot="header">
+        <h4 class="header | header-md">Ambitious</h4>
+        <h3 class="figure | header-xl">33%</h3>
+    </template>
+    
+    
+    <template slot="descr">
         <div class="stat-card__descr paragraphs -xs">
             <p>A third for you and family, a third for the world and a third for that third thing in your life (travel, angel investing, wacky experiment).</p>
         </div>
-        
-    </div>
-</div> 
-            <div class="stat-card">
-    <div class="stat-card__content">
-        <div class="stat-card__header">
-            <h4 class="header | header-md">Traditional</h4>
-            <h3 class="figure | header-xl">10%</h3>
-        </div>
-        
+    </template>
+    
+
+</stat_card>
+
+ 
+            <stat_card :active="false">
+
+    <template slot="header">
+        <h4 class="header | header-md">Traditional</h4>
+        <h3 class="figure | header-xl">10%</h3>
+    </template>
+    
+    
+    <template slot="descr">
         <div class="stat-card__descr paragraphs -xs">
             <p>A third for you and family, a third for the world and a third for that third thing in your life (travel, angel investing, wacky experiment).</p>
         </div>
-        
-    </div>
-</div> 
-            <div class="stat-card">
-    <div class="stat-card__content">
-        <div class="stat-card__header">
-            <h4 class="header | header-md">Conservative</h4>
-            <h3 class="figure | header-xl">5%</h3>
-        </div>
-        
+    </template>
+    
+
+</stat_card>
+
+ 
+            <stat_card :active="false">
+
+    <template slot="header">
+        <h4 class="header | header-md">Conservative</h4>
+        <h3 class="figure | header-xl">5%</h3>
+    </template>
+    
+    
+    <template slot="descr">
         <div class="stat-card__descr paragraphs -xs">
             <p>A third for you and family, a third for the world and a third for that third thing in your life (travel, angel investing, wacky experiment).</p>
         </div>
-        
-    </div>
-</div> 
+    </template>
+    
+
+</stat_card>
+
+ 
     </aside>
     
     
