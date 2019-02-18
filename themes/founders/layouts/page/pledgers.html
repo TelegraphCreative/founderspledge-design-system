@@ -1,67 +1,69 @@
 {{ define "main" }}
 
-    <!-- Section Header -->
-    {{range .Params.SectionHeader_1}}
-        {{ partial "components/section-header.html" . }} {{ end }}
+<!-- Section Header -->
+{{ range.Params.SectionHeader_1 }}
+{{ partial "components/section-header.html" . }} {{ end }}
 
-    <!-- Search Menu -->
-    <section class="search-menu | container gutter-md space-b">
-
-        <!-- Form -->
-        <div class="search-menu__form">
-            <div class="search-form">
-                <form action="">
-                    <input type="search" class="search" placeholder="Search">
-                    <button class="submit link">
-                        {{- partial "svg/search.svg" (dict "class" "-sm-2") -}}
-                    </button>
-                </form>
-            </div>
-        </div>
-
-        <!-- Filters -->
-        <div class="search-menu__filters | md:flex md:justify-end">
-            
-            <select_box class="-box" :opt="{ linkList: true, variant: '-md -md:narrow-2 -dark -center' }">
-                <option value="All Locations">All Locations</option>
-                <option value="A Filter">A Filter</option>
-                <option value="A Filter">A Filter</option>
-                <option value="A Filter">A Filter</option>                
-            </select_box>
-        </div>
-
-
-    </section>
-    
-    <!-- Small Header -->
-    <header class="text-center mb-6">
-        <h4 class="header-md">1,420 Pledgers</h4>
-    </header>
-
-    <!-- Profile Grid -->
-    <section class="profile-cards flex-grid flex-wrap  | container gutter-md  space-b">
-        {{range .Params.ProfileGrid_1}}
-            {{ partial "components/profile-card--modal.html" . }} {{ end }}
-    </section>
-
-    <!-- Profile Slider -Hero -->
-    <section class="space-b">
-        {{ partial "components/profile-slider--hero.html" . }}
-    </section>
-
-    <!-- Profile Grid -->
-    <section class="profile-cards flex-grid flex-wrap  | container gutter-md  space-b">
-        {{range .Params.ProfileGrid_1}}
-            {{ partial "components/profile-card.html" . }} {{ end }}
-    </section>
-
-    <!-- Pagination -->
-    <div class="flex justify-center space-b ">
-        <button class="btn -wide -dark">Show More Pledgers</button>
+<!-- Search Menu -->
+<section class="search-menu | container gutter-md space-b">
+  <!-- Form -->
+  <div class="search-menu__form">
+    <div class="search-form">
+      <form action="">
+        <input type="search" class="search" placeholder="Search" />
+        <button class="submit link">
+          {{- partial "svg/search.svg" (dict "class" "-sm-2") -}}
+        </button>
+      </form>
     </div>
+  </div>
 
-    <!-- Panel Hero -->
-    {{range .Params.PanelHero_1}}
-        {{ partial "components/panel-hero.html" . }} {{end}}
-        
+  <!-- Filters -->
+  <div class="search-menu__filters | md:flex md:justify-end">
+    <select_box
+      :opt="{ linkList: true, variant: '-md -md:narrow-2 -dark -center' }"
+    >
+      <option value="All Locations">All Locations</option>
+      <option value="A Filter">A Filter</option>
+      <option value="A Filter">A Filter</option>
+      <option value="A Filter">A Filter</option>
+    </select_box>
+  </div>
+</section>
+
+<!-- Small Header -->
+<header class="text-center mb-6">
+  <h4 class="header-md">1,420 Pledgers</h4>
+</header>
+
+<!-- Profile Grid -->
+<section
+  class="profile-cards flex-grid flex-wrap  | container gutter-md  space-b"
+>
+  {{ range.Params.ProfileGrid_1 }}
+  {{ partial "components/profile-card--modal.html" . }} {{ end }}
+</section>
+
+<!-- Profile Slider -Hero -->
+<section class="space-b">
+  {{ partial "components/profile-slider--hero.html" . }}
+</section>
+
+<!-- Profile Grid -->
+<section
+  class="profile-cards flex-grid flex-wrap  | container gutter-md  space-b"
+>
+  {{ range.Params.ProfileGrid_1 }}
+  {{ partial "components/profile-card.html" . }} {{ end }}
+</section>
+
+<!-- Pagination -->
+<div class="flex justify-center space-b ">
+  <button class="btn -wide -dark">Show More Pledgers</button>
+</div>
+
+<!-- Panel Hero -->
+{{ range.Params.PanelHero_1 }}
+{{ partial "components/panel-hero.html" . }} {{ end }}
+
 {{ end }}

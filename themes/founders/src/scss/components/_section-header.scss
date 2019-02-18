@@ -1,132 +1,122 @@
 .section-header {
+  // General Layout
+  @apply text-center mb-8 pt-12;
+  @apply w-4/5 mx-auto;
 
-    // General Layout
-    @apply text-center mb-8 pt-12;
-    @apply w-4/5 mx-auto ;
-    
-    
-    .header-sm {
-        @apply mb-4;
-    }
-    .paragraphs {
-        @apply pt-4;
-    }
+  .header-sm {
+    @apply mb-4;
+  }
+  .paragraphs {
+    @apply pt-4;
+  }
 
-    &__descr {
-        @apply mx-auto max-w-lg;
-    }
-    
-    &__action {
-        @apply pt-5;
-    }
+  &__descr {
+    @apply mx-auto max-w-lg;
+  }
 
-    // -Top Type
-    &.-top {
-        @apply px-4 w-full max-w-full;
-    }
+  &__action {
+    @apply pt-5;
+  }
 
-    // -Left Type
+  // -Top Type
+  &.-top {
+    @apply px-4 w-full max-w-full;
+  }
+
+  // -Left Type
+  &.-left {
+    @apply text-left;
+  }
+
+  // -Arrow Type
+  &.-arrow {
+    .link.-icon {
+      @apply .justify-center;
+    }
+    // -Left
     &.-left {
+      @apply text-center;
+    }
+  }
+
+  // sm Screen
+  @screen sm {
+    @apply w-full max-w-full;
+    &__descr {
+      @apply w-3/5;
+    }
+
+    // -Arrow Type
+    &.-arrow {
+      .section-header__content {
+        @apply text-center relative;
+      }
+
+      .section-header__action {
+        @apply absolute pin-r pin-t pt-0;
+      }
+    }
+
+    // -Left (override other types)
+    &.-left {
+      .section-header__content {
         @apply text-left;
+      }
     }
 
-     // -Arrow Type
-     &.-arrow {
-        .link.-icon {
-            @apply .justify-center;
-        }
-        // -Left
-        &.-left {
-            @apply text-center;
-        }
-        
-     }
-
-   
-    // sm Screen
-    @screen sm {
-        @apply w-full max-w-full;
-        &__descr {
-            @apply w-3/5;
-        }
-
-         // -Arrow Type
-        &.-arrow {
-            .section-header__content {
-                @apply text-center relative;
-            }
-
-            .section-header__action {
-                @apply absolute pin-r pin-t pt-0;
-            }
-        }
-
-        // -Left (override other types)
-        &.-left {
-            .section-header__content {
-                @apply text-left;
-            }
-        }
-
-        // Top Section Header
-        &.-top {
-            @apply px-8;
-        }
-
+    // Top Section Header
+    &.-top {
+      @apply px-8;
     }
-    
-    // md Screen
-    @screen md {
-        // General Layout
-        @apply mb-10 pt-14 pt-22;
+  }
 
-        &__action {
-            @apply pt-10;
-        }
+  // md Screen
+  @screen md {
+    // General Layout
+    @apply mb-10 pt-14 pt-22;
 
-
-        // Top Section Header
-        &.-top {
-            @apply pb-6;
-
-            .header {
-                @apply text-6xl mx-auto w-4/5 max-w-xl;
-                line-height: 1.2;
-            }
-        }
-
-        // -Basic Type
-        &.-basic {
-            @apply pt-0 pb-4;
-        }
-
+    &__action {
+      @apply pt-10;
     }
+
+    // Top Section Header
+    &.-top {
+      @apply pb-6;
+
+      .header {
+        @apply text-6xl mx-auto w-4/5 max-w-xl;
+        line-height: 1.2;
+      }
+    }
+
+    // -Basic Type
+    &.-basic {
+      @apply pt-0 pb-4;
+    }
+  }
 }
 
 // Variation
 // On Dark
 // md Screen
 .bg-green-darkest .section-header {
-    .header {
-        @apply text-green-light;
+  .header {
+    @apply text-green-light;
+  }
+  .paragraphs {
+    @apply text-white;
+  }
+
+  @screen md {
+    .header-sm {
+      @apply text-green-light;
     }
-    .paragraphs {
-        @apply text-white;
+    .btn {
+      @apply text-green-light border-green-light;
+
+      &:hover {
+        @apply border-white bg-white text-green-darkest;
+      }
     }
-    
-    @screen md {
-
-            .header-sm {
-                @apply text-green-light;
-            }
-            .btn {
-                @apply text-green-light border-green-light;
-
-                &:hover {
-                    @apply border-white bg-white text-green-darkest;
-                }
-            }
-
-
-    }
+  }
 }

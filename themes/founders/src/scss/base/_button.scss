@@ -1,75 +1,77 @@
 // Prevent Outlines
 * {
-    outline: none;
+  outline: none;
 }
 
-// Base 
+// Base
 .btn {
-    @apply link
+  @apply link
     inline-block
     border-2 border-green
     text-green text-sm text-center
     font-sans 
     font-medium
     px-6 py-5;
-    
-    // Hover
+
+  // Hover
+  &:hover {
+    @apply border-green bg-green text-white;
+  }
+
+  // Light
+  &.-light {
+    @apply border-green-light text-green-light;
+
     &:hover {
-        @apply border-green bg-green text-white;
+      @apply border-white bg-white text-green-darkest;
     }
+  }
 
-    // Light
-    &.-light {
-        @apply border-green-light text-green-light;
+  // Dark
+  &.-dark {
+    @apply border-green-darkest text-green-darkest;
 
-        &:hover {
-            @apply border-white bg-white text-green-darkest;
-        }
+    &:hover {
+      @apply border-green-darkest bg-green-darkest text-white;
     }
+  }
 
-    // Dark
-    &.-dark {
-        @apply border-green-darkest text-green-darkest;
+  // Gallery
+  &--gallery {
+    @apply flex justify-start items-center w-full cursor-pointer;
 
-        &:hover {
-            @apply border-green-darkest bg-green-darkest text-white;
-        }
+    .link {
+      @apply pl-10 mt-6;
     }
-
-    // Gallery
-    &--gallery {
-        @apply flex justify-start items-center w-full cursor-pointer;
-        
-        .link {
-            @apply pl-10 mt-6;
+    &:hover {
+      .link {
+        @apply text-green-darkest;
+        svg {
+          transform: translate(0.5rem, 0);
         }
-        &:hover {
-            .link {
-                @apply text-green-darkest;
-                svg {
-                    transform: translate(.5rem, 0)
-                }
-            }
-        }
+      }
     }
-
+  }
 }
 
-
-
 // -Modifiers
-.btn, [class^='btn--']{
+.btn,
+[class^="btn--"] {
+  &.-wide {
+    @apply px-16;
+  }
 
-    &.-wide {
-        @apply px-16
+  &.-solid {
+    @apply bg-green text-white;
+
+    &:hover {
+      @apply bg-green-darkest border-green-darkest;
     }
+  }
 
-    
-    &.-full {
-        @apply 
-            block 
+  &.-full {
+    @apply block 
             w-full
             text-center;
-    }
-
+  }
 }
