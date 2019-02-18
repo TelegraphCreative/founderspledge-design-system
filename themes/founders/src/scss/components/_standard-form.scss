@@ -1,0 +1,44 @@
+// Standard Form
+.standard-form {
+  @apply -mx-4;
+
+  // Fields
+  input[type="text"] {
+    @apply w-full border-b border-green-darkest bg-oat-lightest
+      text-base 
+      px-2 pb-2 pt-8
+      property-colors duration-3 timing-1;
+
+    &:placeholder {
+      @apply opacity-75;
+    }
+
+    &:focus {
+      @apply bg-oat-lighter;
+    }
+  }
+
+  //   Labels
+  label.standard-label {
+    @apply text-xs font-sans font-semibold .uppercase
+    absolute pin-t pin-l 
+    z-10
+    ml-6 mt-2;
+  }
+
+  // Helper Text
+  .helper-text {
+    @apply text-xs font-sans font-normal
+      mt-2 ml-2;
+  }
+  // Form Group
+  .form-group {
+    @apply flex justify-between flex-wrap
+    mb-8;
+  }
+
+  // Field Group
+  .field-group {
+    @apply relative flex-1 px-4;
+  }
+}

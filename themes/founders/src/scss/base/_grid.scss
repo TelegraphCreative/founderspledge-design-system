@@ -1,131 +1,127 @@
-// General Doc Rules 
+// General Doc Rules
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
-
 
 // Container
 .container {
-    @apply mx-auto
+  @apply mx-auto
     px-8;
-    max-width: 90rem; // 1440
+  max-width: 90rem; // 1440
 
-    &--sm {
-        @apply px-8 mx-auto ;
-        max-width: 65rem; // 760
-    }
+  &--sm {
+    @apply px-8 mx-auto;
+    max-width: 65rem; // 760
+  }
+  &--xs {
+    @apply px-8 mx-auto;
+    max-width: 54.125rem; // 866 (+gutter-lg sets forms @ 586)
+  }
 
-    // -flush Type
-    &.-flush {
-        @apply px-0;
-    }
+  // -flush Type
+  &.-flush {
+    @apply px-0;
+  }
 }
-
 
 // Grid
 .grid {
-    display: grid;
+  display: grid;
 }
 
 // Flex Grid
 .flex-grid {
-    @apply flex justify-between;
+  @apply flex justify-between;
 }
 
 // Tiny Screen
 @screen xs {
-    // Flex Grid
-    .xs\:flex-grid {
-        @apply flex justify-between;
-    }
+  // Flex Grid
+  .xs\:flex-grid {
+    @apply flex justify-between;
+  }
 }
 // Medium Screen
 @screen md {
+  // Container
+  .container {
+    @apply px-0;
 
-    // Container
-    .container {
-        @apply px-0;
+    &--sm {
+      @apply px-0;
+    }
+  }
 
-        &--sm {
-            @apply px-0;
-            
-        }
+  // Gutters
+  .gutter {
+    &-sm {
+      @apply px-6;
     }
 
-    // Gutters
-    .gutter {
+    // Default
+    @apply px-10;
 
-        &-sm {
-            @apply px-6;
-        }
-
-        // Default
-        @apply px-10;
-
-        &-md {
-            @apply px-10;
-        }
-
-        // X Axis
-        &-lg {
-            @apply px-18;
-        }
-
-        // L
-        &-l {
-            @apply pl-10;
-            &--md {
-                @apply pl-10;
-            }
-            &--lg {
-                @apply pl-18;
-            }
-        }
+    &-md {
+      @apply px-10;
     }
 
-    // Flex Grid
-    .md\:flex-grid {
-        @apply flex justify-between;
+    // X Axis
+    &-lg {
+      @apply px-18;
     }
+
+    // L
+    &-l {
+      @apply pl-10;
+      &--md {
+        @apply pl-10;
+      }
+      &--lg {
+        @apply pl-18;
+      }
+    }
+  }
+
+  // Flex Grid
+  .md\:flex-grid {
+    @apply flex justify-between;
+  }
 }
 
 // Large Screen
 @screen lg {
+  // Gutters
+  .lg\:gutter {
+    @apply px-15;
+  }
 
-    // Gutters
-    .lg\:gutter {
-        @apply px-15;
-    }
-    
-    .gutter {
-
-        &-md {
-            @apply px-22;
-        }
-
-        // X Axis
-        &-lg {
-            @apply px-32;
-        }
-
-        // L
-        &-l {
-            @apply pl-15;
-            &--md {
-                @apply pl-22;
-            }
-            &--lg {
-                @apply pl-30;
-            }
-        }
+  .gutter {
+    &-md {
+      @apply px-22;
     }
 
-    // Flex Grid
-    .lg\:flex-grid {
-        @apply flex justify-between;
+    // X Axis
+    &-lg {
+      @apply px-32;
     }
+
+    // L
+    &-l {
+      @apply pl-15;
+      &--md {
+        @apply pl-22;
+      }
+      &--lg {
+        @apply pl-30;
+      }
+    }
+  }
+
+  // Flex Grid
+  .lg\:flex-grid {
+    @apply flex justify-between;
+  }
 }
-
 
 /// Grid Notes (Homepage as sample)
 // 212 (124 + 88 nested containers)

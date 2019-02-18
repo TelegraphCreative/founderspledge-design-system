@@ -1,0 +1,11 @@
+<header class="sub-section-header {{ .variation }}">
+  {{ if .header }}
+  <h2 class="header | header-md">{{.header | safeHTML}}</h2>
+  {{ end }}
+
+  {{ if .descr }}
+  <div class="paragraphs | pt-6">
+    {{.descr | safeHTML}}
+  </div>
+  {{ end }}
+</header>
