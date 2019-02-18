@@ -1,0 +1,7 @@
+.form-clone-group__content {
+  @apply .border-oat-light .border-t
+    pt-10 mt-10;
+}
+.form-clone-group__content:first-child {
+  @apply border-0 pt-0 mt-0;
+}

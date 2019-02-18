@@ -8762,19 +8762,21 @@ body {
   font-size: 1.125rem;
 }
 
-.option-group {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+@media (min-width: 768px) {
+  .option-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-.option-group__item {
-  margin-right: 1rem;
-  flex: 1 1 0%;
-}
+  .option-group__item {
+    margin-right: 1rem;
+    flex: 1 1 0%;
+  }
 
-.option-group__item:last-child {
-  margin-right: 0;
+  .option-group__item:last-child {
+    margin-right: 0;
+  }
 }
 
 .signup-form {
@@ -8933,8 +8935,28 @@ body {
 .standard-form .field-group {
   position: relative;
   flex-grow: 1;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: .25rem;
+  padding-right: .25rem;
+}
+
+@media (min-width: 768px) {
+  .field-group {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+.form-clone-group__content {
+  border-color: #f1ece4;
+  border-top-width: 1px;
+  padding-top: 2.5rem;
+  margin-top: 2.5rem;
+}
+
+.form-clone-group__content:first-child {
+  border-width: 0;
+  padding-top: 0;
+  margin-top: 0;
 }
 
 .headsup {

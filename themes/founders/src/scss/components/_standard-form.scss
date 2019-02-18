@@ -50,6 +50,14 @@
 
   // Field Group
   .field-group {
-    @apply relative flex-grow px-4;
+    @apply relative flex-grow px-1;
+  }
+}
+
+// Screen
+@screen md {
+  // Field Group
+  .field-group {
+    @apply px-4;
   }
 }

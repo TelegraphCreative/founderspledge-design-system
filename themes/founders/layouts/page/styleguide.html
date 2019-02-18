@@ -1,0 +1,162 @@
+{{ define "main" }}
+
+{{/*  Section Header  */}}
+{{ range.Params.SectionHeader_1 }}
+{{ partial "components/section-header.html" . }} {{ end }}
+
+<section class="container--xs | gutter-lg space-b">
+  {{/*  Sub Section Header  */}}
+  {{ range.Params.SubSectionHeader_1 }}
+  {{ partial "components/sub-section-header.html" . }} {{ end }}
+
+  {{/*  Form  */}}
+  <form action="" class="standard-form">
+    {{/*  Group  */}}
+    <div class="form-group">
+      <div class="field-group">
+        <label class="standard-label" for="first-name">
+          First Name
+        </label>
+        <input type="text" id="first-name" />
+      </div>
+    </div>
+
+    {{/*  Group  */}}
+    <div class="form-group">
+      <div class="field-group">
+        <label class="standard-label" for="last-name">
+          Last Name
+        </label>
+        <input type="text" id="last-name" />
+      </div>
+    </div>
+
+    {{/*  Group  */}}
+    <div class="form-group">
+      <div class="field-group">
+        <label class="standard-label" for="company">
+          Company
+        </label>
+        <input type="text" id="company" placeholder="Placeholder Text" />
+        <div class="helper-text">Helper Text</div>
+      </div>
+    </div>
+
+    {{/*  Group  */}}
+    <div class="form-group">
+      <div class="field-group">
+        <label class="standard-label" for="email">
+          Email
+        </label>
+        <input type="text" id="email" />
+      </div>
+    </div>
+
+    {{/*  Group  */}}
+    <div class="form-group">
+      <div class="field-group | w-1/3">
+        <label class="standard-label" for="phone">
+          Country Code
+        </label>
+        <input type="text" id="phone" />
+      </div>
+      <div class="field-group | w-2/3">
+        <label class="standard-label" for="phone">
+          Phone
+        </label>
+        <input type="text" id="phone" />
+      </div>
+    </div>
+
+    {{/*  Group  */}}
+    <div class="form-group">
+      <div class="field-group">
+        <label class="standard-label" for="country">
+          Country
+        </label>
+        <select_box :opt="{ variant: '-standard -md' }">
+          <option value="en" selected>English (US)</option>
+          <option value="es">Spanish</option>
+          <option value="ma">Mandarin</option>
+          <option value="de">German</option>
+          <option value="fr">French</option>
+        </select_box>
+      </div>
+    </div>
+
+    {{/*  Group  */}}
+    <div class="form-group">
+      <div class="field-group">
+        <label class="standard-label" for="address-1">
+          Address Line 1
+        </label>
+        <input type="text" id="address-1" />
+      </div>
+    </div>
+
+    {{/*  Group  */}}
+    <div class="form-group">
+      <div class="field-group">
+        <label class="standard-label" for="address-2">
+          Address Line 2
+        </label>
+        <input type="text" id="address-2" />
+      </div>
+    </div>
+
+    {{/*  Group  */}}
+    <div class="form-group">
+      <div class="field-group | w-1/3">
+        <label class="standard-label" for="city">
+          City
+        </label>
+        <input type="text" id="city" />
+      </div>
+      <div class="field-group | w-2/3">
+        <label class="standard-label" for="zip">
+          Zip
+        </label>
+        <input type="text" id="zip" />
+      </div>
+    </div>
+
+    {{/*  Sub Section Header  */}}
+    {{ range.Params.SubSectionHeader_2 }}
+    {{ partial "components/sub-section-header.html" . }} {{ end }}
+
+    <div class="form-group">
+      <div class="field-group">
+        <label for="option-C" class="control control--radio -small">
+          <input type="radio" value="Option C" name="group-B" id="option-C" />
+
+          <span class="control__text">Option C</span>
+
+          <div class="control__indicator"></div>
+        </label>
+
+        <label for="option-D" class="control control--radio -small">
+          <input type="radio" value="Option D" name="group-B" id="option-D" />
+
+          <span class="control__text">Option D</span>
+
+          <div class="control__indicator"></div>
+        </label>
+      </div>
+    </div>
+
+    {{/*  Sub Section Header  */}}
+    {{ range.Params.SubSectionHeader_3 }}
+    {{ partial "components/sub-section-header.html" . }} {{ end }}
+
+    {{/*  Range Slider  */}}
+    <range_slider :min="40" :max="100"> </range_slider>
+
+    {{/*  Sub Section Header  */}}
+    {{ range.Params.SubSectionHeader_4 }}
+    {{ partial "components/sub-section-header.html" . }} {{ end }}
+
+    <button class="btn -full -solid">Review & Sign</button>
+  </form>
+</section>
+
+{{ end }}
