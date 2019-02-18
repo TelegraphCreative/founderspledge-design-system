@@ -154,8 +154,10 @@
 
 <section class="container--xs | gutter-lg space-b">
   
-  
-  <header class="sub-section-header ">
+  <form action="" class="standard-form">
+    
+    
+    <header class="sub-section-header mx-2">
   
   <h2 class="header | header-md">Tell Us About Yourself</h2>
   
@@ -164,8 +166,6 @@
 </header>
  
 
-  
-  <form action="" class="standard-form">
     
     <div class="form-group">
       <div class="field-group">
@@ -209,17 +209,23 @@
 
     
     <div class="form-group">
-      <div class="field-group | w-1/3">
-        <label class="standard-label" for="phone">
+      <div class="field-group | w-2/5">
+        <label class="standard-label" for="country">
           Country Code
         </label>
-        <input type="text" id="phone" />
+        <select_box :opt="{ variant: '-standard -md' }">
+          <option value="en" selected>UK</option>
+          <option value="es">GE</option>
+          <option value="ma">FR</option>
+          <option value="de">US</option>
+          <option value="fr">SP</option>
+        </select_box>
       </div>
-      <div class="field-group | w-2/3">
+      <div class="field-group | w-3/5">
         <label class="standard-label" for="phone">
           Phone
         </label>
-        <input type="text" id="phone" />
+        <input type="text" id="phone" placeholder="+0 (000) 000-0000" />
       </div>
     </div>
 
@@ -274,11 +280,162 @@
         <input type="text" id="zip" />
       </div>
     </div>
-  </form>
+
+    
+    
+    <header class="sub-section-header mx-2">
+  
+  <h2 class="header | header-md">Your Company Details</h2>
+  
 
   
+</header>
+ 
+
+    
+    <clone_form_blocks :group="'Company'" class="">
+      <template slot="blocks">
+        
+        <div class="form-group">
+          <div class="field-group">
+            <div class="standard-label -standalone">
+              WHERE IS YOUR COMPANY BASED?
+            </div>
+            <div class="option-group">
+              <label
+                for="option-1"
+                class="option-group__item | control control--radio-box"
+              >
+                <input
+                  type="radio"
+                  value="Option 1"
+                  name="group-A"
+                  id="option-1"
+                />
+                <span class="control__text | w-full">US/CAN</span>
+              </label>
+
+              <label
+                for="option-2"
+                class="option-group__item | control control--radio-box"
+              >
+                <input
+                  type="radio"
+                  value="Option 2"
+                  name="group-A"
+                  id="option-2"
+                />
+                <span class="control__text | w-full">UK/EU</span>
+              </label>
+
+              <label
+                for="option-3"
+                class="option-group__item | control control--radio-box"
+              >
+                <input
+                  type="radio"
+                  value="Option 3"
+                  name="group-A"
+                  id="option-3"
+                />
+                <span class="control__text | w-full">Other</span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="form-group">
+          <div class="field-group">
+            <div class="standard-label -standalone">
+              WHAT’S YOUR ROLE IN THE COMPANY?
+            </div>
+            <div class="option-group">
+              <label
+                for="option-4"
+                class="option-group__item | control control--radio-box"
+              >
+                <input
+                  type="radio"
+                  value="Option 4"
+                  name="group-B"
+                  id="option-4"
+                />
+
+                <span class="control__text | w-full">Founder</span>
+              </label>
+
+              <label
+                for="option-5"
+                class="option-group__item | control control--radio-box"
+              >
+                <input
+                  type="radio"
+                  value="Option 5"
+                  name="group-B"
+                  id="option-5"
+                />
+
+                <span class="control__text | w-full">Investor</span>
+              </label>
+
+              <label
+                for="option-6"
+                class="option-group__item | control control--radio-box"
+              >
+                <input
+                  type="radio"
+                  value="Option 6"
+                  name="group-B"
+                  id="option-6"
+                />
+
+                <span class="control__text | w-full">Venture Capital</span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="form-group">
+          <div class="field-group">
+            <label class="standard-label" for="add-company-name">
+              Company Name
+            </label>
+            <input type="text" id="add-company-name" />
+          </div>
+        </div>
+
+        
+        <div class="form-group">
+          <div class="field-group">
+            <label class="standard-label" for="add-company-num">
+              Company #
+            </label>
+            <input type="text" id="add-company-num" />
+          </div>
+        </div>
+      </template>
+    </clone_form_blocks>
+
+    
+    
+    <header class="sub-section-header mx-2">
   
-  <header class="sub-section-header ">
+  <h2 class="header | header-md">How much do you want to pledge?</h2>
+  
+
+  
+</header>
+ 
+
+    
+    <range_slider :min="10" :start="40" :max="100" class="form-block">
+    </range_slider>
+
+    
+    
+    <header class="sub-section-header mx-2">
   
   <h2 class="header | header-md">Let’s make this official.</h2>
   
@@ -291,7 +448,10 @@
 </header>
  
 
-  <a href="#" class="btn -full -solid">Review & Sign</a>
+    <div class="form-block">
+      <button class="btn -light -full -solid">Review & Sign</button>
+    </div>
+  </form>
 </section>
 
 
@@ -446,6 +606,16 @@
                 class="menu-bar__link"
                 tabindex="0"
                 >Sign In</a
+              >
+            </li>
+            <li class="menu-list__item">
+              <a
+                role="menuitem"
+                aria-haspopup="false"
+                href="/make-a-pledge"
+                class="menu-bar__link"
+                tabindex="0"
+                >Make a Pledge</a
               >
             </li>
           </ul>

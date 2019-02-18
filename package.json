@@ -25,6 +25,7 @@
     "countup.js": "^1.9.3",
     "in-view": "^0.6.1",
     "intersection-observer": "^0.5.1",
+    "jquery": "^3.3.1",
     "laravel-mix": "^4.0.13",
     "laravel-mix-purgecss": "^4.0.0",
     "laravel-mix-tailwind": "^0.1.0",

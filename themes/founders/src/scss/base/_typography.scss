@@ -1,134 +1,131 @@
 // Typography
 body {
-    @apply text-green-darkest font-sans;
+  @apply text-green-darkest font-sans;
 }
 
 // Headers
 .header {
-    // 12
-    &-sm {
-        @apply text-xs text-green 
+  // 12
+  &-sm {
+    @apply text-xs text-green 
         uppercase
         font-medium
         tracking-narrow;
-        
-        &.-light {
-            @apply text-green-light;
-        }
-        &.-white {
-            @apply text-white;
-        }
 
-        // Type Small 2
-        // &-2 {
-        //     @apply text-xl font-serif;
-        // }
+    &.-light {
+      @apply text-green-light;
+    }
+    &.-white {
+      @apply text-white;
     }
 
-    
-    // 18
-    &-md {
-        @apply text-xl font-serif;
-    }
-    
-    // 30 -> 36
-    &-lg {
-        @apply text-3xl font-serif leading-tight;
-        &-2 {
-            @apply text-2xl font-serif leading-tight;
-        }
-    }
+    // Type Small 2
+    // &-2 {
+    //     @apply text-xl font-serif;
+    // }
+  }
 
-    // 40 -> 68 
-    &-xl {
-        @apply text-5xl font-serif;
-         
+  // 18
+  &-md {
+    @apply text-xl font-serif;
+  }
 
-        // 40
-        &-2 {
-            @apply text-5xl font-serif;
-        }
-
+  // 30 -> 36
+  &-lg {
+    @apply text-3xl font-serif leading-tight;
+    &-2 {
+      @apply text-2xl font-serif leading-tight;
     }
+  }
+
+  // 40 -> 68
+  &-xl {
+    @apply text-5xl font-serif;
+
+    // 40
+    &-2 {
+      @apply text-5xl font-serif;
+    }
+  }
 }
 
 // Paragraphs
 .paragraphs {
-    p {
-        @apply text-lg leading-normal 
+  p {
+    @apply text-lg leading-normal 
         mb-6;
 
-        &:last-of-type {
-            @apply mb-0;
-        }
-
-        // Default Links
-        a {
-            @apply text-green;
-            
-            &:hover {
-                @apply text-green-darkest;
-            }
-        }
+    &:last-of-type {
+      @apply mb-0;
     }
-    
-    &.-sm {
-        p {
-            @apply text-base leading-loose 
+
+    // Default Links
+    a {
+      @apply text-green;
+
+      &:hover {
+        @apply text-green-darkest;
+      }
+    }
+  }
+
+  &.-sm {
+    p {
+      @apply text-base leading-loose 
             mb-4;
 
-            &:last-of-type {
-                @apply mb-0;
-            }
-        }
+      &:last-of-type {
+        @apply mb-0;
+      }
     }
-    &.-xs {
-        p {
-            @apply text-sm leading-loose 
+  }
+  &.-xs {
+    p {
+      @apply text-sm leading-loose 
             mb-4;
 
-            &:last-of-type {
-                @apply mb-0;
-            }
-        }
+      &:last-of-type {
+        @apply mb-0;
+      }
     }
+  }
 }
-
 
 // Default Links
 a {
-    @apply text-green;
+  @apply text-green;
 }
 
 // lg Screen
 @screen lg {
-    // Headers
-    .header {
-
-        // 36
-        &-lg {
-            @apply text-5xl;
-            &-2 {
-                // @apply text-xl font-serif leading-tight;
-                font-size: 2rem;
-            }
-        }
-
-        // 68
-        &-xl {
-            @apply text-10xl;
-
-        }
-
+  // Headers
+  .header {
+    // 36
+    &-lg {
+      @apply text-5xl;
+      &-2 {
+        // @apply text-xl font-serif leading-tight;
+        font-size: 2rem;
+      }
     }
-}
 
+    // 68
+    &-xl {
+      @apply text-10xl;
+    }
+  }
+}
 
 // Integers
 .font-integer {
-    -moz-font-feature-settings:"lnum" 1; 
-    -ms-font-feature-settings:"lnum" 1; 
-    -o-font-feature-settings:"lnum" 1; 
-    -webkit-font-feature-settings:"lnum" 1; 
-    font-feature-settings:"lnum" 1;
+  -moz-font-feature-settings: "lnum" 1;
+  -ms-font-feature-settings: "lnum" 1;
+  -o-font-feature-settings: "lnum" 1;
+  -webkit-font-feature-settings: "lnum" 1;
+  font-feature-settings: "lnum" 1;
+}
+
+// Line Heights (override header classes)
+.leading-neg {
+  line-height: 0.9 !important;
 }

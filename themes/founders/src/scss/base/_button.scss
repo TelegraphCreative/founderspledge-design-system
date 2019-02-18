@@ -27,6 +27,31 @@
     }
   }
 
+  // Solid
+  &.-solid {
+    @apply bg-green border-green text-white;
+
+    &:hover {
+      @apply bg-green-darkest border-green-darkest text-white;
+    }
+  }
+
+  // Small
+  &.-small {
+    @apply py-3;
+  }
+
+  // Add
+  &.-add {
+    @apply relative pr-10;
+    &:after {
+      @apply absolute pin-r align-t
+      text-xl font-normal;
+      content: "\002B";
+      margin-right: 0.875rem;
+    }
+  }
+
   // Dark
   &.-dark {
     @apply border-green-darkest text-green-darkest;
@@ -59,14 +84,6 @@
 [class^="btn--"] {
   &.-wide {
     @apply px-16;
-  }
-
-  &.-solid {
-    @apply bg-green text-white;
-
-    &:hover {
-      @apply bg-green-darkest border-green-darkest;
-    }
   }
 
   &.-full {
