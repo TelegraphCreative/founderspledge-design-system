@@ -1,0 +1,42 @@
+.styleguide {
+    &__block {
+        @apply mt-10 py-10;
+    }
+
+    h1 {
+        @apply text-3xl;
+    }
+    h2 {
+        @apply text-2xl;
+    }
+    h3 {
+        @apply text-xl;
+    }
+
+    h1,h2,h3 {
+        @apply mb-8;
+    }  
+
+    h1,h2,h3 {
+        @apply font-sans font-medium;
+    }
+    
+    h4,h5,h6,p {
+        @apply mb-6;
+    }  
+
+    ul, ol, table {
+        @apply my-6;
+        
+        li {
+            @apply my-2;
+        }
+    }
+
+    a {
+        @apply font-normal .no-underline text-green;
+        &:hover {
+            @apply text-green-darkest;
+        }
+    }
+}

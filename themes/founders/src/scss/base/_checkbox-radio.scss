@@ -3,86 +3,89 @@
 //
 
 .control {
-    @apply block relative
+  @apply block relative
     pl-6 mb-3 
     cursor-pointer;
 
-    input {
-        @apply absolute 
+  input {
+    @apply absolute 
         opacity-0;
-        z-index: -1;
-    }
+    z-index: -1;
+  }
 
-    &__indicator {
-        @apply absolute 
+  &__indicator {
+    @apply absolute 
             border border-grey-lightest
             h-4 w-4;
-            top: 2px;
-            left: 0;
-    }
+    top: 2px;
+    left: 0;
+  }
 
-    &--radio .control__indicator {
-        border-radius: 50%;
-    }
-    
-    // Hover, Focus
-    &:hover input:not([disabled]) ~ .control__indicator,
-    &:hover input:not([disabled]):checked ~ .control__indicator,
-    input:focus ~ .control__indicator {
-        @apply border-green;
-    }
+  &--radio .control__indicator {
+    border-radius: 50%;
+  }
 
-    // Checked
-    input:checked ~ .control__indicator,
-    input:checked:focus ~ .control__indicator {
-        @apply border-green bg-green;
-    }
+  // Hover, Focus
+  &:hover input:not([disabled]) ~ .control__indicator,
+  &:hover input:not([disabled]):checked ~ .control__indicator,
+  input:focus ~ .control__indicator {
+    @apply border-green;
+  }
 
-    // Disabled
-    input:disabled ~ .control__indicator {
-        @apply bg-grey-lightest     
+  // Checked
+  input:checked ~ .control__indicator,
+  input:checked:focus ~ .control__indicator {
+    @apply border-green bg-green;
+  }
+
+  // Disabled
+  input:disabled ~ .control__indicator {
+    @apply bg-grey-lightest     
         pointer-events-none;
+  }
+  &__indicator:after {
+    content: "";
+    @apply absolute hidden;
+  }
+  input:checked ~ .control__indicator:after {
+    @apply inline-block;
+  }
+  &--checkbox .control__indicator:after {
+    @apply border-white;
+    left: 5px;
+    top: 2px;
+    width: 5px;
+    height: 8px;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+  &--checkbox input:disabled ~ .control__indicator:after {
+    border-color: #7b7b7b;
+  }
+
+  // Radio Box Type
+  &--radio-box {
+    @apply pl-0;
+    .control__text {
+      @apply inline-block py-3 px-6
+       font-medium font-sans text-sm 
+        text-green-darkest bg-white
+        border-2 border-green-darkest
+        property-colors duration-3 timing-1;
     }
-    &__indicator:after {
-        content: '';
-        @apply absolute hidden;
-    }
-    input:checked ~ .control__indicator:after {
-        @apply inline-block;
-    }
-    &--checkbox .control__indicator:after {
-        @apply border-white;
-        left: 5px;
-        top: 2px;
-        width: 5px;
-        height: 8px;
-        border-width: 0 2px 2px 0;
-        transform: rotate(45deg);
-    }
-    &--checkbox input:disabled ~ .control__indicator:after {
-        border-color: #7b7b7b;
+    .control__indicator {
+      @apply hidden;
     }
 
-    // Small
-    &.-small {
-        @apply font-sans text-sm mb-4;
-        margin-top: 2px;
-        .control__indicator {
-            top: -2px
-        }
+    // Hover / Checked
+    input:checked ~ .control__text,
+    input:checked:focus ~ .control__text {
+      @apply bg-green-darkest text-white font-semibold;
     }
-
-    // Radio Circles (not used)
-    // &--radio .control__indicator:after {
-    //     left: 7px;
-    //     top: 7px;
-    //     height: 6px;
-    //     width: 6px;
-    //     border-radius: 50%;
-    //     background: #fff;
-    // }
-    // &--radio input:disabled ~ .control__indicator:after {
-    //     background: #7b7b7b;
-    // }
-
+    &:hover {
+      .control__text {
+        @apply bg-green-darkest text-white;
+      }
+    }
+  }
 }

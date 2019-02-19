@@ -1,29 +1,34 @@
 // Heads Up
 .headsup {
-    @apply text-center;
-    &__fig {
-        @apply mb-6;
-    }
-    
-    &__fig__integer {
-        @apply relative;
-    } 
-    
-    // Screen
-    @screen md {
-        
-        // Inline
-        &.-inline {
-            @apply flex
-            justify-center;
-            
-            .headsup {
+  @apply text-center;
+  &__fig {
+    @apply mb-6;
+  }
 
-                &__fig {
-                    @apply px-8;
-                }
-            }
+  &__fig__integer {
+    @apply relative;
+  }
+
+  // Screen
+  @screen md {
+    // Inline
+    &.-inline {
+      @apply flex
+            justify-between 
+            items-center;
+
+      .headsup {
+        &__fig {
+          @apply px-8;
         }
+      }
 
+      // Highlight
+      .-highlight .header-lg {
+        @apply relative;
+        top: -5px;
+        line-height: 0.64;
+      }
     }
+  }
 }

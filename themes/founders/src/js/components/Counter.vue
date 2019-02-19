@@ -1,18 +1,14 @@
 <template>
-  <span class="counter | font-integer" id="counter">{{end}}</span>
+    <span class="counter | font-integer" id="counter">{{end}}</span>
 </template>
 
 <script type="text/babel">
-  
-  import CountUp from 'countup.js';
-  import inView from 'in-view';
+import CountUp from "countup.js";
+import inView from "in-view";
 
-  export default {
-   props: [
-       'start',
-       'end',
-   ],
-    mounted(){
+export default {
+    props: ["start", "end"],
+    mounted() {
         const _this = this;
 
         // Counter Settings
@@ -21,11 +17,11 @@
             useGrouping: true
         };
 
-        window.addEventListener('load', function() {
-            inView('.counter').once('enter', el => {
+        window.addEventListener("load", function() {
+            inView(".counter").once("enter", el => {
                 // Initialize Counter
                 var counterEl = new CountUp(_this.$el, _this.start, _this.end);
-                counterEl.start()
+                counterEl.start();
             });
 
             // let sections = document.querySelectorAll('.counter');
@@ -36,9 +32,7 @@
             //         counterEl.start()
             //     });
             // });
-            
         });
     }
-  };
-
+};
 </script>

@@ -18,6 +18,9 @@
     {{ end }}
       
     <link rel="stylesheet" href="/dist/css/app.css">
+    {{ if in ( printf "%v" .Permalink) "styleguide" }}
+      <link rel="stylesheet" href="/dist/css/styleguide.css">
+    {{ end }}
 
     {{ block "favicon" . }}
       {{ partial "base/site-favicon.html" . }}

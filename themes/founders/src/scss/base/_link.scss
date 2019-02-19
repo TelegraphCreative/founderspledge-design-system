@@ -1,114 +1,107 @@
-
-
 // Links
 .link {
-    @apply 
-        no-underline
+  @apply no-underline
         font-medium
         inline-block
         timing-1 duration-1 property-all;
 
-    // Underline
-    &.-underline {
-        @apply text-green border-b-3 border-green pb-1;
-        
-        &:hover {
-            @apply text-green-darkest border-green-darkest;
-        }
+  // Underline
+  &.-underline {
+    @apply text-green border-b-3 border-green pb-1;
+
+    &:hover {
+      @apply text-green-darkest border-green-darkest;
+    }
+  }
+
+  // Small
+  &.-sm {
+    @apply text-sm pb-0;
+  }
+
+  // Green
+  &.-green {
+    @apply text-green;
+
+    &:hover {
+      @apply text-green-darkest;
+    }
+  }
+
+  // Icon Link
+  &.-icon {
+    @apply flex items-center;
+
+    // Icon
+    svg {
+      @apply property-transform;
     }
 
-    // Small
-    &.-sm {
-        @apply text-sm pb-0;
+    .text {
+      @apply mr-2;
     }
 
-    // Green
-    &.-green {
-        @apply text-green;
-        
-        &:hover {
-            @apply text-green-darkest;
-        }
+    &:hover {
+      svg {
+        transform: translate(0.5rem, 0);
+        @apply property-transform;
+      }
     }
+  }
 
+  // Group of Links
+  &-group {
+    @apply flex items-center .justify-center;
+    &__item,
+    .link {
+      @apply mr-4 text-center;
 
-    // Icon Link
-    &.-icon {
-
-        @apply flex items-center;
-
-        // Icon 
-        svg {
-            @apply property-transform;
-        }
-
-
-        .text {
-            @apply mr-2;
-        }
-
-        &:hover {
-            svg {
-                transform: translate(.5rem,0);
-                @apply property-transform;
-            }
-        }
-
+      &:last-child {
+        @apply mr-0;
+      }
     }
+  }
 
+  // Screen Md
+  @screen md {
     // Group of Links
     &-group {
-        @apply flex items-center .justify-center;
-
-        .link {
-            @apply mr-4 text-center;
-            
-            &:last-child {
-                @apply mr-0;
-            }
-        }
+      @apply justify-start;
     }
-
-    // Screen Md
-    @screen md {
-        // Group of Links
-        &-group {
-            @apply justify-start;
-        }
-    }
+  }
 }
-
 
 // Default Link
 a {
-    @apply link
-    underline; 
-    color: inherit;
+  @apply link
+    underline;
+  color: inherit;
 
-    &:hover {
-        @apply text-green;
-    }
+  &:hover {
+    @apply text-green;
+  }
 }
-a, button {
- outline: none !important;
+a,
+button {
+  outline: none !important;
 }
 
 // Focus Links (general accessibility)
 .focus-links {
-    a:focus,
-    button:focus {
-        color: #E8A879 !important;
-        border-color: #E8A879 !important;
-        .icon {
-            color: #E8A879 ;
-            border-color: #E8A879 ;
-        }
+  a:focus,
+  button:focus {
+    color: #e8a879 !important;
+    border-color: #e8a879 !important;
+    .icon {
+      color: #e8a879;
+      border-color: #e8a879;
     }
+  }
 }
 
 // Section Anchor
 .js-section-anchor {
-    &.section-active {
-        color: #53C07D !important;
-    }
+  &.section-active {
+    color: #53c07d !important;
+  }
 }

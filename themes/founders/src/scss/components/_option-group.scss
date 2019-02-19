@@ -1,0 +1,13 @@
+// Inline Justified Options
+@screen md {
+  .option-group {
+    @apply flex items-center .justify-center;
+    &__item {
+      @apply mr-4 flex-1;
+
+      &:last-child {
+        @apply mr-0;
+      }
+    }
+  }
+}

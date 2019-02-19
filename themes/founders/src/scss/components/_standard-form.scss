@@ -19,11 +19,16 @@
   }
 
   //   Labels
-  label.standard-label {
+  .standard-label {
     @apply text-xs font-sans font-semibold .uppercase
     absolute pin-t pin-l 
     z-10
     ml-6 mt-2;
+
+    &.-standalone {
+      @apply static
+      ml-3 mt-0 mb-3;
+    }
   }
 
   // Helper Text
@@ -31,6 +36,12 @@
     @apply text-xs font-sans font-normal
       mt-2 ml-2;
   }
+
+  // Form Block (elements not in a group - this applies the correct margins)
+  .form-block {
+    @apply mx-3 mb-8;
+  }
+
   // Form Group
   .form-group {
     @apply flex justify-between flex-wrap
@@ -39,6 +50,14 @@
 
   // Field Group
   .field-group {
-    @apply relative flex-1 px-4;
+    @apply relative flex-grow px-1;
+  }
+}
+
+// Screen
+@screen md {
+  // Field Group
+  .field-group {
+    @apply px-4;
   }
 }

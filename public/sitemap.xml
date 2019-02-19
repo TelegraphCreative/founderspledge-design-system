@@ -3,6 +3,10 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://confident-blackwell-dbed1e.netlify.com/styleguide/buttons/</loc>
+  </url>
+  
+  <url>
     <loc>https://confident-blackwell-dbed1e.netlify.com/careers/</loc>
   </url>
   
@@ -33,7 +37,7 @@
   </url>
   
   <url>
-    <loc>https://confident-blackwell-dbed1e.netlify.com/styleguide/</loc>
+    <loc>https://confident-blackwell-dbed1e.netlify.com/styleguide/intro/</loc>
   </url>
   
   <url>
@@ -49,12 +53,29 @@
   </url>
   
   <url>
+    <loc>https://confident-blackwell-dbed1e.netlify.com/styleguide/range/</loc>
+  </url>
+  
+  <url>
+    <loc>https://confident-blackwell-dbed1e.netlify.com/styleguide/readme/</loc>
+  </url>
+  
+  <url>
     <loc>https://confident-blackwell-dbed1e.netlify.com/start-your-journey/</loc>
+  </url>
+  
+  <url>
+    <loc>https://confident-blackwell-dbed1e.netlify.com/styleguide/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://confident-blackwell-dbed1e.netlify.com/tags/</loc>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://confident-blackwell-dbed1e.netlify.com/styleguide/typography/</loc>
   </url>
   
   <url>
