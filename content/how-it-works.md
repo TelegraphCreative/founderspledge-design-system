@@ -1,7 +1,7 @@
 {
-   "layout": "how-it-works",
-   "title": "How It Works",
-   "SectionHeader_1": [
+  "layout": "how-it-works",
+  "title": "How It Works",
+  "SectionHeader_1": [
     {
       "variation": "-top",
       "preheader": "Start your Journey",
@@ -25,6 +25,10 @@
     {
       "text": "Benefits",
       "url": "#benefits"
+    },
+    {
+      "text": "FAQ",
+      "url": "#faq"
     }
   ],
   "MediaArticle_1": [
@@ -55,16 +59,52 @@
       }
     }
   ],
+  "SectionHeaderBasic_1": [
+    {
+      "variation": "",
+      "header": "Frequently Asked Questions",
+      "link": false
+    }
+  ],
+  "ResourceList_1": [
+    {
+      "preheader": "London, UK",
+      "header": "Events Coordinator",
+      "image": false,
+      "link": {
+        "variation": "-icon",
+        "text": "See details",
+        "url": "#"
+      }
+    },
+    {
+      "preheader": "New York City, USA",
+      "header": "Key Relationships Manager",
+      "image": false,
+      "link": {
+        "text": "Download",
+        "url": "#"
+      }
+    },
+    {
+      "preheader": "San Francisco, USA",
+      "header": "Key Relationships Manager",
+      "image": false,
+      "link": {
+        "text": "Download",
+        "url": "#"
+      }
+    }
+  ],
   "PanelHero_1": [
     {
-        "variation": "bg-green-darkest",
-        "header": "Make the Pledge",
-        "descr": "<p>Subheading here, let’s keep it brief and reassuring. Transparency is succint.</p>",
-        "action" : {
-            "text" : "Request a Call",
-            "url" : "#"
-        }
+      "variation": "bg-green-darkest",
+      "header": "Make the Pledge",
+      "descr": "<p>Subheading here, let’s keep it brief and reassuring. Transparency is succint.</p>",
+      "action": {
+        "text": "Request a Call",
+        "url": "#"
+      }
     }
   ]
 }
-

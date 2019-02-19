@@ -16,6 +16,7 @@ import range_slider from "./components/Range.vue";
 import smooth_scroll from "./components/SmoothScroll";
 import section_anchor_states from "./components/SectionAnchorStates";
 import counter from "./components/Counter";
+import accordion from "./components/accordion";
 import clone_form_blocks from "./components/CloneFormBlocks";
 
 // Vue App
@@ -45,6 +46,7 @@ const app = new Vue({
     range_slider,
     smooth_scroll,
     counter,
+    accordion,
     clone_form_blocks
   }
 });
