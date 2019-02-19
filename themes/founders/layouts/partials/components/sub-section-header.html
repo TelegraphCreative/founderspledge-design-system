@@ -1,6 +1,6 @@
 <header class="sub-section-header {{ .variation }}">
   {{ if .header }}
-  <h2 class="header | header-md">{{.header | safeHTML}}</h2>
+  <h2 class="header | {{ .headerSize }}">{{.header | safeHTML}}</h2>
   {{ end }}
 
   {{ if .descr }}

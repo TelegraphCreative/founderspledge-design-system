@@ -1,0 +1,144 @@
+{{ define "main" }}
+
+{{/*  Edit Profile */}}
+<section class="container--xs | space-b">
+  {{/*  Sub Section Header  */}}
+  {{ range.Params.SubSectionHeader_1 }}
+  {{ partial "components/sub-section-header.html" . }} {{ end }}
+
+  {{/*  Aside + Form */}}
+  <div class="md:flex-grid">
+    <aside class="md:w-1/4 | md:pr-6">
+      <figure class="image -is1x1 | mb-3">
+        <img src="/img/fpo-01.jpg" alt="" class="fit-cover" />
+      </figure>
+
+      <button class="btn -dark -full -small">Change Photo</button>
+    </aside>
+
+    <main class="md:w-3/4 | px-2 md:px-12">
+      {{/*  Form  */}}
+      <form action="" class="standard-form">
+        {{/*  Group  */}}
+        <div class="form-group">
+          <div class="field-group">
+            <label class="standard-label" for="first-name">
+              First Name
+            </label>
+            <input type="text" id="first-name" />
+          </div>
+        </div>
+
+        {{/*  Group  */}}
+        <div class="form-group">
+          <div class="field-group">
+            <label class="standard-label" for="last-name">
+              Last Name
+            </label>
+            <input type="text" id="last-name" />
+          </div>
+        </div>
+
+        {{/*  Group  */}}
+        <div class="form-group">
+          <div class="field-group">
+            <label class="standard-label" for="company">
+              Company
+            </label>
+            <input type="text" id="company" placeholder="Placeholder Text" />
+            <div class="helper-text">Helper Text</div>
+          </div>
+        </div>
+
+        {{/*  Group  */}}
+        <div class="form-group">
+          <div class="field-group">
+            <label class="standard-label" for="email">
+              Email
+            </label>
+            <input type="text" id="email" />
+          </div>
+        </div>
+
+        {{/*  Group  */}}
+        <div class="form-group">
+          <div class="field-group | w-2/5">
+            <label class="standard-label" for="country">
+              Country Code
+            </label>
+            <select_box :opt="{ variant: '-standard -md' }">
+              <option value="de" selected>DEU +49</option>
+              <option value="uk">UK</option>
+              <option value="fr">FR</option>
+              <option value="de">US</option>
+              <option value="fr">SP</option>
+            </select_box>
+          </div>
+          <div class="field-group | w-3/5">
+            <label class="standard-label" for="phone">
+              Phone
+            </label>
+            <input type="text" id="phone" placeholder="+0 (000) 000-0000" />
+          </div>
+        </div>
+
+        {{/*  Group  */}}
+        <div class="form-group">
+          <div class="field-group">
+            <label class="standard-label" for="country">
+              Country
+            </label>
+            <select_box :opt="{ variant: '-standard -md' }">
+              <option value="es" selected>Germany</option>
+              <option value="en">United States of America</option>
+              <option value="ma">France</option>
+              <option value="de">Spain</option>
+              <option value="fr">Italy</option>
+            </select_box>
+          </div>
+        </div>
+
+        {{/*  Group  */}}
+        <div class="form-group">
+          <div class="field-group">
+            <label class="standard-label" for="address-1">
+              Address Line 1
+            </label>
+            <input type="text" id="address-1" />
+          </div>
+        </div>
+
+        {{/*  Group  */}}
+        <div class="form-group">
+          <div class="field-group">
+            <label class="standard-label" for="address-2">
+              Address Line 2
+            </label>
+            <input type="text" id="address-2" />
+          </div>
+        </div>
+
+        {{/*  Group  */}}
+        <div class="form-group">
+          <div class="field-group | w-1/2">
+            <label class="standard-label" for="city">
+              City
+            </label>
+            <input type="text" id="city" />
+          </div>
+          <div class="field-group | w-1/2">
+            <label class="standard-label" for="zip">
+              Zip
+            </label>
+            <input type="text" id="zip" />
+          </div>
+        </div>
+
+        <div class="form-block">
+          <button class="btn -light -full -solid">Save Changes</button>
+        </div>
+      </form>
+    </main>
+  </div>
+</section>
+{{ end }}

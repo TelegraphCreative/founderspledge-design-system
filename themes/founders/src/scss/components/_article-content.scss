@@ -53,6 +53,9 @@
   // Images
   img {
     @apply my-12;
+    &.-flush {
+      @apply -my-0;
+    }
   }
 
   // Blockquotes

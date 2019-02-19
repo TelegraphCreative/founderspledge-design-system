@@ -8,10 +8,10 @@
             <div class="modal -content | modal__box" v-if="isActive">
                 <!-- Close -->
                 <div @click="close" class="modal__close">
-                    <IconClose :classes="'icon--close -sm text-green'"></IconClose>
+                    <IconClose :classes="'icon--close -sm text-white'"></IconClose>
                 </div>
 
-                <div class="modal__content">
+                <div class="modal__content | container--sm gutter-lg">
                     <!-- Main -->
                     <div class="modal__main">
                         <!-- Header -->
@@ -26,6 +26,8 @@
                             <slot name="article">
                                 <p>Article text…</p>
                             </slot>
+
+                            <div class="pattern--green"></div>
                         </div>
                     </div>
                 </div>

@@ -37,7 +37,7 @@
       mt-2 ml-2;
   }
 
-  // Form Block (elements not in a group - this applies the correct margins)
+  // Form Block (elements like headers and buttons that are not a field group - this applies the correct margins)
   .form-block {
     @apply mx-3 mb-8;
   }
