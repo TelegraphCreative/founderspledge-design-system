@@ -1,0 +1,17 @@
+.author-card {
+  @apply my-8 pt-10 border-t border-oat-light;
+
+  // Screen
+  @screen md {
+    @apply my-16;
+    // Aside
+    &__aside {
+      @apply w-1/3 pr-6 border-r border-oat-light;
+    }
+
+    // Main
+    &__main {
+      @apply w-2/3 pl-6;
+    }
+  }
+}

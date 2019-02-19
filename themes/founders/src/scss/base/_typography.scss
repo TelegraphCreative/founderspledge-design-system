@@ -15,14 +15,12 @@ body {
     &.-light {
       @apply text-green-light;
     }
+    &.-grey {
+      @apply text-grey-light;
+    }
     &.-white {
       @apply text-white;
     }
-
-    // Type Small 2
-    // &-2 {
-    //     @apply text-xl font-serif;
-    // }
   }
 
   // 18
@@ -52,8 +50,8 @@ body {
 // Paragraphs
 .paragraphs {
   p {
-    @apply text-lg leading-normal 
-        mb-6;
+    @apply text-lg leading-normal font-normal
+      mb-6;
 
     &:last-of-type {
       @apply mb-0;
@@ -109,7 +107,6 @@ a {
       }
     }
 
-    
     // 68
     &-xl {
       @apply text-10xl;

@@ -141,4 +141,65 @@
     </main>
   </div>
 </section>
+
+<!-- Pledges -->
+<section class="bg-green-darkest | space-t space-b ">
+  <div class="container gutter-lg">
+    <!-- Section Header - Basic -->
+    {{ range.Params.SectionHeaderBasic_2 }}
+    {{ partial "components/section-header--button-group.html" . }} {{ end }}
+
+    <!-- Pledges  -->
+    <div class="pledge-card"></div>
+  </div>
+</section>
+
+<!-- Deployments -->
+<section class="bg-oat-light | space-t space-b ">
+  <div class="container gutter-lg">
+    <!-- Section Header - Basic -->
+    {{ range.Params.SectionHeaderBasic_3 }}
+    {{ partial "components/section-header--button-group.html" . }} {{ end }}
+
+    <!-- Status List  -->
+    <div class="status-list">
+      {{ range.Params.StatusList_1 }}
+      {{ partial "components/status.html" . }} {{ end }}
+      {{ range.Params.StatusList_1 }}
+      {{ partial "components/status--linked.html" . }} {{ end }}
+    </div>
+
+    <div class="space-t">
+      <!-- Heads Up - Inline -->
+      <div class="headsup -inline -center">
+        <div class="headsup__fig">
+          <h4 class="header-lg | text-green">
+            $<span class="font-integer">91</span>
+          </h4>
+          <h3 class="header-sm -light">Total Grants</h3>
+        </div>
+
+        <div class="headsup__fig">
+          <h4 class="header-lg | text-green">
+            $<span class="font-integer">630</span>
+          </h4>
+          <h3 class="header-sm -light">Transfers</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Reports -->
+<section class="container | gutter-lg | space-t md:space-b--lg">
+  <!-- Section Header - Basic -->
+  {{ range.Params.SectionHeaderBasic_1 }}
+  {{ partial "components/section-header--basic.html" . }} {{ end }}
+
+  <!-- Resource List-->
+  <div class="resources | space-b">
+    {{ range.Params.ResourceList_1 }}
+    {{ partial "components/resource--single-link.html" . }} {{ end }}
+  </div>
+</section>
 {{ end }}

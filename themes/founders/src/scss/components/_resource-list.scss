@@ -10,7 +10,7 @@
         &:before {
             @apply absolute pseudo pin-t pin-l z-0
             w-full h-full 
-            property-colors duration-4 timing-1;
+            property-all duration-3 timing-1;
             
             transform: scale(1.02);
         }
@@ -77,7 +77,7 @@
         }
         
         &__action {
-            @apply  timing-1 duration-1 property-all
+            @apply  timing-1 duration-3 property-all
             pr-15;
         }
 

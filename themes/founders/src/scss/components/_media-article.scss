@@ -1,179 +1,169 @@
 // Media Article
 .media-article {
-    
+  &__main {
+    @apply pb-14;
+  }
+  &__aside {
+    @apply relative;
+  }
+
+  // Header
+  .media-article__header {
+    .header {
+      @apply text-4xl font-serif pb-5;
+    }
+  }
+
+  // Highlight Type
+  &.-highlight {
+    .media-article__header {
+      .header {
+        @apply text-5xl;
+      }
+    }
+  }
+
+  // Pattern
+  .pattern {
+    // @apply hidden;
+    width: 100%;
+    height: 4rem;
+    bottom: -1.25rem;
+    left: 0;
+  }
+
+  // -Features Type > Feature
+  &__feature {
+    @apply max-w-xs w-full
+        pb-12;
+
+    &:last-of-type {
+      @apply pb-6;
+    }
+  }
+
+  // Article Indent Type
+  &.-article-indent {
+    .media-article__main {
+      @apply pt-12;
+    }
+  }
+}
+
+@screen md {
+  // Layout
+  .media-article {
+    @apply flex justify-between;
+
     &__main {
-        @apply pb-14;
+      @apply max-w-lg;
+      width: 62%;
     }
     &__aside {
-        @apply relative;
+      width: 38%;
     }
-    
-    // Header
-    .media-article__header {
-        .header {
-            @apply text-4xl font-serif pb-5;
-        }
+    .pattern {
+      @apply hidden;
+    }
+
+    &__header {
+      @apply pt-14;
+    }
+    &__article {
+      width: 92%;
     }
 
     // Highlight Type
     &.-highlight {
-        
-        .media-article__header {
-            .header {
-                @apply text-5xl
-                ;
-            }
+      .media-article__main {
+        width: 67.5%;
+      }
+      .media-article__aside {
+        width: 32.5%;
+      }
+
+      .media-article__main {
+        @apply pl-30;
+      }
+      .media-article__article {
+        width: 72%;
+      }
+      .media-article__header {
+        .header {
+          @apply text-10xl pb-12;
         }
+      }
     }
 
-    // Pattern
-    .pattern {
-        // @apply hidden;
-        width: 100%;
-        height: 4rem;
-        bottom: -1.25rem;
-        left: 0;
+    // Features Type
+    &.-features {
+      .media-article__main {
+        @apply max-w-full;
+        width: 70%;
+      }
+      .media-article__aside {
+        width: 30%;
+      }
+      .image {
+        @apply h-full;
+      }
     }
 
-    // -Features Type > Feature
-    &__feature {
-        @apply max-w-xs w-full
-        pb-12;
+    // Stats Type
+    &.-stats {
+      .media-article__main {
+        width: 54%;
+        @apply pr-20;
+      }
+      .media-article__aside {
+        width: 46%;
+      }
+    }
 
-        &:last-of-type {
-            @apply pb-6;
-        }
+    // Simple Type
+    &.-simple {
+      .media-article__main {
+        width: 65%;
+      }
+      .media-article__aside {
+        width: 35%;
+      }
+      .media-article__article {
+        width: 95%;
+      }
+    }
+
+    // Reverse
+    &.-reverse {
+      @apply flex-row-reverse;
+
+      .media-article__main.gutter-l--lg {
+        @apply pl-32;
+      }
     }
 
     // Article Indent Type
     &.-article-indent {
+      .media-article__main {
+        @apply pt-24;
+      }
+      &--sm {
         .media-article__main {
-            @apply pt-12;
+          @apply pt-16;
         }
+      }
     }
-    
-}
-
-
-
-@screen md {
-    // Layout
-    .media-article {
-        @apply flex justify-between;
-
-        &__main {
-            @apply max-w-lg;
-            width: 62%;
-        }
-        &__aside {
-            width: 38%;
-            
-        }
-        .pattern {
-            @apply hidden;
-        }
-
-        &__header {
-            @apply pt-14;
-        }
-        &__article {
-            width: 92%;
-        }
-
-        // Highlight Type
-        &.-highlight {
-
-            .media-article__main {
-                width: 67.5%;
-            }
-            .media-article__aside {
-                width: 32.5%;
-            }
-
-            .media-article__main {
-                @apply pl-30;
-            }
-            .media-article__article {
-                width: 72%;
-            }
-            .media-article__header {
-                .header {
-                    @apply text-10xl pb-12;
-                }
-            }
-        }
-
-        // Features Type
-        &.-features {
-            .media-article__main {
-                @apply max-w-full;
-                width: 70%;
-            }
-            .media-article__aside {
-                width: 30%;
-            }
-            .image {
-                @apply h-full;
-            }
-        }
-
-        // Stats Type
-        &.-stats {
-            .media-article__main {
-                width: 54%;
-                @apply pr-20;
-            }
-            .media-article__aside {
-                width: 46%;
-            }
-        }
-
-        // Simple Type
-        &.-simple {
-            .media-article__main {
-                width: 65%;
-            }
-            .media-article__aside {
-                width: 35%;
-            }
-            .media-article__article {
-                width: 95%;
-            }
-        }
-
-        // Reverse
-        &.-reverse {
-            @apply flex-row-reverse;
-
-            .media-article__main.gutter-l--lg {
-                @apply pl-32;
-            }
-        }
-
-        // Article Indent Type
-        &.-article-indent {
-            .media-article__main {
-                @apply pt-24
-            }
-            &--sm {
-                .media-article__main {
-                    @apply pt-16;
-                }
-            }
-        }
-        
-    }
-    
+  }
 }
 
 @screen lg {
-    .media-article {
-        .pattern {
-            @apply block;
-            width: 19.1875rem;
-            height: 16.5625rem;
-            bottom: -3.25rem;
-            left: -4.5rem;
-        }
+  .media-article {
+    .pattern {
+      @apply block;
+      width: 19.1875rem;
+      height: 15.625rem;
+      bottom: -3.25rem;
+      left: -4.5rem;
     }
+  }
 }

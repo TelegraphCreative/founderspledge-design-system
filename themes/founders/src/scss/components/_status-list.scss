@@ -1,0 +1,44 @@
+.status-list {
+  // Status
+  .status {
+    @apply bg-white py-10 px-4 mb-4 border-l-3 w-full no-underline;
+
+    &:before {
+    }
+
+    &:last-child {
+      @apply mb-0;
+    }
+  }
+
+  // Colors
+  .border-green {
+    .current-status {
+      @apply text-green;
+    }
+  }
+
+  // Screen
+  @screen md {
+    // Status
+    .status {
+      @apply px-10 py-14 border-l-8;
+
+      &__content {
+        @apply w-5/6 mx-auto relative z-10;
+      }
+    }
+
+    // Linked Statuses
+    a.status {
+      @apply relative
+      property-all duration-3 timing-1;
+
+      // Hover
+      &:hover {
+        @apply text-green-darkest shadow-lg;
+        transform: scale(1.005);
+      }
+    }
+  }
+}

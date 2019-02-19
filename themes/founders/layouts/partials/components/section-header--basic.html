@@ -5,6 +5,12 @@
             <h2 class="header | header-lg">{{ .header }}</h2>
             {{ end }}
         </div>
+
+        {{ if .descr }}
+        <div class="section-header__descr -flush | paragraphs">
+            {{.descr | safeHTML}}
+        </div>
+        {{ end }}
     
         {{ if .link }}
         <div class="section-header__action">

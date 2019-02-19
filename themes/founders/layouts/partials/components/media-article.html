@@ -10,62 +10,51 @@ Content Types:
 
 -->
 <div class="media-article {{.variation}} | container gutter-l--md">
+  <div class="media-article__main | sm:px-12 md:pb-12">
+    <header class="media-article__header">
+      {{ if .preheader }}
+      <h4 class="preheader | header-sm | pb-5">{{ .preheader }}</h4>
+      {{ end }}
+      <h2 class="header">{{ .header }}</h2>
+      {{ if .subheader }}
+      <h4 class="subheader | header-sm | pb-5">{{ .subheader }}</h4>
+      {{ end }}
+    </header>
 
-        <div class="media-article__main | sm:px-12 md:pb-12">
+    <article class="media-article__article | paragraphs">
+      {{ .descr | safeHTML }}
+    </article>
 
-        <header class="media-article__header">
-            {{ if .preheader }}
-            <h4 class="preheader | header-sm | pb-5">{{ .preheader }}</h4>
-            {{ end }}
-            <h2 class="header">{{ .header }}</h2>
-            {{ if .subheader }}
-            <h4 class="subheader | header-sm | pb-5">{{ .subheader }}</h4>
-            {{ end }}
-        </header>
-
-        <article class="media-article__article | paragraphs">
-            {{ .descr | safeHTML }}
-        </article>
-        
-        {{ if .links }}
-            <div class="media-article__actions | md:mt-12 mt-8">
-                <div class="link-group">
-                    {{ range .links }}
-                        <a href="{{ .url }}" class="{{.variation}}">{{ .text }}</a>
-                    {{ end }}
-                </div>
-            </div>
+    {{ if .links }}
+    <div class="media-article__actions | md:mt-12 mt-8">
+      <div class="link-group">
+        {{ range.links }}
+        <a href="{{ .url }}" class="{{.variation}}">{{ .text }}</a>
         {{ end }}
-        
-        {{ if .gallery }}
-            <div class="media-article__actions | md:mt-12 mt-5">
-                <div class="link-group">
-
-                    <!-- Gallery Modal -->
-                    {{ partial "components/gallery-modal.html" . }}
-
-                </div>
-            </div>
-        {{ end }}
-
-
-
+      </div>
     </div>
+    {{ end }}
 
-    
-    <aside class="media-article__aside | xl:bg-orange">
-        {{ if .image }}
-            <figure class="image -is{{ .image.ratio }} | md:block hidden">
-                <img src="{{ .image.url }}" alt="" class="fit-cover">
-            </figure>
-            <figure class="image -is{{ .image_small.ratio }} | md:hidden block">
-                <img src="{{ .image_small.url }}" alt="" class="fit-cover">
-            </figure>
-        {{ end }}
+    {{ if .gallery }}
+    <div class="media-article__actions | md:mt-12 mt-5">
+      <div class="link-group">
+        <!-- Gallery Modal -->
+        {{ partial "components/gallery-modal.html" . }}
+      </div>
+    </div>
+    {{ end }}
+  </div>
 
-        <div class="pattern | absolute"></div>
-    </aside>
-    
-    
+  <aside class="media-article__aside | xl:bg-orange">
+    {{ if .image }}
+    <figure class="image -is{{ .image.ratio }} | md:block hidden">
+      <img src="{{ .image.url }}" alt="" class="fit-cover" />
+    </figure>
+    <figure class="image -is{{ .image_small.ratio }} | md:hidden block">
+      <img src="{{ .image_small.url }}" alt="" class="fit-cover" />
+    </figure>
+    {{ end }}
 
+    <div class="pattern | absolute"></div>
+  </aside>
 </div>

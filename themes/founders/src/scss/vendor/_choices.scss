@@ -268,7 +268,8 @@ $choices-icon-cross-inverse: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjEiI
     display: block;
   }
   .is-open & {
-    border-color: darken($choices-keyline-color, 15%);
+    // border-color: darken($choices-keyline-color, 15%);
+    @apply border-green;
   }
   .is-flipped & {
     top: auto;
@@ -402,8 +403,9 @@ $choices-icon-cross-inverse: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjEiI
 
 /*=====  End of Choices  ======*/
 
+// For dev, force active state
 // .choices__list {
-//     display: block !important;
+//   display: block !important;
 // }
 
 .choices {
@@ -445,6 +447,14 @@ $choices-icon-cross-inverse: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjEiI
     }
     .choices__inner .choices__item--selectable:after {
       @apply pin-r;
+    }
+  }
+
+  // Active
+  &.is-open {
+    .choices__list--dropdown,
+    .choices__inner {
+      @apply border-green;
     }
   }
 

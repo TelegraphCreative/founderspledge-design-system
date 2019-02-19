@@ -1,22 +1,23 @@
-<a href="#" class="featured-article-card | link-card -dark -lg--l | container -flush | block">
+<a
+  href="#"
+  class="featured-article-card | link-card -dark -lg--l | container -flush | block"
+>
+  <div class="featured-article-card__content">
+    {{ if .image }}
+    <figure class="featured-article-card__figure | image -background -is3x2">
+      <div
+        class="background"
+        style="background-image: url('{{ .image }}');"
+      ></div>
+    </figure>
+    {{ end }}
 
-    <div class="featured-article-card__content">
-        
-        {{ if .image }}
-        <figure class="featured-article-card__figure | image -background -is3x2">
-            <div class="background" style="background-image: url('{{ .image }}');"></div>
-        </figure>
-        {{ end }}
-
-        <div class="featured-article-card__main | link-card__content ">
-            <h2 class="preheader | header-sm | mb-3">{{ .preheader }}</h2>
-            <h2 class="header | header-xl-2 | mb-5">{{ .header }}</h2>
-            <div class="paragraphs">
-                {{ .detail | safeHTML }}
-            </div>
-        </div>
-        
+    <div class="featured-article-card__main | link-card__content ">
+      <h2 class="preheader | header-sm | mb-3">{{ .preheader }}</h2>
+      <h2 class="header | header-lg | mb-5">{{ .header }}</h2>
+      <div class="paragraphs">
+        {{ .detail | safeHTML }}
+      </div>
     </div>
-    
-</a> 
-
+  </div>
+</a>
