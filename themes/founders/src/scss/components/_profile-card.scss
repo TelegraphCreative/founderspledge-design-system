@@ -1,80 +1,77 @@
 // Card
 .profile-card {
+  // Layout
+  @apply block w-full mb-4  no-underline cursor-pointer;
 
-    // Layout
-    @apply block w-full mb-4  no-underline cursor-pointer;
-    
+  &__content,
+  &__main {
+    @apply h-full;
+  }
+
+  &__content {
+    @apply overflow-hidden;
+  }
+
+  // Box
+  &__main {
+    @apply relative text-white bg-green-darkest 
+        px-6 pb-6 pt-12;
+  }
+
+  .pattern--green {
+    @apply absolute pin-r;
+    height: 3.25rem;
+    width: 12.5rem;
+    top: -1rem;
+  }
+
+  // Screen
+  // -sm
+  @screen sm {
+    @apply w-1/2 px-2;
+  }
+  // -md
+  @screen md {
+    @apply w-1/3 mb-8 -mx-2;
+
+    // Remove last btm margin on mobile
+    &:last-child,
+    &:nth-last-child(2),
+    &:nth-last-child(3) {
+      @apply mb-0;
+    }
+
     &__content,
     &__main {
-        @apply h-full;
+      @apply h-auto;
+    }
+
+    &__main {
+      @apply pb-8 pt-16;
+    }
+
+    .visibility-shift {
+      @apply .opacity-0;
     }
 
     &__content {
-        @apply overflow-hidden;
+      @apply relative;
     }
 
     // Box
     &__main {
-        @apply relative text-white bg-green-darkest 
-        px-6 pb-6 pt-12;
-    }
-
-    .pattern--green {
-        @apply absolute pin-r;
-        height: 3.25rem;
-        width: 12.625rem;
-        top: -1rem;
-    }
-
-    // Screen
-    // -sm
-    @screen sm {
-        @apply w-1/2 px-2;
-    }
-    // -md
-    @screen md {
-        @apply w-1/3 mb-8 -mx-2;
-
-        // Remove last btm margin on mobile
-        &:last-child, 
-        &:nth-last-child(2),
-        &:nth-last-child(3) {
-            @apply mb-0;
-        }
-
-        &__content,
-        &__main {
-            @apply h-auto;
-        }
-
-        &__main {
-            @apply pb-8 pt-16;
-        }
-
-        .visibility-shift {
-            @apply .opacity-0;
-        }
-
-        &__content {
-            @apply relative;
-        }
-
-        // Box
-        &__main {
-            transform: translate(0%, 100%);
-            @apply absolute pin-l pin-b w-full z-20
+      transform: translate(0%, 100%);
+      @apply absolute pin-l pin-b w-full z-20
             property-all duration-4 timing-1;
-        }
-
-        &:hover {
-            .profile-card__main {
-                transform: translate(0%, 0%);
-            }
-            .visibility-shift {
-                @apply .opacity-100;
-            }
-        }
-
     }
 
+    &:hover {
+      .profile-card__main {
+        transform: translate(0%, 0%);
+      }
+      .visibility-shift {
+        @apply .opacity-100;
+      }
+    }
+  }
 }

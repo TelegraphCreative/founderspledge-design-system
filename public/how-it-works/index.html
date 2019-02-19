@@ -137,26 +137,27 @@
       <main role="main">
         
 
-  
-  
-    <header class="section-header -top">
-    <div class="section-header__content">
-        
-        <h4 class="header-sm">Start your Journey</h4>
-        
 
-        
-        <h2 class="header | header-lg">Giving Redefined: Simple, <br>Personal, Impactful</h2>
-        
 
-        
+<header class="section-header -top">
+  <div class="section-header__content">
+    
+    <h4 class="header-sm">Start your Journey</h4>
+    
 
-        
-    </div>
-</header> 
+    
+    <h2 class="header | header-lg">Giving Redefined: Simple, <br>Personal, Impactful</h2>
+    
 
-  
-  
+    
+
+    
+  </div>
+</header>
+ 
+
+
+
 <nav class="page-menu | gutter">
     <ul class="page-menu__bar menu-bar">
         
@@ -176,12 +177,19 @@
                 <smooth_scroll class="link" :anchor="'#benefits'" :offset="120">Benefits</smooth_scroll>
             </li>
         
+            <li class="page-menu__item">
+                <smooth_scroll class="link" :anchor="'#faq'" :offset="120">FAQ</smooth_scroll>
+            </li>
+        
     </ul>
 </nav>
-  
-  
-  <section id="journey" class="js-section | bg-green-darkest | space-t--lg space-b">
-    <div class="info-slider-layout | container">
+
+
+<section
+  id="journey"
+  class="js-section | bg-green-darkest | space-t--lg space-b"
+>
+  <div class="info-slider-layout | container">
 
     
     <info_slider :opt="{
@@ -369,11 +377,11 @@
     </info_slider>
 
 </div>
-  </section>
+</section>
 
-  
-  <section id="offerings" class="js-section">
-      <div class="featured-articles | md:flex-grid container gutter">
+
+<section id="offerings" class="js-section">
+  <div class="featured-articles | md:flex-grid container gutter">
     
     
     <div class="feature-article | md:w-1/2">
@@ -428,11 +436,11 @@
     </div> 
 
 </div>
-  </section>
+</section>
 
+
+<section id="community" class="js-section |  bg-orange text-white">
   
-  <section id="community" class="js-section |  bg-orange text-white">
-      
 <slider :opt="{
     items: 1,
     autoplay: true,
@@ -501,68 +509,202 @@ class="profile-slider -basic slider-reset -no-gutters bg-grey-darker| container 
 
 </slider>
 
-  </section>
+</section>
 
 
+<section id="benefits" class="js-section | space-t--sm space-b--lg">
   
-  <section id="benefits" class="js-section | space-t--sm space-b">
-    
-      
+  
 <div class="media-article -article-indent | container gutter-l--md">
+  <div class="media-article__main | sm:px-12 md:pb-12">
+    <header class="media-article__header">
+      
+      <h2 class="header">What We Offer Pledgers</h2>
+      
+    </header>
 
-        <div class="media-article__main | sm:px-12 md:pb-12">
+    <article class="media-article__article | paragraphs">
+      <p>Accountability, peace of mind, and end-to-end giving infrastructure. When you join the community, you also open a door to the world of evidence-driven philanthropy.</p><p>You gain access to educational events with our fantastic community of FPers, and world-class charity research by our in-house team of experts.</p>
+    </article>
 
-        <header class="media-article__header">
-            
-            <h2 class="header">What We Offer Pledgers</h2>
-            
-        </header>
-
-        <article class="media-article__article | paragraphs">
-            <p>Accountability, peace of mind, and end-to-end giving infrastructure. When you join the community, you also open a door to the world of evidence-driven philanthropy.</p><p>You gain access to educational events with our fantastic community of FPers, and world-class charity research by our in-house team of experts.</p>
-        </article>
+    
+    <div class="media-article__actions | md:mt-12 mt-8">
+      <div class="link-group">
         
+        <a href="#" class="link -underline">Meet our Community</a>
         
-            <div class="media-article__actions | md:mt-12 mt-8">
-                <div class="link-group">
-                    
-                        <a href="#" class="link -underline">Meet our Community</a>
-                    
-                        <a href="#" class="link -underline">Browse Research</a>
-                    
-                </div>
-            </div>
+        <a href="#" class="link -underline">Browse Research</a>
         
-        
-        
-
-
-
+      </div>
     </div>
-
-    
-    <aside class="media-article__aside | xl:bg-orange">
-        
-            <figure class="image -is8x20 | md:block hidden">
-                <img src="/img/fpo-01.jpg" alt="" class="fit-cover">
-            </figure>
-            <figure class="image -is2x1 | md:hidden block">
-                <img src="/img/fpo-03.jpg" alt="" class="fit-cover">
-            </figure>
-        
-
-        <div class="pattern | absolute"></div>
-    </aside>
-    
     
 
-</div> 
-  </section>
+    
+  </div>
 
+  <aside class="media-article__aside | xl:bg-orange">
+    
+    <figure class="image -is8x20 | md:block hidden">
+      <img src="/img/fpo-01.jpg" alt="" class="fit-cover" />
+    </figure>
+    <figure class="image -is2x1 | md:hidden block">
+      <img src="/img/fpo-03.jpg" alt="" class="fit-cover" />
+    </figure>
+    
+
+    <div class="pattern | absolute"></div>
+  </aside>
+</div>
+ 
+</section>
+
+
+
+<section id="faq" class="js-section | container | gutter-lg | space-t space-b">
   
-  <section class="space-t--sm">
+  <header class="section-header -basic ">
+    <div class="section-header__content">
+        <div class="section-header__name">
+            
+            <h2 class="header | header-lg">Frequently Asked Questions</h2>
+            
+        </div>
+
+        
     
-        <header class="panel-hero bg-green-darkest">
+        
+    </div>
+</header> 
+  
+  <div class="resources -accordion">
+    
+    <accordion class="resource__item | toggle-text">
+  <template slot="accordion-header">
+    <div class="resource__main">
+      <div class="resource__descr">
+        
+        <h2 class="header | header-lg-2 mb-2 md:mb-0">
+          Events Coordinator
+        </h2>
+        
+        
+        <h4 class="header-sm">London, UK</h4>
+        
+      </div>
+
+      <div class="resource__action | accordion-icon">
+        <button class="link -icon -green -sm">
+          <span class="text">
+            <span
+              class="toggle-text__text"
+              data-default="Learn More"
+              data-active="Close"
+            ></span
+          ></span><span class="icon | icon--arrow -xs -stroke-4"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 39"><polyline stroke="currentColor" class="stroke" points="0.9,38.5 11.9,19.5 0.9,0.5 "/></svg></span>
+</button>
+      </div>
+    </div>
+  </template>
+
+  <template slot="accordion-content">
+    <div class="resource__extended-content | paragraphs -sm | my-8">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eos totam,
+        <a href="http://example.com" target="_blank">this is a link</a>
+        eaque illo minima inventore ad, ratione neque laboriosam labore tempore
+        nihil, debitis aperiam ut? Unde ipsam recusandae facere accusamus.
+      </p>
+    </div>
+  </template>
+</accordion>
+ 
+    <accordion class="resource__item | toggle-text">
+  <template slot="accordion-header">
+    <div class="resource__main">
+      <div class="resource__descr">
+        
+        <h2 class="header | header-lg-2 mb-2 md:mb-0">
+          Key Relationships Manager
+        </h2>
+        
+        
+        <h4 class="header-sm">New York City, USA</h4>
+        
+      </div>
+
+      <div class="resource__action | accordion-icon">
+        <button class="link -icon -green -sm">
+          <span class="text">
+            <span
+              class="toggle-text__text"
+              data-default="Learn More"
+              data-active="Close"
+            ></span
+          ></span><span class="icon | icon--arrow -xs -stroke-4"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 39"><polyline stroke="currentColor" class="stroke" points="0.9,38.5 11.9,19.5 0.9,0.5 "/></svg></span>
+</button>
+      </div>
+    </div>
+  </template>
+
+  <template slot="accordion-content">
+    <div class="resource__extended-content | paragraphs -sm | my-8">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eos totam,
+        <a href="http://example.com" target="_blank">this is a link</a>
+        eaque illo minima inventore ad, ratione neque laboriosam labore tempore
+        nihil, debitis aperiam ut? Unde ipsam recusandae facere accusamus.
+      </p>
+    </div>
+  </template>
+</accordion>
+ 
+    <accordion class="resource__item | toggle-text">
+  <template slot="accordion-header">
+    <div class="resource__main">
+      <div class="resource__descr">
+        
+        <h2 class="header | header-lg-2 mb-2 md:mb-0">
+          Key Relationships Manager
+        </h2>
+        
+        
+        <h4 class="header-sm">San Francisco, USA</h4>
+        
+      </div>
+
+      <div class="resource__action | accordion-icon">
+        <button class="link -icon -green -sm">
+          <span class="text">
+            <span
+              class="toggle-text__text"
+              data-default="Learn More"
+              data-active="Close"
+            ></span
+          ></span><span class="icon | icon--arrow -xs -stroke-4"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 39"><polyline stroke="currentColor" class="stroke" points="0.9,38.5 11.9,19.5 0.9,0.5 "/></svg></span>
+</button>
+      </div>
+    </div>
+  </template>
+
+  <template slot="accordion-content">
+    <div class="resource__extended-content | paragraphs -sm | my-8">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eos totam,
+        <a href="http://example.com" target="_blank">this is a link</a>
+        eaque illo minima inventore ad, ratione neque laboriosam labore tempore
+        nihil, debitis aperiam ut? Unde ipsam recusandae facere accusamus.
+      </p>
+    </div>
+  </template>
+</accordion>
+ 
+  </div>
+</section>
+
+
+<section class="space-t--sm">
+  
+  <header class="panel-hero bg-green-darkest">
 
     
     <h2 class="header-lg | mb-4">Make the Pledge</h2>
@@ -581,8 +723,7 @@ class="profile-slider -basic slider-reset -no-gutters bg-grey-darker| container 
     
 
 </header> 
-  </section>
-
+</section>
 
 
       </main>

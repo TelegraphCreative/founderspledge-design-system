@@ -1,0 +1,40 @@
+<accordion class="resource__item | toggle-text">
+  <template slot="accordion-header">
+    <div class="resource__main">
+      <div class="resource__descr">
+        {{ if .header }}
+        <h2 class="header | header-lg-2 mb-2 md:mb-0">
+          {{.header | safeHTML}}
+        </h2>
+        {{ end }}
+        {{ if .preheader }}
+        <h4 class="header-sm">{{.preheader | safeHTML}}</h4>
+        {{ end }}
+      </div>
+
+      <div class="resource__action | accordion-icon">
+        <button class="link -icon -green -sm">
+          <span class="text">
+            <span
+              class="toggle-text__text"
+              data-default="Learn More"
+              data-active="Close"
+            ></span
+          ></span>
+          {{- partial "svg/arrow--r.svg" (dict "class" "-xs -stroke-4") -}}
+        </button>
+      </div>
+    </div>
+  </template>
+
+  <template slot="accordion-content">
+    <div class="resource__extended-content | paragraphs -sm | my-8">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eos totam,
+        <a href="http://example.com" target="_blank">this is a link</a>
+        eaque illo minima inventore ad, ratione neque laboriosam labore tempore
+        nihil, debitis aperiam ut? Unde ipsam recusandae facere accusamus.
+      </p>
+    </div>
+  </template>
+</accordion>

@@ -12,6 +12,10 @@
 
   &__descr {
     @apply mx-auto max-w-lg;
+
+    &.-flush {
+      @apply ml-0 ;
+    }
   }
 
   &__action {
@@ -44,6 +48,9 @@
     @apply w-full max-w-full;
     &__descr {
       @apply w-3/5;
+      &.-flush {
+        @apply w-full;
+      }
     }
 
     // -Arrow Type

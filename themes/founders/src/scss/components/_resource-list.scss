@@ -1,91 +1,110 @@
-
 // Item
 .resource {
-    
-    // General Layout
-    &__item {
-        @apply p-6 pt-8 px-0 border-b border-oat-light relative;
+  // General Layout
+  &__item {
+    @apply p-6 pt-8 px-0 border-b border-oat-light relative;
 
-        // Box
-        &:before {
-            @apply absolute pseudo pin-t pin-l z-0
+    // Box
+    &:before {
+      @apply absolute pseudo pin-t pin-l z-0
             w-full h-full 
-            property-colors duration-4 timing-1;
-            
-            transform: scale(1.02);
+            property-all duration-3 timing-1;
+
+      transform: scale(1.02);
+    }
+
+    &:hover {
+      &:before {
+        @apply bg-white shadow-lg;
+      }
+    }
+
+    .link:hover {
+      @apply text-green border-green;
+    }
+  }
+
+  &__aside {
+    @apply .overflow-hidden h-18;
+  }
+
+  &__main {
+    @apply mb-4;
+  }
+
+  &__content {
+    @apply relative z-10;
+  }
+
+  &__action {
+    @apply font-semibold;
+  }
+}
+
+.resources {
+  // Accordion Type
+  &.-accordion {
+    .resource {
+      // Item
+      &__item {
+        @apply cursor-pointer;
+
+        // Hide Box
+        &:before {
+          @apply hidden;
         }
-    
+        // Icon
+
+        .-icon svg {
+          transform: rotate(90deg);
+        }
         &:hover {
-            &:before {
-                @apply bg-white shadow-lg;
-            }
+          .-icon svg {
+            transform: translate(0.5rem, 0) rotate(90deg);
+          }
         }
-
-
-        .link:hover {
-            @apply text-green border-green;
+        &.-active {
+          .-icon svg {
+            transform: translate(0.5rem, 0) rotate(-90deg);
+          }
         }
+      }
     }
-
-    &__aside {
-        @apply .overflow-hidden h-18;
-    }
-
-    &__main {
-        @apply mb-4;
-    }
-
-    // &__descr {
-    //     @apply mb-2;
-    // }
-    
-
-    &__content {
-        @apply relative z-10;
-    }
-    
-    &__action {
-        @apply font-semibold;
-    }
-
+  }
 }
 
 // Screen
 @screen md {
-    .resource {
-
-        &__content {
-            @apply .flex-row-reverse;
-        }
-        
-        &__main,
-        &__content {
-            @apply flex .items-center;
-        }
-
-        &__main {
-            @apply flex-1;
-        }
-        
-        &__descr {
-            @apply flex-1;
-        }
-
-        &__aside {
-            @apply w-full h-auto pr-6;
-            max-width: 10rem;
-        }
-        
-        &__action {
-            @apply  timing-1 duration-1 property-all
-            pr-15;
-        }
-
-        &__item {
-            @apply -mx-5 px-5;
-        }
+  .resource {
+    &__content {
+      @apply .flex-row-reverse;
     }
 
+    &__main,
+    &__content {
+      @apply flex .items-center;
+    }
 
+    &__main {
+      @apply flex-1;
+    }
 
+    &__descr {
+      @apply flex-1;
+    }
+
+    &__aside {
+      @apply w-full h-auto pr-6;
+      max-width: 10rem;
+    }
+
+    &__action {
+      @apply timing-1 duration-3 property-all
+            pr-15;
+    }
+
+    &__item {
+      @apply -mx-5 px-5;
+    }
+  }
 }

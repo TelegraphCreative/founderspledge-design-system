@@ -1,39 +1,52 @@
 {{ define "main" }}
 
-  <!-- Section Header -->
-  {{range .Params.SectionHeader_1}}
-    {{ partial "components/section-header.html" . }} {{ end }}
+<!-- Section Header -->
+{{ range.Params.SectionHeader_1 }}
+{{ partial "components/section-header.html" . }} {{ end }}
 
-  <!-- Page Menu-->
-  {{ partial "components/page-menu.html" . }}
-  
-  <!-- Info Slider -->
-  <section id="journey" class="js-section | bg-green-darkest | space-t--lg space-b">
-    {{ partial "components/info-slider.html" . }}
-  </section>
+<!-- Page Menu-->
+{{ partial "components/page-menu.html" . }}
 
-  <!-- Feature Articles -->
-  <section id="offerings" class="js-section">
-      {{ partial "components/feature-articles.html" . }}
-  </section>
+<!-- Info Slider -->
+<section
+  id="journey"
+  class="js-section | bg-green-darkest | space-t--lg space-b"
+>
+  {{ partial "components/info-slider.html" . }}
+</section>
 
-  <!-- Profile Slider --basic -->
-  <section id="community" class="js-section |  bg-orange text-white">
-      {{ partial "components/profile-slider--basic.html" . }}
-  </section>
+<!-- Feature Articles -->
+<section id="offerings" class="js-section">
+  {{ partial "components/feature-articles.html" . }}
+</section>
 
+<!-- Profile Slider --basic -->
+<section id="community" class="js-section |  bg-orange text-white">
+  {{ partial "components/profile-slider--basic.html" . }}
+</section>
 
-  <!-- Media Article -->
-  <section id="benefits" class="js-section | space-t--sm space-b">
-    {{range .Params.MediaArticle_1}}
-      {{ partial "components/media-article.html" . }} {{ end }}
-  </section>
+<!-- Media Article -->
+<section id="benefits" class="js-section | space-t--sm space-b--lg">
+  {{ range.Params.MediaArticle_1 }}
+  {{ partial "components/media-article.html" . }} {{ end }}
+</section>
 
-  <!-- Panel Hero -->
-  <section class="space-t--sm">
-    {{range .Params.PanelHero_1}}
-        {{ partial "components/panel-hero.html" . }} {{end}}
-  </section>
+<!-- Resources --accordion -->
 
+<section id="faq" class="js-section | container | gutter-lg | space-t space-b">
+  {{ range.Params.SectionHeaderBasic_1 }}
+  {{ partial "components/section-header--basic.html" . }} {{ end }}
+  <!-- Resource List-->
+  <div class="resources -accordion">
+    {{ range.Params.ResourceList_1 }}
+    {{ partial "components/resource--accordion.html" . }} {{ end }}
+  </div>
+</section>
+
+<!-- Panel Hero -->
+<section class="space-t--sm">
+  {{ range.Params.PanelHero_1 }}
+  {{ partial "components/panel-hero.html" . }} {{ end }}
+</section>
 
 {{ end }}

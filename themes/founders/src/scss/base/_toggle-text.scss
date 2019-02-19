@@ -1,0 +1,14 @@
+.toggle-text {
+  .toggle-text__text {
+    &:after {
+      content: attr(data-default);
+    }
+  }
+  &.-active {
+    .toggle-text__text {
+      &:after {
+        content: attr(data-active);
+      }
+    }
+  }
+}
