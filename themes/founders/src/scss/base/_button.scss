@@ -56,6 +56,10 @@
   &.-dark {
     @apply border-green-darkest text-green-darkest;
 
+    &.-small {
+      @apply border;
+    }
+
     &:hover {
       @apply border-green-darkest bg-green-darkest text-white;
     }

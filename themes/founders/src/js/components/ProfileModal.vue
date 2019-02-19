@@ -10,7 +10,7 @@
 
                     <!-- Close -->
                     <div @click="close" class="modal__close">
-                        <IconClose :classes="'icon--close -sm text-green'"></IconClose>
+                        <IconClose :classes="'icon--close -sm text-white'"></IconClose>
                     </div>
 
                     <div class="modal__content ">

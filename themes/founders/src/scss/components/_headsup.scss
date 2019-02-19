@@ -16,6 +16,8 @@
       @apply flex
             justify-between 
             items-center;
+      
+            
 
       .headsup {
         &__fig {
@@ -30,5 +32,8 @@
         line-height: 0.64;
       }
     }
+  }
+  &.-center {
+    @apply justify-center; 
   }
 }

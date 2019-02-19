@@ -1,7 +1,49 @@
 .content-modal {
     .modal {
-        &__main {
-            @apply bg-white;
+        &__header {
+            @apply pt-12 mb-10 text-center;
+        }
+        &__detail {
+            @apply pt-16 px-14 pb-12
+            bg-white
+            relative
+            ;
+        }
+    }
+
+    // Pattern
+    .pattern--green {
+        width: 10rem;
+        height: 2.5rem;
+        bottom: -1rem;
+        background-size: 100%;
+
+        @apply center-x;
+    }
+
+    // Screen 
+    @screen md {
+        .modal {
+            &__content {
+                @apply h-screen;
+            }
+            &__main {
+                @apply h-screen flex flex-col flex-grow;
+            }
+            &__detail {
+                @apply mb-12 flex-grow;
+            }
+        }
+
+        // Pattern
+        .pattern--green {
+            width: 18.75rem;
+            height: 4.375rem;
+            bottom: 1rem;
+            background-size: 66%;
+            right: -17rem;
+            left: inherit;
+            @apply absolute;
         }
     }
 }

@@ -109,9 +109,14 @@ a {
       }
     }
 
+    
     // 68
     &-xl {
       @apply text-10xl;
+      // 56
+      &-2 {
+        @apply text-6xl;
+      }
     }
   }
 }

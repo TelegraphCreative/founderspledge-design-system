@@ -36,7 +36,9 @@
 
         <div class="space-t--sm space-b">
             <!-- Heads Up - Inline -->
+            {{range $.Site.Data.home.Headsup_1}}
             {{ partial "components/headsup--inline.html" . }}
+            {{end}}
         </div>
     </section>
 

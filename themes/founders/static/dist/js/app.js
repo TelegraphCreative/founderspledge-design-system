@@ -189,6 +189,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: {
@@ -20161,29 +20163,37 @@ var render = function() {
                 { staticClass: "modal__close", on: { click: _vm.close } },
                 [
                   _c("IconClose", {
-                    attrs: { classes: "icon--close -sm text-green" }
+                    attrs: { classes: "icon--close -sm text-white" }
                   })
                 ],
                 1
               ),
               _vm._v(" "),
-              _c("div", { staticClass: "modal__content" }, [
-                _c("div", { staticClass: "modal__main" }, [
-                  _c(
-                    "header",
-                    { staticClass: "modal__header" },
-                    [_vm._t("header", [_c("h3", [_vm._v("Modal Header")])])],
-                    2
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    { staticClass: "modal__detail" },
-                    [_vm._t("article", [_c("p", [_vm._v("Article text…")])])],
-                    2
-                  )
-                ])
-              ])
+              _c(
+                "div",
+                { staticClass: "modal__content | container--sm gutter-lg" },
+                [
+                  _c("div", { staticClass: "modal__main" }, [
+                    _c(
+                      "header",
+                      { staticClass: "modal__header" },
+                      [_vm._t("header", [_c("h3", [_vm._v("Modal Header")])])],
+                      2
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      { staticClass: "modal__detail" },
+                      [
+                        _vm._t("article", [_c("p", [_vm._v("Article text…")])]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "pattern--green" })
+                      ],
+                      2
+                    )
+                  ])
+                ]
+              )
             ])
           : _vm._e()
       ])
@@ -20505,7 +20515,7 @@ var render = function() {
                 { staticClass: "modal__close", on: { click: _vm.close } },
                 [
                   _c("IconClose", {
-                    attrs: { classes: "icon--close -sm text-green" }
+                    attrs: { classes: "icon--close -sm text-white" }
                   })
                 ],
                 1

@@ -91,6 +91,11 @@
       "descr": "<p>Social impact is complex - and the research below reflects that.</p><p>That’s why we offer everyone in the community an opportunity to chat one-on-one with our research team. They’ll walk you through relevant research in a digestible way, and answer all your questions.</p>"
     }
   ],
+  "Headsup_1": [
+    {
+      "variation": "-inline  -center"
+    }
+  ],
   "MediaArticle_3": [
     {
       "variation": "-reverse",
