@@ -16,6 +16,7 @@
     
       
     <link rel="stylesheet" href="/dist/css/app.css">
+    
 
     
       <link rel="apple-touch-icon" sizes="180x180" href="https://confident-blackwell-dbed1e.netlify.com/dist/assets/favicon/apple-touch-icon.png">
@@ -449,7 +450,40 @@
  
 
     <div class="form-block">
-      <button class="btn -light -full -solid">Review & Sign</button>
+      
+      <content_modal>
+        <template slot="trigger">
+          <button class="btn -light -full -solid">Review & Sign</button>
+        </template>
+
+        <header slot="header">
+          <h4 class="header-xl">Thank you!</h4>
+          <h5 class="header-sm -light">
+            Your pledge has been successfully sent.
+          </h5>
+        </header>
+
+        <article slot="article">
+          <article class="article-copy">
+            <p>I can’t thank you enough for your support.</p>
+
+            <p>
+              We're empowering founders and investors to add value to their
+              companies as well as the causes they love, without sacrificing one
+              for the other. Together, we’re making a real difference in the
+              tech world and in the global community.
+            </p>
+
+            <p>
+              Now you’re part of our global community who've all committed to do
+              good by pledging to support the social causes they’re passionate
+              about.
+            </p>
+
+            <p>That means something.</p>
+          </article>
+        </article>
+      </content_modal>
     </div>
   </form>
 </section>
@@ -608,16 +642,6 @@
                 >Sign In</a
               >
             </li>
-            <li class="menu-list__item">
-              <a
-                role="menuitem"
-                aria-haspopup="false"
-                href="/make-a-pledge"
-                class="menu-bar__link"
-                tabindex="0"
-                >Make a Pledge</a
-              >
-            </li>
           </ul>
         </nav>
       </div>
@@ -628,16 +652,6 @@
           <h5 class="site-footer__header | header-">Get to Know Us</h5>
 
           <ul class="menu-list">
-            <li class="menu-list__item">
-              <a
-                role="menuitem"
-                aria-haspopup="false"
-                href="/pledgers"
-                class="menu-bar__link"
-                tabindex="0"
-                >Pledgers</a
-              >
-            </li>
             <li class="menu-list__item">
               <a
                 role="menuitem"
@@ -666,6 +680,16 @@
                 class="menu-bar__link"
                 tabindex="0"
                 >Privacy Policy</a
+              >
+            </li>
+            <li class="menu-list__item">
+              <a
+                role="menuitem"
+                aria-haspopup="false"
+                href="/styleguide/intro"
+                class="menu-bar__link"
+                tabindex="0"
+                >Styleguide</a
               >
             </li>
           </ul>

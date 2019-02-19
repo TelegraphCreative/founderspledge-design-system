@@ -269,7 +269,40 @@
     {{ partial "components/sub-section-header.html" . }} {{ end }}
 
     <div class="form-block">
-      <button class="btn -light -full -solid">Review & Sign</button>
+      {{/*  Profile Card  - Modal */}}
+      <content_modal>
+        <template slot="trigger">
+          <button class="btn -light -full -solid">Review & Sign</button>
+        </template>
+
+        <header slot="header">
+          <h4 class="header-xl">Thank you!</h4>
+          <h5 class="header-sm -light">
+            Your pledge has been successfully sent.
+          </h5>
+        </header>
+
+        <article slot="article">
+          <article class="article-copy">
+            <p>I can’t thank you enough for your support.</p>
+
+            <p>
+              We're empowering founders and investors to add value to their
+              companies as well as the causes they love, without sacrificing one
+              for the other. Together, we’re making a real difference in the
+              tech world and in the global community.
+            </p>
+
+            <p>
+              Now you’re part of our global community who've all committed to do
+              good by pledging to support the social causes they’re passionate
+              about.
+            </p>
+
+            <p>That means something.</p>
+          </article>
+        </article>
+      </content_modal>
     </div>
   </form>
 </section>

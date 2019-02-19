@@ -18,6 +18,7 @@ mix.webpackConfig({
 mix
     .js( themeDir + 'src/js/app.js', themeDir + 'static/dist/js')
     .sass( themeDir +'src/scss/app.scss', themeDir + 'static/dist/css')
+    .sass( themeDir +'src/scss/styleguide.scss', themeDir + 'static/dist/css')
     .tailwind();
         
 if (mix.inProduction()) {

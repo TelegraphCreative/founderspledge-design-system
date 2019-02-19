@@ -11,6 +11,16 @@
     
     
     <item>
+      <title>Buttons</title>
+      <link>https://confident-blackwell-dbed1e.netlify.com/styleguide/buttons/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://confident-blackwell-dbed1e.netlify.com/styleguide/buttons/</guid>
+      <description> Buttons Description for this code block
+&amp;lt;section id=&amp;#34;main&amp;#34;&amp;gt; &amp;lt;div&amp;gt;&amp;lt;a href=&amp;#34;#&amp;#34; class=&amp;#34;btn -wide&amp;#34;&amp;gt;Get to Know Us&amp;lt;/a&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;/section&amp;gt; &amp;lt;!-- Range Slider --&amp;gt; &amp;lt;range_slider :min=&amp;#34;10&amp;#34; :start=&amp;#34;40&amp;#34; :max=&amp;#34;100&amp;#34; class=&amp;#34;form-block&amp;#34;&amp;gt; &amp;lt;/range_slider&amp;gt; Get to Know Us   </description>
+    </item>
+    
+    <item>
       <title>Careers</title>
       <link>https://confident-blackwell-dbed1e.netlify.com/careers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -56,12 +66,12 @@
     </item>
     
     <item>
-      <title>Impact</title>
-      <link>https://confident-blackwell-dbed1e.netlify.com/styleguide/</link>
+      <title>Intro</title>
+      <link>https://confident-blackwell-dbed1e.netlify.com/styleguide/intro/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://confident-blackwell-dbed1e.netlify.com/styleguide/</guid>
-      <description></description>
+      <guid>https://confident-blackwell-dbed1e.netlify.com/styleguide/intro/</guid>
+      <description> Layout Index  Home How It Works Community Impact Make a Pledge Pledgers Press &amp;amp; Media Start your Journey Stories Stories Article Careers General Content  </description>
     </item>
     
     <item>
@@ -92,12 +102,50 @@
     </item>
     
     <item>
+      <title>Range</title>
+      <link>https://confident-blackwell-dbed1e.netlify.com/styleguide/range/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://confident-blackwell-dbed1e.netlify.com/styleguide/range/</guid>
+      <description> Range Slider Vue Component for selecting pledge amount.
+js/components/Range.vue  &amp;lt;range_slider :min=&amp;#34;10&amp;#34; :start=&amp;#34;40&amp;#34; :max=&amp;#34;100&amp;#34; class=&amp;#34;form-block&amp;#34;&amp;gt; &amp;lt;/range_slider&amp;gt;   </description>
+    </item>
+    
+    <item>
+      <title>Readme</title>
+      <link>https://confident-blackwell-dbed1e.netlify.com/styleguide/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://confident-blackwell-dbed1e.netlify.com/styleguide/readme/</guid>
+      <description>Layout Index Powered by Laravel Mix, this site is built using Hugo to efficiently generate static html pages and webpack to handle assets.
+Local Environment Setup
+Install packages yarn install
+Install Hugo brew install hugo
+Development Mode yarn do
+Starts a hugo server at http://localhost:1313/
+Generate Distrubtion Files yarn hugo
+File Structure Development files are stored in the Hugo theme, founders
+Assets
+   Type Path     JS Source .</description>
+    </item>
+    
+    <item>
       <title>Start Your Journey</title>
       <link>https://confident-blackwell-dbed1e.netlify.com/start-your-journey/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://confident-blackwell-dbed1e.netlify.com/start-your-journey/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>Typography</title>
+      <link>https://confident-blackwell-dbed1e.netlify.com/styleguide/typography/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://confident-blackwell-dbed1e.netlify.com/styleguide/typography/</guid>
+      <description> Typography Description for this code block
+&amp;lt;section id=&amp;#34;main&amp;#34;&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h1 id=&amp;#34;buttons&amp;#34;&amp;gt;Code&amp;lt;/h1&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/section&amp;gt; </description>
     </item>
     
     <item>

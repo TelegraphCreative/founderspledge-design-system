@@ -8,6 +8,7 @@ import full_slider from "./components/FullSlider";
 import info_slider from "./components/InfoSlider";
 import slider from "./components/Slider";
 import profile_modal from "./components/ProfileModal";
+import content_modal from "./components/ContentModal";
 import gallery_modal from "./components/GalleryModal";
 import select_box from "./components/SelectBox";
 import stat_card from "./components/StatCard.vue";
@@ -37,6 +38,7 @@ const app = new Vue({
     info_slider,
     slider,
     profile_modal,
+    content_modal,
     gallery_modal,
     select_box,
     stat_card,
