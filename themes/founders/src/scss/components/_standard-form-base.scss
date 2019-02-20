@@ -1,0 +1,60 @@
+.standard-form-base {
+  // Fields
+  input[type="text"] {
+    @apply w-full border-b border-green-darkest
+        text-base 
+        px-2 pb-2 pt-8
+        property-colors duration-3 timing-1;
+
+    &:placeholder {
+      @apply opacity-75;
+    }
+
+    &:focus {
+      @apply border-green;
+    }
+  }
+
+  // Form Group
+  .form-group {
+    @apply flex justify-between flex-wrap
+    mb-8;
+  }
+
+  // Labels
+  .standard-label {
+    @apply text-xs font-sans font-semibold .uppercase
+    absolute pin-t pin-l 
+    z-10
+    mt-2;
+
+    &.-standalone {
+      @apply static
+      ml-3 mt-0 mb-3;
+    }
+  }
+
+  // Field Group
+  .field-group {
+    @apply relative flex-grow px-1;
+  }
+
+  // Form Block (elements like headers and buttons that are not a field group - this applies the correct margins)
+  .form-block {
+    @apply mx-3 mb-8;
+  }
+
+  // Helper Text
+  .helper-text {
+    @apply text-xs font-sans font-normal
+      mt-2 ml-2;
+  }
+}
+
+// Screen
+@screen md {
+  // Field Group
+  .field-group {
+    @apply px-4;
+  }
+}

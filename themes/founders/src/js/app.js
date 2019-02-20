@@ -18,6 +18,7 @@ import section_anchor_states from "./components/SectionAnchorStates";
 import counter from "./components/Counter";
 import accordion from "./components/accordion";
 import clone_form_blocks from "./components/CloneFormBlocks";
+import clone_pledge from "./components/ClonePledges";
 
 // Vue App
 const app = new Vue({
@@ -47,7 +48,8 @@ const app = new Vue({
     smooth_scroll,
     counter,
     accordion,
-    clone_form_blocks
+    clone_form_blocks,
+    clone_pledge
   }
 });
 

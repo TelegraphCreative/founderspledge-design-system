@@ -68,8 +68,8 @@
   ],
   "ResourceList_1": [
     {
-      "preheader": "London, UK",
-      "header": "Events Coordinator",
+      "header": "Can I change my pledge?",
+      "descr": "<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>",
       "image": false,
       "link": {
         "variation": "-icon",
@@ -78,8 +78,8 @@
       }
     },
     {
-      "preheader": "New York City, USA",
-      "header": "Key Relationships Manager",
+      "header": "How does it work?",
+      "descr": "<p>Adipisci eligendi voluptate placeat ducimus, at accusantium a quas assumenda sunt atque quod.</p>",
       "image": false,
       "link": {
         "text": "Download",
@@ -87,8 +87,8 @@
       }
     },
     {
-      "preheader": "San Francisco, USA",
-      "header": "Key Relationships Manager",
+      "header": "Another question",
+      "descr": "<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>",
       "image": false,
       "link": {
         "text": "Download",

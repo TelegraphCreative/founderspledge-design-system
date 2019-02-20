@@ -4561,6 +4561,10 @@ body {
   color: #a0e0b2;
 }
 
+.header-sm.-dark {
+  color: #12302d;
+}
+
 .header-sm.-grey {
   color: #889796;
 }

@@ -1,0 +1,11 @@
+.pledge-form {
+  @apply -mx-3;
+  // Field Group
+  .field-group {
+    @apply px-3;
+  }
+
+  .standard-label {
+    @apply ml-3;
+  }
+}
