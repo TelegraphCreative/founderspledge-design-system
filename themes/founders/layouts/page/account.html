@@ -1,31 +1,41 @@
 {{ define "main" }}
 
+<!-- Page Menu-->
+{{ partial "components/page-menu.html" . }}
+
 {{/*  Edit Profile */}}
-<section class="container--xs | space-b">
-  {{/*  Sub Section Header  */}}
-  {{ range.Params.SubSectionHeader_1 }}
-  {{ partial "components/sub-section-header.html" . }} {{ end }}
+<section
+  id="profile"
+  class="js-section | js-form | toggle-text | container--sm gutter-md | space-b"
+>
+  {{/*  Section Header Button Group  */}}
+  {{ range.Params.SectionHeaderButton_1 }}
+  {{ partial "components/section-header--button-group.html" . }} {{ end }}
 
   {{/*  Aside + Form */}}
   <div class="md:flex-grid">
-    <aside class="md:w-1/4 | md:pr-6">
+    <aside class="md:w-1/4 | md:pr-12 | mb-10">
       <figure class="image -is1x1 | mb-3">
         <img src="/img/fpo-01.jpg" alt="" class="fit-cover" />
       </figure>
 
-      <button class="btn -dark -full -small">Change Photo</button>
+      <div class="js-form__edit-mode">
+        <button class="btn -dark -full -small">
+          Change Photo
+        </button>
+      </div>
     </aside>
 
-    <main class="md:w-3/4 | px-2 md:px-12">
+    <main class="md:w-3/4 | md:pl-12 md:pr-20">
       {{/*  Form  */}}
-      <form action="" class="standard-form | standard-form-base">
+      <form action="" class="standard-form-base -locked | standard-form">
         {{/*  Group  */}}
         <div class="form-group">
           <div class="field-group">
             <label class="standard-label" for="first-name">
               First Name
             </label>
-            <input type="text" id="first-name" />
+            <input type="text" id="first-name" value="Samantha" />
           </div>
         </div>
 
@@ -134,8 +144,10 @@
           </div>
         </div>
 
-        <div class="form-block">
-          <button class="btn -light -full -solid">Save Changes</button>
+        <div class="js-form__edit-mode | form-block">
+          <button class="js-form__edit-btn | btn -light -full -solid">
+            Save Changes
+          </button>
         </div>
       </form>
     </main>
@@ -143,25 +155,27 @@
 </section>
 
 <!-- Pledges -->
-<section class="bg-green-darkest | space-t space-b ">
+<section
+  id="pledges"
+  class="js-section js-clone | toggle-text bg-green-darkest | space-t space-b "
+>
   <div class="container gutter-lg">
-    <!-- Section Header - Basic -->
-    {{ range.Params.SectionHeaderBasic_2 }}
+    {{/*  Section Header Button Group  */}}
+    {{ range.Params.SectionHeaderButton_2 }}
     {{ partial "components/section-header--button-group.html" . }} {{ end }}
 
-    <div class="pledge-cards">
+    <div class="js-clone__append-to | pledge-cards">
       <!-- Pledges  -->
-      {{ partial "components/pledge-card.html" . }}
       {{ partial "components/pledge-card.html" . }}
     </div>
   </div>
 </section>
 
 <!-- Deployments -->
-<section class="bg-oat-light | space-t space-b ">
+<section id="deployments" class="js-section | bg-oat-light | space-t space-b ">
   <div class="container gutter-lg">
-    <!-- Section Header - Basic -->
-    {{ range.Params.SectionHeaderBasic_3 }}
+    {{/*  Section Header Button Group  */}}
+    {{ range.Params.SectionHeaderButton_3 }}
     {{ partial "components/section-header--button-group.html" . }} {{ end }}
 
     <!-- Status List  -->
@@ -201,9 +215,12 @@
 </section>
 
 <!-- Reports -->
-<section class="container | gutter-lg | space-t md:space-b--lg">
+<section
+  id="reports"
+  class="js-section | container | gutter-lg | space-t md:space-b--lg"
+>
   <!-- Section Header - Basic -->
-  {{ range.Params.SectionHeaderBasic_1 }}
+  {{ range.Params.SectionHeaderButton_4 }}
   {{ partial "components/section-header--basic.html" . }} {{ end }}
 
   <!-- Resource List-->

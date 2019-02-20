@@ -138,38 +138,116 @@
         
 
 
-<section class="container--xs | space-b">
-  
-  
-  <header class="sub-section-header ">
-  
-  <h2 class="header | header-lg">Edit your Profile</h2>
-  
 
+<nav class="page-menu | gutter | -align-right -neg-offset">
+  <ul class="page-menu__bar menu-bar">
+    
+    <li class="page-menu__item">
+      <smooth_scroll
+        class="link"
+        :anchor="'#profile'"
+        :offset="120"
+        >Profile</smooth_scroll
+      >
+    </li>
+    
+    <li class="page-menu__item">
+      <smooth_scroll
+        class="link"
+        :anchor="'#pledges'"
+        :offset="120"
+        >Pledges</smooth_scroll
+      >
+    </li>
+    
+    <li class="page-menu__item">
+      <smooth_scroll
+        class="link"
+        :anchor="'#deployments'"
+        :offset="120"
+        >Deployments</smooth_scroll
+      >
+    </li>
+    
+    <li class="page-menu__item">
+      <smooth_scroll
+        class="link"
+        :anchor="'#reports'"
+        :offset="120"
+        >Charity Reports</smooth_scroll
+      >
+    </li>
+    
+  </ul>
+</nav>
+
+
+
+<section
+  id="profile"
+  class="js-section | js-form | toggle-text | container--sm gutter-md | space-b"
+>
   
+  
+  <header class="section-header -inline-actions -flush -left md:pr-20">
+  <div class="section-header__content">
+    <div class="section-header__name">
+      
+      <h2 class="header | header-lg">
+        
+        <span
+          class="block | toggle-text__text"
+          data-default="Your Profile"
+          data-active="Edit Your Profile"
+        ></span>
+        
+      </h2>
+      
+    </div>
+
+    
+    <div
+      class="js-form__lock-mode | section-header__action | link-group"
+    >
+      
+      <a href="#" class="link-group__item | btn -dark -small">
+        Reset Password
+      </a>
+      
+      <a href="#" class="link-group__item | js-form__edit-btn | btn -dark -small -add">
+        Edit
+      </a>
+      
+    </div>
+    
+  </div>
 </header>
  
 
   
   <div class="md:flex-grid">
-    <aside class="md:w-1/4 | md:pr-6">
+    <aside class="md:w-1/4 | md:pr-12 | mb-10">
       <figure class="image -is1x1 | mb-3">
         <img src="/img/fpo-01.jpg" alt="" class="fit-cover" />
       </figure>
 
-      <button class="btn -dark -full -small">Change Photo</button>
+      <div class="js-form__edit-mode">
+        <button class="btn -dark -full -small">
+          Change Photo
+        </button>
+      </div>
     </aside>
 
-    <main class="md:w-3/4 | px-2 md:px-12">
+    <main class="md:w-3/4 | md:pl-12 md:pr-20">
       
-      <form action="" class="standard-form | standard-form-base">
+      <form action="" class="standard-form-base -locked | standard-form">
         
         <div class="form-group">
           <div class="field-group">
             <label class="standard-label" for="first-name">
               First Name
             </label>
-            <input type="text" id="first-name" />
+            <input type="text" id="first-name" value="Samantha" />
           </div>
         </div>
 
@@ -278,8 +356,10 @@
           </div>
         </div>
 
-        <div class="form-block">
-          <button class="btn -light -full -solid">Save Changes</button>
+        <div class="js-form__edit-mode | form-block">
+          <button class="js-form__edit-btn | btn -light -full -solid">
+            Save Changes
+          </button>
         </div>
       </form>
     </main>
@@ -287,22 +367,31 @@
 </section>
 
 
-<section class="bg-green-darkest | space-t space-b ">
+<section
+  id="pledges"
+  class="js-section js-clone | toggle-text bg-green-darkest | space-t space-b "
+>
   <div class="container gutter-lg">
     
     
-    <header class="section-header -arrow -left">
+    <header class="section-header -inline-actions -flush -left">
   <div class="section-header__content">
     <div class="section-header__name">
       
-      <h2 class="header | header-lg">Pledges</h2>
+      <h2 class="header | header-lg">
+        
+        Pledges
+        
+      </h2>
       
     </div>
 
     
-    <div class="section-header__action | link-group">
+    <div
+      class=" | section-header__action | link-group"
+    >
       
-      <a href="#" class="link-group__item | btn -dark -small -add">
+      <a href="#" class="link-group__item | js-clone__clone-btn | btn -dark -small -add">
         New Pledge
       </a>
       
@@ -312,9 +401,9 @@
 </header>
  
 
-    <div class="pledge-cards">
+    <div class="js-clone__append-to | pledge-cards">
       
-      <div class="pledge-card">
+      <div class="js-form js-clone__template | pledge-card">
   <div class="pledge-card__content">
     <div class="pledge-card__main">
       <div class="pledge-card__header">
@@ -322,7 +411,7 @@
         <h5 class="header-sm">Signed Month DD, YY</h5>
       </div>
 
-      <form action="" class="pledge-form | standard-form-base">
+      <form action="" class="standard-form-base -locked | pledge-form">
         
         <div class="form-group">
           <div class="field-group | w-1/2">
@@ -341,64 +430,28 @@
 
         
         <div class="form-group">
-          <div class="field-group">
+          <div class="field-group ">
             <label class="standard-label" for="share-holding">
               Share Holding
             </label>
             <input type="text" id="share-holding" placeholder="$X,XXX,XXX.XX" />
+            <div class="helper-text">Helper Text</div>
           </div>
         </div>
       </form>
     </div>
     <div class="pledge-card__actions">
       <div class="link-group">
-        <button class="link -dark -sm -underline">Edit</button>
-        <button class="link -dark -sm -underline">Download</button>
-      </div>
-    </div>
-  </div>
-  <div class="pattern--green"></div>
-</div>
-
-      <div class="pledge-card">
-  <div class="pledge-card__content">
-    <div class="pledge-card__main">
-      <div class="pledge-card__header">
-        <h4 class="header-lg-2">7% for FakeCo</h4>
-        <h5 class="header-sm">Signed Month DD, YY</h5>
-      </div>
-
-      <form action="" class="pledge-form | standard-form-base">
-        
-        <div class="form-group">
-          <div class="field-group | w-1/2">
-            <label class="standard-label" for="pledge-volume">
-              Est Pledge Volume
-            </label>
-            <input type="text" id="pledge-volume" placeholder="$X,XXX,XXX.XX" />
-          </div>
-          <div class="field-group | w-1/2">
-            <label class="standard-label" for="Valuation">
-              Valuation
-            </label>
-            <input type="text" id="Valuation" placeholder="$X,XXX,XXX.XX" />
-          </div>
-        </div>
-
-        
-        <div class="form-group">
-          <div class="field-group">
-            <label class="standard-label" for="share-holding">
-              Share Holding
-            </label>
-            <input type="text" id="share-holding" placeholder="$X,XXX,XXX.XX" />
-          </div>
-        </div>
-      </form>
-    </div>
-    <div class="pledge-card__actions">
-      <div class="link-group">
-        <button class="link -dark -sm -underline">Edit</button>
+        <button
+          class="js-form__edit-btn js-form__lock-mode | link -dark -sm -underline"
+        >
+          Edit
+        </button>
+        <button
+          class="js-form__edit-btn js-form__edit-mode | link -dark -sm -underline"
+        >
+          Save
+        </button>
         <button class="link -dark -sm -underline">Download</button>
       </div>
     </div>
@@ -411,20 +464,26 @@
 </section>
 
 
-<section class="bg-oat-light | space-t space-b ">
+<section id="deployments" class="js-section | bg-oat-light | space-t space-b ">
   <div class="container gutter-lg">
     
     
-    <header class="section-header -arrow -left">
+    <header class="section-header -inline-actions -flush -left">
   <div class="section-header__content">
     <div class="section-header__name">
       
-      <h2 class="header | header-lg">My Deployments</h2>
+      <h2 class="header | header-lg">
+        
+        My Deployments
+        
+      </h2>
       
     </div>
 
     
-    <div class="section-header__action | link-group">
+    <div
+      class=" | section-header__action | link-group"
+    >
       
       <a href="#" class="link-group__item | btn -dark -small -add">
         New Grant
@@ -531,10 +590,13 @@
 </section>
 
 
-<section class="container | gutter-lg | space-t md:space-b--lg">
+<section
+  id="reports"
+  class="js-section | container | gutter-lg | space-t md:space-b--lg"
+>
   
   
-  <header class="section-header -basic -left">
+  <header class="section-header -basic -flush -left">
     <div class="section-header__content">
         <div class="section-header__name">
             

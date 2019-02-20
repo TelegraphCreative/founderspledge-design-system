@@ -2,22 +2,59 @@
   "draft": false,
   "layout": "account",
   "title": "Your Account",
-  "SubSectionHeader_1": [
+  "PageMenuVariation": "-align-right -neg-offset",
+  "PageMenu": [
     {
-      "variation": "",
-      "headerSize": "header-lg",
-      "header": "Edit your Profile",
-      "descr": false
+      "text": "Profile",
+      "url": "#profile"
+    },
+    {
+      "text": "Pledges",
+      "url": "#pledges"
+    },
+    {
+      "text": "Deployments",
+      "url": "#deployments"
+    },
+    {
+      "text": "Charity Reports",
+      "url": "#reports"
     }
   ],
-  "SectionHeaderBasic_1": [
+  "SectionHeaderButton_1": [
     {
-      "variation": "-left",
-      "header": "Charity Reports",
-      "descr": "<p>Our operations are fully funded by a small group of essential donors and institutions. <br>This means we can support impactful giving at zero cost. Simple, transparent, and effective.</p>",
-      "link": false
+      "variation": "-flush -left md:pr-20",
+      "header": "Your Profile",
+      "headerEditMode": "Edit Your Profile",
+      "buttonGroupVariation": "js-form__lock-mode",
+      "buttons": [
+        {
+          "text": "Reset Password",
+          "variation": "btn -dark -small",
+          "url": "#"
+        },
+        {
+          "text": "Edit",
+          "variation": "js-form__edit-btn | btn -dark -small -add",
+          "url": "#"
+        }
+      ]
     }
   ],
+  "SectionHeaderButton_2": [
+    {
+      "variation": "-flush -left",
+      "header": "Pledges",
+      "buttons": [
+        {
+          "text": "New Pledge",
+          "variation": "js-clone__clone-btn | btn -dark -small -add",
+          "url": "#"
+        }
+      ]
+    }
+  ],
+
   "ResourceList_1": [
     {
       "preheader": "PUBLISHED MONTH DD, YYYY",
@@ -47,22 +84,9 @@
       }
     }
   ],
-  "SectionHeaderBasic_2": [
+  "SectionHeaderButton_3": [
     {
-      "variation": "-left",
-      "header": "Pledges",
-      "buttons": [
-        {
-          "text": "New Pledge",
-          "variation": "btn -dark -small -add",
-          "url": "#"
-        }
-      ]
-    }
-  ],
-  "SectionHeaderBasic_3": [
-    {
-      "variation": "-left",
+      "variation": "-flush -left",
       "header": "My Deployments",
       "buttons": [
         {
@@ -78,6 +102,15 @@
       ]
     }
   ],
+  "SectionHeaderButton_4": [
+    {
+      "variation": "-flush -left",
+      "header": "Charity Reports",
+      "descr": "<p>Our operations are fully funded by a small group of essential donors and institutions. <br>This means we can support impactful giving at zero cost. Simple, transparent, and effective.</p>",
+      "link": false
+    }
+  ],
+
   "StatusList_1": [
     {
       "variation": "border-green",

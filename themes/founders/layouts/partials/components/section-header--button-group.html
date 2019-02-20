@@ -1,13 +1,25 @@
-<header class="section-header -arrow {{.variation}}">
+<header class="section-header -inline-actions {{.variation}}">
   <div class="section-header__content">
     <div class="section-header__name">
       {{ if .header }}
-      <h2 class="header | header-lg">{{ .header }}</h2>
+      <h2 class="header | header-lg">
+        {{ if .headerEditMode }}
+        <span
+          class="block | toggle-text__text"
+          data-default="{{ .header }}"
+          data-active="{{ .headerEditMode }}"
+        ></span>
+        {{ else }}
+        {{ .header }}
+        {{ end }}
+      </h2>
       {{ end }}
     </div>
 
     {{ if .buttons }}
-    <div class="section-header__action | link-group">
+    <div
+      class="{{.buttonGroupVariation}} | section-header__action | link-group"
+    >
       {{ range.buttons }}
       <a href="{{ .url }}" class="link-group__item | {{ .variation }}">
         {{ .text }}

@@ -1,18 +1,18 @@
-<header class="section-header -arrow {{.variation}}">
-    <div class="section-header__content">
-        <div class="section-header__name">
-            {{ if .header }}
-            <h2 class="header | header-lg">{{ .header }}</h2>
-            {{ end }}
-        </div>
-    
-        {{ if .link }}
-        <div class="section-header__action">
-            <a href="{{ .link.url }}" class="link -icon">
-                <span class="text">{{ .link.text }}</span>
-                {{- partial "svg/arrow--r.svg" (dict "class" "-sm -stroke-3") -}}
-            </a>
-        </div>
-        {{ end }}
+<header class="section-header -inline-actions -arrow {{.variation}}">
+  <div class="section-header__content">
+    <div class="section-header__name">
+      {{ if .header }}
+      <h2 class="header | header-lg">{{ .header }}</h2>
+      {{ end }}
     </div>
+
+    {{ if .link }}
+    <div class="section-header__action">
+      <a href="{{ .link.url }}" class="link -icon">
+        <span class="text">{{ .link.text }}</span>
+        {{- partial "svg/arrow--r.svg" (dict "class" "-sm -stroke-3") -}}
+      </a>
+    </div>
+    {{ end }}
+  </div>
 </header>

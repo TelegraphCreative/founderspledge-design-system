@@ -20,6 +20,7 @@
     .section-active {
         @apply text-green;
     }
+
     
     @screen md {
         @apply pin-t border-oat-light border-b; 
@@ -30,6 +31,17 @@
         }
         .link {
             @apply px-8 py-8;
+        }
+
+
+        // Variations
+        &.-neg-offset {
+            @apply -mt-8;
+        }
+        &.-align-right {
+            .page-menu__bar {
+                @apply .justify-end px-22;
+            }
         }
     }
 

@@ -417,7 +417,8 @@ $choices-icon-cross-inverse: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjEiI
   // Medium
   &.-md {
     .choices__inner {
-      @apply px-6 py-5;
+      @apply px-6 py-5
+      text-base;
     }
   }
   // Dark Box

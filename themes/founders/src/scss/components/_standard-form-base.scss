@@ -1,12 +1,17 @@
 .standard-form-base {
   // Fields
-  input[type="text"] {
-    @apply w-full border-b border-green-darkest
+  textarea,
+  input[type="text"],
+  input[type="password"],
+  input[type="email"] {
+    @apply w-full border-b border-green-darkest bg-oat-lightest
         text-base 
-        px-2 pb-2 pt-8
+        pb-2 pt-8
         property-colors duration-3 timing-1;
 
-    &:placeholder {
+    -webkit-border-radius: 0px;
+
+    &::placeholder {
       @apply opacity-75;
     }
 
@@ -15,39 +20,100 @@
     }
   }
 
-  // Form Group
-  .form-group {
-    @apply flex justify-between flex-wrap
-    mb-8;
-  }
-
   // Labels
   .standard-label {
     @apply text-xs font-sans font-semibold .uppercase
     absolute pin-t pin-l 
     z-10
-    mt-2;
+    mt-2
+    ml-4;
 
     &.-standalone {
       @apply static
-      ml-3 mt-0 mb-3;
+      ml-4 mt-0 mb-3;
     }
   }
 
   // Field Group
   .field-group {
-    @apply relative flex-grow px-1;
+    @apply relative flex-grow px-4;
+  }
+
+  // Form Group
+  .form-group {
+    @apply flex justify-between flex-wrap
+    mb-8 
+    -mx-4;
   }
 
   // Form Block (elements like headers and buttons that are not a field group - this applies the correct margins)
   .form-block {
-    @apply mx-3 mb-8;
+    @apply mb-8;
   }
 
   // Helper Text
   .helper-text {
     @apply text-xs font-sans font-normal
-      mt-2 ml-2;
+      mt-2;
+  }
+
+  // Error
+  .-error {
+    .standard-label,
+    .helper-text {
+      @apply text-orange;
+    }
+    textarea,
+    input[type="text"],
+    input[type="password"],
+    input[type="email"] {
+      @apply border-orange;
+      &::placeholder {
+        @apply text-orange;
+      }
+    }
+  }
+
+  // White Fields
+  &.-white-fields {
+    textarea,
+    input[type="text"],
+    input[type="password"],
+    input[type="email"] {
+      @apply bg-white;
+    }
+  }
+
+  // Locked Form
+  &.-locked {
+    // Fields
+    textarea,
+    input {
+      @apply bg-white;
+
+      &::placeholder {
+        @apply opacity-0;
+      }
+    }
+
+    .helper-text {
+      @apply hidden;
+    }
+
+    // Choices
+    .choices.-standard .choices__list--dropdown,
+    .choices.-standard .choices__inner {
+      @apply bg-white;
+    }
+    .choices[data-type*="select-one"]
+      .choices__inner
+      .choices__item--selectable:after {
+      @apply hidden;
+    }
+
+    .field-group {
+      @apply pointer-events-none;
+    }
   }
 }
 

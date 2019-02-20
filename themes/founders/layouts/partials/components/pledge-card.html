@@ -1,4 +1,4 @@
-<div class="pledge-card">
+<div class="js-form js-clone__template | pledge-card">
   <div class="pledge-card__content">
     <div class="pledge-card__main">
       <div class="pledge-card__header">
@@ -6,8 +6,8 @@
         <h5 class="header-sm">Signed Month DD, YY</h5>
       </div>
 
-      <form action="" class="pledge-form | standard-form-base">
-        {{/*  Group  */}}
+      <form action="" class="standard-form-base -locked | pledge-form">
+        {{/*  Group  add .-error to .field-group for error */}}
         <div class="form-group">
           <div class="field-group | w-1/2">
             <label class="standard-label" for="pledge-volume">
@@ -25,18 +25,28 @@
 
         {{/*  Group  */}}
         <div class="form-group">
-          <div class="field-group">
+          <div class="field-group ">
             <label class="standard-label" for="share-holding">
               Share Holding
             </label>
             <input type="text" id="share-holding" placeholder="$X,XXX,XXX.XX" />
+            <div class="helper-text">Helper Text</div>
           </div>
         </div>
       </form>
     </div>
     <div class="pledge-card__actions">
       <div class="link-group">
-        <button class="link -dark -sm -underline">Edit</button>
+        <button
+          class="js-form__edit-btn js-form__lock-mode | link -dark -sm -underline"
+        >
+          Edit
+        </button>
+        <button
+          class="js-form__edit-btn js-form__edit-mode | link -dark -sm -underline"
+        >
+          Save
+        </button>
         <button class="link -dark -sm -underline">Download</button>
       </div>
     </div>
