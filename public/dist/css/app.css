@@ -4971,6 +4971,12 @@ html {
   border-color: #12302d;
 }
 
+.link.-underline.-sm {
+  border-bottom-width: 2px;
+  font-size: .875rem;
+  padding-bottom: .25rem;
+}
+
 .link.-sm {
   font-size: .875rem;
   padding-bottom: 0;
@@ -4982,6 +4988,16 @@ html {
 
 .link.-green:hover {
   color: #12302d;
+}
+
+.link.-dark {
+  color: #12302d;
+  border-color: #12302d;
+}
+
+.link.-dark:hover {
+  color: #53c07d;
+  border-color: #53c07d;
 }
 
 .link.-icon {
@@ -7714,6 +7730,86 @@ body {
   }
 }
 
+.pledge-cards {
+  margin-top: 0;
+}
+
+.pledge-card {
+  background-color: #fff;
+  position: relative;
+  margin-bottom: 4rem;
+}
+
+.pledge-card:last-child {
+  margin-bottom: 0;
+}
+
+.pledge-card__header {
+  margin-bottom: 2.5rem;
+}
+
+.pledge-card__content {
+  padding-top: 2.5rem;
+}
+
+.pledge-card__actions {
+  padding: 1.5rem;
+  background-color: #f1ece4;
+}
+
+.pledge-card__main {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.pledge-card .pattern--green {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .pledge-cards {
+    margin-top: 4rem;
+  }
+
+  .pledge-card__content {
+    padding-top: 3rem;
+  }
+
+  .pledge-card__actions {
+    padding: 2rem;
+  }
+
+  .pledge-card__actions .link-group {
+    justify-content: flex-end;
+  }
+
+  .pledge-card__main {
+    width: 83.33333%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .pledge-card .pattern--green {
+    display: block;
+    right: 0;
+    top: 0;
+    position: absolute;
+    margin-right: -2rem;
+    margin-top: -1.5rem;
+    background-size: 80%;
+    width: 18rem;
+    height: 5rem;
+    bottom: -3rem;
+    -webkit-transform: none;
+            transform: none;
+    left: inherit;
+  }
+}
+
 .author-card {
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -9184,16 +9280,10 @@ body {
   width: .5rem;
 }
 
-.standard-form {
-  margin-left: -1rem;
-  margin-right: -1rem;
-}
-
-.standard-form input[type=text] {
+.standard-form-base input[type=text] {
   width: 100%;
   border-bottom-width: 1px;
   border-color: #12302d;
-  background-color: #faf9f7;
   font-size: 1rem;
   padding-left: .5rem;
   padding-right: .5rem;
@@ -9204,15 +9294,22 @@ body {
   transition-timing-function: ease;
 }
 
-.standard-form input[type=text]:placeholder {
+.standard-form-base input[type=text]:placeholder {
   opacity: .75;
 }
 
-.standard-form input[type=text]:focus {
+.standard-form-base input[type=text]:focus {
   border-color: #53c07d;
 }
 
-.standard-form .standard-label {
+.standard-form-base .form-group {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.standard-form-base .standard-label {
   font-size: .75rem;
   font-family: Graphik--web;
   font-weight: 600;
@@ -9221,18 +9318,30 @@ body {
   top: 0;
   left: 0;
   z-index: 10;
-  margin-left: 1.5rem;
   margin-top: .5rem;
 }
 
-.standard-form .standard-label.-standalone {
+.standard-form-base .standard-label.-standalone {
   position: static;
   margin-left: .75rem;
   margin-top: 0;
   margin-bottom: .75rem;
 }
 
-.standard-form .helper-text {
+.standard-form-base .field-group {
+  position: relative;
+  flex-grow: 1;
+  padding-left: .25rem;
+  padding-right: .25rem;
+}
+
+.standard-form-base .form-block {
+  margin-left: .75rem;
+  margin-right: .75rem;
+  margin-bottom: 2rem;
+}
+
+.standard-form-base .helper-text {
   font-size: .75rem;
   font-family: Graphik--web;
   font-weight: 400;
@@ -9240,31 +9349,20 @@ body {
   margin-left: .5rem;
 }
 
-.standard-form .form-block {
-  margin-left: .75rem;
-  margin-right: .75rem;
-  margin-bottom: 2rem;
-}
-
-.standard-form .form-group {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin-bottom: 2rem;
-}
-
-.standard-form .field-group {
-  position: relative;
-  flex-grow: 1;
-  padding-left: .25rem;
-  padding-right: .25rem;
-}
-
 @media (min-width: 768px) {
   .field-group {
     padding-left: 1rem;
     padding-right: 1rem;
   }
+}
+
+.standard-form {
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
+
+.standard-form .standard-label {
+  margin-left: 1.5rem;
 }
 
 .form-clone-group__content {
@@ -9278,6 +9376,20 @@ body {
   border-width: 0;
   padding-top: 0;
   margin-top: 0;
+}
+
+.pledge-form {
+  margin-left: -0.75rem;
+  margin-right: -0.75rem;
+}
+
+.pledge-form .field-group {
+  padding-left: .75rem;
+  padding-right: .75rem;
+}
+
+.pledge-form .standard-label {
+  margin-left: .75rem;
 }
 
 .headsup {

@@ -7730,6 +7730,10 @@ body {
   }
 }
 
+.pledge-cards {
+  margin-top: 0;
+}
+
 .pledge-card {
   background-color: #fff;
   position: relative;
@@ -7740,20 +7744,20 @@ body {
   margin-bottom: 0;
 }
 
-.pledge-card .pledge__header {
+.pledge-card__header {
   margin-bottom: 2.5rem;
 }
 
-.pledge-card .pledge__content {
+.pledge-card__content {
   padding-top: 2.5rem;
 }
 
-.pledge-card .pledge__actions {
+.pledge-card__actions {
   padding: 1.5rem;
   background-color: #f1ece4;
 }
 
-.pledge-card .pledge__main {
+.pledge-card__main {
   padding-left: 1rem;
   padding-right: 1rem;
 }
@@ -7763,19 +7767,23 @@ body {
 }
 
 @media (min-width: 768px) {
-  .pledge-card .pledge__content {
+  .pledge-cards {
+    margin-top: 4rem;
+  }
+
+  .pledge-card__content {
     padding-top: 3rem;
   }
 
-  .pledge-card .pledge__actions {
+  .pledge-card__actions {
     padding: 2rem;
   }
 
-  .pledge-card .pledge__actions .link-group {
+  .pledge-card__actions .link-group {
     justify-content: flex-end;
   }
 
-  .pledge-card .pledge__main {
+  .pledge-card__main {
     width: 83.33333%;
     margin-left: auto;
     margin-right: auto;
@@ -7784,21 +7792,22 @@ body {
     padding-left: 1rem;
     padding-right: 1rem;
   }
-}
 
-.pledge-card .pattern--green {
-  background-size: 80%;
-  width: 18rem;
-  height: 5rem;
-  bottom: -3rem;
-  right: 0;
-  top: 0;
-  position: absolute;
-  margin-right: -2rem;
-  margin-top: -1.5rem;
-  -webkit-transform: none;
-          transform: none;
-  left: inherit;
+  .pledge-card .pattern--green {
+    display: block;
+    right: 0;
+    top: 0;
+    position: absolute;
+    margin-right: -2rem;
+    margin-top: -1.5rem;
+    background-size: 80%;
+    width: 18rem;
+    height: 5rem;
+    bottom: -3rem;
+    -webkit-transform: none;
+            transform: none;
+    left: inherit;
+  }
 }
 
 .author-card {
