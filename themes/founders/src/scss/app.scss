@@ -89,8 +89,9 @@
 
 // Forms
 @import "components/signup-form";
-@import "components/standard-form";
+@import "components/standard-form-base";
 @import "components/form-clone-blocks";
+@import "components/js-form";
 
 // Misc
 @import "components/headsup";

@@ -6,7 +6,7 @@
 
 <section class="container--xs | gutter-lg space-b">
   {{/*  Form  */}}
-  <form action="" class="standard-form">
+  <form action="" class="standard-form | standard-form-base">
     {{/*  Sub Section Header  */}}
     {{ range.Params.SubSectionHeader_1 }}
     {{ partial "components/sub-section-header.html" . }} {{ end }}
@@ -302,11 +302,12 @@
             <p>That means something.</p>
 
             <p>
-              Sincerely,<br>
-            
-            <img src="/img/fpo-sig.jpg" class="-flush block w-48">
-            David Goldberg<br>
-            Co-Founder & Global CEO</p>
+              Sincerely,<br />
+
+              <img src="/img/fpo-sig.jpg" class="-flush block w-48" />
+              David Goldberg<br />
+              Co-Founder & Global CEO
+            </p>
           </article>
         </article>
       </content_modal>

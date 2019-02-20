@@ -15,24 +15,15 @@ import stat_card from "./components/StatCard.vue";
 import range_slider from "./components/Range.vue";
 import smooth_scroll from "./components/SmoothScroll";
 import section_anchor_states from "./components/SectionAnchorStates";
+import edit_lock_form_mode from "./components/EditLockFormModes";
 import counter from "./components/Counter";
-import accordion from "./components/accordion";
-import clone_form_blocks from "./components/CloneFormBlocks";
+import accordion from "./components/Accordion";
+import clone_blocks from "./components/CloneBlocks";
 
 // Vue App
 const app = new Vue({
   el: "#app",
-  data() {
-    return {
-      bodyClass: "nothing"
-    };
-  },
-  methods: {
-    setBodyClasses(value) {
-      console.log(value);
-      this.bodyClass = value;
-    }
-  },
+
   components: {
     site_menu,
     full_slider,
@@ -46,10 +37,11 @@ const app = new Vue({
     range_slider,
     smooth_scroll,
     counter,
-    accordion,
-    clone_form_blocks
+    accordion
   }
 });
 
 // Other Initializations
 section_anchor_states();
+edit_lock_form_mode();
+clone_blocks();

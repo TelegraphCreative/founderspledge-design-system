@@ -158,31 +158,57 @@
 
 
 
-<nav class="page-menu | gutter">
-    <ul class="page-menu__bar menu-bar">
-        
-            <li class="page-menu__item">
-                <smooth_scroll class="link" :anchor="'#journey'" :offset="120">The Pledger Journey</smooth_scroll>
-            </li>
-        
-            <li class="page-menu__item">
-                <smooth_scroll class="link" :anchor="'#offerings'" :offset="120">Offerings</smooth_scroll>
-            </li>
-        
-            <li class="page-menu__item">
-                <smooth_scroll class="link" :anchor="'#community'" :offset="120">Hear from our Community</smooth_scroll>
-            </li>
-        
-            <li class="page-menu__item">
-                <smooth_scroll class="link" :anchor="'#benefits'" :offset="120">Benefits</smooth_scroll>
-            </li>
-        
-            <li class="page-menu__item">
-                <smooth_scroll class="link" :anchor="'#faq'" :offset="120">FAQ</smooth_scroll>
-            </li>
-        
-    </ul>
+<nav class="page-menu | gutter | ">
+  <ul class="page-menu__bar menu-bar">
+    
+    <li class="page-menu__item">
+      <smooth_scroll
+        class="link"
+        :anchor="'#journey'"
+        :offset="120"
+        >The Pledger Journey</smooth_scroll
+      >
+    </li>
+    
+    <li class="page-menu__item">
+      <smooth_scroll
+        class="link"
+        :anchor="'#offerings'"
+        :offset="120"
+        >Offerings</smooth_scroll
+      >
+    </li>
+    
+    <li class="page-menu__item">
+      <smooth_scroll
+        class="link"
+        :anchor="'#community'"
+        :offset="120"
+        >Hear from our Community</smooth_scroll
+      >
+    </li>
+    
+    <li class="page-menu__item">
+      <smooth_scroll
+        class="link"
+        :anchor="'#benefits'"
+        :offset="120"
+        >Benefits</smooth_scroll
+      >
+    </li>
+    
+    <li class="page-menu__item">
+      <smooth_scroll
+        class="link"
+        :anchor="'#faq'"
+        :offset="120"
+        >FAQ</smooth_scroll
+      >
+    </li>
+    
+  </ul>
 </nav>
+
 
 
 <section
@@ -583,23 +609,23 @@ class="profile-slider -basic slider-reset -no-gutters bg-grey-darker| container 
     <div class="resource__main">
       <div class="resource__descr">
         
-        <h2 class="header | header-lg-2 mb-2 md:mb-0">
-          Events Coordinator
+        <h2 class="header | header-md mb-2 md:mb-0">
+          Can I change my pledge?
         </h2>
         
         
-        <h4 class="header-sm">London, UK</h4>
+        <div class="paragraphs -sm">
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        </div>
         
       </div>
 
       <div class="resource__action | accordion-icon">
         <button class="link -icon -green -sm">
-          <span class="text">
-            <span
-              class="toggle-text__text"
-              data-default="Learn More"
-              data-active="Close"
-            ></span
+          <span
+            class="text | toggle-text__text"
+            data-default="Learn More"
+            data-active="Less"
           ></span><span class="icon | icon--arrow -xs -stroke-4"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 39"><polyline stroke="currentColor" class="stroke" points="0.9,38.5 11.9,19.5 0.9,0.5 "/></svg></span>
 </button>
       </div>
@@ -607,12 +633,22 @@ class="profile-slider -basic slider-reset -no-gutters bg-grey-darker| container 
   </template>
 
   <template slot="accordion-content">
-    <div class="resource__extended-content | paragraphs -sm | my-8">
+    <div
+      class="resource__extended-content | article-copy paragraphs -xs | my-8"
+    >
+      <h6>Descriptive Header 6</h6>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eos totam,
+        This is all option, of course. Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Et eos totam,
         <a href="http://example.com" target="_blank">this is a link</a>
         eaque illo minima inventore ad, ratione neque laboriosam labore tempore
         nihil, debitis aperiam ut? Unde ipsam recusandae facere accusamus.
+      </p>
+      <p>
+        This is all option, of course. Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Et eos totam, eaque illo minima inventore ad, ratione
+        neque laboriosam labore tempore nihil, debitis aperiam ut? Unde ipsam
+        recusandae facere accusamus.
       </p>
     </div>
   </template>
@@ -623,23 +659,23 @@ class="profile-slider -basic slider-reset -no-gutters bg-grey-darker| container 
     <div class="resource__main">
       <div class="resource__descr">
         
-        <h2 class="header | header-lg-2 mb-2 md:mb-0">
-          Key Relationships Manager
+        <h2 class="header | header-md mb-2 md:mb-0">
+          How does it work?
         </h2>
         
         
-        <h4 class="header-sm">New York City, USA</h4>
+        <div class="paragraphs -sm">
+          <p>Adipisci eligendi voluptate placeat ducimus, at accusantium a quas assumenda sunt atque quod.</p>
+        </div>
         
       </div>
 
       <div class="resource__action | accordion-icon">
         <button class="link -icon -green -sm">
-          <span class="text">
-            <span
-              class="toggle-text__text"
-              data-default="Learn More"
-              data-active="Close"
-            ></span
+          <span
+            class="text | toggle-text__text"
+            data-default="Learn More"
+            data-active="Less"
           ></span><span class="icon | icon--arrow -xs -stroke-4"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 39"><polyline stroke="currentColor" class="stroke" points="0.9,38.5 11.9,19.5 0.9,0.5 "/></svg></span>
 </button>
       </div>
@@ -647,12 +683,22 @@ class="profile-slider -basic slider-reset -no-gutters bg-grey-darker| container 
   </template>
 
   <template slot="accordion-content">
-    <div class="resource__extended-content | paragraphs -sm | my-8">
+    <div
+      class="resource__extended-content | article-copy paragraphs -xs | my-8"
+    >
+      <h6>Descriptive Header 6</h6>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eos totam,
+        This is all option, of course. Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Et eos totam,
         <a href="http://example.com" target="_blank">this is a link</a>
         eaque illo minima inventore ad, ratione neque laboriosam labore tempore
         nihil, debitis aperiam ut? Unde ipsam recusandae facere accusamus.
+      </p>
+      <p>
+        This is all option, of course. Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Et eos totam, eaque illo minima inventore ad, ratione
+        neque laboriosam labore tempore nihil, debitis aperiam ut? Unde ipsam
+        recusandae facere accusamus.
       </p>
     </div>
   </template>
@@ -663,23 +709,23 @@ class="profile-slider -basic slider-reset -no-gutters bg-grey-darker| container 
     <div class="resource__main">
       <div class="resource__descr">
         
-        <h2 class="header | header-lg-2 mb-2 md:mb-0">
-          Key Relationships Manager
+        <h2 class="header | header-md mb-2 md:mb-0">
+          Another question
         </h2>
         
         
-        <h4 class="header-sm">San Francisco, USA</h4>
+        <div class="paragraphs -sm">
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        </div>
         
       </div>
 
       <div class="resource__action | accordion-icon">
         <button class="link -icon -green -sm">
-          <span class="text">
-            <span
-              class="toggle-text__text"
-              data-default="Learn More"
-              data-active="Close"
-            ></span
+          <span
+            class="text | toggle-text__text"
+            data-default="Learn More"
+            data-active="Less"
           ></span><span class="icon | icon--arrow -xs -stroke-4"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 39"><polyline stroke="currentColor" class="stroke" points="0.9,38.5 11.9,19.5 0.9,0.5 "/></svg></span>
 </button>
       </div>
@@ -687,12 +733,22 @@ class="profile-slider -basic slider-reset -no-gutters bg-grey-darker| container 
   </template>
 
   <template slot="accordion-content">
-    <div class="resource__extended-content | paragraphs -sm | my-8">
+    <div
+      class="resource__extended-content | article-copy paragraphs -xs | my-8"
+    >
+      <h6>Descriptive Header 6</h6>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eos totam,
+        This is all option, of course. Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Et eos totam,
         <a href="http://example.com" target="_blank">this is a link</a>
         eaque illo minima inventore ad, ratione neque laboriosam labore tempore
         nihil, debitis aperiam ut? Unde ipsam recusandae facere accusamus.
+      </p>
+      <p>
+        This is all option, of course. Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Et eos totam, eaque illo minima inventore ad, ratione
+        neque laboriosam labore tempore nihil, debitis aperiam ut? Unde ipsam
+        recusandae facere accusamus.
       </p>
     </div>
   </template>

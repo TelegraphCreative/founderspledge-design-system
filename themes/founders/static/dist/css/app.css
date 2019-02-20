@@ -4561,6 +4561,10 @@ body {
   color: #a0e0b2;
 }
 
+.header-sm.-dark {
+  color: #12302d;
+}
+
 .header-sm.-grey {
   color: #889796;
 }
@@ -4967,6 +4971,12 @@ html {
   border-color: #12302d;
 }
 
+.link.-underline.-sm {
+  border-bottom-width: 2px;
+  font-size: .875rem;
+  padding-bottom: .25rem;
+}
+
 .link.-sm {
   font-size: .875rem;
   padding-bottom: 0;
@@ -4978,6 +4988,16 @@ html {
 
 .link.-green:hover {
   color: #12302d;
+}
+
+.link.-dark {
+  color: #12302d;
+  border-color: #12302d;
+}
+
+.link.-dark:hover {
+  color: #53c07d;
+  border-color: #53c07d;
 }
 
 .link.-icon {
@@ -5003,21 +5023,37 @@ html {
   transition-property: transform, -webkit-transform;
 }
 
-.link-group {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.link-group__item {
+  display: block;
+  width: 100%;
+  margin-bottom: .5rem;
 }
 
-.link-group__item,
-.link-group .link {
-  margin-right: 1rem;
-  text-align: center;
+@media (min-width: 420px) {
+  .link-group {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .link-group__item,
+  .link-group .link {
+    margin-right: 1rem;
+    text-align: center;
+    width: auto;
+    margin-bottom: 0;
+  }
+
+  .link-group__item:last-child,
+  .link-group .link:last-child {
+    margin-right: 0;
+  }
 }
 
-.link-group__item:last-child,
-.link-group .link:last-child {
-  margin-right: 0;
+@media (min-width: 576px) {
+  .link-group {
+    justify-content: center;
+  }
 }
 
 @media (min-width: 768px) {
@@ -6432,6 +6468,7 @@ body.overflow-hidden {
   padding-right: 1.5rem;
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
+  font-size: 1rem;
 }
 
 .choices.-dark .choices__list--dropdown,
@@ -6558,6 +6595,16 @@ body.overflow-hidden {
     padding-right: 2rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
+  }
+
+  .page-menu.-neg-offset {
+    margin-top: -2rem;
+  }
+
+  .page-menu.-align-right .page-menu__bar {
+    justify-content: flex-end;
+    padding-left: 5.5rem;
+    padding-right: 5.5rem;
   }
 }
 
@@ -6785,6 +6832,10 @@ body {
   margin-right: auto;
 }
 
+.section-header.-flush {
+  width: 100%;
+}
+
 .section-header .header-sm {
   margin-bottom: 1rem;
 }
@@ -6840,12 +6891,12 @@ body {
     width: 100%;
   }
 
-  .section-header.-arrow .section-header__content {
+  .section-header.-inline-actions .section-header__content {
     text-align: center;
     position: relative;
   }
 
-  .section-header.-arrow .section-header__action {
+  .section-header.-inline-actions .section-header__action {
     position: absolute;
     right: 0;
     top: 0;
@@ -6900,21 +6951,19 @@ body {
   color: #fff;
 }
 
-@media (min-width: 768px) {
-  .bg-green-darkest .section-header .header-sm {
-    color: #a0e0b2;
-  }
+.bg-green-darkest .section-header .header-sm {
+  color: #a0e0b2;
+}
 
-  .bg-green-darkest .section-header .btn {
-    color: #a0e0b2;
-    border-color: #a0e0b2;
-  }
+.bg-green-darkest .section-header .btn {
+  color: #a0e0b2;
+  border-color: #a0e0b2;
+}
 
-  .bg-green-darkest .section-header .btn:hover {
-    border-color: #fff;
-    background-color: #fff;
-    color: #12302d;
-  }
+.bg-green-darkest .section-header .btn:hover {
+  border-color: #fff;
+  background-color: #fff;
+  color: #12302d;
 }
 
 .sub-section-header {
@@ -7707,6 +7756,86 @@ body {
     padding-bottom: 3rem;
     padding-left: 8.75rem;
     padding-right: 6rem;
+  }
+}
+
+.pledge-cards {
+  margin-top: 0;
+}
+
+.pledge-card {
+  background-color: #fff;
+  position: relative;
+  margin-bottom: 4rem;
+}
+
+.pledge-card:last-child {
+  margin-bottom: 0;
+}
+
+.pledge-card__header {
+  margin-bottom: 2.5rem;
+}
+
+.pledge-card__content {
+  padding-top: 2.5rem;
+}
+
+.pledge-card__actions {
+  padding: 1.5rem;
+  background-color: #f1ece4;
+}
+
+.pledge-card__main {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.pledge-card .pattern--green {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .pledge-cards {
+    margin-top: 4rem;
+  }
+
+  .pledge-card__content {
+    padding-top: 3rem;
+  }
+
+  .pledge-card__actions {
+    padding: 2rem;
+  }
+
+  .pledge-card__actions .link-group {
+    justify-content: flex-end;
+  }
+
+  .pledge-card__main {
+    width: 83.33333%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .pledge-card .pattern--green {
+    display: block;
+    right: 0;
+    top: 0;
+    position: absolute;
+    margin-right: -2rem;
+    margin-top: -1.5rem;
+    background-size: 80%;
+    width: 18rem;
+    height: 5rem;
+    bottom: -3rem;
+    -webkit-transform: none;
+            transform: none;
+    left: inherit;
   }
 }
 
@@ -9180,35 +9309,59 @@ body {
   width: .5rem;
 }
 
-.standard-form {
-  margin-left: -1rem;
-  margin-right: -1rem;
-}
-
-.standard-form input[type=text] {
+.standard-form-base textarea,
+.standard-form-base input[type=text],
+.standard-form-base input[type=password],
+.standard-form-base input[type=email] {
   width: 100%;
   border-bottom-width: 1px;
   border-color: #12302d;
   background-color: #faf9f7;
   font-size: 1rem;
-  padding-left: .5rem;
-  padding-right: .5rem;
   padding-bottom: .5rem;
   padding-top: 2rem;
   transition-property: color, background, border-color;
   transition-duration: .45s;
   transition-timing-function: ease;
+  -webkit-border-radius: 0px;
 }
 
-.standard-form input[type=text]:placeholder {
+.standard-form-base textarea::-webkit-input-placeholder,
+.standard-form-base input[type=text]::-webkit-input-placeholder,
+.standard-form-base input[type=password]::-webkit-input-placeholder,
+.standard-form-base input[type=email]::-webkit-input-placeholder {
   opacity: .75;
 }
 
-.standard-form input[type=text]:focus {
+.standard-form-base textarea:-ms-input-placeholder,
+.standard-form-base input[type=text]:-ms-input-placeholder,
+.standard-form-base input[type=password]:-ms-input-placeholder,
+.standard-form-base input[type=email]:-ms-input-placeholder {
+  opacity: .75;
+}
+
+.standard-form-base textarea::-ms-input-placeholder,
+.standard-form-base input[type=text]::-ms-input-placeholder,
+.standard-form-base input[type=password]::-ms-input-placeholder,
+.standard-form-base input[type=email]::-ms-input-placeholder {
+  opacity: .75;
+}
+
+.standard-form-base textarea::placeholder,
+.standard-form-base input[type=text]::placeholder,
+.standard-form-base input[type=password]::placeholder,
+.standard-form-base input[type=email]::placeholder {
+  opacity: .75;
+}
+
+.standard-form-base textarea:focus,
+.standard-form-base input[type=text]:focus,
+.standard-form-base input[type=password]:focus,
+.standard-form-base input[type=email]:focus {
   border-color: #53c07d;
 }
 
-.standard-form .standard-label {
+.standard-form-base .standard-label {
   font-size: .75rem;
   font-family: Graphik--web;
   font-weight: 600;
@@ -9217,43 +9370,131 @@ body {
   top: 0;
   left: 0;
   z-index: 10;
-  margin-left: 1.5rem;
   margin-top: .5rem;
+  margin-left: 1rem;
 }
 
-.standard-form .standard-label.-standalone {
+.standard-form-base .standard-label.-standalone {
   position: static;
-  margin-left: .75rem;
+  margin-left: 1rem;
   margin-top: 0;
   margin-bottom: .75rem;
 }
 
-.standard-form .helper-text {
-  font-size: .75rem;
-  font-family: Graphik--web;
-  font-weight: 400;
-  margin-top: .5rem;
-  margin-left: .5rem;
+.standard-form-base .field-group {
+  position: relative;
+  flex-grow: 1;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
-.standard-form .form-block {
-  margin-left: .75rem;
-  margin-right: .75rem;
-  margin-bottom: 2rem;
-}
-
-.standard-form .form-group {
+.standard-form-base .form-group {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   margin-bottom: 2rem;
+  margin-left: -1rem;
+  margin-right: -1rem;
 }
 
-.standard-form .field-group {
-  position: relative;
-  flex-grow: 1;
-  padding-left: .25rem;
-  padding-right: .25rem;
+.standard-form-base .form-block {
+  margin-bottom: 2rem;
+}
+
+.standard-form-base .helper-text {
+  font-size: .75rem;
+  font-family: Graphik--web;
+  font-weight: 400;
+  margin-top: .5rem;
+}
+
+.standard-form-base .-error .standard-label,
+.standard-form-base .-error .helper-text {
+  color: #e8a879;
+}
+
+.standard-form-base .-error textarea,
+.standard-form-base .-error input[type=text],
+.standard-form-base .-error input[type=password],
+.standard-form-base .-error input[type=email] {
+  border-color: #e8a879;
+}
+
+.standard-form-base .-error textarea::-webkit-input-placeholder,
+.standard-form-base .-error input[type=text]::-webkit-input-placeholder,
+.standard-form-base .-error input[type=password]::-webkit-input-placeholder,
+.standard-form-base .-error input[type=email]::-webkit-input-placeholder {
+  color: #e8a879;
+}
+
+.standard-form-base .-error textarea:-ms-input-placeholder,
+.standard-form-base .-error input[type=text]:-ms-input-placeholder,
+.standard-form-base .-error input[type=password]:-ms-input-placeholder,
+.standard-form-base .-error input[type=email]:-ms-input-placeholder {
+  color: #e8a879;
+}
+
+.standard-form-base .-error textarea::-ms-input-placeholder,
+.standard-form-base .-error input[type=text]::-ms-input-placeholder,
+.standard-form-base .-error input[type=password]::-ms-input-placeholder,
+.standard-form-base .-error input[type=email]::-ms-input-placeholder {
+  color: #e8a879;
+}
+
+.standard-form-base .-error textarea::placeholder,
+.standard-form-base .-error input[type=text]::placeholder,
+.standard-form-base .-error input[type=password]::placeholder,
+.standard-form-base .-error input[type=email]::placeholder {
+  color: #e8a879;
+}
+
+.standard-form-base.-white-fields textarea,
+.standard-form-base.-white-fields input[type=text],
+.standard-form-base.-white-fields input[type=password],
+.standard-form-base.-white-fields input[type=email] {
+  background-color: #fff;
+}
+
+.standard-form-base.-locked textarea,
+.standard-form-base.-locked input {
+  background-color: #fff;
+}
+
+.standard-form-base.-locked textarea::-webkit-input-placeholder,
+.standard-form-base.-locked input::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+.standard-form-base.-locked textarea:-ms-input-placeholder,
+.standard-form-base.-locked input:-ms-input-placeholder {
+  opacity: 0;
+}
+
+.standard-form-base.-locked textarea::-ms-input-placeholder,
+.standard-form-base.-locked input::-ms-input-placeholder {
+  opacity: 0;
+}
+
+.standard-form-base.-locked textarea::placeholder,
+.standard-form-base.-locked input::placeholder {
+  opacity: 0;
+}
+
+.standard-form-base.-locked .helper-text {
+  display: none;
+}
+
+.standard-form-base.-locked .choices.-standard .choices__list--dropdown,
+.standard-form-base.-locked .choices.-standard .choices__inner {
+  background-color: #fff;
+}
+
+.standard-form-base.-locked .choices[data-type*=select-one] .choices__inner .choices__item--selectable:after {
+  display: none;
+}
+
+.standard-form-base.-locked .field-group {
+  pointer-events: none;
 }
 
 @media (min-width: 768px) {
@@ -9274,6 +9515,18 @@ body {
   border-width: 0;
   padding-top: 0;
   margin-top: 0;
+}
+
+.js-form__edit-mode {
+  display: none;
+}
+
+.js-form.-active .js-form__edit-mode {
+  display: block;
+}
+
+.js-form.-active .js-form__lock-mode {
+  display: none;
 }
 
 .headsup {

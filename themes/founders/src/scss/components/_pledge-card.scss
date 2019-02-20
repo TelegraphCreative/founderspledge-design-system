@@ -1,2 +1,64 @@
+.pledge-cards {
+  @apply mt-0;
+}
+
 .pledge-card {
+  @apply bg-white relative mb-16;
+
+  &:last-child {
+    @apply mb-0;
+  }
+
+  &__header {
+    @apply mb-10;
+  }
+  &__content {
+    @apply pt-10;
+  }
+  &__actions {
+    @apply p-6 bg-oat-light;
+  } // Main
+  &__main {
+    @apply px-4;
+  }
+
+  // Pattern
+  .pattern--green {
+    @apply hidden;
+  }
+}
+
+// Screen
+@screen md {
+  .pledge-cards {
+    @apply mt-16;
+  }
+
+  .pledge-card {
+    &__content {
+      @apply pt-12;
+    }
+    &__actions {
+      @apply p-8;
+      .link-group {
+        @apply justify-end;
+      }
+    }
+    // Main
+    &__main {
+      @apply w-5/6 mx-auto  pt-4  pb-6 px-4;
+    }
+
+    // Pattern
+    .pattern--green {
+      @apply block pin-r pin-t absolute -mr-8 -mt-6;
+
+      background-size: 80%;
+      width: 18rem;
+      height: 5rem;
+      bottom: -3rem;
+      transform: none;
+      left: inherit;
+    }
+  }
 }

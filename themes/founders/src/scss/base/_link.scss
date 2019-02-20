@@ -12,6 +12,10 @@
     &:hover {
       @apply text-green-darkest border-green-darkest;
     }
+
+    &.-sm {
+      @apply border-b-2 text-sm pb-1;
+    }
   }
 
   // Small
@@ -25,6 +29,15 @@
 
     &:hover {
       @apply text-green-darkest;
+    }
+  }
+
+  // Dark
+  &.-dark {
+    @apply text-green-darkest border-green-darkest;
+
+    &:hover {
+      @apply text-green border-green;
     }
   }
 
@@ -48,17 +61,32 @@
       }
     }
   }
-
   // Group of Links
-  &-group {
-    @apply flex items-center .justify-center;
-    &__item,
-    .link {
-      @apply mr-4 text-center;
+  &-group__item {
+    @apply block w-full mb-2;
+  }
 
-      &:last-child {
-        @apply mr-0;
+  // Screen XS
+  @screen xs {
+    // Group of Links
+    &-group {
+      @apply flex items-center .justify-start;
+      &__item,
+      .link {
+        @apply mr-4 text-center w-auto mb-0;
+
+        &:last-child {
+          @apply mr-0;
+        }
       }
+    }
+  }
+
+  // Screen sm
+  @screen sm {
+    // Group of Links
+    &-group {
+      @apply justify-center;
     }
   }
 

@@ -1,0 +1,26 @@
+.js-form {
+  // Notes:
+  // Form is in Lock Mode by defualt
+  // Edit mode is considered 'active' state
+  // JS will directly add classes to <form>
+  // .-active on parent will control .toggle-text elements via css
+
+  // Elements:
+  // Lock Mode Elements (these elements are visible in lock mode by default)
+  // &__lock-mode {}
+
+  // Edit Mode Elements (these elements are hidden in lock mode)
+  &__edit-mode {
+    @apply hidden;
+  }
+
+  // Edit Mode (-active)
+  &.-active {
+    .js-form__edit-mode {
+      @apply block;
+    }
+    .js-form__lock-mode {
+      @apply hidden;
+    }
+  }
+}

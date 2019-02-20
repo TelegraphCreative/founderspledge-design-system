@@ -3,23 +3,23 @@
     <div class="resource__main">
       <div class="resource__descr">
         {{ if .header }}
-        <h2 class="header | header-lg-2 mb-2 md:mb-0">
+        <h2 class="header | header-md mb-2 md:mb-0">
           {{.header | safeHTML}}
         </h2>
         {{ end }}
-        {{ if .preheader }}
-        <h4 class="header-sm">{{.preheader | safeHTML}}</h4>
+        {{ if .descr }}
+        <div class="paragraphs -sm">
+          {{.descr | safeHTML}}
+        </div>
         {{ end }}
       </div>
 
       <div class="resource__action | accordion-icon">
         <button class="link -icon -green -sm">
-          <span class="text">
-            <span
-              class="toggle-text__text"
-              data-default="Learn More"
-              data-active="Close"
-            ></span
+          <span
+            class="text | toggle-text__text"
+            data-default="Learn More"
+            data-active="Less"
           ></span>
           {{- partial "svg/arrow--r.svg" (dict "class" "-xs -stroke-4") -}}
         </button>
@@ -28,12 +28,22 @@
   </template>
 
   <template slot="accordion-content">
-    <div class="resource__extended-content | paragraphs -sm | my-8">
+    <div
+      class="resource__extended-content | article-copy paragraphs -xs | my-8"
+    >
+      <h6>Descriptive Header 6</h6>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eos totam,
+        This is all option, of course. Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Et eos totam,
         <a href="http://example.com" target="_blank">this is a link</a>
         eaque illo minima inventore ad, ratione neque laboriosam labore tempore
         nihil, debitis aperiam ut? Unde ipsam recusandae facere accusamus.
+      </p>
+      <p>
+        This is all option, of course. Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Et eos totam, eaque illo minima inventore ad, ratione
+        neque laboriosam labore tempore nihil, debitis aperiam ut? Unde ipsam
+        recusandae facere accusamus.
       </p>
     </div>
   </template>

@@ -15,6 +15,9 @@ body {
     &.-light {
       @apply text-green-light;
     }
+    &.-dark {
+      @apply text-green-darkest;
+    }
     &.-grey {
       @apply text-grey-light;
     }
