@@ -3,91 +3,219 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://confident-blackwell-dbed1e.netlify.com/styleguide/buttons/</loc>
+    <loc>/styleguide/all-templates/</loc>
   </url>
   
   <url>
-    <loc>https://confident-blackwell-dbed1e.netlify.com/careers/</loc>
+    <loc>/styleguide/readme/</loc>
   </url>
   
   <url>
-    <loc>https://confident-blackwell-dbed1e.netlify.com/categories/</loc>
+    <loc>/styleguide/article-cards/</loc>
+  </url>
+  
+  <url>
+    <loc>/styleguide/article-content/</loc>
+  </url>
+  
+  <url>
+    <loc>/styleguide/author-card/</loc>
+  </url>
+  
+  <url>
+    <loc>/styleguide/blockquote/</loc>
+  </url>
+  
+  <url>
+    <loc>/styleguide/buttons/</loc>
+  </url>
+  
+  <url>
+    <loc>/careers/</loc>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://confident-blackwell-dbed1e.netlify.com/community/</loc>
+    <loc>/community/</loc>
   </url>
   
   <url>
-    <loc>https://confident-blackwell-dbed1e.netlify.com/</loc>
+    <loc>/styleguide/definition-list/</loc>
+  </url>
+  
+  <url>
+    <loc>/styleguide/featured-article-card/</loc>
+  </url>
+  
+  <url>
+    <loc>/styleguide/featured-article/</loc>
+  </url>
+  
+  <url>
+    <loc>/styleguide/flip-cards/</loc>
+  </url>
+  
+  <url>
+    <loc>/styleguide/form-base/</loc>
+  </url>
+  
+  <url>
+    <loc>/styleguide/select-field/</loc>
+  </url>
+  
+  <url>
+    <loc>/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://confident-blackwell-dbed1e.netlify.com/general-content/</loc>
+    <loc>/general-content/</loc>
   </url>
   
   <url>
-    <loc>https://confident-blackwell-dbed1e.netlify.com/how-it-works/</loc>
+    <loc>/styleguide/highlight-card/</loc>
   </url>
   
   <url>
-    <loc>https://confident-blackwell-dbed1e.netlify.com/impact/</loc>
+    <loc>/how-it-works/</loc>
   </url>
   
   <url>
-    <loc>https://confident-blackwell-dbed1e.netlify.com/styleguide/intro/</loc>
+    <loc>/styleguide/image/</loc>
   </url>
   
   <url>
-    <loc>https://confident-blackwell-dbed1e.netlify.com/make-a-pledge/</loc>
+    <loc>/impact/</loc>
   </url>
   
   <url>
-    <loc>https://confident-blackwell-dbed1e.netlify.com/pledgers/</loc>
+    <loc>/styleguide/links/</loc>
   </url>
   
   <url>
-    <loc>https://confident-blackwell-dbed1e.netlify.com/press-media/</loc>
+    <loc>/styleguide/logo-list/</loc>
   </url>
   
   <url>
-    <loc>https://confident-blackwell-dbed1e.netlify.com/styleguide/range/</loc>
+    <loc>/make-a-pledge/</loc>
   </url>
   
   <url>
-    <loc>https://confident-blackwell-dbed1e.netlify.com/styleguide/readme/</loc>
+    <loc>/styleguide/content-modal/</loc>
   </url>
   
   <url>
-    <loc>https://confident-blackwell-dbed1e.netlify.com/start-your-journey/</loc>
+    <loc>/styleguide/profile-modal/</loc>
   </url>
   
   <url>
-    <loc>https://confident-blackwell-dbed1e.netlify.com/styleguide/</loc>
+    <loc>/styleguide/page-menu/</loc>
+  </url>
+  
+  <url>
+    <loc>/styleguide/panel-hero/</loc>
+  </url>
+  
+  <url>
+    <loc>/styleguide/patterns/</loc>
+  </url>
+  
+  <url>
+    <loc>/pledgers/</loc>
+  </url>
+  
+  <url>
+    <loc>/press-media/</loc>
+  </url>
+  
+  <url>
+    <loc>/styleguide/profile-card/</loc>
+  </url>
+  
+  <url>
+    <loc>/styleguide/profile-slider/</loc>
+  </url>
+  
+  <url>
+    <loc>/styleguide/range/</loc>
+  </url>
+  
+  <url>
+    <loc>/styleguide/resource-accordion/</loc>
+  </url>
+  
+  <url>
+    <loc>/styleguide/resource-list/</loc>
+  </url>
+  
+  <url>
+    <loc>/styleguide/section-header/</loc>
+  </url>
+  
+  <url>
+    <loc>/styleguide/social-list/</loc>
+  </url>
+  
+  <url>
+    <loc>/styleguide/spacing/</loc>
+  </url>
+  
+  <url>
+    <loc>/start-your-journey/</loc>
+  </url>
+  
+  <url>
+    <loc>/styleguide/stat-card/</loc>
+  </url>
+  
+  <url>
+    <loc>/styleguide/status-list/</loc>
+  </url>
+  
+  <url>
+    <loc>/styleguide/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://confident-blackwell-dbed1e.netlify.com/tags/</loc>
+    <loc>/styleguide/sub-section-header/</loc>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://confident-blackwell-dbed1e.netlify.com/styleguide/typography/</loc>
+    <loc>/styleguide/toggle-text/</loc>
   </url>
   
   <url>
-    <loc>https://confident-blackwell-dbed1e.netlify.com/account/</loc>
+    <loc>/styleguide/typography/</loc>
   </url>
   
   <url>
-    <loc>https://confident-blackwell-dbed1e.netlify.com/stories/</loc>
+    <loc>/styleguide/video/</loc>
   </url>
   
   <url>
-    <loc>https://confident-blackwell-dbed1e.netlify.com/stories-article/</loc>
+    <loc>/account/</loc>
+  </url>
+  
+  <url>
+    <loc>/styleguide/h-card/</loc>
+  </url>
+  
+  <url>
+    <loc>/stories/</loc>
+  </url>
+  
+  <url>
+    <loc>/stories-article/</loc>
   </url>
   
 </urlset>

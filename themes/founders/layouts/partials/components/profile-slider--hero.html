@@ -1,66 +1,75 @@
 <!-- Profile Slider -->
-<slider :opt="{
+<slider
+  :opt="{
     items: 1,
     autoplay: false,
     mode: 'gallery'
 }"
-class="profile-slider -hero slider-reset -no-gutters | clearfix">
-
-<template slot="slides">
+  class="profile-slider -hero slider-reset -no-gutters | clearfix"
+>
+  <template slot="slides">
     <div class="profile-slider__slide">
-        <div class="profile-slider__content">
-
-            <!-- Aside -->
-            <div class="profile-slider__aside">
-                <figure class="image -md:is2x1 -is16x9">
-                    <img src="/img/fpo-05.jpg" data-src="/img/fpo-05.jpg" class="fit-cover" alt="">
-                </figure>
-            </div>
-
-            <!-- Main -->
-            <div class="profile-slider__main">
-                <div class="profile-slider__card | bg-green-darkest text-white">
-            
-                    <h3 class="header-md | text-green-light mb-1">Elon Musk</h3>
-                    <h3 class="header-sm -light | mb-4">Founder at Tesla, Space X</h3>
-                    
-                    <div class="paragraphs">
-                        <p>Our operations are fully funded by a small group of essential donors and institutions. This means we can support impactful giving at zero cost. Simple, transparent, and effective. </p>
-                    </div>
-            
-                </div>
-            </div>
-
+      <div class="profile-slider__content">
+        <!-- Aside -->
+        <div class="profile-slider__aside">
+          <figure class="image -md:is2x1 -is16x9">
+            <img
+              src="/dist/assets/img/fpo-05.jpg"
+              data-src="/dist/assets/img/fpo-05.jpg"
+              class="fit-cover"
+              alt=""
+            />
+          </figure>
         </div>
+
+        <!-- Main -->
+        <div class="profile-slider__main">
+          <div class="profile-slider__card | bg-green-darkest text-white">
+            <h3 class="header-md | text-green-light mb-1">Elon Musk</h3>
+            <h3 class="header-sm -light | mb-4">Founder at Tesla, Space X</h3>
+
+            <div class="paragraphs">
+              <p>
+                Our operations are fully funded by a small group of essential
+                donors and institutions. This means we can support impactful
+                giving at zero cost. Simple, transparent, and effective.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="profile-slider__slide">
-        <div class="profile-slider__content">
-
-            <!-- Aside -->
-            <div class="profile-slider__aside">
-                <figure class="image -is2x1">
-                    <img src="/img/fpo-07.jpg" data-src="/img/fpo-07.jpg" class="fit-cover" alt="">
-                </figure>
-            </div>
-
-            <!-- Main -->
-            <div class="profile-slider__main">
-                <div class="profile-slider__card | bg-green-darkest text-white">
-            
-                    <h3 class="header-md | text-green-light mb-1">Miguel McKelvey</h3>
-                    <h3 class="header-sm -light | mb-4">Founder & CEO, WeWork</h3>
-                    
-                    <div class="paragraphs">
-                        <p>Our operations are fully funded by a small group of essential donors and institutions. This means we can support impactful giving at zero cost. Simple, transparent, and effective. </p>
-                    </div>
-            
-                </div>
-            </div>
-
+      <div class="profile-slider__content">
+        <!-- Aside -->
+        <div class="profile-slider__aside">
+          <figure class="image -is2x1">
+            <img
+              src="/dist/assets/img/fpo-07.jpg"
+              data-src="/dist/assets/img/fpo-07.jpg"
+              class="fit-cover"
+              alt=""
+            />
+          </figure>
         </div>
+
+        <!-- Main -->
+        <div class="profile-slider__main">
+          <div class="profile-slider__card | bg-green-darkest text-white">
+            <h3 class="header-md | text-green-light mb-1">Miguel McKelvey</h3>
+            <h3 class="header-sm -light | mb-4">Founder & CEO, WeWork</h3>
+
+            <div class="paragraphs">
+              <p>
+                Our operations are fully funded by a small group of essential
+                donors and institutions. This means we can support impactful
+                giving at zero cost. Simple, transparent, and effective.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</template>
-
-
+  </template>
 </slider>

@@ -2,49 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Styleguides on Founders Pledge</title>
-    <link>https://confident-blackwell-dbed1e.netlify.com/styleguide/</link>
+    <link>/styleguide/</link>
     <description>Recent content in Styleguides on Founders Pledge</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://confident-blackwell-dbed1e.netlify.com/styleguide/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/styleguide/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Buttons</title>
-      <link>https://confident-blackwell-dbed1e.netlify.com/styleguide/buttons/</link>
+      <title>All Templates</title>
+      <link>/styleguide/all-templates/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://confident-blackwell-dbed1e.netlify.com/styleguide/buttons/</guid>
-      <description> Buttons Description for this code block
-&amp;lt;section id=&amp;#34;main&amp;#34;&amp;gt; &amp;lt;div&amp;gt;&amp;lt;a href=&amp;#34;#&amp;#34; class=&amp;#34;btn -wide&amp;#34;&amp;gt;Get to Know Us&amp;lt;/a&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;/section&amp;gt; &amp;lt;!-- Range Slider --&amp;gt; &amp;lt;range_slider :min=&amp;#34;10&amp;#34; :start=&amp;#34;40&amp;#34; :max=&amp;#34;100&amp;#34; class=&amp;#34;form-block&amp;#34;&amp;gt; &amp;lt;/range_slider&amp;gt; Get to Know Us   </description>
+      <guid>/styleguide/all-templates/</guid>
+      <description>Layout Index Marketing   Home   How It Works   Community   Pledgers   Impact   Start your Journey   Careers   Content Channels   Press &amp;amp; Media   Stories   Stories Article   Workflow &amp;amp; Account   Make a Pledge   Account Page   General Purpose   General Content    </description>
     </item>
     
     <item>
-      <title>Intro</title>
-      <link>https://confident-blackwell-dbed1e.netlify.com/styleguide/intro/</link>
+      <title>An Intro</title>
+      <link>/styleguide/readme/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://confident-blackwell-dbed1e.netlify.com/styleguide/intro/</guid>
-      <description> Layout Index Marketing  Home How It Works Community Pledgers Impact Start your Journey Careers  Content Channels  Press &amp;amp; Media Stories Stories Article  Workflow &amp;amp; Account  Make a Pledge Account Page  General Purpose  General Content  </description>
-    </item>
-    
-    <item>
-      <title>Range</title>
-      <link>https://confident-blackwell-dbed1e.netlify.com/styleguide/range/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://confident-blackwell-dbed1e.netlify.com/styleguide/range/</guid>
-      <description> Range Slider Vue Component for selecting pledge amount.
-js/components/Range.vue  &amp;lt;range_slider :min=&amp;#34;10&amp;#34; :start=&amp;#34;40&amp;#34; :max=&amp;#34;100&amp;#34; class=&amp;#34;form-block&amp;#34;&amp;gt; &amp;lt;/range_slider&amp;gt;   </description>
-    </item>
-    
-    <item>
-      <title>Readme</title>
-      <link>https://confident-blackwell-dbed1e.netlify.com/styleguide/readme/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://confident-blackwell-dbed1e.netlify.com/styleguide/readme/</guid>
+      <guid>/styleguide/readme/</guid>
       <description>Layout Index Powered by Laravel Mix, this site is built using Hugo to efficiently generate static html pages and webpack to handle assets.
 Local Environment Setup
 Install packages yarn install
@@ -58,13 +38,410 @@ Assets
     </item>
     
     <item>
-      <title>Typography</title>
-      <link>https://confident-blackwell-dbed1e.netlify.com/styleguide/typography/</link>
+      <title>Article Cards</title>
+      <link>/styleguide/article-cards/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://confident-blackwell-dbed1e.netlify.com/styleguide/typography/</guid>
-      <description> Typography Description for this code block
-&amp;lt;section id=&amp;#34;main&amp;#34;&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h1 id=&amp;#34;buttons&amp;#34;&amp;gt;Code&amp;lt;/h1&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/section&amp;gt; </description>
+      <guid>/styleguide/article-cards/</guid>
+      <description>Article Cards SASS Partial: components/article-card
+Hugo Partial: partials/components/article-card
+Grid  &amp;lt;div class=&amp;#34;article-cards | xs:flex-grid&amp;#34;&amp;gt; &amp;lt;/div&amp;gt;  Insights His Passion for WeWork Drove His Vision for Social Change    Insights His Passion for WeWork Drove His Vision for Social Change    &amp;lt;div class=&amp;#34;article-cards | xs:flex-grid&amp;#34;&amp;gt; &amp;lt;a class=&amp;#34;article-card&amp;#34; href=&amp;#34;/stories-article&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;article-card__content&amp;#34;&amp;gt; &amp;lt;figure class=&amp;#34;article-card__figure | image -is16x9&amp;#34;&amp;gt; &amp;lt;img alt=&amp;#34;&amp;#34; class=&amp;#34;fit-cover&amp;#34; src=&amp;#34;/dist/assets/img/fpo-10.jpg&amp;#34;&amp;gt; &amp;lt;/figure&amp;gt; &amp;lt;div class=&amp;#34;article-card__main&amp;#34;&amp;gt; &amp;lt;h2 class=&amp;#34;preheader | header-sm&amp;#34;&amp;gt;Insights&amp;lt;/h2&amp;gt; &amp;lt;h2 class=&amp;#34;header | header-md&amp;#34;&amp;gt;His Passion for WeWork Drove His Vision for Social Change&amp;lt;/h2&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; &amp;lt;a class=&amp;#34;article-card&amp;#34; href=&amp;#34;/stories-article&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;article-card__content&amp;#34;&amp;gt; &amp;lt;figure class=&amp;#34;article-card__figure | image -is16x9&amp;#34;&amp;gt; &amp;lt;img alt=&amp;#34;&amp;#34; class=&amp;#34;fit-cover&amp;#34; src=&amp;#34;/dist/assets/img/fpo-10.</description>
+    </item>
+    
+    <item>
+      <title>Article Content</title>
+      <link>/styleguide/article-content/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/styleguide/article-content/</guid>
+      <description>Article Content SASS Partial: components/article-content
+ Section Heading (H5) Created with a simple aspiration (h2) We approached this mission with a deep understanding of the sector – Founders Pledge was built by founders, for founders and launched out of Founders Forum, Europe&#39;s foremost network of digital and technology entrepreneurs.
+We&#39;re empowering founders and investors to add value to their companies as well as the causes they love, without sacrificing one for the other.</description>
+    </item>
+    
+    <item>
+      <title>Author Card</title>
+      <link>/styleguide/author-card/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/styleguide/author-card/</guid>
+      <description>Author Card SASS Partial: components/author-card
+   Paul Smith Author   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem obcaecati qui non hic nihil accusantium vitae totam, nam nulla optio quas ut incidunt ipsa, reprehenderit veritatis placeat amet minima fugit?     &amp;lt;div class=&amp;#34;author-card | md:flex-grid&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;author-card__aside&amp;#34;&amp;gt; &amp;lt;figure class=&amp;#34;image -is1x1 | mb-4&amp;#34;&amp;gt; &amp;lt;img src=&amp;#34;/dist/assets/img/fpo-10.jpg&amp;#34; class=&amp;#34;fit-cover&amp;#34; /&amp;gt; &amp;lt;/figure&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;author-card__main&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;author-card__header | mb-5 pt-2&amp;#34;&amp;gt; &amp;lt;h4 class=&amp;#34;header-md&amp;#34;&amp;gt;Paul Smith&amp;lt;/h4&amp;gt; &amp;lt;h5 class=&amp;#34;header-sm | pt-2&amp;#34;&amp;gt;Author&amp;lt;/h5&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;author-card__descr | paragraphs -sm&amp;#34;&amp;gt; &amp;lt;p&amp;gt; Lorem ipsum dolor, sit amet consectetur adipisicing elit.</description>
+    </item>
+    
+    <item>
+      <title>Blockquote</title>
+      <link>/styleguide/blockquote/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/styleguide/blockquote/</guid>
+      <description>Blockquote SASS Partial: base/blockquote
+ &#34;I’m excited to be able to contribute to a community of founders who are thinking critically about their giving. Together I believe we can achieve a huge amount of good.&#34;   Miguel Mckelvey  Founder &amp;amp; CEO    &amp;lt;blockquote class=&amp;#34;blockquote | md:pt-10&amp;#34;&amp;gt; &amp;lt;h3 class=&amp;#34;blockquote__quote | mb-8 md:mb-10&amp;#34;&amp;gt; &amp;#34;I’m excited to be able to contribute to a community of founders who are thinking critically about their giving.</description>
+    </item>
+    
+    <item>
+      <title>Buttons</title>
+      <link>/styleguide/buttons/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/styleguide/buttons/</guid>
+      <description>— Buttons SASS Partial: base/button
+Standard  Standard  &amp;lt;a href=&amp;#34;#&amp;#34; class=&amp;#34;btn&amp;#34;&amp;gt;Standard&amp;lt;/a&amp;gt; Wide  Light  &amp;lt;a href=&amp;#34;#&amp;#34; class=&amp;#34;btn -light&amp;#34;&amp;gt;Light&amp;lt;/a&amp;gt; Solid  Solid  &amp;lt;a href=&amp;#34;#&amp;#34; class=&amp;#34;btn -solid&amp;#34;&amp;gt;Solid&amp;lt;/a&amp;gt; Small  Small  &amp;lt;a href=&amp;#34;#&amp;#34; class=&amp;#34;btn -small&amp;#34;&amp;gt;Small&amp;lt;/a&amp;gt; Add  The add button should be paired with the -dark -small variations  Add   &amp;lt;a href=&amp;#34;#&amp;#34; class=&amp;#34;btn -add -dark -small&amp;#34;&amp;gt;Add&amp;lt;/a&amp;gt; Wide  Wide  &amp;lt;a href=&amp;#34;#&amp;#34; class=&amp;#34;btn -wide&amp;#34;&amp;gt;Wide&amp;lt;/a&amp;gt; Full  Full  &amp;lt;a href=&amp;#34;#&amp;#34; class=&amp;#34;btn -full&amp;#34;&amp;gt;Full&amp;lt;/a&amp;gt; Gallery Button     Browse event gallery    &amp;lt;div class=&amp;#34;btn--gallery&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;gallery-stack&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;gallery-stack__item&amp;#34;&amp;gt; &amp;lt;img src=&amp;#34;/dist/assets/img/fpo-03.</description>
+    </item>
+    
+    <item>
+      <title>Definition List</title>
+      <link>/styleguide/definition-list/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/styleguide/definition-list/</guid>
+      <description>Definition List SASS Partial: components/definition-list
+ Published March 2017 Written By Jane Smith   &amp;lt;dl class=&amp;#34;definition-list&amp;#34;&amp;gt; &amp;lt;dt&amp;gt;Published&amp;lt;/dt&amp;gt; &amp;lt;dd&amp;gt;March 2017&amp;lt;/dd&amp;gt; &amp;lt;dt&amp;gt;Written By&amp;lt;/dt&amp;gt; &amp;lt;dd&amp;gt;Jane Smith&amp;lt;/dd&amp;gt; &amp;lt;/dl&amp;gt; </description>
+    </item>
+    
+    <item>
+      <title>Featured Article Card</title>
+      <link>/styleguide/featured-article-card/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/styleguide/featured-article-card/</guid>
+      <description>Featured Article Card SASS Partial: components/featured-article-card
+Related SASS Partial: components/link-card
+Hugo Partial: components/featured-article-card
+   Impact Journey Story Title Here Will Break to Second Row If Lengthy Our operations are fully funded by a small group of essential donors and institutions. This means we can support impactful giving at zero cost. Simple, transparent, and effective.
+    &amp;lt;a class=&amp;#34;featured-article-card | link-card -dark -lg--l | container -flush | block&amp;#34; href=&amp;#34;#&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;featured-article-card__content&amp;#34;&amp;gt; &amp;lt;figure class=&amp;#34;featured-article-card__figure | image -background -is3x2&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;background&amp;#34; style=&amp;#34;background-image: url(&amp;#39;/dist/assets/img/fpo-09.</description>
+    </item>
+    
+    <item>
+      <title>Featured Articles</title>
+      <link>/styleguide/featured-article/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/styleguide/featured-article/</guid>
+      <description>Featured Articles SASS Partial: components/featured-article
+Grid  &amp;lt;div class=&amp;#34;featured-articles | md:flex-grid container gutter&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;feature-article | md:w-1/2&amp;#34;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;feature-article | md:w-1/2&amp;#34;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; Featured Article  Powered by Visionaries Zero Cuts Zero Fees 100% Impact Our operations are fully funded by a small group of essential donors and institutions. This means we can support impactful giving at zero cost.
+Simple, transparent, and effective.
+  Learn More     &amp;lt;div class=&amp;#34;feature-article&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;feature-article__content | text-center&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;feature-article__main&amp;#34;&amp;gt; &amp;lt;h2 class=&amp;#34;header-lg | mb-4&amp;#34;&amp;gt;Powered by Visionaries&amp;lt;/h2&amp;gt; &amp;lt;h4 class=&amp;#34;subheader text-orange&amp;#34;&amp;gt;&amp;lt;span class=&amp;#34;ornament-breadcrumb&amp;#34;&amp;gt;Zero Cuts&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;#34;ornament-breadcrumb&amp;#34;&amp;gt;Zero Fees&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;#34;ornament-breadcrumb&amp;#34;&amp;gt;100% Impact&amp;lt;/span&amp;gt;&amp;lt;/h4&amp;gt; &amp;lt;div class=&amp;#34;paragraphs | mt-8&amp;#34;&amp;gt; &amp;lt;p&amp;gt;Our operations are fully funded by a small group of essential donors and institutions.</description>
+    </item>
+    
+    <item>
+      <title>Flip Cards</title>
+      <link>/styleguide/flip-cards/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/styleguide/flip-cards/</guid>
+      <description>Flip Card SASS Partial: components/flip-card
+Hugo Partial: components/flip-card
+Variations include:
+ -resource -press -features -cta  Flip Card Grid  &amp;lt;div class=&amp;#34;flip-cards | md:flex-grid justify-between | container gutter-md&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;flip-card -press&amp;#34;&amp;gt; … &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;flip-card -press&amp;#34;&amp;gt; … &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt;  Press  “enables budding tycoons to donate a percentage of their future earnings to good causes, once they sell or list their businesses.”
+  Read full article         &amp;lt;div class=&amp;#34;flip-card -press&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;flip-card__content&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;flip-card__back&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;flip-card__main&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;flip-card__descr | paragraphs -xs&amp;#34;&amp;gt; &amp;lt;p&amp;gt;“enables budding tycoons to donate a percentage of their future earnings to good causes, once they sell or list their businesses.</description>
+    </item>
+    
+    <item>
+      <title>Form - Base</title>
+      <link>/styleguide/form-base/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/styleguide/form-base/</guid>
+      <description>Form Base SASS Partial: standard-form-base
+Related SASS Partials: checkbox-radio
+Related SASS Partials: vendor/choices
+Description: This is the base for standard forms. The core elements are:
+Basics  .form-group: Sets a flexbox grid and x-axis margins .field-group: Contains the form elements directly and can be set to a width to create a column layout. .standard-label: The input label, which is set absolutely relative to the .form-group so they appear to float in the input field.</description>
+    </item>
+    
+    <item>
+      <title>Form - Select Field</title>
+      <link>/styleguide/select-field/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/styleguide/select-field/</guid>
+      <description>Select Field Base SASS Partial: vendor/choices
+Related SASS Partial: standard-form-base
+Description: This is a Vue component that uses Vue Properties to set the variant classes. Check out the Select Field for all variant styles.
+Default  Germany United States of America France Spain Italy   &amp;lt;select_box :opt=&amp;#34;{ variant: &amp;#39;&amp;#39; }&amp;#34;&amp;gt; &amp;lt;option value=&amp;#34;es&amp;#34; selected&amp;gt;Germany&amp;lt;/option&amp;gt; &amp;lt;option value=&amp;#34;en&amp;#34;&amp;gt;United States of America&amp;lt;/option&amp;gt; &amp;lt;option value=&amp;#34;ma&amp;#34;&amp;gt;France&amp;lt;/option&amp;gt; &amp;lt;option value=&amp;#34;de&amp;#34;&amp;gt;Spain&amp;lt;/option&amp;gt; &amp;lt;option value=&amp;#34;fr&amp;#34;&amp;gt;Italy&amp;lt;/option&amp;gt; &amp;lt;/select_box&amp;gt; Default Dark  Germany United States of America France Spain Italy   &amp;lt;select_box :opt=&amp;#34;{ variant: &amp;#39;-dark&amp;#39; }&amp;#34;&amp;gt; &amp;lt;option value=&amp;#34;es&amp;#34; selected&amp;gt;Germany&amp;lt;/option&amp;gt; &amp;lt;option value=&amp;#34;en&amp;#34;&amp;gt;United States of America&amp;lt;/option&amp;gt; &amp;lt;option value=&amp;#34;ma&amp;#34;&amp;gt;France&amp;lt;/option&amp;gt; &amp;lt;option value=&amp;#34;de&amp;#34;&amp;gt;Spain&amp;lt;/option&amp;gt; &amp;lt;option value=&amp;#34;fr&amp;#34;&amp;gt;Italy&amp;lt;/option&amp;gt; &amp;lt;/select_box&amp;gt; Default Center  Germany United States of America France Spain Italy   &amp;lt;select_box :opt=&amp;#34;{ variant: &amp;#39;-center&amp;#39; }&amp;#34;&amp;gt; &amp;lt;option value=&amp;#34;es&amp;#34; selected&amp;gt;Germany&amp;lt;/option&amp;gt; &amp;lt;option value=&amp;#34;en&amp;#34;&amp;gt;United States of America&amp;lt;/option&amp;gt; &amp;lt;option value=&amp;#34;ma&amp;#34;&amp;gt;France&amp;lt;/option&amp;gt; &amp;lt;option value=&amp;#34;de&amp;#34;&amp;gt;Spain&amp;lt;/option&amp;gt; &amp;lt;option value=&amp;#34;fr&amp;#34;&amp;gt;Italy&amp;lt;/option&amp;gt; &amp;lt;/select_box&amp;gt; Default Dark Center  Germany United States of America France Spain Italy   &amp;lt;select_box :opt=&amp;#34;{ variant: &amp;#39;-dark -center&amp;#39; }&amp;#34;&amp;gt; &amp;lt;option value=&amp;#34;es&amp;#34; selected&amp;gt;Germany&amp;lt;/option&amp;gt; &amp;lt;option value=&amp;#34;en&amp;#34;&amp;gt;United States of America&amp;lt;/option&amp;gt; &amp;lt;option value=&amp;#34;ma&amp;#34;&amp;gt;France&amp;lt;/option&amp;gt; &amp;lt;option value=&amp;#34;de&amp;#34;&amp;gt;Spain&amp;lt;/option&amp;gt; &amp;lt;option value=&amp;#34;fr&amp;#34;&amp;gt;Italy&amp;lt;/option&amp;gt; &amp;lt;/select_box&amp;gt; Standard Styled to match the Standard Form Base</description>
+    </item>
+    
+    <item>
+      <title>Highlight Cards</title>
+      <link>/styleguide/highlight-card/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/styleguide/highlight-card/</guid>
+      <description>Highlight Cards SASS Partial: components/highlight-card
+Hugo Partial: components/highlight-card
+Highlight Card Grid  highlight-cards | md:flex-grid container lg:gutter | md:pb-0 pb-4 &amp;lt;div class=&amp;#34;highlight-card&amp;#34;&amp;gt; … &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;highlight-card&amp;#34;&amp;gt; … &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt;  Highlight Card    Community Form lasting bonds with value-aligned entrepreneurs, tackle some of the world’s toughest challenges, and learn experts at our intimate events around the globe.
+  Learn More     &amp;lt;div class=&amp;#34;highlight-card&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;highlight-card__content&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;highlight-card__icon | text-green&amp;#34;&amp;gt; &amp;lt;span class=&amp;#34;icon | icon--arrow -md&amp;#34;&amp;gt;&amp;lt;svg viewbox=&amp;#34;0 0 13 39&amp;#34; xmlns=&amp;#34;http://www.</description>
+    </item>
+    
+    <item>
+      <title>Image</title>
+      <link>/styleguide/image/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/styleguide/image/</guid>
+      <description>— Image SASS Partial: base/image
+Ratio 1x1     &amp;lt;figure class=&amp;#34;image -is1x1&amp;#34;&amp;gt; &amp;lt;img src=&amp;#34;{$path}&amp;#34;&amp;gt; &amp;lt;/figure&amp;gt; Ratio 12x16     &amp;lt;figure class=&amp;#34;image -is12x16&amp;#34;&amp;gt; &amp;lt;img src=&amp;#34;{$path}&amp;#34;&amp;gt; &amp;lt;/figure&amp;gt; Ratio 8x20     &amp;lt;figure class=&amp;#34;image -is8x20&amp;#34;&amp;gt; &amp;lt;img src=&amp;#34;{$path}&amp;#34;&amp;gt; &amp;lt;/figure&amp;gt; Ratio 8x10     &amp;lt;figure class=&amp;#34;image -is8x10&amp;#34;&amp;gt; &amp;lt;img src=&amp;#34;{$path}&amp;#34;&amp;gt; &amp;lt;/figure&amp;gt; Ratio 16x12     &amp;lt;figure class=&amp;#34;image -is16x12&amp;#34;&amp;gt; &amp;lt;img src=&amp;#34;{$path}&amp;#34;&amp;gt; &amp;lt;/figure&amp;gt; Ratio 16x9     &amp;lt;figure class=&amp;#34;image -is16x9&amp;#34;&amp;gt; &amp;lt;img src=&amp;#34;{$path}&amp;#34;&amp;gt; &amp;lt;/figure&amp;gt; Ratio 2x1     &amp;lt;figure class=&amp;#34;image -is2x1&amp;#34;&amp;gt; &amp;lt;img src=&amp;#34;{$path}&amp;#34;&amp;gt; &amp;lt;/figure&amp;gt; Ratio 3x2     &amp;lt;figure class=&amp;#34;image -is3x2&amp;#34;&amp;gt; &amp;lt;img src=&amp;#34;{$path}&amp;#34;&amp;gt; &amp;lt;/figure&amp;gt; Fit: Cover     &amp;lt;figure class=&amp;#34;image -is3x2&amp;#34;&amp;gt; &amp;lt;img src=&amp;#34;{$path}&amp;#34; class=&amp;#34;fit-cover&amp;#34;&amp;gt; &amp;lt;/figure&amp;gt; Fit: Contain     &amp;lt;figure class=&amp;#34;image -is3x2&amp;#34;&amp;gt; &amp;lt;img src=&amp;#34;{$path}&amp;#34; class=&amp;#34;fit-contain&amp;#34;&amp;gt; &amp;lt;/figure&amp;gt; Inner Shadow     &amp;lt;figure class=&amp;#34;image -is3x2 -inner-shadow&amp;#34;&amp;gt; &amp;lt;img src=&amp;#34;{$path}&amp;#34;&amp;gt; &amp;lt;/figure&amp;gt; Rounded + Shadow     &amp;lt;figure class=&amp;#34;image -is3x2 -inner-shadow | rounded-full&amp;#34;&amp;gt; &amp;lt;img src=&amp;#34;{$path}&amp;#34;&amp;gt; &amp;lt;/figure&amp;gt; </description>
+    </item>
+    
+    <item>
+      <title>Links</title>
+      <link>/styleguide/links/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/styleguide/links/</guid>
+      <description>— Links SASS Partial: base/link
+Standard  Read More  &amp;lt;a href=&amp;#34;#&amp;#34; class=&amp;#34;link&amp;#34;&amp;gt;Read More&amp;lt;/a&amp;gt; Small  Read More  &amp;lt;a href=&amp;#34;#&amp;#34; class=&amp;#34;link -sm&amp;#34;&amp;gt;Read More&amp;lt;/a&amp;gt; Green  Read More  &amp;lt;a href=&amp;#34;#&amp;#34; class=&amp;#34;link -green&amp;#34;&amp;gt;Read More&amp;lt;/a&amp;gt; Dark Reset the default for nested links that inherit unwanted styles from their parent
+ Read More  &amp;lt;a href=&amp;#34;#&amp;#34; class=&amp;#34;link -dark&amp;#34;&amp;gt;Read More&amp;lt;/a&amp;gt; Icon  Download   &amp;lt;button class=&amp;#34;link -icon -green -sm&amp;#34;&amp;gt; &amp;lt;span class=&amp;#34;text&amp;#34;&amp;gt;Download&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;#34;icon | icon--arrow -xs -stroke-4&amp;#34;&amp;gt;&amp;lt;svg xmlns=&amp;#34;http://www.</description>
+    </item>
+    
+    <item>
+      <title>Logo List</title>
+      <link>/styleguide/logo-list/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/styleguide/logo-list/</guid>
+      <description>Logo List SASS Partial: components/logo-list
+Hugo Partial: components/logo-list
+             &amp;lt;div class=&amp;#34;logo-list&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;logo-list__logo&amp;#34;&amp;gt; &amp;lt;figure class=&amp;#34;image -is2x1&amp;#34;&amp;gt; &amp;lt;img alt=&amp;#34;&amp;#34; src=&amp;#34;/dist/assets/img/fpo-logo-03.png&amp;#34;&amp;gt; &amp;lt;/figure&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; </description>
+    </item>
+    
+    <item>
+      <title>Modal - Content</title>
+      <link>/styleguide/content-modal/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/styleguide/content-modal/</guid>
+      <description>Content Modal SASS Partial: components/content-modal
+Modal Base Styles: base/modal
+Vue Component JS: src/js/components/ContentModal.vue
+Description: This is a Vue component that uses Template Slots, meaning you can swap out content easily right in the HTML markup. You can use anything to trigger the modal using the Trigger Slot.
+Resources: Vue Slots
+  Review &amp; Sign  Thank you! Your pledge has been successfully sent.   I can’t thank you enough for your support.</description>
+    </item>
+    
+    <item>
+      <title>Modal - Profile</title>
+      <link>/styleguide/profile-modal/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/styleguide/profile-modal/</guid>
+      <description>Profile Modal SASS Partial: components/profile-modal
+Hugo Partial: components/profile-card--modal
+Modal Base Styles: base/modal
+Vue Component JS: src/js/components/ProfileModal.vue
+Description: This is a Vue component that uses Template Slots, meaning you can swap out content easily right in the HTML markup. You can use anything to trigger the modal using the Trigger Slot.
+Resources: Vue Slots
+   Lauren Bacall Actress      Lauren Bacall Actress  Miguel directs all architecture, design, and construction activities at WeWork.</description>
+    </item>
+    
+    <item>
+      <title>Page Menu</title>
+      <link>/styleguide/page-menu/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/styleguide/page-menu/</guid>
+      <description>Page Menu SASS Partial: components/page-menu
+Hugo Partial: components/page-menu
+Related: js/components/SmoothScroll.vue
+Description: This pattern uses the smooth_scroll Vue component which includes Option Properties that allow you to set the page anchor and top offset
+For each section in the page, add .js-section. This enables the active states in the menu to update automatically on scroll.
+Variations  -neg-offset -align-right   Section Header Section Header Section Header Section Header    &amp;lt;nav class=&amp;#34;page-menu | gutter &amp;#34;&amp;gt; &amp;lt;ul class=&amp;#34;page-menu__bar menu-bar&amp;#34;&amp;gt; &amp;lt;li class=&amp;#34;page-menu__item&amp;#34;&amp;gt; &amp;lt;smooth_scroll class=&amp;#34;link&amp;#34; :anchor=&amp;#34;&amp;#39;section-1&amp;#39;&amp;#34; :offset=&amp;#34;120&amp;#34; &amp;gt;Section Header&amp;lt;/smooth_scroll &amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;#34;page-menu__item&amp;#34;&amp;gt; &amp;lt;smooth_scroll class=&amp;#34;link&amp;#34; :anchor=&amp;#34;&amp;#39;section-2&amp;#39;&amp;#34; :offset=&amp;#34;120&amp;#34; &amp;gt;Section Header&amp;lt;/smooth_scroll &amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;#34;page-menu__item&amp;#34;&amp;gt; &amp;lt;smooth_scroll class=&amp;#34;link&amp;#34; :anchor=&amp;#34;&amp;#39;section-1&amp;#39;&amp;#34; :offset=&amp;#34;120&amp;#34; &amp;gt;Section Header&amp;lt;/smooth_scroll &amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;#34;page-menu__item&amp;#34;&amp;gt; &amp;lt;smooth_scroll class=&amp;#34;link&amp;#34; :anchor=&amp;#34;&amp;#39;section-2&amp;#39;&amp;#34; :offset=&amp;#34;120&amp;#34; &amp;gt;Section Header&amp;lt;/smooth_scroll &amp;gt; &amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt; &amp;lt;/nav&amp;gt; </description>
+    </item>
+    
+    <item>
+      <title>Panel Hero</title>
+      <link>/styleguide/panel-hero/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/styleguide/panel-hero/</guid>
+      <description>Panel Hero SASS Partial: components/panel-hero
+Hugo Partial: components/panel-hero
+Description: Optional child elements include:
+ Description   You&#39;re Fantastic Descriptive bit of copy, because we can.  Register Now    &amp;lt;header class=&amp;#34;panel-hero&amp;#34;&amp;gt; &amp;lt;h2 class=&amp;#34;header-lg | mb-4&amp;#34;&amp;gt;You&amp;#39;re Fantastic&amp;lt;/h2&amp;gt; &amp;lt;div class=&amp;#34;panel-hero__descr | paragraphs&amp;#34;&amp;gt; Descriptive bit of copy, because we can. &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;panel-hero__action | pt-8&amp;#34;&amp;gt; &amp;lt;a href=&amp;#34;#&amp;#34; class=&amp;#34;btn -wide&amp;#34;&amp;gt;Register Now&amp;lt;/a&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/header&amp;gt; Panel Hero Dark  You&#39;re Fantastic Descriptive bit of copy, because we can.</description>
+    </item>
+    
+    <item>
+      <title>Patterns</title>
+      <link>/styleguide/patterns/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/styleguide/patterns/</guid>
+      <description>Patterns SASS Partial: base/pattern
+Description:Dimensions are set in each layout block. Or, you can apply -md to set a basic height and width (used here for example).
+ Standard    &amp;lt;div class=&amp;#34;pattern&amp;#34;&amp;gt;&amp;lt;/div&amp;gt; Green    &amp;lt;div class=&amp;#34;pattern--green&amp;#34;&amp;gt;&amp;lt;/div&amp;gt; White    &amp;lt;div class=&amp;#34;pattern--white&amp;#34;&amp;gt;&amp;lt;/div&amp;gt; </description>
+    </item>
+    
+    <item>
+      <title>Profile Cards</title>
+      <link>/styleguide/profile-card/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/styleguide/profile-card/</guid>
+      <description>Profile Cards SASS Partial: components/profile-card
+Hugo Partials: components/profile-card components/profile-card--modal Grid   Jane Smith Description       Jane Smith Description       Jane Smith Description        &amp;lt;section class=&amp;#34;profile-cards flex-grid flex-wrap &amp;#34;&amp;gt; &amp;lt;a href=&amp;#34;#&amp;#34; class=&amp;#34;profile-card&amp;#34;&amp;gt; … &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;#34;#&amp;#34; class=&amp;#34;profile-card&amp;#34;&amp;gt; … &amp;lt;/a&amp;gt; &amp;lt;a href=&amp;#34;#&amp;#34; class=&amp;#34;profile-card&amp;#34;&amp;gt; … &amp;lt;/a&amp;gt; &amp;lt;/section&amp;gt; Profile Card   Jane Smith Description       &amp;lt;a href=&amp;#34;#&amp;#34; class=&amp;#34;profile-card&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;profile-card__content&amp;#34;&amp;gt; &amp;lt;figure class=&amp;#34;profile-card__figure | image -is1x1&amp;#34;&amp;gt; &amp;lt;img src=&amp;#34;/dist/assets/img/fpo-04.</description>
+    </item>
+    
+    <item>
+      <title>Profile Slider</title>
+      <link>/styleguide/profile-slider/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/styleguide/profile-slider/</guid>
+      <description>Profile Slider SASS Partial: components/profile-slider
+Related SASS Partial: components/slider
+Hugo Partial: components/profile-slider
+Vue Component: components/FullSlider
+Vue Component JS: src/js/components/ProfileModal.vue
+Description: This is a Vue component that uses Template Slots, meaning you can swap out content easily right in the HTML markup.
+Resources: Vue Slots
+ &#34;I’m excited to be able to contribute to a community of founders who are thinking critically about their giving. Together I believe we can achieve a huge amount of good.</description>
+    </item>
+    
+    <item>
+      <title>Range</title>
+      <link>/styleguide/range/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/styleguide/range/</guid>
+      <description>Range Slider SASS Partial: components/rang
+Vue Component JS: src/js/components/Range.vue
+Description: This is a Vue component that uses Properties to configure the range start, min, and max options. The content on either side is set in the component file itself.
+Resources: Vue Slots
+   &amp;lt;range_slider :min=&amp;#34;10&amp;#34; :start=&amp;#34;40&amp;#34; :max=&amp;#34;100&amp;#34; class=&amp;#34;form-block&amp;#34;&amp;gt; &amp;lt;/range_slider&amp;gt; </description>
+    </item>
+    
+    <item>
+      <title>Resource Accordion</title>
+      <link>/styleguide/resource-accordion/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/styleguide/resource-accordion/</guid>
+      <description>Resource Accordion SASS Partial: components/resource-list
+Hugo Partial: components/resource--accordion.html
+ Can I change my pledge?  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+       Descriptive Header 6  This is all option, of course. Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eos totam, this is a link eaque illo minima inventore ad, ratione neque laboriosam labore tempore nihil, debitis aperiam ut? Unde ipsam recusandae facere accusamus.</description>
+    </item>
+    
+    <item>
+      <title>Resource List</title>
+      <link>/styleguide/resource-list/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/styleguide/resource-list/</guid>
+      <description>Resource List SASS Partial: components/resource-list
+Hugo Partial: components/resource
+ Events Coordinator London, UK  See details    Key Relationships Manager New York City, USA  Download    Key Relationships Manager San Francisco, USA  Download      &amp;lt;div class=&amp;#34;resources&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;resource__item&amp;#34;&amp;gt; &amp;lt;a class=&amp;#34;resource__content | no-underline&amp;#34; href=&amp;#34;#&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;resource__main&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;resource__descr&amp;#34;&amp;gt; &amp;lt;h2 class=&amp;#34;header | header-lg-2 mb-2 md:mb-0 | text-green-darkest&amp;#34;&amp;gt;Events Coordinator&amp;lt;/h2&amp;gt; &amp;lt;h4 class=&amp;#34;header-sm&amp;#34;&amp;gt;London, UK&amp;lt;/h4&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;resource__action&amp;#34;&amp;gt; &amp;lt;button class=&amp;#34;link -icon -green -sm&amp;#34;&amp;gt;&amp;lt;span class=&amp;#34;text&amp;#34;&amp;gt;See details&amp;lt;/span&amp;gt;&amp;lt;span class=&amp;#34;icon | icon--arrow -xs -stroke-4&amp;#34;&amp;gt;&amp;lt;svg viewbox=&amp;#34;0 0 13 39&amp;#34; xmlns=&amp;#34;http://www.</description>
+    </item>
+    
+    <item>
+      <title>Section Header</title>
+      <link>/styleguide/section-header/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/styleguide/section-header/</guid>
+      <description>Section Header SASS Partial: components/section-header
+Hugo Partials:  components/section-header--arrow.html components/section-header--button-group.html components/section-header--basic.html components/section-header.html  Notes: Optional child elements include:
+ Preheader Description Link   Preheader Primary Title Descriptive paragraph.  Optional Link     &amp;lt;header class=&amp;#34;section-header&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;section-header__content&amp;#34;&amp;gt; &amp;lt;h4 class=&amp;#34;header-sm&amp;#34;&amp;gt;Preheader&amp;lt;/h4&amp;gt; &amp;lt;h2 class=&amp;#34;header | header-lg&amp;#34;&amp;gt;Primary Title&amp;lt;/h2&amp;gt; &amp;lt;div class=&amp;#34;section-header__descr | paragraphs&amp;#34;&amp;gt; &amp;lt;p&amp;gt;Descriptive paragraph. &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;section-header__action&amp;#34;&amp;gt; &amp;lt;a href=&amp;#34;#&amp;#34; class=&amp;#34;link -underline&amp;#34;&amp;gt;Optional Link&amp;lt;/a&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/header&amp;gt;  Top  Preheader Primary Title Descriptive paragraph.</description>
+    </item>
+    
+    <item>
+      <title>Social List</title>
+      <link>/styleguide/social-list/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/styleguide/social-list/</guid>
+      <description>Social List SASS Partial: components/social-list
+            &amp;lt;ul class=&amp;#34;social-list | mt-3&amp;#34; role=&amp;#34;menubar&amp;#34;&amp;gt; &amp;lt;li&amp;gt; &amp;lt;a aria-label=&amp;#34;Facebook&amp;#34; href=&amp;#34;&amp;#34;&amp;gt;&amp;lt;span class=&amp;#34;icon | icon--fb&amp;#34;&amp;gt;&amp;lt;svg viewbox=&amp;#34;0 0 32 32&amp;#34; xmlns=&amp;#34;http://www.w3.org/2000/svg&amp;#34;&amp;gt; &amp;lt;path d=&amp;#34;M12.46218,31V18H8v-6h4.46218V7.80998C12.46218,3.24577,15.35166,1,19.42325,1 c1.95033,0,3.62655,0.1452,4.11504,0.21011v4.76987l-2.82387,0.00128C18.50007,5.98127,18,7.0335,18,8.57757V12h6l-2,6h-4v13 H12.46218z&amp;#34; fill=&amp;#34;currentColor&amp;#34;&amp;gt;&amp;lt;/path&amp;gt;&amp;lt;/svg&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;a aria-label=&amp;#34;Linked In&amp;#34; href=&amp;#34;&amp;#34;&amp;gt;&amp;lt;span class=&amp;#34;icon | icon--linkedin&amp;#34;&amp;gt;&amp;lt;svg viewbox=&amp;#34;0 0 32 32&amp;#34; xmlns=&amp;#34;http://www.w3.org/2000/svg&amp;#34;&amp;gt; &amp;lt;path d=&amp;#34;M30.66667,0H1.33333C0.59695,0,0,0.59695,0,1.33333v29.33333C0,31.40305,0.59695,32,1.33333,32h29.33333 C31.40305,32,32,31.40305,32,30.66667V1.33333C32,0.59695,31.40305,0,30.66667,0z M9.49262,27.26738H4.74176V11.99653h4.75086 V27.26738z M7.1185,9.91013c-1.5243,0-2.75347-1.23305-2.75347-2.75258c0-1.5191,1.22916-2.75218,2.75347-2.75218 c1.51823,0,2.75084,1.23308,2.75084,2.75218C9.86933,8.67708,8.63673,9.91013,7.1185,9.91013z M27.26871,27.26738h-4.74569v-7.42622 c0-1.77085-0.0304-4.04907-2.46613-4.04907c-2.4696,0-2.8464,1.93013-2.8464,3.92231v7.55298h-4.74045V11.99653h4.54951v2.08764 h0.06507c0.6328-1.20053,2.18142-2.46658,4.49049-2.46658c4.80551,0,5.6936,3.16196,5.6936,7.27476V27.26738z&amp;#34; fill=&amp;#34;currentColor&amp;#34;&amp;gt;&amp;lt;/path&amp;gt;&amp;lt;/svg&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li&amp;gt; &amp;lt;a aria-label=&amp;#34;Linked In&amp;#34; href=&amp;#34;&amp;#34;&amp;gt;&amp;lt;span class=&amp;#34;icon | icon--linkedin&amp;#34;&amp;gt;&amp;lt;svg viewbox=&amp;#34;0 0 32 32&amp;#34; xmlns=&amp;#34;http://www.</description>
+    </item>
+    
+    <item>
+      <title>Spacing</title>
+      <link>/styleguide/spacing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/styleguide/spacing/</guid>
+      <description>— Spacing SASS Partial: base/space
+Top  Bottom of preceeding sibling Spaced Element   &amp;lt;div class=&amp;#34;space-t&amp;#34;&amp;gt;&amp;lt;/div&amp;gt; Top Small  Bottom of preceeding sibling Spaced Element   &amp;lt;div class=&amp;#34;space-t--sm&amp;#34;&amp;gt;&amp;lt;/div&amp;gt; Top Large  Bottom of preceeding sibling Spaced Element   &amp;lt;div class=&amp;#34;space-t--lg&amp;#34;&amp;gt;&amp;lt;/div&amp;gt; Bottom  Spaced Element  Bottom of proceeding sibling  &amp;lt;div class=&amp;#34;space-b&amp;#34;&amp;gt;&amp;lt;/div&amp;gt; Bottom Small  Spaced Element  Bottom of proceeding sibling  &amp;lt;div class=&amp;#34;space-b--sm&amp;#34;&amp;gt;&amp;lt;/div&amp;gt; Bottom Large  Spaced Element  Bottom of proceeding sibling  &amp;lt;div class=&amp;#34;space-b--lg&amp;#34;&amp;gt;&amp;lt;/div&amp;gt; </description>
+    </item>
+    
+    <item>
+      <title>Stat Cards</title>
+      <link>/styleguide/stat-card/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/styleguide/stat-card/</guid>
+      <description>Stat Cards SASS Partial: components/stat-card
+Description: This is a Vue component that uses Template Slots, meaning you can swap out content easily right in the HTML markup.
+Resources: Vue Slots
+ Ambitious 33%  A third for you and family, a third for the world and a third for that third thing in your life (travel, angel investing, wacky experiment).
+    &amp;lt;stat_card :active=&amp;#34;true&amp;#34;&amp;gt; &amp;lt;template slot=&amp;#34;header&amp;#34;&amp;gt; &amp;lt;h4 class=&amp;#34;header | header-md&amp;#34;&amp;gt;Ambitious&amp;lt;/h4&amp;gt; &amp;lt;h3 class=&amp;#34;figure | header-xl | font-integer&amp;#34;&amp;gt;33%&amp;lt;/h3&amp;gt; &amp;lt;/template&amp;gt; &amp;lt;template slot=&amp;#34;descr&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;stat-card__descr paragraphs -xs&amp;#34;&amp;gt; &amp;lt;p&amp;gt;A third for you and family, a third for the world and a third for that third thing in your life (travel, angel investing, wacky experiment).</description>
+    </item>
+    
+    <item>
+      <title>Status List</title>
+      <link>/styleguide/status-list/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/styleguide/status-list/</guid>
+      <description>Status List SASS Partial: components/status-list
+Green  $13,000.00 for Clean Air Task Force COMPLETED MONTH DD, YYYY     &amp;lt;div class=&amp;#34;status-list&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;status border-green&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;status__content&amp;#34;&amp;gt; &amp;lt;h3 class=&amp;#34;header-lg-2 | mb-2&amp;#34;&amp;gt;$13,000.00 for Clean Air Task Force&amp;lt;/h3&amp;gt; &amp;lt;h5 class=&amp;#34;header-sm -grey | current-status&amp;#34;&amp;gt;COMPLETED MONTH DD, YYYY&amp;lt;/h5&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; Orange  $13,000.00 for Clean Air Task Force COMPLETED MONTH DD, YYYY     &amp;lt;div class=&amp;#34;status-list&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;status border-orange&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;status__content&amp;#34;&amp;gt; &amp;lt;h3 class=&amp;#34;header-lg-2 | mb-2&amp;#34;&amp;gt;$13,000.</description>
+    </item>
+    
+    <item>
+      <title>Sub Section Header</title>
+      <link>/styleguide/sub-section-header/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/styleguide/sub-section-header/</guid>
+      <description>Sub Section Header SASS Partial: components/sub-section-header
+ Tell Us About Yourself   &amp;lt;header class=&amp;#34;sub-section-header mx-2&amp;#34;&amp;gt; &amp;lt;h2 class=&amp;#34;header-md&amp;#34;&amp;gt;Tell Us About Yourself&amp;lt;/h2&amp;gt; &amp;lt;/header&amp;gt;  </description>
+    </item>
+    
+    <item>
+      <title>Toggle Text</title>
+      <link>/styleguide/toggle-text/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/styleguide/toggle-text/</guid>
+      <description>Toggle Text SASS Partial: base/toggle-text
+Description: Use CSS pseudo content to toggle based on data attributes. by deafult, the content of the data-default attribute is displayed. To show the data-active content instead, add the -active variation to the parent toggle-text div.
+Once toggle-text is added to a parent div, all of the child toggle-text__text elements will toggle according to the variation class
+Inactive State:     &amp;lt;div class=&amp;#34;toggle-text&amp;#34;&amp;gt; &amp;lt;span class=&amp;#34;toggle-text__text&amp;#34; data-default=&amp;#34;Learn More&amp;#34; data-active=&amp;#34;Less&amp;#34;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/div&amp;gt; Active State:     &amp;lt;div class=&amp;#34;toggle-text -active&amp;#34;&amp;gt; &amp;lt;span class=&amp;#34;toggle-text__text&amp;#34; data-default=&amp;#34;Learn More&amp;#34; data-active=&amp;#34;Less&amp;#34;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/div&amp;gt; </description>
+    </item>
+    
+    <item>
+      <title>Typography</title>
+      <link>/styleguide/typography/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/styleguide/typography/</guid>
+      <description>— Typography Headers, paragraphs, and basic links.
+SASS Partial: base/typography
+Header XL  Philanthropy  &amp;lt;h2 class=&amp;#34;header-xl&amp;#34;&amp;gt;Philanthropy&amp;lt;/h2&amp;gt; Header XL 2  Philanthropy  &amp;lt;h2 class=&amp;#34;header-xl-2&amp;#34;&amp;gt;Philanthropy&amp;lt;/h2&amp;gt; Header Lg  Philanthropy  &amp;lt;h2 class=&amp;#34;header-lg&amp;#34;&amp;gt;Philanthropy&amp;lt;/h2&amp;gt; Header Lg 2  Philanthropy  &amp;lt;h2 class=&amp;#34;header-lg-2&amp;#34;&amp;gt;Philanthropy&amp;lt;/h2&amp;gt; Header Md  Philanthropy  &amp;lt;h2 class=&amp;#34;header-md&amp;#34;&amp;gt;Philanthropy&amp;lt;/h2&amp;gt; Header Sm  Philanthropy  &amp;lt;h2 class=&amp;#34;header-sm&amp;#34;&amp;gt;Philanthropy&amp;lt;/h2&amp;gt; Header Sm -light  Philanthropy  &amp;lt;h2 class=&amp;#34;header-sm -light&amp;#34;&amp;gt;Philanthropy&amp;lt;/h2&amp;gt; Header Sm -dark  Philanthropy  &amp;lt;h2 class=&amp;#34;header-sm -dark&amp;#34;&amp;gt;Philanthropy&amp;lt;/h2&amp;gt; Header Sm -grey  Philanthropy  &amp;lt;h2 class=&amp;#34;header-sm -grey&amp;#34;&amp;gt;Philanthropy&amp;lt;/h2&amp;gt; Header Sm -white  Philanthropy  &amp;lt;h2 class=&amp;#34;header-sm -white&amp;#34;&amp;gt;Philanthropy&amp;lt;/h2&amp;gt; Paragraphs  Providing expert research, guidance, and educational events, we empower entrepreneurs to maximize their impact.</description>
+    </item>
+    
+    <item>
+      <title>Video</title>
+      <link>/styleguide/video/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/styleguide/video/</guid>
+      <description>Video SASS Partial: base/video
+    &amp;lt;div class=&amp;#34;video-wrapper&amp;#34;&amp;gt; &amp;lt;iframe src=&amp;#34;https://player.vimeo.com/video/120979603&amp;#34; width=&amp;#34;640&amp;#34; height=&amp;#34;360&amp;#34; frameborder=&amp;#34;0&amp;#34; webkitallowfullscreen mozallowfullscreen allowfullscreen&amp;gt;&amp;lt;/iframe&amp;gt; &amp;lt;/div&amp;gt; </description>
+    </item>
+    
+    <item>
+      <title>hCard</title>
+      <link>/styleguide/h-card/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/styleguide/h-card/</guid>
+      <description>hCard SASS Partial: components/hcard
+ +44 (0) 208 068 0425  info@founderspledge.org Block A Unit 402A
+100 Clements Road
+London SE16 4DG
+   &amp;lt;div class=&amp;#34;hcard | lg:py-0 py-8&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;hcard__item | tel&amp;#34;&amp;gt; &amp;lt;a href=&amp;#34;tel: +44 (0) 208 068 0425&amp;#34;&amp;gt; +44 (0) 208 068 0425&amp;lt;/a&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;hcard__item | email&amp;#34;&amp;gt; &amp;lt;a href=&amp;#34;mailto:info@founderspledge.org&amp;#34; &amp;gt;info@founderspledge.org&amp;lt;/a &amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;hcard__item | addr | mt-5&amp;#34;&amp;gt; &amp;lt;p&amp;gt;Block A Unit 402A&amp;lt;/p&amp;gt; &amp;lt;p&amp;gt;100 Clements Road&amp;lt;/p&amp;gt; &amp;lt;p&amp;gt;London SE16 4DG&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt;  </description>
     </item>
     
   </channel>

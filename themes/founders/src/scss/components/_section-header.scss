@@ -5,6 +5,9 @@
   // Flush
   &.-flush {
     @apply w-full;
+    .section-header__descr {
+      @apply ml-0;
+    }
   }
 
   .header-sm {

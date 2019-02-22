@@ -16,11 +16,14 @@ Powered by Laravel Mix, this site is built using Hugo to efficiently generate st
 
 **Development Mode**
 `yarn do`
-
-Starts a hugo server at [http://localhost:1313/](http://localhost:1313/)
+Compiles JS, SASS, and HTML to `themes/founders/static/dist` and starts a hugo server at [http://localhost:1313/](http://localhost:1313/)
 
 **Generate Distrubtion Files**
 `yarn hugo`
+Compiles JS, SASS, and HTML to `public`
+
+`yarn build`
+Runs purge on hugo distribution files (so run the hugo command first).
 
 ## File Structure
 
@@ -106,7 +109,7 @@ layout: how-it-works
 ```
 {
     "variation": "-press",
-    "logo": "/img/fpo-logo-01.jpg",
+    "logo": "/dist/assets/img/fpo-logo-01.jpg",
     "descr": "“enables budding tycoons to donate a percentage of their future earnings to good causes, once they sell or list their businesses.”",
     "link": {
     "variation": "link -underline",
