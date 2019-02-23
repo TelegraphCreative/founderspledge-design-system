@@ -23,7 +23,7 @@
     {{ end }}
 
     {{ block "favicon" . }}
-      {{ partial "base/site-favicon.html" . }}
+      <!-- {{ partial "base/site-favicon.html" . }} -->
     {{ end }}
 
     {{ if .RSSLink }}
@@ -45,7 +45,6 @@
   <body class="{{ $.Param "body_classes"  | default ""}}{{ with getenv "HUGO_ENV" }} {{ . }}{{ end }}">
 
     <div id="app" v-cloak>
-
       {{ block "header" . }}{{ partial "base/site-header.html" .}}{{ end }}
       <main role="main">
         {{ block "main" . }}{{ end }}

@@ -31,7 +31,6 @@
 @import "base/modal";
 @import "base/range";
 @import "base/checkbox-radio";
-@import "base/checkbox-radio";
 @import "base/toggle-text";
 
 // Vendor
@@ -101,10 +100,6 @@
 @import "components/gallery-stack";
 @import "components/site-footer";
 
-// body {
-//     @apply bg-pink text-red;
-// }
-
-// .critical-is-removed {
-//     @apply text-pink;
+// .if-not-in-body-removed-by-purge {
+//   @apply text-green;
 // }

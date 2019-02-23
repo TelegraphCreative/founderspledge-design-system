@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Founders Pledge  | Form - Select Field</title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.53" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+      
+    <link rel="stylesheet" href="/dist/css/app.css">
+    
+      <link rel="stylesheet" href="/dist/css/styleguide.css">
+    
+
+    
+      
+    
+
+    
+
+    <meta property="og:title" content="Form - Select Field" />
+<meta property="og:description" content="Select Field Base SASS Partial: vendor/choices
+Related SASS Partial: standard-form-base
+Description: This is a Vue component that uses Vue Properties to set the variant classes. Check out the Select Field for all variant styles.
+Default  Germany United States of America France Spain Italy   &lt;select_box :opt=&#34;{ variant: &#39;&#39; }&#34;&gt; &lt;option value=&#34;es&#34; selected&gt;Germany&lt;/option&gt; &lt;option value=&#34;en&#34;&gt;United States of America&lt;/option&gt; &lt;option value=&#34;ma&#34;&gt;France&lt;/option&gt; &lt;option value=&#34;de&#34;&gt;Spain&lt;/option&gt; &lt;option value=&#34;fr&#34;&gt;Italy&lt;/option&gt; &lt;/select_box&gt; Default Dark  Germany United States of America France Spain Italy   &lt;select_box :opt=&#34;{ variant: &#39;-dark&#39; }&#34;&gt; &lt;option value=&#34;es&#34; selected&gt;Germany&lt;/option&gt; &lt;option value=&#34;en&#34;&gt;United States of America&lt;/option&gt; &lt;option value=&#34;ma&#34;&gt;France&lt;/option&gt; &lt;option value=&#34;de&#34;&gt;Spain&lt;/option&gt; &lt;option value=&#34;fr&#34;&gt;Italy&lt;/option&gt; &lt;/select_box&gt; Default Center  Germany United States of America France Spain Italy   &lt;select_box :opt=&#34;{ variant: &#39;-center&#39; }&#34;&gt; &lt;option value=&#34;es&#34; selected&gt;Germany&lt;/option&gt; &lt;option value=&#34;en&#34;&gt;United States of America&lt;/option&gt; &lt;option value=&#34;ma&#34;&gt;France&lt;/option&gt; &lt;option value=&#34;de&#34;&gt;Spain&lt;/option&gt; &lt;option value=&#34;fr&#34;&gt;Italy&lt;/option&gt; &lt;/select_box&gt; Default Dark Center  Germany United States of America France Spain Italy   &lt;select_box :opt=&#34;{ variant: &#39;-dark -center&#39; }&#34;&gt; &lt;option value=&#34;es&#34; selected&gt;Germany&lt;/option&gt; &lt;option value=&#34;en&#34;&gt;United States of America&lt;/option&gt; &lt;option value=&#34;ma&#34;&gt;France&lt;/option&gt; &lt;option value=&#34;de&#34;&gt;Spain&lt;/option&gt; &lt;option value=&#34;fr&#34;&gt;Italy&lt;/option&gt; &lt;/select_box&gt; Standard Styled to match the Standard Form Base" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/styleguide/select-field/" />
+
+<meta itemprop="name" content="Form - Select Field">
+<meta itemprop="description" content="Select Field Base SASS Partial: vendor/choices
+Related SASS Partial: standard-form-base
+Description: This is a Vue component that uses Vue Properties to set the variant classes. Check out the Select Field for all variant styles.
+Default  Germany United States of America France Spain Italy   &lt;select_box :opt=&#34;{ variant: &#39;&#39; }&#34;&gt; &lt;option value=&#34;es&#34; selected&gt;Germany&lt;/option&gt; &lt;option value=&#34;en&#34;&gt;United States of America&lt;/option&gt; &lt;option value=&#34;ma&#34;&gt;France&lt;/option&gt; &lt;option value=&#34;de&#34;&gt;Spain&lt;/option&gt; &lt;option value=&#34;fr&#34;&gt;Italy&lt;/option&gt; &lt;/select_box&gt; Default Dark  Germany United States of America France Spain Italy   &lt;select_box :opt=&#34;{ variant: &#39;-dark&#39; }&#34;&gt; &lt;option value=&#34;es&#34; selected&gt;Germany&lt;/option&gt; &lt;option value=&#34;en&#34;&gt;United States of America&lt;/option&gt; &lt;option value=&#34;ma&#34;&gt;France&lt;/option&gt; &lt;option value=&#34;de&#34;&gt;Spain&lt;/option&gt; &lt;option value=&#34;fr&#34;&gt;Italy&lt;/option&gt; &lt;/select_box&gt; Default Center  Germany United States of America France Spain Italy   &lt;select_box :opt=&#34;{ variant: &#39;-center&#39; }&#34;&gt; &lt;option value=&#34;es&#34; selected&gt;Germany&lt;/option&gt; &lt;option value=&#34;en&#34;&gt;United States of America&lt;/option&gt; &lt;option value=&#34;ma&#34;&gt;France&lt;/option&gt; &lt;option value=&#34;de&#34;&gt;Spain&lt;/option&gt; &lt;option value=&#34;fr&#34;&gt;Italy&lt;/option&gt; &lt;/select_box&gt; Default Dark Center  Germany United States of America France Spain Italy   &lt;select_box :opt=&#34;{ variant: &#39;-dark -center&#39; }&#34;&gt; &lt;option value=&#34;es&#34; selected&gt;Germany&lt;/option&gt; &lt;option value=&#34;en&#34;&gt;United States of America&lt;/option&gt; &lt;option value=&#34;ma&#34;&gt;France&lt;/option&gt; &lt;option value=&#34;de&#34;&gt;Spain&lt;/option&gt; &lt;option value=&#34;fr&#34;&gt;Italy&lt;/option&gt; &lt;/select_box&gt; Standard Styled to match the Standard Form Base">
+
+
+
+<meta itemprop="wordCount" content="246">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Form - Select Field"/>
+<meta name="twitter:description" content="Select Field Base SASS Partial: vendor/choices
+Related SASS Partial: standard-form-base
+Description: This is a Vue component that uses Vue Properties to set the variant classes. Check out the Select Field for all variant styles.
+Default  Germany United States of America France Spain Italy   &lt;select_box :opt=&#34;{ variant: &#39;&#39; }&#34;&gt; &lt;option value=&#34;es&#34; selected&gt;Germany&lt;/option&gt; &lt;option value=&#34;en&#34;&gt;United States of America&lt;/option&gt; &lt;option value=&#34;ma&#34;&gt;France&lt;/option&gt; &lt;option value=&#34;de&#34;&gt;Spain&lt;/option&gt; &lt;option value=&#34;fr&#34;&gt;Italy&lt;/option&gt; &lt;/select_box&gt; Default Dark  Germany United States of America France Spain Italy   &lt;select_box :opt=&#34;{ variant: &#39;-dark&#39; }&#34;&gt; &lt;option value=&#34;es&#34; selected&gt;Germany&lt;/option&gt; &lt;option value=&#34;en&#34;&gt;United States of America&lt;/option&gt; &lt;option value=&#34;ma&#34;&gt;France&lt;/option&gt; &lt;option value=&#34;de&#34;&gt;Spain&lt;/option&gt; &lt;option value=&#34;fr&#34;&gt;Italy&lt;/option&gt; &lt;/select_box&gt; Default Center  Germany United States of America France Spain Italy   &lt;select_box :opt=&#34;{ variant: &#39;-center&#39; }&#34;&gt; &lt;option value=&#34;es&#34; selected&gt;Germany&lt;/option&gt; &lt;option value=&#34;en&#34;&gt;United States of America&lt;/option&gt; &lt;option value=&#34;ma&#34;&gt;France&lt;/option&gt; &lt;option value=&#34;de&#34;&gt;Spain&lt;/option&gt; &lt;option value=&#34;fr&#34;&gt;Italy&lt;/option&gt; &lt;/select_box&gt; Default Dark Center  Germany United States of America France Spain Italy   &lt;select_box :opt=&#34;{ variant: &#39;-dark -center&#39; }&#34;&gt; &lt;option value=&#34;es&#34; selected&gt;Germany&lt;/option&gt; &lt;option value=&#34;en&#34;&gt;United States of America&lt;/option&gt; &lt;option value=&#34;ma&#34;&gt;France&lt;/option&gt; &lt;option value=&#34;de&#34;&gt;Spain&lt;/option&gt; &lt;option value=&#34;fr&#34;&gt;Italy&lt;/option&gt; &lt;/select_box&gt; Standard Styled to match the Standard Form Base"/>
+
+  </head>
+
+  <body class="">
+
+    <div id="app" v-cloak>
+      
+<div class="pb-12 md:py-12 container gutter border-b-8 border-oat-light">
+  <h1 class="font-sans  font-medium">
+    <a href="/" class="no-underline"><span class="text-3xl">Founders Pledge</span> <span class="text-xl block">Styleguide</span></a>
+  </h1>
+</div>
+
+
+      <main role="main">
+        
+<div class="styleguide | container gutter">
+  <div class="md:flex flex-wrap">
+    <aside
+      class="styleguide-menu styleguide__content | md:w-1/4 pt-10 | md:pb-0 pb-4 | md:border-r md:border-b-0 border-b | border-oat-light"
+    >
+      <h3 class="header-md mb-3">Components</h3>
+      <ul class="menu-list">
+        
+        <li>
+          <a href="/styleguide/all-templates">All Templates </a>
+        </li>
+        
+        <li>
+          <a href="/styleguide/readme">An Intro </a>
+        </li>
+        
+        <li>
+          <a href="/styleguide/article-cards">Article Cards </a>
+        </li>
+        
+        <li>
+          <a href="/styleguide/article-content">Article Content </a>
+        </li>
+        
+        <li>
+          <a href="/styleguide/author-card">Author Card </a>
+        </li>
+        
+        <li>
+          <a href="/styleguide/blockquote">Blockquote </a>
+        </li>
+        
+        <li>
+          <a href="/styleguide/buttons">Buttons </a>
+        </li>
+        
+        <li>
+          <a href="/styleguide/definition-list">Definition List </a>
+        </li>
+        
+        <li>
+          <a href="/styleguide/featured-article-card">Featured Article Card </a>
+        </li>
+        
+        <li>
+          <a href="/styleguide/featured-article">Featured Articles </a>
+        </li>
+        
+        <li>
+          <a href="/styleguide/flip-cards">Flip Cards </a>
+        </li>
+        
+        <li>
+          <a href="/styleguide/form-base">Form - Base </a>
+        </li>
+        
+        <li>
+          <a href="/styleguide/select-field">Form - Select Field </a>
+        </li>
+        
+        <li>
+          <a href="/styleguide/highlight-card">Highlight Cards </a>
+        </li>
+        
+        <li>
+          <a href="/styleguide/image">Image </a>
+        </li>
+        
+        <li>
+          <a href="/styleguide/links">Links </a>
+        </li>
+        
+        <li>
+          <a href="/styleguide/logo-list">Logo List </a>
+        </li>
+        
+        <li>
+          <a href="/styleguide/content-modal">Modal - Content </a>
+        </li>
+        
+        <li>
+          <a href="/styleguide/profile-modal">Modal - Profile </a>
+        </li>
+        
+        <li>
+          <a href="/styleguide/page-menu">Page Menu </a>
+        </li>
+        
+        <li>
+          <a href="/styleguide/panel-hero">Panel Hero </a>
+        </li>
+        
+        <li>
+          <a href="/styleguide/patterns">Patterns </a>
+        </li>
+        
+        <li>
+          <a href="/styleguide/profile-card">Profile Cards </a>
+        </li>
+        
+        <li>
+          <a href="/styleguide/profile-slider">Profile Slider </a>
+        </li>
+        
+        <li>
+          <a href="/styleguide/range">Range </a>
+        </li>
+        
+        <li>
+          <a href="/styleguide/resource-accordion">Resource Accordion </a>
+        </li>
+        
+        <li>
+          <a href="/styleguide/resource-list">Resource List </a>
+        </li>
+        
+        <li>
+          <a href="/styleguide/section-header">Section Header </a>
+        </li>
+        
+        <li>
+          <a href="/styleguide/social-list">Social List </a>
+        </li>
+        
+        <li>
+          <a href="/styleguide/spacing">Spacing </a>
+        </li>
+        
+        <li>
+          <a href="/styleguide/stat-card">Stat Cards </a>
+        </li>
+        
+        <li>
+          <a href="/styleguide/status-list">Status List </a>
+        </li>
+        
+        <li>
+          <a href="/styleguide/sub-section-header">Sub Section Header </a>
+        </li>
+        
+        <li>
+          <a href="/styleguide/toggle-text">Toggle Text </a>
+        </li>
+        
+        <li>
+          <a href="/styleguide/typography">Typography </a>
+        </li>
+        
+        <li>
+          <a href="/styleguide/video">Video </a>
+        </li>
+        
+        <li>
+          <a href="/styleguide/h-card">hCard </a>
+        </li>
+        
+      </ul>
+    </aside>
+
+    <main class="styleguide-main | md:w-3/4 md:pl-10 pt-10">
+      <!-- Header -->
+
+<div class="styleguide__content border-b border-oat-light pb-8 mb-12">
+  <h1>Select Field Base</h1>
+  <p><u>SASS Partial:</u> <code>vendor/choices</code></p>
+  <p><u>Related SASS Partial:</u> <code>standard-form-base</code></p>
+  
+  <p><u>Description:</u> This is a Vue component that uses Vue Properties to set the variant classes. Check out the Select Field for all variant styles.</p>
+
+  <h2>Default</h2>
+
+</div>
+
+<!-- Result -->
+
+<div class="styleguide__result">
+    <select_box :opt="{ variant: '' }">
+        <option value="es" selected>Germany</option>
+        <option value="en">United States of America</option>
+        <option value="ma">France</option>
+        <option value="de">Spain</option>
+        <option value="fr">Italy</option>
+    </select_box>
+</div>
+
+<!-- Markup -->
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">select_box</span> <span style="color:#a6e22e">:opt</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{ variant: &#39;&#39; }&#34;</span>&gt;
+    &lt;<span style="color:#f92672">option</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;es&#34;</span> <span style="color:#a6e22e">selected</span>&gt;Germany&lt;/<span style="color:#f92672">option</span>&gt;
+    &lt;<span style="color:#f92672">option</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;en&#34;</span>&gt;United States of America&lt;/<span style="color:#f92672">option</span>&gt;
+    &lt;<span style="color:#f92672">option</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;ma&#34;</span>&gt;France&lt;/<span style="color:#f92672">option</span>&gt;
+    &lt;<span style="color:#f92672">option</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;de&#34;</span>&gt;Spain&lt;/<span style="color:#f92672">option</span>&gt;
+    &lt;<span style="color:#f92672">option</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;fr&#34;</span>&gt;Italy&lt;/<span style="color:#f92672">option</span>&gt;
+&lt;/<span style="color:#f92672">select_box</span>&gt;</code></pre></div>
+
+<div class="styleguide__content">
+    <h2>Default Dark</h2>
+</div>
+
+<!-- Result -->
+
+<div class="styleguide__result">
+<select_box :opt="{ variant: '-dark' }">
+    <option value="es" selected>Germany</option>
+    <option value="en">United States of America</option>
+    <option value="ma">France</option>
+    <option value="de">Spain</option>
+    <option value="fr">Italy</option>
+</select_box>
+</div>
+
+<!-- Markup -->
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">select_box</span> <span style="color:#a6e22e">:opt</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{ variant: &#39;-dark&#39; }&#34;</span>&gt;
+    &lt;<span style="color:#f92672">option</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;es&#34;</span> <span style="color:#a6e22e">selected</span>&gt;Germany&lt;/<span style="color:#f92672">option</span>&gt;
+    &lt;<span style="color:#f92672">option</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;en&#34;</span>&gt;United States of America&lt;/<span style="color:#f92672">option</span>&gt;
+    &lt;<span style="color:#f92672">option</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;ma&#34;</span>&gt;France&lt;/<span style="color:#f92672">option</span>&gt;
+    &lt;<span style="color:#f92672">option</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;de&#34;</span>&gt;Spain&lt;/<span style="color:#f92672">option</span>&gt;
+    &lt;<span style="color:#f92672">option</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;fr&#34;</span>&gt;Italy&lt;/<span style="color:#f92672">option</span>&gt;
+&lt;/<span style="color:#f92672">select_box</span>&gt;</code></pre></div>
+
+<div class="styleguide__content">
+    <h2>Default Center</h2>
+</div>
+
+<!-- Result -->
+
+<div class="styleguide__result">
+<select_box :opt="{ variant: '-center' }">
+    <option value="es" selected>Germany</option>
+    <option value="en">United States of America</option>
+    <option value="ma">France</option>
+    <option value="de">Spain</option>
+    <option value="fr">Italy</option>
+</select_box>
+</div>
+
+<!-- Markup -->
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">select_box</span> <span style="color:#a6e22e">:opt</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{ variant: &#39;-center&#39; }&#34;</span>&gt;
+    &lt;<span style="color:#f92672">option</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;es&#34;</span> <span style="color:#a6e22e">selected</span>&gt;Germany&lt;/<span style="color:#f92672">option</span>&gt;
+    &lt;<span style="color:#f92672">option</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;en&#34;</span>&gt;United States of America&lt;/<span style="color:#f92672">option</span>&gt;
+    &lt;<span style="color:#f92672">option</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;ma&#34;</span>&gt;France&lt;/<span style="color:#f92672">option</span>&gt;
+    &lt;<span style="color:#f92672">option</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;de&#34;</span>&gt;Spain&lt;/<span style="color:#f92672">option</span>&gt;
+    &lt;<span style="color:#f92672">option</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;fr&#34;</span>&gt;Italy&lt;/<span style="color:#f92672">option</span>&gt;
+&lt;/<span style="color:#f92672">select_box</span>&gt;</code></pre></div>
+
+<div class="styleguide__content">
+    <h2>Default Dark Center</h2>
+</div>
+
+<!-- Result -->
+
+<div class="styleguide__result">
+<select_box :opt="{ variant: '-dark -center' }">
+    <option value="es" selected>Germany</option>
+    <option value="en">United States of America</option>
+    <option value="ma">France</option>
+    <option value="de">Spain</option>
+    <option value="fr">Italy</option>
+</select_box>
+</div>
+
+<!-- Markup -->
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">select_box</span> <span style="color:#a6e22e">:opt</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{ variant: &#39;-dark -center&#39; }&#34;</span>&gt;
+    &lt;<span style="color:#f92672">option</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;es&#34;</span> <span style="color:#a6e22e">selected</span>&gt;Germany&lt;/<span style="color:#f92672">option</span>&gt;
+    &lt;<span style="color:#f92672">option</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;en&#34;</span>&gt;United States of America&lt;/<span style="color:#f92672">option</span>&gt;
+    &lt;<span style="color:#f92672">option</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;ma&#34;</span>&gt;France&lt;/<span style="color:#f92672">option</span>&gt;
+    &lt;<span style="color:#f92672">option</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;de&#34;</span>&gt;Spain&lt;/<span style="color:#f92672">option</span>&gt;
+    &lt;<span style="color:#f92672">option</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;fr&#34;</span>&gt;Italy&lt;/<span style="color:#f92672">option</span>&gt;
+&lt;/<span style="color:#f92672">select_box</span>&gt;</code></pre></div>
+
+<div class="styleguide__content">
+    <h2>Standard</h2>
+    <p>Styled to match the Standard Form Base</p>
+</div>
+<!-- Result -->
+<div class="styleguide__result">
+    <form action="" class="standard-form-base">
+        <div class="form-group">
+            <div class="field-group">
+                <label class="standard-label" for="country">
+                Country
+                </label>
+                <select_box :opt="{ variant: '-standard' }">
+                <option value="es" selected>Germany</option>
+                <option value="en">United States of America</option>
+                <option value="ma">France</option>
+                <option value="de">Spain</option>
+                <option value="fr">Italy</option>
+                </select_box>
+            </div>
+        </div>
+    </form>
+</div>
+
+<!-- Markup -->
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;form-group&#34;</span>&gt;
+    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;field-group&#34;</span>&gt;
+        &lt;<span style="color:#f92672">label</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;standard-label&#34;</span> <span style="color:#a6e22e">for</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;country&#34;</span>&gt;
+        Country
+        &lt;/<span style="color:#f92672">label</span>&gt;
+        &lt;<span style="color:#f92672">select_box</span> <span style="color:#a6e22e">:opt</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{ variant: &#39;-standard&#39; }&#34;</span>&gt;
+        &lt;<span style="color:#f92672">option</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;es&#34;</span> <span style="color:#a6e22e">selected</span>&gt;Germany&lt;/<span style="color:#f92672">option</span>&gt;
+        &lt;<span style="color:#f92672">option</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;en&#34;</span>&gt;United States of America&lt;/<span style="color:#f92672">option</span>&gt;
+        &lt;<span style="color:#f92672">option</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;ma&#34;</span>&gt;France&lt;/<span style="color:#f92672">option</span>&gt;
+        &lt;<span style="color:#f92672">option</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;de&#34;</span>&gt;Spain&lt;/<span style="color:#f92672">option</span>&gt;
+        &lt;<span style="color:#f92672">option</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;fr&#34;</span>&gt;Italy&lt;/<span style="color:#f92672">option</span>&gt;
+        &lt;/<span style="color:#f92672">select_box</span>&gt;
+    &lt;/<span style="color:#f92672">div</span>&gt;
+&lt;/<span style="color:#f92672">div</span>&gt;</code></pre></div>
+
+<div class="styleguide__content">
+    <h2>Standard Medium</h2>
+</div>
+
+<!-- Result -->
+
+<div class="styleguide__result">
+    <form action="" class="standard-form-base">
+        <div class="form-group">
+            <div class="field-group">
+                <label class="standard-label" for="country">
+                Country
+                </label>
+                <select_box :opt="{ variant: '-standard -md' }">
+                <option value="es" selected>Germany</option>
+                <option value="en">United States of America</option>
+                <option value="ma">France</option>
+                <option value="de">Spain</option>
+                <option value="fr">Italy</option>
+                </select_box>
+            </div>
+        </div>
+    </form>
+</div>
+
+<!-- Markup -->
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;form-group&#34;</span>&gt;
+    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;field-group&#34;</span>&gt;
+        &lt;<span style="color:#f92672">label</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;standard-label&#34;</span> <span style="color:#a6e22e">for</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;country&#34;</span>&gt;
+        Country
+        &lt;/<span style="color:#f92672">label</span>&gt;
+        &lt;<span style="color:#f92672">select_box</span> <span style="color:#a6e22e">:opt</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{ variant: &#39;-standard -md&#39; }&#34;</span>&gt;
+        &lt;<span style="color:#f92672">option</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;es&#34;</span> <span style="color:#a6e22e">selected</span>&gt;Germany&lt;/<span style="color:#f92672">option</span>&gt;
+        &lt;<span style="color:#f92672">option</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;en&#34;</span>&gt;United States of America&lt;/<span style="color:#f92672">option</span>&gt;
+        &lt;<span style="color:#f92672">option</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;ma&#34;</span>&gt;France&lt;/<span style="color:#f92672">option</span>&gt;
+        &lt;<span style="color:#f92672">option</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;de&#34;</span>&gt;Spain&lt;/<span style="color:#f92672">option</span>&gt;
+        &lt;<span style="color:#f92672">option</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;fr&#34;</span>&gt;Italy&lt;/<span style="color:#f92672">option</span>&gt;
+        &lt;/<span style="color:#f92672">select_box</span>&gt;
+    &lt;/<span style="color:#f92672">div</span>&gt;
+&lt;/<span style="color:#f92672">div</span>&gt;</code></pre></div>
+
+    </main>
+  </div>
+</div>
+
+      </main>
+      
+      
+<div class="py-12 container gutter"></div>
+
+    </div>
+
+    <script src="/dist/js/app.js"></script>
+
+
+
+    
+  </body>
+</html>

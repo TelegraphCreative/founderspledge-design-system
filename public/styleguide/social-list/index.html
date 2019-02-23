@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Founders Pledge  | Social List</title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.53" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+      
+    <link rel="stylesheet" href="/dist/css/app.css">
+    
+      <link rel="stylesheet" href="/dist/css/styleguide.css">
+    
+
+    
+      
+    
+
+    
+
+    <meta property="og:title" content="Social List" />
+<meta property="og:description" content="Social List SASS Partial: components/social-list
+            &lt;ul class=&#34;social-list | mt-3&#34; role=&#34;menubar&#34;&gt; &lt;li&gt; &lt;a aria-label=&#34;Facebook&#34; href=&#34;&#34;&gt;&lt;span class=&#34;icon | icon--fb&#34;&gt;&lt;svg viewbox=&#34;0 0 32 32&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt; &lt;path d=&#34;M12.46218,31V18H8v-6h4.46218V7.80998C12.46218,3.24577,15.35166,1,19.42325,1 c1.95033,0,3.62655,0.1452,4.11504,0.21011v4.76987l-2.82387,0.00128C18.50007,5.98127,18,7.0335,18,8.57757V12h6l-2,6h-4v13 H12.46218z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/a&gt; &lt;/li&gt; &lt;li&gt; &lt;a aria-label=&#34;Linked In&#34; href=&#34;&#34;&gt;&lt;span class=&#34;icon | icon--linkedin&#34;&gt;&lt;svg viewbox=&#34;0 0 32 32&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt; &lt;path d=&#34;M30.66667,0H1.33333C0.59695,0,0,0.59695,0,1.33333v29.33333C0,31.40305,0.59695,32,1.33333,32h29.33333 C31.40305,32,32,31.40305,32,30.66667V1.33333C32,0.59695,31.40305,0,30.66667,0z M9.49262,27.26738H4.74176V11.99653h4.75086 V27.26738z M7.1185,9.91013c-1.5243,0-2.75347-1.23305-2.75347-2.75258c0-1.5191,1.22916-2.75218,2.75347-2.75218 c1.51823,0,2.75084,1.23308,2.75084,2.75218C9.86933,8.67708,8.63673,9.91013,7.1185,9.91013z M27.26871,27.26738h-4.74569v-7.42622 c0-1.77085-0.0304-4.04907-2.46613-4.04907c-2.4696,0-2.8464,1.93013-2.8464,3.92231v7.55298h-4.74045V11.99653h4.54951v2.08764 h0.06507c0.6328-1.20053,2.18142-2.46658,4.49049-2.46658c4.80551,0,5.6936,3.16196,5.6936,7.27476V27.26738z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/a&gt; &lt;/li&gt; &lt;li&gt; &lt;a aria-label=&#34;Linked In&#34; href=&#34;&#34;&gt;&lt;span class=&#34;icon | icon--linkedin&#34;&gt;&lt;svg viewbox=&#34;0 0 32 32&#34; xmlns=&#34;http://www." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/styleguide/social-list/" />
+
+<meta itemprop="name" content="Social List">
+<meta itemprop="description" content="Social List SASS Partial: components/social-list
+            &lt;ul class=&#34;social-list | mt-3&#34; role=&#34;menubar&#34;&gt; &lt;li&gt; &lt;a aria-label=&#34;Facebook&#34; href=&#34;&#34;&gt;&lt;span class=&#34;icon | icon--fb&#34;&gt;&lt;svg viewbox=&#34;0 0 32 32&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt; &lt;path d=&#34;M12.46218,31V18H8v-6h4.46218V7.80998C12.46218,3.24577,15.35166,1,19.42325,1 c1.95033,0,3.62655,0.1452,4.11504,0.21011v4.76987l-2.82387,0.00128C18.50007,5.98127,18,7.0335,18,8.57757V12h6l-2,6h-4v13 H12.46218z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/a&gt; &lt;/li&gt; &lt;li&gt; &lt;a aria-label=&#34;Linked In&#34; href=&#34;&#34;&gt;&lt;span class=&#34;icon | icon--linkedin&#34;&gt;&lt;svg viewbox=&#34;0 0 32 32&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt; &lt;path d=&#34;M30.66667,0H1.33333C0.59695,0,0,0.59695,0,1.33333v29.33333C0,31.40305,0.59695,32,1.33333,32h29.33333 C31.40305,32,32,31.40305,32,30.66667V1.33333C32,0.59695,31.40305,0,30.66667,0z M9.49262,27.26738H4.74176V11.99653h4.75086 V27.26738z M7.1185,9.91013c-1.5243,0-2.75347-1.23305-2.75347-2.75258c0-1.5191,1.22916-2.75218,2.75347-2.75218 c1.51823,0,2.75084,1.23308,2.75084,2.75218C9.86933,8.67708,8.63673,9.91013,7.1185,9.91013z M27.26871,27.26738h-4.74569v-7.42622 c0-1.77085-0.0304-4.04907-2.46613-4.04907c-2.4696,0-2.8464,1.93013-2.8464,3.92231v7.55298h-4.74045V11.99653h4.54951v2.08764 h0.06507c0.6328-1.20053,2.18142-2.46658,4.49049-2.46658c4.80551,0,5.6936,3.16196,5.6936,7.27476V27.26738z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/a&gt; &lt;/li&gt; &lt;li&gt; &lt;a aria-label=&#34;Linked In&#34; href=&#34;&#34;&gt;&lt;span class=&#34;icon | icon--linkedin&#34;&gt;&lt;svg viewbox=&#34;0 0 32 32&#34; xmlns=&#34;http://www.">
+
+
+
+<meta itemprop="wordCount" content="81">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Social List"/>
+<meta name="twitter:description" content="Social List SASS Partial: components/social-list
+            &lt;ul class=&#34;social-list | mt-3&#34; role=&#34;menubar&#34;&gt; &lt;li&gt; &lt;a aria-label=&#34;Facebook&#34; href=&#34;&#34;&gt;&lt;span class=&#34;icon | icon--fb&#34;&gt;&lt;svg viewbox=&#34;0 0 32 32&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt; &lt;path d=&#34;M12.46218,31V18H8v-6h4.46218V7.80998C12.46218,3.24577,15.35166,1,19.42325,1 c1.95033,0,3.62655,0.1452,4.11504,0.21011v4.76987l-2.82387,0.00128C18.50007,5.98127,18,7.0335,18,8.57757V12h6l-2,6h-4v13 H12.46218z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/a&gt; &lt;/li&gt; &lt;li&gt; &lt;a aria-label=&#34;Linked In&#34; href=&#34;&#34;&gt;&lt;span class=&#34;icon | icon--linkedin&#34;&gt;&lt;svg viewbox=&#34;0 0 32 32&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt; &lt;path d=&#34;M30.66667,0H1.33333C0.59695,0,0,0.59695,0,1.33333v29.33333C0,31.40305,0.59695,32,1.33333,32h29.33333 C31.40305,32,32,31.40305,32,30.66667V1.33333C32,0.59695,31.40305,0,30.66667,0z M9.49262,27.26738H4.74176V11.99653h4.75086 V27.26738z M7.1185,9.91013c-1.5243,0-2.75347-1.23305-2.75347-2.75258c0-1.5191,1.22916-2.75218,2.75347-2.75218 c1.51823,0,2.75084,1.23308,2.75084,2.75218C9.86933,8.67708,8.63673,9.91013,7.1185,9.91013z M27.26871,27.26738h-4.74569v-7.42622 c0-1.77085-0.0304-4.04907-2.46613-4.04907c-2.4696,0-2.8464,1.93013-2.8464,3.92231v7.55298h-4.74045V11.99653h4.54951v2.08764 h0.06507c0.6328-1.20053,2.18142-2.46658,4.49049-2.46658c4.80551,0,5.6936,3.16196,5.6936,7.27476V27.26738z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/a&gt; &lt;/li&gt; &lt;li&gt; &lt;a aria-label=&#34;Linked In&#34; href=&#34;&#34;&gt;&lt;span class=&#34;icon | icon--linkedin&#34;&gt;&lt;svg viewbox=&#34;0 0 32 32&#34; xmlns=&#34;http://www."/>
+
+  </head>
+
+  <body class="">
+
+    <div id="app" v-cloak>
+      
+<div class="pb-12 md:py-12 container gutter border-b-8 border-oat-light">
+  <h1 class="font-sans  font-medium">
+    <a href="/" class="no-underline"><span class="text-3xl">Founders Pledge</span> <span class="text-xl block">Styleguide</span></a>
+  </h1>
+</div>
+
+
+      <main role="main">
+        
+<div class="styleguide | container gutter">
+  <div class="md:flex flex-wrap">
+    <aside
+      class="styleguide-menu styleguide__content | md:w-1/4 pt-10 | md:pb-0 pb-4 | md:border-r md:border-b-0 border-b | border-oat-light"
+    >
+      <h3 class="header-md mb-3">Components</h3>
+      <ul class="menu-list">
+        
+        <li>
+          <a href="/styleguide/all-templates">All Templates </a>
+        </li>
+        
+        <li>
+          <a href="/styleguide/readme">An Intro </a>
+        </li>
+        
+        <li>
+          <a href="/styleguide/article-cards">Article Cards </a>
+        </li>
+        
+        <li>
+          <a href="/styleguide/article-content">Article Content </a>
+        </li>
+        
+        <li>
+          <a href="/styleguide/author-card">Author Card </a>
+        </li>
+        
+        <li>
+          <a href="/styleguide/blockquote">Blockquote </a>
+        </li>
+        
+        <li>
+          <a href="/styleguide/buttons">Buttons </a>
+        </li>
+        
+        <li>
+          <a href="/styleguide/definition-list">Definition List </a>
+        </li>
+        
+        <li>
+          <a href="/styleguide/featured-article-card">Featured Article Card </a>
+        </li>
+        
+        <li>
+          <a href="/styleguide/featured-article">Featured Articles </a>
+        </li>
+        
+        <li>
+          <a href="/styleguide/flip-cards">Flip Cards </a>
+        </li>
+        
+        <li>
+          <a href="/styleguide/form-base">Form - Base </a>
+        </li>
+        
+        <li>
+          <a href="/styleguide/select-field">Form - Select Field </a>
+        </li>
+        
+        <li>
+          <a href="/styleguide/highlight-card">Highlight Cards </a>
+        </li>
+        
+        <li>
+          <a href="/styleguide/image">Image </a>
+        </li>
+        
+        <li>
+          <a href="/styleguide/links">Links </a>
+        </li>
+        
+        <li>
+          <a href="/styleguide/logo-list">Logo List </a>
+        </li>
+        
+        <li>
+          <a href="/styleguide/content-modal">Modal - Content </a>
+        </li>
+        
+        <li>
+          <a href="/styleguide/profile-modal">Modal - Profile </a>
+        </li>
+        
+        <li>
+          <a href="/styleguide/page-menu">Page Menu </a>
+        </li>
+        
+        <li>
+          <a href="/styleguide/panel-hero">Panel Hero </a>
+        </li>
+        
+        <li>
+          <a href="/styleguide/patterns">Patterns </a>
+        </li>
+        
+        <li>
+          <a href="/styleguide/profile-card">Profile Cards </a>
+        </li>
+        
+        <li>
+          <a href="/styleguide/profile-slider">Profile Slider </a>
+        </li>
+        
+        <li>
+          <a href="/styleguide/range">Range </a>
+        </li>
+        
+        <li>
+          <a href="/styleguide/resource-accordion">Resource Accordion </a>
+        </li>
+        
+        <li>
+          <a href="/styleguide/resource-list">Resource List </a>
+        </li>
+        
+        <li>
+          <a href="/styleguide/section-header">Section Header </a>
+        </li>
+        
+        <li>
+          <a href="/styleguide/social-list">Social List </a>
+        </li>
+        
+        <li>
+          <a href="/styleguide/spacing">Spacing </a>
+        </li>
+        
+        <li>
+          <a href="/styleguide/stat-card">Stat Cards </a>
+        </li>
+        
+        <li>
+          <a href="/styleguide/status-list">Status List </a>
+        </li>
+        
+        <li>
+          <a href="/styleguide/sub-section-header">Sub Section Header </a>
+        </li>
+        
+        <li>
+          <a href="/styleguide/toggle-text">Toggle Text </a>
+        </li>
+        
+        <li>
+          <a href="/styleguide/typography">Typography </a>
+        </li>
+        
+        <li>
+          <a href="/styleguide/video">Video </a>
+        </li>
+        
+        <li>
+          <a href="/styleguide/h-card">hCard </a>
+        </li>
+        
+      </ul>
+    </aside>
+
+    <main class="styleguide-main | md:w-3/4 md:pl-10 pt-10">
+      <!-- Header -->
+
+<div class="styleguide__content border-b border-oat-light pb-8 mb-12">
+  <h1>Social List</h1>
+  <p><u>SASS Partial:</u> <code>components/social-list</code></p>
+</div>
+
+<!-- Result -->
+
+<div class="styleguide__result">
+<ul class="social-list | mt-3" role="menubar">
+    <li>
+        <a aria-label="Facebook" href=""><span class="icon | icon--fb"><svg viewbox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12.46218,31V18H8v-6h4.46218V7.80998C12.46218,3.24577,15.35166,1,19.42325,1 c1.95033,0,3.62655,0.1452,4.11504,0.21011v4.76987l-2.82387,0.00128C18.50007,5.98127,18,7.0335,18,8.57757V12h6l-2,6h-4v13 H12.46218z" fill="currentColor"></path></svg></span></a>
+    </li>
+    <li>
+        <a aria-label="Linked In" href=""><span class="icon | icon--linkedin"><svg viewbox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+        <path d="M30.66667,0H1.33333C0.59695,0,0,0.59695,0,1.33333v29.33333C0,31.40305,0.59695,32,1.33333,32h29.33333 C31.40305,32,32,31.40305,32,30.66667V1.33333C32,0.59695,31.40305,0,30.66667,0z M9.49262,27.26738H4.74176V11.99653h4.75086 V27.26738z M7.1185,9.91013c-1.5243,0-2.75347-1.23305-2.75347-2.75258c0-1.5191,1.22916-2.75218,2.75347-2.75218 c1.51823,0,2.75084,1.23308,2.75084,2.75218C9.86933,8.67708,8.63673,9.91013,7.1185,9.91013z M27.26871,27.26738h-4.74569v-7.42622 c0-1.77085-0.0304-4.04907-2.46613-4.04907c-2.4696,0-2.8464,1.93013-2.8464,3.92231v7.55298h-4.74045V11.99653h4.54951v2.08764 h0.06507c0.6328-1.20053,2.18142-2.46658,4.49049-2.46658c4.80551,0,5.6936,3.16196,5.6936,7.27476V27.26738z" fill="currentColor"></path></svg></span></a>
+    </li>
+    <li>
+        <a aria-label="Linked In" href=""><span class="icon | icon--linkedin"><svg viewbox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+        <path d="M32,6.07561c-1.17735,0.52214-2.44259,0.87512-3.77071,1.03378 c1.35555-0.81248,2.39653-2.09911,2.88667-3.63218c-1.26845,0.75237-2.67349,1.29874-4.16896,1.5932 c-1.19757-1.276-2.90382-2.07328-4.79203-2.07328c-3.6259,0-6.56538,2.93949-6.56538,6.56504 c0,0.51461,0.05807,1.0156,0.16997,1.49615C10.30329,10.78454,5.46576,8.17083,2.2277,4.19882 C1.66258,5.16848,1.33887,6.29621,1.33887,7.49939c0,2.27766,1.15906,4.28716,2.92062,5.46451 C3.1833,12.92984,2.171,12.63447,1.28582,12.14272c-0.00046,0.02744-0.00056,0.05487-0.00056,0.08253 c0,3.18096,2.26302,5.83445,5.2664,6.43754C6.00071,18.81275,5.42072,18.893,4.82199,18.893 c-0.42305,0-0.83433-0.04115-1.2352-0.11774c0.83546,2.60823,3.26,4.50639,6.13286,4.55943 c-2.24691,1.76077-5.07769,2.81032-8.15355,2.81032c-0.52993,0-1.05253-0.03109-1.5661-0.09167 c2.90543,1.86272,6.35632,2.94954,10.06382,2.94954c12.07582,0,18.67926-10.00381,18.67926-18.67944 c0-0.28463-0.00639-0.56776-0.01897-0.8493C30.00674,8.54849,31.11985,7.39218,32,6.07561z" fill="currentColor"></path></svg></span></a>
+    </li>
+</ul>
+</div>
+
+<!-- Markup -->
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">ul</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;social-list | mt-3&#34;</span> <span style="color:#a6e22e">role</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;menubar&#34;</span>&gt;
+			&lt;<span style="color:#f92672">li</span>&gt;
+				&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">aria-label</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Facebook&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span>&gt;&lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;icon | icon--fb&#34;</span>&gt;&lt;<span style="color:#f92672">svg</span> <span style="color:#a6e22e">viewbox</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;0 0 32 32&#34;</span> <span style="color:#a6e22e">xmlns</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;http://www.w3.org/2000/svg&#34;</span>&gt;
+				&lt;<span style="color:#f92672">path</span> <span style="color:#a6e22e">d</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;M12.46218,31V18H8v-6h4.46218V7.80998C12.46218,3.24577,15.35166,1,19.42325,1 c1.95033,0,3.62655,0.1452,4.11504,0.21011v4.76987l-2.82387,0.00128C18.50007,5.98127,18,7.0335,18,8.57757V12h6l-2,6h-4v13 H12.46218z&#34;</span> <span style="color:#a6e22e">fill</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;currentColor&#34;</span>&gt;&lt;/<span style="color:#f92672">path</span>&gt;&lt;/<span style="color:#f92672">svg</span>&gt;&lt;/<span style="color:#f92672">span</span>&gt;&lt;/<span style="color:#f92672">a</span>&gt;
+			&lt;/<span style="color:#f92672">li</span>&gt;
+			&lt;<span style="color:#f92672">li</span>&gt;
+				&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">aria-label</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Linked In&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span>&gt;&lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;icon | icon--linkedin&#34;</span>&gt;&lt;<span style="color:#f92672">svg</span> <span style="color:#a6e22e">viewbox</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;0 0 32 32&#34;</span> <span style="color:#a6e22e">xmlns</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;http://www.w3.org/2000/svg&#34;</span>&gt;
+				&lt;<span style="color:#f92672">path</span> <span style="color:#a6e22e">d</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;M30.66667,0H1.33333C0.59695,0,0,0.59695,0,1.33333v29.33333C0,31.40305,0.59695,32,1.33333,32h29.33333 C31.40305,32,32,31.40305,32,30.66667V1.33333C32,0.59695,31.40305,0,30.66667,0z M9.49262,27.26738H4.74176V11.99653h4.75086 V27.26738z M7.1185,9.91013c-1.5243,0-2.75347-1.23305-2.75347-2.75258c0-1.5191,1.22916-2.75218,2.75347-2.75218 c1.51823,0,2.75084,1.23308,2.75084,2.75218C9.86933,8.67708,8.63673,9.91013,7.1185,9.91013z M27.26871,27.26738h-4.74569v-7.42622 c0-1.77085-0.0304-4.04907-2.46613-4.04907c-2.4696,0-2.8464,1.93013-2.8464,3.92231v7.55298h-4.74045V11.99653h4.54951v2.08764 h0.06507c0.6328-1.20053,2.18142-2.46658,4.49049-2.46658c4.80551,0,5.6936,3.16196,5.6936,7.27476V27.26738z&#34;</span> <span style="color:#a6e22e">fill</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;currentColor&#34;</span>&gt;&lt;/<span style="color:#f92672">path</span>&gt;&lt;/<span style="color:#f92672">svg</span>&gt;&lt;/<span style="color:#f92672">span</span>&gt;&lt;/<span style="color:#f92672">a</span>&gt;
+			&lt;/<span style="color:#f92672">li</span>&gt;
+			&lt;<span style="color:#f92672">li</span>&gt;
+				&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">aria-label</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Linked In&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span>&gt;&lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;icon | icon--linkedin&#34;</span>&gt;&lt;<span style="color:#f92672">svg</span> <span style="color:#a6e22e">viewbox</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;0 0 32 32&#34;</span> <span style="color:#a6e22e">xmlns</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;http://www.w3.org/2000/svg&#34;</span>&gt;
+				&lt;<span style="color:#f92672">path</span> <span style="color:#a6e22e">d</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;M32,6.07561c-1.17735,0.52214-2.44259,0.87512-3.77071,1.03378 c1.35555-0.81248,2.39653-2.09911,2.88667-3.63218c-1.26845,0.75237-2.67349,1.29874-4.16896,1.5932 c-1.19757-1.276-2.90382-2.07328-4.79203-2.07328c-3.6259,0-6.56538,2.93949-6.56538,6.56504 c0,0.51461,0.05807,1.0156,0.16997,1.49615C10.30329,10.78454,5.46576,8.17083,2.2277,4.19882 C1.66258,5.16848,1.33887,6.29621,1.33887,7.49939c0,2.27766,1.15906,4.28716,2.92062,5.46451 C3.1833,12.92984,2.171,12.63447,1.28582,12.14272c-0.00046,0.02744-0.00056,0.05487-0.00056,0.08253 c0,3.18096,2.26302,5.83445,5.2664,6.43754C6.00071,18.81275,5.42072,18.893,4.82199,18.893 c-0.42305,0-0.83433-0.04115-1.2352-0.11774c0.83546,2.60823,3.26,4.50639,6.13286,4.55943 c-2.24691,1.76077-5.07769,2.81032-8.15355,2.81032c-0.52993,0-1.05253-0.03109-1.5661-0.09167 c2.90543,1.86272,6.35632,2.94954,10.06382,2.94954c12.07582,0,18.67926-10.00381,18.67926-18.67944 c0-0.28463-0.00639-0.56776-0.01897-0.8493C30.00674,8.54849,31.11985,7.39218,32,6.07561z&#34;</span> <span style="color:#a6e22e">fill</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;currentColor&#34;</span>&gt;&lt;/<span style="color:#f92672">path</span>&gt;&lt;/<span style="color:#f92672">svg</span>&gt;&lt;/<span style="color:#f92672">span</span>&gt;&lt;/<span style="color:#f92672">a</span>&gt;
+			&lt;/<span style="color:#f92672">li</span>&gt;
+		&lt;/<span style="color:#f92672">ul</span>&gt;</code></pre></div>
+
+    </main>
+  </div>
+</div>
+
+      </main>
+      
+      
+<div class="py-12 container gutter"></div>
+
+    </div>
+
+    <script src="/dist/js/app.js"></script>
+
+
+
+    
+  </body>
+</html>

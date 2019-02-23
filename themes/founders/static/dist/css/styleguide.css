@@ -1,61 +1,68 @@
-.styleguide__block {
-  margin-top: 2.5rem;
+.styleguide .highlight {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
+  margin-bottom: 2.5rem;
+  border-bottom-width: 1px;
+  border-color: #000;
+  overflow: hidden;
 }
 
-.styleguide h1 {
+.styleguide .highlight pre {
+  padding: 1rem;
+}
+
+.styleguide__content h1 {
   font-size: 1.875rem;
 }
 
-.styleguide h2 {
+.styleguide__content h2 {
   font-size: 1.5rem;
 }
 
-.styleguide h3 {
+.styleguide__content h3 {
   font-size: 1.375rem;
 }
 
-.styleguide h1,
-.styleguide h2,
-.styleguide h3 {
+.styleguide__content h1,
+.styleguide__content h2,
+.styleguide__content h3 {
   margin-bottom: 2rem;
 }
 
-.styleguide h1,
-.styleguide h2,
-.styleguide h3 {
+.styleguide__content h1,
+.styleguide__content h2,
+.styleguide__content h3 {
   font-family: Graphik--web;
   font-weight: 500;
 }
 
-.styleguide h4,
-.styleguide h5,
-.styleguide h6,
-.styleguide p {
+.styleguide__content h4,
+.styleguide__content h5,
+.styleguide__content h6,
+.styleguide__content p {
   margin-bottom: 1.5rem;
 }
 
-.styleguide ul,
-.styleguide ol,
-.styleguide table {
+.styleguide__content ul,
+.styleguide__content ol,
+.styleguide__content table {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 }
 
-.styleguide ul li,
-.styleguide ol li,
-.styleguide table li {
+.styleguide__content ul li,
+.styleguide__content ol li,
+.styleguide__content table li {
   margin-top: .5rem;
   margin-bottom: .5rem;
 }
 
-.styleguide a {
+.styleguide__content a {
   font-weight: 400;
   text-decoration: none;
   color: #53c07d;
 }
 
-.styleguide a:hover {
+.styleguide__content a:hover {
   color: #12302d;
 }

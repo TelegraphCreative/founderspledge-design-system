@@ -13,13 +13,13 @@
 <div class="styleguide | container gutter">
   <div class="md:flex flex-wrap">
     <aside
-      class="styleguide-menu | md:w-1/4 pt-10 | md:pb-0 pb-4 | md:border-r md:border-b-0 border-b | border-oat-light"
+      class="styleguide-menu styleguide__content | md:w-1/4 pt-10 | md:pb-0 pb-4 | md:border-r md:border-b-0 border-b | border-oat-light"
     >
       <h3 class="header-md mb-3">Components</h3>
       <ul class="menu-list">
         {{range where .Site.RegularPages ".Section" "styleguide"}}
         <li>
-          <a href="/styleguide/{{.Title | lower }}">{{.Title}}</a>
+          <a href="/styleguide/{{.Slug }}">{{.Title}} </a>
         </li>
         {{ end }}
       </ul>

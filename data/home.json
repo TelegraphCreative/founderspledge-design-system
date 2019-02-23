@@ -13,11 +13,11 @@
         }
       ],
       "image": {
-        "url": "/img/fpo-01.jpg",
+        "url": "/dist/assets/img/fpo-01.jpg",
         "ratio": "8x20"
       },
       "image_small": {
-        "url": "/img/fpo-03.jpg",
+        "url": "/dist/assets/img/fpo-03.jpg",
         "ratio": "2x1"
       }
     }
@@ -75,11 +75,11 @@
         }
       ],
       "image": {
-        "url": "/img/fpo-01.jpg",
+        "url": "/dist/assets/img/fpo-01.jpg",
         "ratio": "8x20"
       },
       "image_small": {
-        "url": "/img/fpo-03.jpg",
+        "url": "/dist/assets/img/fpo-03.jpg",
         "ratio": "2x1"
       }
     }
@@ -106,11 +106,11 @@
         }
       ],
       "image": {
-        "url": "/img/fpo-01.jpg",
+        "url": "/dist/assets/img/fpo-01.jpg",
         "ratio": "8x20"
       },
       "image_small": {
-        "url": "/img/fpo-03.jpg",
+        "url": "/dist/assets/img/fpo-03.jpg",
         "ratio": "2x1"
       }
     }

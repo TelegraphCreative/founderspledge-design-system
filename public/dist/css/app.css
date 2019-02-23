@@ -5544,6 +5544,12 @@ cite {
   background: url("/dist/assets/svg/pattern-crosshatch--white.svg") repeat;
 }
 
+.pattern.-md,
+[class^=pattern--].-md {
+  height: 3.25rem;
+  width: 12.5rem;
+}
+
 .pseudo {
   content: "";
 }
@@ -5724,114 +5730,6 @@ body.overflow-hidden {
 
 [type=range]::-ms-tooltip {
   display: none;
-}
-
-.control {
-  display: block;
-  position: relative;
-  padding-left: 1.5rem;
-  margin-bottom: .75rem;
-  cursor: pointer;
-}
-
-.control input {
-  position: absolute;
-  opacity: 0;
-  z-index: -1;
-}
-
-.control__indicator {
-  position: absolute;
-  border-width: 1px;
-  border-color: #f1f1f1;
-  height: 1rem;
-  width: 1rem;
-  top: 2px;
-  left: 0;
-}
-
-.control--radio .control__indicator {
-  border-radius: 50%;
-}
-
-.control:hover input:not([disabled]) ~ .control__indicator,
-.control:hover input:not([disabled]):checked ~ .control__indicator,
-.control input:focus ~ .control__indicator {
-  border-color: #53c07d;
-}
-
-.control input:checked ~ .control__indicator,
-.control input:checked:focus ~ .control__indicator {
-  border-color: #53c07d;
-  background-color: #53c07d;
-}
-
-.control input:disabled ~ .control__indicator {
-  background-color: #f1f1f1;
-  pointer-events: none;
-}
-
-.control__indicator:after {
-  content: "";
-  position: absolute;
-  display: none;
-}
-
-.control input:checked ~ .control__indicator:after {
-  display: inline-block;
-}
-
-.control--checkbox .control__indicator:after {
-  border-color: #fff;
-  left: 5px;
-  top: 2px;
-  width: 5px;
-  height: 8px;
-  border-width: 0 2px 2px 0;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
-.control--checkbox input:disabled ~ .control__indicator:after {
-  border-color: #7b7b7b;
-}
-
-.control--radio-box {
-  padding-left: 0;
-}
-
-.control--radio-box .control__text {
-  display: inline-block;
-  padding-top: .75rem;
-  padding-bottom: .75rem;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  font-weight: 500;
-  font-family: Graphik--web;
-  font-size: .875rem;
-  color: #12302d;
-  background-color: #fff;
-  border-width: 2px;
-  border-color: #12302d;
-  transition-property: color, background, border-color;
-  transition-duration: .45s;
-  transition-timing-function: ease;
-}
-
-.control--radio-box .control__indicator {
-  display: none;
-}
-
-.control--radio-box input:checked ~ .control__text,
-.control--radio-box input:checked:focus ~ .control__text {
-  background-color: #12302d;
-  color: #fff;
-  font-weight: 600;
-}
-
-.control--radio-box:hover .control__text {
-  background-color: #12302d;
-  color: #fff;
 }
 
 .control {
@@ -6834,6 +6732,10 @@ body {
 
 .section-header.-flush {
   width: 100%;
+}
+
+.section-header.-flush .section-header__descr {
+  margin-left: 0;
 }
 
 .section-header .header-sm {
